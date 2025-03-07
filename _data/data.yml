@@ -28,7 +28,7 @@ education:
     time: 2014 - 2017
     university: Hanil High School
 
-GPA block has problems with the current layout. It will be fixed in the future.
+# GPA block has problems with the current layout. It will be fixed in the future.
 GPA:
   - idiom: "Department GPA : 3.72 / 4.3"
   - idiom: "Cumulative GPA : 3.62 / 4.3"
