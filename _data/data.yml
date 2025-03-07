@@ -16,33 +16,40 @@ languages:
   - idiom: English
 
 education:
+  - degree: Integrated M.S./Ph.D in Electrical & Electronic
+    time: 2025 - Present
+    university: Yonsei University
+
   - degree: BE in Electrical & Electronic
-    time: 2019 - Present
+    time: 2019 - 2024
     university: Yonsei University
 
   - degree: High School
     time: 2014 - 2017
     university: Hanil High School
 
-# GPA block has problems with the current layout. It will be fixed in the future.
-#  GPA:
-#    - idiom: "Department GPA : / 4.3"
-#    - idiom: "Cumulative GPA : / 4.3"
+GPA block has problems with the current layout. It will be fixed in the future.
+GPA:
+  - idiom: "Department GPA : 3.72 / 4.3"
+  - idiom: "Cumulative GPA : 3.62 / 4.3"
 
 skills:
   - category: Computer Science
     skill: 
-      - C, C++, Python
-      - CUDA, PyTorch, TensorRT-LLM
-      - Nsight Systems, Nsight Compute
+      - LLVM
+      - C/C++, Python
+      - CUDA, PyTorch
+
   - category: Digital Circuit Design
     skill:
       - Verilog
       - Xilinx Vivado
       - Cadence Virtuoso (Analog)
+
   - category: Programming
     skill:
-      - Linux, Docker
+      - Linux
+      - Docker, Multipass
       - Dart, Flutter
 
 # Publications
@@ -54,12 +61,20 @@ publications:
     
 # Profile
 profile: |
-  Research Interests : Compiler Optimization for Deep Learning and Homomorphic Encryption.
+  Research Interests : Compiler Optimization for Homomorphic Encryption and Deep Learning
 
 # Experience
 experience:
+  - role: Research Assistant
+    time: 2025.03 - Present
+    company: CORE Lab in Yonsei University / Prof. Hanjun Kim
+    details:
+      - "Homomorphic Encryption"
+    technologies_used: | 
+      LLVM, Python, C/C++
+    
   - role: Undergraduate Research Assistant
-    time: 2024.06 - Present
+    time: 2024.06 - 2025.02
     company: CORE Lab in Yonsei University / Prof. Hanjun Kim
     details:
       - "Study LLVM"
