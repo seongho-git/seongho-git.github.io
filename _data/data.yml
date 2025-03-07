@@ -16,7 +16,7 @@ languages:
   - idiom: English
 
 education:
-  - degree: Integrated M.S./Ph.D in Electrical & Electronic
+  - degree: Integrated M.S./Ph.D in EEE
     time: 2025 - Present
     university: Yonsei University
 
@@ -29,9 +29,9 @@ education:
     university: Hanil High School
 
 # GPA block has problems with the current layout. It will be fixed in the future.
-GPA:
-  - idiom: "Department GPA : 3.72 / 4.3"
-  - idiom: "Cumulative GPA : 3.62 / 4.3"
+# GPA:
+#  - idiom: "Department GPA : 3.72 / 4.3"
+#  - idiom: "Cumulative GPA : 3.62 / 4.3"
 
 skills:
   - category: Computer Science
