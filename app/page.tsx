@@ -554,7 +554,7 @@ export default function HomePage() {
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>
-                      <CardTitle className="text-xl">Integrated M.S./Ph.D in EEE</CardTitle>
+                      <CardTitle className="text-xl">Integrated M.S./Ph.D in Electrical & Electronic</CardTitle>
                       <CardDescription className="text-blue-600 font-medium text-base">
                         Yonsei University
                       </CardDescription>
@@ -570,7 +570,7 @@ export default function HomePage() {
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>
-                      <CardTitle className="text-xl">BE in Electrical & Electronic</CardTitle>
+                      <CardTitle className="text-xl">B.E. in Electrical & Electronic</CardTitle>
                       <CardDescription className="text-blue-600 font-medium text-base">
                         Yonsei University
                       </CardDescription>
