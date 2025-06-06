@@ -2,8 +2,8 @@
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
-  basePath: process.env.NODE_ENV === 'production' ? '/seongho-git.github.io' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/seongho-git.github.io/' : '',
+  basePath: '',
+  assetPrefix: '',
   eslint: {
     ignoreDuringBuilds: true,
   },
