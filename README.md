@@ -1,30 +1,37 @@
-# Github.io website design
+# Seongho Kim - Personal Website
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
-
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/seongho-kim-4014s-projects/v0-github-io-website-design)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/T04i5GMZVIK)
+This is the repository for my personal website hosted on GitHub Pages.
 
 ## Overview
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+This website showcases my work as a compiler engineer, including:
+
+- Research interests in compiler optimization for homomorphic encryption and deep learning
+- Publications and research papers
+- Professional experience
+- Projects and contributions
+- Skills and education
+
+## Technologies Used
+
+- Next.js
+- React
+- Tailwind CSS
+- GitHub Pages
+
+## Local Development
+
+To run this website locally:
+
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Start the development server: `npm run dev`
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ## Deployment
 
-Your project is live at:
+This website is automatically deployed to GitHub Pages when changes are pushed to the main branch.
 
-**[https://vercel.com/seongho-kim-4014s-projects/v0-github-io-website-design](https://vercel.com/seongho-kim-4014s-projects/v0-github-io-website-design)**
+## License
 
-## Build your app
-
-Continue building your app on:
-
-**[https://v0.dev/chat/projects/T04i5GMZVIK](https://v0.dev/chat/projects/T04i5GMZVIK)**
-
-## How It Works
-
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+All rights reserved.
