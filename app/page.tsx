@@ -128,7 +128,11 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="flex flex-col md:flex-row gap-8 items-start">
               <div className="w-40 h-40 md:w-48 md:h-48 rounded-full bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900/20 dark:to-blue-800/20 flex items-center justify-center overflow-hidden flex-shrink-0">
-                <Code className="h-20 w-20 text-blue-600/30" />
+                <img
+                    src="/profile.jpg?height=192&width=192"
+                    alt="Seongho Kim"
+                    className="w-full h-full object-cover rounded-full"
+                />
               </div>
               <div>
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground mt-6 md:mt-0">
@@ -140,10 +144,11 @@ export default function HomePage() {
                 </p>
                 <div className="mt-8 flex items-center gap-4">
                   <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+                    <Mail className="mr-2 h-4 w-4" />
                     <a href="mailto:seongho-kim@yonsei.ac.kr">Get in Touch</a>
                   </Button>
                   <Button variant="outline" size="lg">
-                    <a href="#projects">View Projects</a>
+                    <a href="#projects">View Projects</a> 
                   </Button>
                 </div>
                 <div className="mt-8 flex items-center space-x-4">
@@ -678,16 +683,12 @@ export default function HomePage() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                <a href="mailto:seongho-kim@yonsei.ac.kr">
                   <Mail className="mr-2 h-4 w-4" />
-                  Send Email
-                </a>
+                  <a href="mailto:seongho-kim@yonsei.ac.kr">Send Email</a>
               </Button>
               <Button variant="outline" size="lg">
-                <a href="https://github.com/seongho-git" target="_blank" rel="noopener noreferrer">
                   <Github className="mr-2 h-4 w-4" />
-                  GitHub Profile
-                </a>
+                  <a href="https://github.com/seongho-git" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
               </Button>
             </div>
           </div>

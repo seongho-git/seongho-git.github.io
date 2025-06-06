@@ -252,7 +252,7 @@ function App() {
             </div>
             <div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mt-6 md:mt-0">
-                Hi, I'm <span className="text-blue-600">Seongho Kim</span>
+                Hi, I'm <span className="text-blue-600">Seongho Kimssss</span>
               </h1>
               <h2 className="text-xl sm:text-2xl text-gray-600 dark:text-gray-400 mt-4 font-medium">
                 Compiler Engineer
