@@ -190,13 +190,13 @@ export default function HomePage() {
                         className="w-full h-full object-cover rounded-full"
                       />
                     </div>
-                    <h3 className="text-xl font-medium text-blue-600">CoreLab</h3>
+                    <h3 className="text-xl font-medium text-blue-600">
+                      <a href="https://corelab.yonsei.ac.kr/" target="_blank" rel="noopener noreferrer">
+                        CoreLab
+                      </a>
+                    </h3>
                     <p className="mt-2 text-sm text-muted-foreground">Yonsei University</p>
                     <p className="mt-4 text-xs text-muted-foreground">Research Assistant</p>
-                    <a
-                      href="http://corelab.or.kr/"
-                      className="mt-6 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-                    >
                   </div>
                 </div>
               </div>
@@ -223,7 +223,7 @@ export default function HomePage() {
                 </p>
                 <p className="text-muted-foreground">
                   My research interests include compiler optimization for homomorphic encryption and deep learning, with
-                  experience in LLVM, C/C++, Python, and CUDA.
+                  experience in MLIR, LLVM, C/C++, Python, and CUDA.
                 </p>
               </div>
               <div className="space-y-6">
@@ -232,7 +232,7 @@ export default function HomePage() {
                   <div>
                     <h3 className="font-semibold text-foreground">Compiler Optimization</h3>
                     <p className="text-sm text-muted-foreground">
-                      LLVM, C/C++, Python for homomorphic encryption and deep learning
+                      MLIR, LLVM, C/C++, Python for homomorphic encryption and deep learning
                     </p>
                   </div>
                 </div>
