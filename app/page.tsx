@@ -148,7 +148,7 @@ export default function HomePage() {
                     <a href="mailto:seongho-kim@yonsei.ac.kr">Get in Touch</a>
                   </Button>
                   <Button variant="outline" size="lg">
-                    <a href="#projects">View Projects</a> 
+                    <a href="#publications">View Publications</a> 
                   </Button>
                 </div>
                 <div className="mt-8 flex items-center space-x-4">
@@ -186,13 +186,17 @@ export default function HomePage() {
                     <div className="w-16 h-16 mx-auto mb-4 rounded-full overflow-hidden bg-blue-100 dark:bg-blue-900/20 flex items-center justify-center">
                       <img
                         src="/corelab_logo.png?height=64&width=64"
-                        alt="CORE Lab"
+                        alt="CoreLab"
                         className="w-full h-full object-cover rounded-full"
                       />
                     </div>
                     <h3 className="text-xl font-medium text-blue-600">CoreLab</h3>
                     <p className="mt-2 text-sm text-muted-foreground">Yonsei University</p>
                     <p className="mt-4 text-xs text-muted-foreground">Research Assistant</p>
+                    <a
+                      href="http://corelab.or.kr/"
+                      className="mt-6 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                    >
                   </div>
                 </div>
               </div>
@@ -214,7 +218,7 @@ export default function HomePage() {
                 </p>
                 <p className="text-muted-foreground mb-6">
                   Currently pursuing an Integrated M.S./Ph.D in Electrical & Electronic Engineering at Yonsei
-                  University, I work as a Research Assistant at CORE Lab under Prof. Hanjun Kim, focusing on compiler
+                  University, I work as a Research Assistant at CoreLab under Prof. Hanjun Kim, focusing on compiler
                   optimization techniques.
                 </p>
                 <p className="text-muted-foreground">
@@ -264,7 +268,7 @@ export default function HomePage() {
                     <CardTitle className="text-xl">
                       Survey and Evaluation of Converging Architecture in LLM based on Footsteps of Operations
                     </CardTitle>
-                    <CardDescription className="text-blue-600 font-medium mt-2">IEEE OJCS, IF=8.2 Q1 (JCR 2025)</CardDescription>
+                    <CardDescription className="text-blue-600 font-medium mt-2">IEEE OJCS, IF=8.2, Q1 (JCR 2025)</CardDescription>
                   </div>
                   <a
                     href="https://arxiv.org/abs/2410.11381"
@@ -281,7 +285,7 @@ export default function HomePage() {
                   Seongho Kim, Jihyun Moon, Juntaek Oh, Insu Choi, and Joon-Sung Yang
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  This paper provides insights into strategies for enhancing LLM performance through the analysis of convergent architecture.
+                  This paper provides insights into strategies for enhancing LLM performance by analyzing the converging architecture.
                 </p>
               </CardContent>
             </Card>
@@ -301,7 +305,7 @@ export default function HomePage() {
                     <div>
                       <CardTitle className="text-xl">Research Assistant</CardTitle>
                       <CardDescription className="text-blue-600 font-medium text-base">
-                        CORE Lab in Yonsei University / Prof. Hanjun Kim
+                        CoreLab in Yonsei University / Prof. Hanjun Kim
                       </CardDescription>
                     </div>
                     <Badge variant="outline" className="text-sm">
@@ -314,9 +318,11 @@ export default function HomePage() {
                   <div className="mt-4">
                     <p className="text-sm font-medium text-muted-foreground">Technologies used:</p>
                     <div className="flex flex-wrap gap-2 mt-2">
-                      <Badge variant="secondary">LLVM</Badge>
+                      <Badge variant="secondary">MLIR</Badge>
                       <Badge variant="secondary">Python</Badge>
                       <Badge variant="secondary">C/C++</Badge>
+                      <Badge variant="secondary">CUDA</Badge>
+                      <Badge variant="secondary">A6000</Badge>
                     </div>
                   </div>
                 </CardContent>
@@ -328,7 +334,7 @@ export default function HomePage() {
                     <div>
                       <CardTitle className="text-xl">Undergraduate Research Assistant</CardTitle>
                       <CardDescription className="text-blue-600 font-medium text-base">
-                        CORE Lab in Yonsei University / Prof. Hanjun Kim
+                        CoreLab in Yonsei University / Prof. Hanjun Kim
                       </CardDescription>
                     </div>
                     <Badge variant="outline" className="text-sm">
