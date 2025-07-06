@@ -185,7 +185,7 @@ export default function HomePage() {
                   <div className="text-center p-6">
                     <div className="w-16 h-16 mx-auto mb-4 rounded-full overflow-hidden bg-blue-100 dark:bg-blue-900/20 flex items-center justify-center">
                       <img
-                        src="/placeholder.svg?height=64&width=64"
+                        src="/corelab_logo.png?height=64&width=64"
                         alt="CORE Lab"
                         className="w-full h-full object-cover rounded-full"
                       />
