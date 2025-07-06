@@ -139,8 +139,8 @@ export default function HomePage() {
                   Hi, I'm <span className="text-blue-600">Seongho Kim</span>
                 </h1>
                 <h2 className="text-xl sm:text-2xl text-muted-foreground mt-4 font-medium">Compiler Engineer</h2>
-                <p className="mt-6 text-lg text-muted-foreground">
-                  Research Interests: Compiler Optimization for Homomorphic Encryption and Deep Learning
+                <p className="mt-6 text-lg text-muted-foreground max-w-2xl leading-relaxed">
+                  Research Interests: Compiler Optimization for Deep Learning and Homomorphic Encryption, Large Language Model Acceleration
                 </p>
                 <div className="mt-8 flex items-center gap-4">
                   <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
@@ -183,8 +183,14 @@ export default function HomePage() {
                 <div className="absolute -right-10 -bottom-10 w-32 h-32 rounded-full bg-blue-200/50 dark:bg-blue-800/20"></div>
                 <div className="relative z-10 w-80 h-80 rounded-lg bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/10 dark:to-blue-800/10 flex items-center justify-center border border-blue-200 dark:border-blue-800/30 shadow-lg">
                   <div className="text-center p-6">
-                    <Cpu className="h-16 w-16 text-blue-600/40 mx-auto mb-4" />
-                    <h3 className="text-xl font-medium text-blue-600">CORE Lab</h3>
+                    <div className="w-16 h-16 mx-auto mb-4 rounded-full overflow-hidden bg-blue-100 dark:bg-blue-900/20 flex items-center justify-center">
+                      <img
+                        src="/placeholder.svg?height=64&width=64"
+                        alt="CORE Lab"
+                        className="w-full h-full object-cover rounded-full"
+                      />
+                    </div>
+                    <h3 className="text-xl font-medium text-blue-600">CoreLab</h3>
                     <p className="mt-2 text-sm text-muted-foreground">Yonsei University</p>
                     <p className="mt-4 text-xs text-muted-foreground">Research Assistant</p>
                   </div>
@@ -258,7 +264,7 @@ export default function HomePage() {
                     <CardTitle className="text-xl">
                       Survey and Evaluation of Converging Architecture in LLM based on Footsteps of Operations
                     </CardTitle>
-                    <CardDescription className="text-blue-600 font-medium mt-2">Arxiv, 2024. 10.</CardDescription>
+                    <CardDescription className="text-blue-600 font-medium mt-2">IEEE OJCS, IF=8.2 Q1 (JCR 2025)</CardDescription>
                   </div>
                   <a
                     href="https://arxiv.org/abs/2410.11381"
@@ -275,8 +281,7 @@ export default function HomePage() {
                   Seongho Kim, Jihyun Moon, Juntaek Oh, Insu Choi, and Joon-Sung Yang
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  This paper provides insights into strategies for accelerating LLM performance through converging
-                  architecture analysis.
+                  This paper provides insights into strategies for enhancing LLM performance through the analysis of convergent architecture.
                 </p>
               </CardContent>
             </Card>
@@ -354,7 +359,7 @@ export default function HomePage() {
                       </CardDescription>
                     </div>
                     <Badge variant="outline" className="text-sm">
-                      2024.03 - 2024.10
+                      2024.03 - 2024.06
                     </Badge>
                   </div>
                 </CardHeader>
@@ -369,6 +374,8 @@ export default function HomePage() {
                       Spearheaded a research team of 3 undergraduates and a graduate, defining objectives and developing
                       research plans.
                     </li>
+                    <li>Research Topic: Analysis of open-source LLMs.</li>
+                    <li>Experimented with Gemma (Google Deepmind) and Llama (Meta) on RTX 6000 Ada with Runpod support.</li>
                   </ul>
                   <div className="mt-4">
                     <p className="text-sm font-medium text-muted-foreground">Technologies used:</p>
@@ -448,6 +455,63 @@ export default function HomePage() {
                   </div>
                 </CardContent>
               </Card>
+
+              <Card className="border-l-4 border-l-blue-600">
+                <CardHeader>
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <CardTitle className="text-xl">Undergraduate Research Intern</CardTitle>
+                      <CardDescription className="text-blue-600 font-medium text-base">
+                        Circuit and System Lab in Yonsei University / Prof. Tae Wook Kim [cite: 82, 83]
+                      </CardDescription>
+                    </div>
+                    <Badge variant="outline" className="text-sm">
+                      2023.01 - 2023.06 [cite: 80]
+                    </Badge>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-4">
+                    <li>Research Topic: Analyze Impulse Radio Ultra-WideBand (IR-UWB) transmitter and transceiver. [cite: 85]</li>
+                    <li>Designed proposed pulse generator of UWB transmitter. [cite: 86]</li>
+                    <li>Analyzed the architecture of UWB transmitter and transceiver. [cite: 87]</li>
+                    <li>Optimized the performance of multi-stage amplifier. [cite: 88]</li>
+                  </ul>
+                  <div className="mt-4">
+                    <p className="text-sm font-medium text-muted-foreground">Technologies used:</p>
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      <Badge variant="secondary">Verilog</Badge>
+                      <Badge variant="secondary">Cadence Virtuoso</Badge>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="border-l-4 border-l-blue-600">
+                <CardHeader>
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <CardTitle className="text-xl">Mandatory Military Service</CardTitle>
+                      <CardDescription className="text-blue-600 font-medium text-base">
+                        Information Systems Management in the Republic of Korea Air Force (ROKAF) [cite: 93, 94]
+                      </CardDescription>
+                    </div>
+                    <Badge variant="outline" className="text-sm">
+                      2020.10 - 2022.07 [cite: 91]
+                    </Badge>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">Fulfilled mandatory military service requirement, focusing on information systems management.</p>
+                  <div className="mt-4">
+                    <p className="text-sm font-medium text-muted-foreground">Technologies used:</p>
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      <Badge variant="secondary">Python</Badge>
+                      <Badge variant="secondary">MS Excel</Badge>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
@@ -507,11 +571,11 @@ export default function HomePage() {
               <div>
                 <h3 className="text-xl font-semibold text-foreground mb-4">Computer Science</h3>
                 <div className="flex flex-wrap gap-2">
+                  <Badge variant="outline">MLIR</Badge>
                   <Badge variant="outline">LLVM</Badge>
-                  <Badge variant="outline">C/C++</Badge>
                   <Badge variant="outline">Python</Badge>
+                  <Badge variant="outline">C/C++</Badge>
                   <Badge variant="outline">CUDA</Badge>
-                  <Badge variant="outline">PyTorch</Badge>
                 </div>
               </div>
               <div>
@@ -535,8 +599,8 @@ export default function HomePage() {
               <div>
                 <h3 className="text-xl font-semibold text-foreground mb-4">Languages</h3>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">Korean</Badge>
-                  <Badge variant="outline">English</Badge>
+                  <Badge variant="outline">Korean (Native)</Badge>
+                  <Badge variant="outline">English (Expert)</Badge>
                 </div>
               </div>
             </div>
