@@ -4,7 +4,24 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Github, Linkedin, Mail, Code, Cpu, Zap, BookOpen, ExternalLink, Menu, X, FileText, Award } from "lucide-react"
+import {
+  Github,
+  Linkedin,
+  Mail,
+  Code,
+  Cpu,
+  Zap,
+  BookOpen,
+  ExternalLink,
+  Menu,
+  X,
+  FileText,
+  Award,
+  Download,
+  Building2,
+  Users,
+  Target,
+} from "lucide-react"
 import { ThemeToggle } from "@/components/theme-toggle"
 
 export default function HomePage() {
@@ -26,8 +43,12 @@ export default function HomePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center space-x-2">
-              <Code className="h-6 w-6 text-blue-600" />
-              <span className="text-xl font-bold">Seongho Kim</span>
+              <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center">
+                <Code className="h-5 w-5 text-white" />
+              </div>
+              <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-blue-700 bg-clip-text text-transparent">
+                Seongho Kim
+              </span>
             </div>
             <nav className="hidden md:flex items-center space-x-8">
               <a href="#about" className="text-sm font-medium hover:text-blue-600 transition-colors">
@@ -123,83 +144,113 @@ export default function HomePage() {
       )}
 
       {/* Hero Section */}
-      <section className="py-20 sm:py-32">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 sm:py-32 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-transparent to-indigo-50/30 dark:from-blue-950/20 dark:via-transparent dark:to-indigo-950/10"></div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="flex flex-col md:flex-row gap-8 items-start">
-              <div className="w-40 h-40 md:w-48 md:h-48 rounded-full bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900/20 dark:to-blue-800/20 flex items-center justify-center overflow-hidden flex-shrink-0">
+              <div className="w-40 h-40 md:w-48 md:h-48 rounded-2xl bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900/20 dark:to-blue-800/20 flex items-center justify-center overflow-hidden flex-shrink-0 shadow-xl">
                 <img
-                    src="/profile.jpg?height=192&width=192"
-                    alt="Seongho Kim"
-                    className="w-full h-full object-cover rounded-full"
+                  src="/profile.jpg?height=192&width=192"
+                  alt="Seongho Kim"
+                  className="w-full h-full object-cover rounded-2xl"
                 />
               </div>
               <div>
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground mt-6 md:mt-0">
-                  Hi, I'm <span className="text-blue-600">Seongho Kim</span>
+                <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300 mb-4">
+                  <Cpu className="w-4 h-4 mr-2" />
+                  Compiler Engineer
+                </div>
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground mt-2">
+                  Hi, I'm{" "}
+                  <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                    Seongho Kim
+                  </span>
                 </h1>
-                <h2 className="text-xl sm:text-2xl text-muted-foreground mt-4 font-medium">Compiler Engineer</h2>
                 <p className="mt-6 text-lg text-muted-foreground max-w-2xl leading-relaxed">
-                  Research Interests: Compiler Optimization for Deep Learning and Homomorphic Encryption, Large Language Model Acceleration
+                  Research Interests: Compiler Optimization for Deep Learning and Homomorphic Encryption, Large Language
+                  Model Acceleration
                 </p>
-                <div className="mt-8 flex items-center gap-4">
-                  <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+                <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                  <Button size="lg" className="bg-blue-600 hover:bg-blue-700 shadow-lg">
                     <Mail className="mr-2 h-4 w-4" />
                     <a href="mailto:seongho-kim@yonsei.ac.kr">Get in Touch</a>
                   </Button>
-                  <Button variant="outline" size="lg">
-                    <a href="#publications">View Publications</a> 
+                  <Button variant="outline" size="lg" className="shadow-lg bg-transparent">
+                    <Download className="mr-2 h-4 w-4" />
+                    <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
+                      Download CV
+                    </a>
+                  </Button>
+                  <Button variant="outline" size="lg" className="shadow-lg bg-transparent">
+                    <a href="#publications">View Publications</a>
                   </Button>
                 </div>
-                <div className="mt-8 flex items-center space-x-4">
+                <div className="mt-8 flex items-center space-x-6">
                   <a
                     href="https://github.com/seongho-git"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-blue-600 transition-colors"
+                    className="text-muted-foreground hover:text-blue-600 transition-colors p-2 hover:bg-blue-50 dark:hover:bg-blue-950/30 rounded-lg"
                   >
-                    <Github className="h-5 w-5" />
+                    <Github className="h-6 w-6" />
                   </a>
                   <a
                     href="https://linkedin.com/in/seongho-kim"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-blue-600 transition-colors"
+                    className="text-muted-foreground hover:text-blue-600 transition-colors p-2 hover:bg-blue-50 dark:hover:bg-blue-950/30 rounded-lg"
                   >
-                    <Linkedin className="h-5 w-5" />
+                    <Linkedin className="h-6 w-6" />
                   </a>
                   <a
                     href="mailto:seongho-kim@yonsei.ac.kr"
-                    className="text-muted-foreground hover:text-blue-600 transition-colors"
+                    className="text-muted-foreground hover:text-blue-600 transition-colors p-2 hover:bg-blue-50 dark:hover:bg-blue-950/30 rounded-lg"
                   >
-                    <Mail className="h-5 w-5" />
+                    <Mail className="h-6 w-6" />
                   </a>
                 </div>
               </div>
             </div>
             <div className="hidden lg:flex justify-center lg:justify-end">
-              <div className="relative">
-                <div className="absolute -left-6 -top-6 w-24 h-24 rounded-full bg-blue-100 dark:bg-blue-900/20"></div>
-                <div className="absolute -right-10 -bottom-10 w-32 h-32 rounded-full bg-blue-200/50 dark:bg-blue-800/20"></div>
-                <div className="relative z-10 w-80 h-80 rounded-lg bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/10 dark:to-blue-800/10 flex items-center justify-center border border-blue-200 dark:border-blue-800/30 shadow-lg">
-                  <div className="text-center p-6">
-                    <div className="w-16 h-16 mx-auto mb-4 rounded-full overflow-hidden bg-blue-100 dark:bg-blue-900/20 flex items-center justify-center">
-                      <img
-                        src="/corelab_logo.png?height=64&width=64"
-                        alt="CoreLab"
-                        className="w-full h-full object-cover rounded-full"
-                      />
-                    </div>
-                    <h3 className="text-xl font-medium text-blue-600">
-                      <a href="https://corelab.yonsei.ac.kr/" target="_blank" rel="noopener noreferrer">
-                        CoreLab
-                      </a>
-                    </h3>
-                    <p className="mt-2 text-sm text-muted-foreground">Yonsei University</p>
-                    <p className="mt-4 text-xs text-muted-foreground">Research Assistant</p>
+              <Card className="w-80 h-80 border-0 shadow-2xl bg-gradient-to-br from-white to-blue-50/50 dark:from-gray-900 dark:to-blue-950/20">
+                <CardContent className="p-8 h-full flex flex-col justify-center items-center text-center">
+                  <div className="w-20 h-20 mx-auto mb-6 rounded-2xl overflow-hidden bg-white dark:bg-gray-800 shadow-lg flex items-center justify-center">
+                    <img
+                      src="/corelab_logo.png?height=64&width=64"
+                      alt="CoreLab"
+                      className="w-16 h-16 object-contain"
+                    />
                   </div>
-                </div>
-              </div>
+                  <h3 className="text-2xl font-bold text-blue-600 mb-2">
+                    <a
+                      href="https://corelab.yonsei.ac.kr/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-blue-700 transition-colors"
+                    >
+                      CoreLab
+                    </a>
+                  </h3>
+                  <p className="text-muted-foreground mb-2">Yonsei University</p>
+                  <Badge
+                    variant="secondary"
+                    className="bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300"
+                  >
+                    Research Assistant
+                  </Badge>
+                  <div className="mt-4 flex items-center space-x-4 text-sm text-muted-foreground">
+                    <div className="flex items-center">
+                      <Building2 className="w-4 h-4 mr-1" />
+                      Lab
+                    </div>
+                    <div className="flex items-center">
+                      <Target className="w-4 h-4 mr-1" />
+                      HE & ML
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
@@ -209,7 +260,7 @@ export default function HomePage() {
       <section id="about" className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-8">About Me</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-12 text-center">About Me</h2>
             <div className="grid md:grid-cols-2 gap-12 items-start">
               <div>
                 <p className="text-lg text-muted-foreground mb-6">
@@ -260,32 +311,36 @@ export default function HomePage() {
       <section id="publications" className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-12">Publications</h2>
-            <Card className="hover:shadow-lg transition-all duration-300">
-              <CardHeader>
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-12 text-center">Publications</h2>
+            <Card className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
+              <CardHeader className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950/20 dark:to-indigo-950/20">
                 <div className="flex items-start justify-between">
                   <div>
-                    <CardTitle className="text-xl">
+                    <CardTitle className="text-xl mb-2">
                       Survey and Evaluation of Converging Architecture in LLM based on Footsteps of Operations
                     </CardTitle>
-                    <CardDescription className="text-blue-600 font-medium mt-2">IEEE OJCS, IF=8.2, Q1 (JCR 2025)</CardDescription>
+                    <CardDescription className="text-blue-600 font-medium">
+                      IEEE OJCS, IF=8.2, Q1 (JCR 2025)
+                    </CardDescription>
                   </div>
                   <a
                     href="https://arxiv.org/abs/2410.11381"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-800 transition-colors"
+                    className="text-blue-600 hover:text-blue-800 transition-colors p-2 hover:bg-blue-100 dark:hover:bg-blue-900/30 rounded-lg"
                   >
                     <ExternalLink className="h-5 w-5" />
                   </a>
                 </div>
               </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">
-                  Seongho Kim, Jihyun Moon, Juntaek Oh, Insu Choi, and Joon-Sung Yang
+              <CardContent className="p-6">
+                <p className="text-muted-foreground mb-4 font-medium">
+                  <span className="text-blue-600 font-bold underline">Seongho Kim</span>, Jihyun Moon, Juntaek Oh, Insu
+                  Choi, and Joon-Sung Yang
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  This paper provides insights into strategies for enhancing LLM performance by analyzing the converging architecture.
+                  This paper provides insights into strategies for enhancing LLM performance by analyzing the converging
+                  architecture.
                 </p>
               </CardContent>
             </Card>
@@ -297,15 +352,23 @@ export default function HomePage() {
       <section id="experience" className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-12">Experience</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-12 text-center">Experience</h2>
             <div className="space-y-8">
-              <Card className="border-l-4 border-l-blue-600">
+              <Card className="border-l-4 border-l-blue-600 shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>
                       <CardTitle className="text-xl">Research Assistant</CardTitle>
                       <CardDescription className="text-blue-600 font-medium text-base">
-                        CoreLab in Yonsei University / Prof. Hanjun Kim
+                        <a
+                          href="https://corelab.yonsei.ac.kr/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:underline"
+                        >
+                          CoreLab in Yonsei University
+                        </a>{" "}
+                        / Prof. Hanjun Kim
                       </CardDescription>
                     </div>
                     <Badge variant="outline" className="text-sm">
@@ -328,13 +391,21 @@ export default function HomePage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-l-4 border-l-blue-600">
+              <Card className="border-l-4 border-l-blue-600 shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>
                       <CardTitle className="text-xl">Undergraduate Research Assistant</CardTitle>
                       <CardDescription className="text-blue-600 font-medium text-base">
-                        CoreLab in Yonsei University / Prof. Hanjun Kim
+                        <a
+                          href="https://corelab.yonsei.ac.kr/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:underline"
+                        >
+                          CoreLab in Yonsei University
+                        </a>{" "}
+                        / Prof. Hanjun Kim
                       </CardDescription>
                     </div>
                     <Badge variant="outline" className="text-sm">
@@ -355,7 +426,7 @@ export default function HomePage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-l-4 border-l-blue-600">
+              <Card className="border-l-4 border-l-green-600 shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>
@@ -372,16 +443,25 @@ export default function HomePage() {
                 <CardContent>
                   <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-4">
                     <li>
-                      Authored and published a research paper titled "Survey and Evaluation of Converging Architecture
-                      in LLM based on Footsteps of Operations", providing insights into strategies for accelerating LLM
-                      performance.
+                      Authored and published a research paper titled{" "}
+                      <a
+                        href="https://arxiv.org/abs/2410.11381"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:underline"
+                      >
+                        "Survey and Evaluation of Converging Architecture in LLM based on Footsteps of Operations"
+                      </a>
+                      , providing insights into strategies for accelerating LLM performance.
                     </li>
                     <li>
                       Spearheaded a research team of 3 undergraduates and a graduate, defining objectives and developing
                       research plans.
                     </li>
                     <li>Research Topic: Analysis of open-source LLMs.</li>
-                    <li>Experimented with Gemma (Google Deepmind) and Llama (Meta) on RTX 6000 Ada with Runpod support.</li>
+                    <li>
+                      Experimented with Gemma (Google Deepmind) and Llama (Meta) on RTX 6000 Ada with Runpod support.
+                    </li>
                   </ul>
                   <div className="mt-4">
                     <p className="text-sm font-medium text-muted-foreground">Technologies used:</p>
@@ -394,7 +474,7 @@ export default function HomePage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-l-4 border-l-blue-600">
+              <Card className="border-l-4 border-l-purple-600 shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>
@@ -424,7 +504,7 @@ export default function HomePage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-l-4 border-l-blue-600">
+              <Card className="border-l-4 border-l-orange-600 shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>
@@ -450,6 +530,12 @@ export default function HomePage() {
                       Achieved 40% performance improvement by applying GQA on Llama2 7B compared to the MHA baseline.
                     </li>
                   </ul>
+                  <p className="text-sm text-blue-600 mb-4">
+                    Related to{" "}
+                    <a href="#projects" className="hover:underline">
+                      SNU Lab Study project
+                    </a>
+                  </p>
                   <div className="mt-4">
                     <p className="text-sm font-medium text-muted-foreground">Technologies used:</p>
                     <div className="flex flex-wrap gap-2 mt-2">
@@ -462,27 +548,33 @@ export default function HomePage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-l-4 border-l-blue-600">
+              <Card className="border-l-4 border-l-indigo-600 shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>
                       <CardTitle className="text-xl">Undergraduate Research Intern</CardTitle>
                       <CardDescription className="text-blue-600 font-medium text-base">
-                        Circuit and System Lab in Yonsei University / Prof. Tae Wook Kim [cite: 82, 83]
+                        Circuit and System Lab in Yonsei University / Prof. Tae Wook Kim
                       </CardDescription>
                     </div>
                     <Badge variant="outline" className="text-sm">
-                      2023.01 - 2023.06 [cite: 80]
+                      2023.01 - 2023.06
                     </Badge>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-4">
-                    <li>Research Topic: Analyze Impulse Radio Ultra-WideBand (IR-UWB) transmitter and transceiver. [cite: 85]</li>
-                    <li>Designed proposed pulse generator of UWB transmitter. [cite: 86]</li>
-                    <li>Analyzed the architecture of UWB transmitter and transceiver. [cite: 87]</li>
-                    <li>Optimized the performance of multi-stage amplifier. [cite: 88]</li>
+                    <li>Research Topic: Analyze Impulse Radio Ultra-WideBand (IR-UWB) transmitter and transceiver.</li>
+                    <li>Designed proposed pulse generator of UWB transmitter.</li>
+                    <li>Analyzed the architecture of UWB transmitter and transceiver.</li>
+                    <li>Optimized the performance of multi-stage amplifier.</li>
                   </ul>
+                  <p className="text-sm text-blue-600 mb-4">
+                    Related to{" "}
+                    <a href="#projects" className="hover:underline">
+                      Circuit and System Lab Study project
+                    </a>
+                  </p>
                   <div className="mt-4">
                     <p className="text-sm font-medium text-muted-foreground">Technologies used:</p>
                     <div className="flex flex-wrap gap-2 mt-2">
@@ -493,22 +585,24 @@ export default function HomePage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-l-4 border-l-blue-600">
+              <Card className="border-l-4 border-l-gray-600 shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>
                       <CardTitle className="text-xl">Mandatory Military Service</CardTitle>
                       <CardDescription className="text-blue-600 font-medium text-base">
-                        Information Systems Management in the Republic of Korea Air Force (ROKAF) [cite: 93, 94]
+                        Information Systems Management in the Republic of Korea Air Force (ROKAF)
                       </CardDescription>
                     </div>
                     <Badge variant="outline" className="text-sm">
-                      2020.10 - 2022.07 [cite: 91]
+                      2020.10 - 2022.07
                     </Badge>
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground mb-4">Fulfilled mandatory military service requirement, focusing on information systems management.</p>
+                  <p className="text-muted-foreground mb-4">
+                    Fulfilled mandatory military service requirement, focusing on information systems management.
+                  </p>
                   <div className="mt-4">
                     <p className="text-sm font-medium text-muted-foreground">Technologies used:</p>
                     <div className="flex flex-wrap gap-2 mt-2">
@@ -527,40 +621,52 @@ export default function HomePage() {
       <section id="projects" className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-12">Projects</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-12 text-center">Projects</h2>
             <div className="grid md:grid-cols-2 gap-8">
-              <Card className="hover:shadow-lg transition-all duration-300 group">
-                <CardHeader>
+              <Card className="hover:shadow-xl transition-all duration-300 group border-0 shadow-lg">
+                <CardHeader className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950/20 dark:to-indigo-950/20">
                   <div className="flex items-center justify-between">
                     <CardTitle className="group-hover:text-blue-600 transition-colors">SNU Lab Study</CardTitle>
                     <ExternalLink className="h-4 w-4 text-muted-foreground group-hover:text-blue-600 transition-colors" />
                   </div>
                   <CardDescription>2023.12 ~ 2024.03</CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">Apply GQA to Llama2-7B on TensorRT-LLM</p>
+                <CardContent className="p-6">
+                  <p className="text-muted-foreground mb-4">Apply GQA to Llama2-7B on TensorRT-LLM</p>
+                  <p className="text-sm text-blue-600">
+                    Related to{" "}
+                    <a href="#experience" className="hover:underline">
+                      SNU Convergence Research Intern experience
+                    </a>
+                  </p>
                 </CardContent>
               </Card>
 
-              <Card className="hover:shadow-lg transition-all duration-300 group">
-                <CardHeader>
+              <Card className="hover:shadow-xl transition-all duration-300 group border-0 shadow-lg">
+                <CardHeader className="bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-950/20 dark:to-pink-950/20">
                   <div className="flex items-center justify-between">
-                    <CardTitle className="group-hover:text-blue-600 transition-colors">
+                    <CardTitle className="group-hover:text-purple-600 transition-colors">
                       Circuit and System Lab Study
                     </CardTitle>
                     <a
                       href="https://drive.google.com/file/d/1DIE-QB58-gWAj9FHtF4tP1jNMG_2th0z/view?usp=sharing"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-muted-foreground group-hover:text-blue-600 transition-colors"
+                      className="text-muted-foreground group-hover:text-purple-600 transition-colors p-2 hover:bg-purple-100 dark:hover:bg-purple-900/30 rounded-lg"
                     >
                       <ExternalLink className="h-4 w-4" />
                     </a>
                   </div>
                   <CardDescription>2023.01 ~ 2023.06</CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">Analysis of Ultra-WideBand CMOS TX & TRX Architecture</p>
+                <CardContent className="p-6">
+                  <p className="text-muted-foreground mb-4">Analysis of Ultra-WideBand CMOS TX & TRX Architecture</p>
+                  <p className="text-sm text-purple-600">
+                    Related to{" "}
+                    <a href="#experience" className="hover:underline">
+                      Undergraduate Research Intern experience
+                    </a>
+                  </p>
                 </CardContent>
               </Card>
             </div>
@@ -572,43 +678,104 @@ export default function HomePage() {
       <section id="skills" className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-12">Skills</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-12 text-center">Skills</h2>
             <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-xl font-semibold text-foreground mb-4">Computer Science</h3>
-                <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">MLIR</Badge>
-                  <Badge variant="outline">LLVM</Badge>
-                  <Badge variant="outline">Python</Badge>
-                  <Badge variant="outline">C/C++</Badge>
-                  <Badge variant="outline">CUDA</Badge>
-                </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-foreground mb-4">Digital Circuit Design</h3>
-                <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">Verilog</Badge>
-                  <Badge variant="outline">Xilinx Vivado</Badge>
-                  <Badge variant="outline">Cadence Virtuoso</Badge>
-                </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-foreground mb-4">Programming</h3>
-                <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">Linux</Badge>
-                  <Badge variant="outline">Docker</Badge>
-                  <Badge variant="outline">Multipass</Badge>
-                  <Badge variant="outline">Dart</Badge>
-                  <Badge variant="outline">Flutter</Badge>
-                </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-foreground mb-4">Languages</h3>
-                <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">Korean (Native)</Badge>
-                  <Badge variant="outline">English (Expert)</Badge>
-                </div>
-              </div>
+              <Card className="shadow-lg border-0">
+                <CardHeader>
+                  <CardTitle className="text-xl flex items-center">
+                    <Cpu className="w-6 h-6 mr-2 text-blue-600" />
+                    Computer Science
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200">
+                      MLIR
+                    </Badge>
+                    <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200">
+                      LLVM
+                    </Badge>
+                    <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200">
+                      Python
+                    </Badge>
+                    <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200">
+                      C/C++
+                    </Badge>
+                    <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200">
+                      CUDA
+                    </Badge>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="shadow-lg border-0">
+                <CardHeader>
+                  <CardTitle className="text-xl flex items-center">
+                    <Zap className="w-6 h-6 mr-2 text-green-600" />
+                    Digital Circuit Design
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="outline" className="bg-green-50 text-green-700 border-green-200">
+                      Verilog
+                    </Badge>
+                    <Badge variant="outline" className="bg-green-50 text-green-700 border-green-200">
+                      Xilinx Vivado
+                    </Badge>
+                    <Badge variant="outline" className="bg-green-50 text-green-700 border-green-200">
+                      Cadence Virtuoso
+                    </Badge>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="shadow-lg border-0">
+                <CardHeader>
+                  <CardTitle className="text-xl flex items-center">
+                    <Code className="w-6 h-6 mr-2 text-purple-600" />
+                    Programming
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="outline" className="bg-purple-50 text-purple-700 border-purple-200">
+                      Linux
+                    </Badge>
+                    <Badge variant="outline" className="bg-purple-50 text-purple-700 border-purple-200">
+                      Docker
+                    </Badge>
+                    <Badge variant="outline" className="bg-purple-50 text-purple-700 border-purple-200">
+                      Multipass
+                    </Badge>
+                    <Badge variant="outline" className="bg-purple-50 text-purple-700 border-purple-200">
+                      Dart
+                    </Badge>
+                    <Badge variant="outline" className="bg-purple-50 text-purple-700 border-purple-200">
+                      Flutter
+                    </Badge>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="shadow-lg border-0">
+                <CardHeader>
+                  <CardTitle className="text-xl flex items-center">
+                    <Users className="w-6 h-6 mr-2 text-orange-600" />
+                    Languages
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="outline" className="bg-orange-50 text-orange-700 border-orange-200">
+                      Korean (Native)
+                    </Badge>
+                    <Badge variant="outline" className="bg-orange-50 text-orange-700 border-orange-200">
+                      English (Expert)
+                    </Badge>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
@@ -618,9 +785,9 @@ export default function HomePage() {
       <section id="education" className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-12">Education</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-12 text-center">Education</h2>
             <div className="space-y-8">
-              <Card className="border-l-4 border-l-blue-600">
+              <Card className="border-l-4 border-l-blue-600 shadow-lg">
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>
@@ -636,7 +803,7 @@ export default function HomePage() {
                 </CardHeader>
               </Card>
 
-              <Card className="border-l-4 border-l-blue-600">
+              <Card className="border-l-4 border-l-green-600 shadow-lg">
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>
@@ -652,7 +819,7 @@ export default function HomePage() {
                 </CardHeader>
               </Card>
 
-              <Card className="border-l-4 border-l-blue-600">
+              <Card className="border-l-4 border-l-purple-600 shadow-lg">
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>
@@ -670,9 +837,9 @@ export default function HomePage() {
             </div>
 
             <div className="mt-16">
-              <h3 className="text-2xl font-bold text-foreground mb-8">Scholarships & Certifications</h3>
-              <div className="space-y-8">
-                <Card>
+              <h3 className="text-2xl font-bold text-foreground mb-8 text-center">Scholarships & Certifications</h3>
+              <div className="grid md:grid-cols-2 gap-8">
+                <Card className="shadow-lg border-0">
                   <CardHeader>
                     <div className="flex items-start">
                       <Award className="h-6 w-6 text-blue-600 mt-1 mr-3 flex-shrink-0" />
@@ -684,17 +851,17 @@ export default function HomePage() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      Yonsei BA/MS/Ph.D Accerlerated Degree Program is a integrated program for the students who want to
-                      get the master's degree right after the bachelor's degree. The selected students will receive a
-                      full scholarship for 3 years after the bachelor's degree.
+                      Yonsei BA/MS/Ph.D Accelerated Degree Program is an integrated program for students who want to get
+                      the master's degree right after the bachelor's degree. The selected students will receive a full
+                      scholarship for 3 years after the bachelor's degree.
                     </p>
                   </CardContent>
                 </Card>
 
-                <Card>
+                <Card className="shadow-lg border-0">
                   <CardHeader>
                     <div className="flex items-start">
-                      <Award className="h-6 w-6 text-blue-600 mt-1 mr-3 flex-shrink-0" />
+                      <Award className="h-6 w-6 text-green-600 mt-1 mr-3 flex-shrink-0" />
                       <div>
                         <CardTitle className="text-lg">Semiconductor Specialist Track</CardTitle>
                         <CardDescription>Yonsei University | 2023.03 - 2025.02</CardDescription>
@@ -710,10 +877,10 @@ export default function HomePage() {
                   </CardContent>
                 </Card>
 
-                <Card>
+                <Card className="shadow-lg border-0">
                   <CardHeader>
                     <div className="flex items-start">
-                      <FileText className="h-6 w-6 text-blue-600 mt-1 mr-3 flex-shrink-0" />
+                      <FileText className="h-6 w-6 text-purple-600 mt-1 mr-3 flex-shrink-0" />
                       <div>
                         <CardTitle className="text-lg">AI-900: Microsoft Azure AI Fundamentals</CardTitle>
                         <CardDescription>Microsoft | 2023.07</CardDescription>
@@ -722,10 +889,10 @@ export default function HomePage() {
                   </CardHeader>
                 </Card>
 
-                <Card>
+                <Card className="shadow-lg border-0">
                   <CardHeader>
                     <div className="flex items-start">
-                      <FileText className="h-6 w-6 text-blue-600 mt-1 mr-3 flex-shrink-0" />
+                      <FileText className="h-6 w-6 text-orange-600 mt-1 mr-3 flex-shrink-0" />
                       <div>
                         <CardTitle className="text-lg">Computer Specialist in Spreadsheet & Database Level 1</CardTitle>
                         <CardDescription>KCCI | 2022.06</CardDescription>
@@ -743,7 +910,10 @@ export default function HomePage() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-muted/30">
+      <section
+        id="contact"
+        className="py-20 bg-gradient-to-br from-blue-50 via-transparent to-indigo-50 dark:from-blue-950/20 dark:via-transparent dark:to-indigo-950/10"
+      >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-8">Get In Touch</h2>
@@ -752,13 +922,15 @@ export default function HomePage() {
               love to hear from you.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                  <Mail className="mr-2 h-4 w-4" />
-                  <a href="mailto:seongho-kim@yonsei.ac.kr">Send Email</a>
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 shadow-lg">
+                <Mail className="mr-2 h-4 w-4" />
+                <a href="mailto:seongho-kim@yonsei.ac.kr">Send Email</a>
               </Button>
-              <Button variant="outline" size="lg">
-                  <Github className="mr-2 h-4 w-4" />
-                  <a href="https://github.com/seongho-git" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+              <Button variant="outline" size="lg" className="shadow-lg bg-transparent">
+                <Github className="mr-2 h-4 w-4" />
+                <a href="https://github.com/seongho-git" target="_blank" rel="noopener noreferrer">
+                  GitHub Profile
+                </a>
               </Button>
             </div>
           </div>
