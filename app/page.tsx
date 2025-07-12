@@ -212,7 +212,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-12 gap-20 items-center">
-              <div className="lg:col-span-6">
+              <div className="lg:col-span-8">
                 <div className="flex flex-col md:flex-row gap-8 items-start">
                   <div className="relative">
                     <div className="w-32 h-32 md:w-40 md:h-40 rounded-3xl bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-blue-900/20 dark:to-indigo-900/20 flex items-center justify-center overflow-hidden flex-shrink-0 shadow-2xl ring-1 ring-blue-200/50 dark:ring-blue-800/50">
@@ -221,9 +221,6 @@ export default function HomePage() {
                         alt="Seongho Kim"
                         className="w-full h-full object-cover rounded-3xl"
                       />
-                    </div>
-                    <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 rounded-full border-4 border-white dark:border-slate-950 flex items-center justify-center">
-                      <div className="w-3 h-3 bg-white rounded-full"></div>
                     </div>
                   </div>
                   <div className="flex-1">
@@ -286,45 +283,36 @@ export default function HomePage() {
                   </div>
                 </div>
               </div>
-              <div className="lg:col-span-6">
-                <Card className="border-0 shadow-2xl bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl ring-1 ring-slate-200/50 dark:ring-slate-800/50">
-                  <CardContent className="p-4">
-                    <div className="text-center">
-                      <div className="w-16 h-16 mx-auto mb-4 rounded-2xl overflow-hidden bg-white dark:bg-slate-800 shadow-xl ring-1 ring-slate-200/50 dark:ring-slate-700/50 flex items-center justify-center">
-                        <img
-                          src="/corelab_logo.png?height=48&width=48"
-                          alt="CoreLab"
-                          className="w-12 h-12 object-contain"
-                        />
-                      </div>
-                      <h3 className="text-xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-                        <a
-                          href="https://corelab.yonsei.ac.kr/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
-                        >
-                          CoreLab
-                        </a>
-                      </h3>
-                      <p className="text-slate-600 dark:text-slate-400 mb-2 text-sm">Yonsei University</p>
-                      <Badge className="bg-gradient-to-r from-blue-100 to-indigo-100 text-blue-800 dark:from-blue-900/30 dark:to-indigo-900/30 dark:text-blue-300 border-0 text-xs">
-                        Research Assistant
-                      </Badge>
-                      <div className="mt-4 grid grid-cols-2 gap-2 text-xs text-slate-600 dark:text-slate-400">
-                        <div className="flex items-center justify-center">
-                          <Building2 className="w-3 h-3 mr-1" />
-                          Lab
-                        </div>
-                        <div className="flex items-center justify-center">
-                          <Target className="w-3 h-3 mr-1" />
-                          HE & ML
-                        </div>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
+              <div className="hidden lg:flex justify-center lg:justify-end lg:col-span-4">
+               <Card className="w-80 h-80 border-0 shadow-2xl bg-gradient-to-br from-white to-blue-50/50 dark:from-gray-900 dark:to-blue-950/20">
+                <CardContent className="p-8 h-full flex flex-col justify-center items-center text-center">
+                  <div className="w-20 h-20 mx-auto mb-6 rounded-2xl overflow-hidden bg-white dark:bg-gray-800 shadow-lg flex items-center justify-center">
+                    <img
+                      src="/corelab_logo.png?height=64&width=64"
+                      alt="CoreLab"
+                      className="w-16 h-16 object-contain"
+                    />
+                  </div>
+                  <h3 className="text-2xl font-bold text-blue-600 mb-2">
+                    <a
+                      href="https://corelab.yonsei.ac.kr/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-blue-700 transition-colors"
+                    >
+                      CoreLab
+                    </a>
+                  </h3>
+                  <p className="text-muted-foreground mb-2">Yonsei University</p>
+                  <Badge
+                    variant="secondary"
+                    className="bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300"
+                  >
+                    Research Assistant
+                  </Badge>
+                </CardContent>
+              </Card>
+            </div>
             </div>
           </div>
         </div>
