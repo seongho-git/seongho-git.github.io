@@ -2,6 +2,8 @@
 
 This is the repository for my personal website hosted on GitHub Pages.
 
+Homepage: [https://seongho-git.github.io/](https://seongho-git.github.io/)
+
 ## Overview
 
 This website showcases my work as a compiler engineer, including:
