@@ -404,7 +404,7 @@ export default function HomePage() {
                     </CardTitle>
                     <div className="flex items-center space-x-2">
                       <Badge className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white border-0">
-                        IEEE OJCS
+                        IEEE Open Journal of the Computer Society (OJCS)
                       </Badge>
                       <Badge
                         variant="outline"
