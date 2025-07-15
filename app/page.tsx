@@ -404,18 +404,18 @@ export default function HomePage() {
                     </CardTitle>
                     <div className="flex items-center space-x-2">
                       <Badge className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white border-0">
-                        IEEE Open Journal of the Computer Society (OJCS)
+                        IEEE Open Journal of the Computer Society, July 2025
                       </Badge>
                       <Badge
                         variant="outline"
                         className="border-blue-200 dark:border-blue-800 text-blue-700 dark:text-blue-300"
                       >
-                        IF=8.2, Q1 (JCR 2025)
+                        IF=8.2, Q1 (JCR 2024)
                       </Badge>
                     </div>
                   </div>
                   <a
-                    href="https://arxiv.org/abs/2410.11381"
+                    href="https://doi.org/10.1109/OJCS.2025.3587005"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors p-3 hover:bg-blue-50 dark:hover:bg-blue-950/30 rounded-xl"
