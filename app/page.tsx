@@ -1000,10 +1000,10 @@ export default function HomePage() {
                   <div className="flex justify-between items-start">
                     <div>
                       <CardTitle className="text-xl text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                        Integrated M.S./Ph.D in Electrical & Electronic
+                        Integrated M.S./Ph.D. in Electrical and Electronic Engineering 
                       </CardTitle>
                       <CardDescription className="text-blue-600 dark:text-blue-400 font-medium text-base mt-1">
-                        Yonsei University
+                        Yonsei University (GPA 4.3/4.3)
                       </CardDescription>
                     </div>
                     <Badge
@@ -1021,10 +1021,10 @@ export default function HomePage() {
                   <div className="flex justify-between items-start">
                     <div>
                       <CardTitle className="text-xl text-slate-900 dark:text-white group-hover:text-slate-600 dark:group-hover:text-slate-400 transition-colors">
-                        B.E. in Electrical & Electronic
+                        B.E. in Electrical and Electronic Engineering 
                       </CardTitle>
                       <CardDescription className="text-blue-600 dark:text-blue-400 font-medium text-base mt-1">
-                        Yonsei University
+                        Yonsei University (GPA 3.72/4.3)
                       </CardDescription>
                     </div>
                     <Badge
