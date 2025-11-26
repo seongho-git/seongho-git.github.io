@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Cpu, Zap, BookOpen, FileText, Award, Building2, Users, Target } from "lucide-react"
+import { Github, Linkedin, Mail, Cpu, Zap, BookOpen, FileText, Award, Building2, Users, Target, Code, Terminal, Layers } from "lucide-react"
 
 export const personalInfo = {
   name: "Seongho Kim",
@@ -8,26 +8,9 @@ export const personalInfo = {
   linkedin: "https://linkedin.com/in/seongho-kim",
   description: "Research Interests: Compiler Optimization for Deep Learning and Homomorphic Encryption, Large Language Model Acceleration",
   about: [
-    "I'm a passionate Compiler Engineer with specialized expertise in optimization techniques for Homomorphic Encryption and Deep Learning.",
-    "Currently pursuing an Integrated M.S./Ph.D in Electrical & Electronic Engineering at Yonsei University, I work as a Research Assistant at CoreLab under Prof. Hanjun Kim, focusing on compiler optimization techniques.",
-    "My research interests include compiler optimization for homomorphic encryption and deep learning, with experience in MLIR, LLVM, C/C++, Python, and CUDA."
-  ],
-  interests: [
-    {
-      title: "Compiler Optimization",
-      description: "MLIR, LLVM, C/C++, Python for homomorphic encryption and deep learning",
-      icon: Cpu
-    },
-    {
-      title: "Deep Learning Acceleration",
-      description: "LLM optimization, CUDA, PyTorch",
-      icon: Zap
-    },
-    {
-      title: "Digital Circuit Design",
-      description: "Verilog, Xilinx Vivado, Cadence Virtuoso",
-      icon: BookOpen
-    }
+    "I am a Ph.D. student in the Department of Electrical and Electronic Engineering at Yonsei University, advised by Prof. Hanjun Kim at CORE Lab. My research focuses on compiler optimization for emerging computing paradigms, specifically Homomorphic Encryption (HE) and Deep Learning (DL).",
+    "I am dedicated to bridging the gap between hardware capabilities and software demands through advanced compiler techniques. My work aims to enable efficient and secure computing by optimizing the entire software stack, from high-level algorithmic descriptions down to hardware-specific instruction generation.",
+    "My core technical interests lie in Compiler Optimization (MLIR, LLVM) and AI Acceleration (LLM kernels, CUDA, NPU architecture). I strive to build systems that are not only performant but also robust and scalable."
   ]
 }
 
@@ -111,32 +94,48 @@ export const experience = [
 
 export const projects = [
   {
-    title: "SNU Lab Study",
+    title: "LLM Kernel Performance Analysis",
+    period: "2024.02 ~ 2024.06",
+    affiliation: "Backdrop Build Lab V3 & V4",
+    description: "Analyzed and compared kernel performance between Llama and Gemma models to identify acceleration opportunities.",
+    relatedTo: "Invited Project Builder experience",
+    link: "https://github.com/seongho-git" // Placeholder as requested
+  },
+  {
+    title: "Llama2-7B GQA Optimization",
     period: "2023.12 ~ 2024.03",
-    description: "Apply GQA to Llama2-7B on TensorRT-LLM",
-    relatedTo: "SNU Lab Study project",
+    affiliation: "SCALE Lab, Seoul National University",
+    description: "Applied Grouped Query Attention (GQA) to Llama2-7B on TensorRT-LLM, achieving a 40% performance improvement over the MHA baseline.",
+    relatedTo: "SNU Convergence Research Intern",
     link: "#experience"
   },
   {
-    title: "Circuit and System Lab Study",
+    title: "Ultra-WideBand CMOS Transmitter Design",
     period: "2023.01 ~ 2023.06",
-    description: "Analysis of Ultra-WideBand CMOS TX & TRX Architecture",
-    relatedTo: "Undergraduate Research Intern experience",
+    affiliation: "Circuit and System Lab, Yonsei University",
+    description: "Analyzed Ultra-WideBand CMOS TX & TRX Architecture and designed a proposed pulse generator for UWB transmitters.",
+    relatedTo: "Undergraduate Research Intern",
     link: "https://drive.google.com/file/d/1DIE-QB58-gWAj9FHtF4tP1jNMG_2th0z/view?usp=sharing"
   }
 ]
 
 export const skills = [
   {
-    category: "Computer Science",
-    icon: Cpu,
-    items: ["MLIR", "LLVM", "Python", "C/C++", "CUDA"],
+    category: "Languages",
+    icon: Code,
+    items: ["C/C++", "CUDA C", "Python", "Dart", "Verilog"],
     color: "blue"
   },
   {
-    category: "Digital Circuit Design",
-    icon: Zap,
-    items: ["Verilog", "Xilinx Vivado", "Cadence Virtuoso"],
+    category: "Frameworks & Tools",
+    icon: Terminal,
+    items: ["MLIR", "LLVM", "CUDA", "PyTorch", "TensorRT-LLM", "Git", "Docker"],
+    color: "indigo"
+  },
+  {
+    category: "Hardware Design",
+    icon: Layers,
+    items: ["Xilinx Vivado", "Cadence Virtuoso", "FPGA"],
     color: "slate"
   }
 ]

@@ -2,6 +2,9 @@
 
 This is a personal portfolio website built with **Next.js 15**, **React 19**, **Tailwind CSS**, and **Framer Motion**.
 
+- **Live Site:** [https://seongho-git.github.io](https://seongho-git.github.io)
+- **Conference Deadlines:** [https://seongho-git.github.io/deadlines](https://seongho-git.github.io/deadlines)
+
 ## Project Structure
 
 The project follows a modular Next.js App Router structure:

@@ -25,14 +25,14 @@ export function SiteHeader() {
   ]
 
   return (
-    <header className="border-b border-slate-200/60 dark:border-slate-800/60 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-slate-950/60 sticky top-0 z-50">
+    <header className="border-b border-slate-200/60 dark:border-border/60 bg-white/80 dark:bg-background/80 backdrop-blur-xl supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity" onClick={scrollToTop}>
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-700 rounded-xl flex items-center justify-center shadow-lg">
+            <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg">
               <Home className="h-5 w-5 text-white" />
             </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-blue-700 via-blue-600 to-indigo-600 bg-clip-text text-transparent">
+            <span className="text-xl font-bold text-slate-900 dark:text-foreground">
               Seongho Kim
             </span>
           </Link>
@@ -41,7 +41,7 @@ export function SiteHeader() {
               <Link
                 key={item.label}
                 href={item.href}
-                className="text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                className="text-sm font-medium text-slate-700 dark:text-muted-foreground hover:text-blue-600 dark:hover:text-primary transition-colors"
               >
                 {item.label}
               </Link>
@@ -51,7 +51,7 @@ export function SiteHeader() {
             <ThemeToggle />
             <Button
               size="sm"
-              className="hidden sm:flex bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white shadow-lg"
+              className="hidden sm:flex bg-blue-600 hover:bg-blue-700 text-white shadow-lg"
               asChild
             >
               <a href="mailto:seongho-kim@yonsei.ac.kr">Contact Me</a>
@@ -65,13 +65,13 @@ export function SiteHeader() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white/95 dark:bg-slate-950/95 backdrop-blur-xl border-b border-slate-200/60 dark:border-slate-800/60">
+        <div className="md:hidden bg-white/95 dark:bg-background/95 backdrop-blur-xl border-b border-slate-200/60 dark:border-border/60">
           <nav className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             {navItems.map((item) => (
               <Link
                 key={item.label}
                 href={item.href}
-                className="text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                className="text-sm font-medium text-slate-700 dark:text-muted-foreground hover:text-blue-600 dark:hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}

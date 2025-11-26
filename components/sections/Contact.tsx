@@ -34,7 +34,7 @@ export function Contact() {
     }
 
     return (
-        <section id="contact" className="py-24 bg-slate-50/50 dark:bg-slate-900/50">
+        <section id="contact" className="py-24 bg-slate-50/50 dark:bg-background">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="max-w-4xl mx-auto">
                     <motion.div
@@ -43,9 +43,9 @@ export function Contact() {
                         viewport={{ once: true }}
                         className="text-center mb-16"
                     >
-                        <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-4">Get in Touch</h2>
-                        <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto rounded-full"></div>
-                        <p className="mt-6 text-lg text-slate-600 dark:text-slate-300">
+                        <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-foreground mb-4">Get in Touch</h2>
+                        <div className="w-24 h-1 bg-blue-600 mx-auto rounded-full"></div>
+                        <p className="mt-6 text-lg text-slate-600 dark:text-muted-foreground">
                             Feel free to reach out for collaborations or just a friendly hello
                         </p>
                     </motion.div>
@@ -55,7 +55,7 @@ export function Contact() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
-                        className="bg-white dark:bg-slate-900 rounded-2xl shadow-xl p-8 md:p-12 border border-slate-200/50 dark:border-slate-800/50"
+                        className="bg-white dark:bg-card rounded-2xl shadow-xl p-8 md:p-12 border border-slate-200 dark:border-border"
                     >
                         <form onSubmit={handleEmailSubmit} className="space-y-6">
                             <div className="grid md:grid-cols-2 gap-6">
@@ -68,7 +68,7 @@ export function Contact() {
                                         value={emailForm.senderEmail}
                                         onChange={(e) => handleInputChange("senderEmail", e.target.value)}
                                         required
-                                        className="bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 focus:ring-blue-500"
+                                        className="bg-slate-50 dark:bg-input border-slate-200 dark:border-border focus:ring-blue-600 focus:border-blue-600"
                                     />
                                 </div>
                                 <div className="space-y-2">
@@ -79,7 +79,7 @@ export function Contact() {
                                         value={emailForm.subject}
                                         onChange={(e) => handleInputChange("subject", e.target.value)}
                                         required
-                                        className="bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 focus:ring-blue-500"
+                                        className="bg-slate-50 dark:bg-input border-slate-200 dark:border-border focus:ring-blue-600 focus:border-blue-600"
                                     />
                                 </div>
                             </div>
@@ -92,13 +92,13 @@ export function Contact() {
                                     value={emailForm.message}
                                     onChange={(e) => handleInputChange("message", e.target.value)}
                                     required
-                                    className="bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 focus:ring-blue-500 resize-none"
+                                    className="bg-slate-50 dark:bg-input border-slate-200 dark:border-border focus:ring-blue-600 focus:border-blue-600 resize-none"
                                 />
                             </div>
                             <Button
                                 type="submit"
                                 size="lg"
-                                className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white shadow-lg"
+                                className="w-full bg-blue-600 hover:bg-blue-700 text-white shadow-lg rounded-full"
                             >
                                 <Send className="w-4 h-4 mr-2" />
                                 Send Message

@@ -74,8 +74,8 @@ export default function DeadlinesPage() {
   }
 
   const ConferenceTable = ({ conferences, title }: { conferences: Conference[], title: string }) => (
-    <Card className="border-0 shadow-xl bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl ring-1 ring-slate-200/50 dark:ring-slate-800/50 mb-12">
-      <CardHeader className="bg-gradient-to-r from-slate-50/80 to-slate-100/80 dark:from-slate-900/30 dark:to-slate-800/30 rounded-t-2xl border-b border-slate-200/50 dark:border-slate-700/50">
+    <Card className="border-0 shadow-xl bg-white/80 dark:bg-card/80 backdrop-blur-xl ring-1 ring-slate-200/50 dark:ring-border/50 mb-12">
+      <CardHeader className="bg-gradient-to-r from-slate-50/80 to-slate-100/80 dark:from-secondary/30 dark:to-secondary/30 rounded-t-2xl border-b border-slate-200/50 dark:border-border/50">
         <CardTitle>{title}</CardTitle>
       </CardHeader>
       <CardContent className="p-0 overflow-x-auto">
@@ -97,7 +97,7 @@ export default function DeadlinesPage() {
               const isConferencePassed = conf.conferenceEndDate ? now > parseISO(conf.conferenceEndDate) : false
 
               return (
-                <TableRow key={`${conf.name}-${conf.year}-${conf.cycle}-${conf.deadline}`} className="group hover:bg-slate-50/50 dark:hover:bg-slate-800/50 transition-colors">
+                <TableRow key={`${conf.name}-${conf.year}-${conf.cycle}-${conf.deadline}`} className="group hover:bg-slate-50/50 dark:hover:bg-muted/50 transition-colors">
                   {/* Conference */}
                   <TableCell className="font-medium">
                     <div className="flex flex-col">
@@ -107,8 +107,8 @@ export default function DeadlinesPage() {
                           target="_blank"
                           rel="noopener noreferrer"
                           className={`text-lg transition-colors flex items-center gap-2 ${isConferencePassed
-                              ? "text-slate-400 line-through decoration-slate-400"
-                              : "text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400"
+                            ? "text-slate-400 line-through decoration-slate-400"
+                            : "text-slate-900 dark:text-foreground group-hover:text-blue-600 dark:group-hover:text-primary"
                             }`}
                         >
                           {conf.name} {conf.year}
@@ -136,12 +136,12 @@ export default function DeadlinesPage() {
                         <span className={`font-medium ${isPassed ? "text-slate-400 line-through" : ""}`}>
                           {format(date, "MMM d, yyyy")}
                         </span>
-                        <span className="text-xs font-mono text-muted-foreground bg-slate-100 dark:bg-slate-800 px-1.5 py-0.5 rounded">
+                        <span className="text-xs font-mono text-muted-foreground bg-slate-100 dark:bg-secondary px-1.5 py-0.5 rounded">
                           {formatDeadlineTime(date)}
                         </span>
                       </div>
                       {conf.cycle && (
-                        <span className="text-xs text-blue-600 dark:text-blue-400 font-medium">
+                        <span className="text-xs text-blue-600 dark:text-primary font-medium">
                           Cycle {conf.cycle}
                         </span>
                       )}
@@ -158,7 +158,7 @@ export default function DeadlinesPage() {
                     {isPassed ? (
                       <span className="text-slate-400 text-sm">Passed</span>
                     ) : (
-                      <span className="font-mono text-slate-900 dark:text-slate-100 font-bold whitespace-nowrap text-sm">
+                      <span className="font-mono text-slate-900 dark:text-foreground font-bold whitespace-nowrap text-sm">
                         {getCountdown(conf.deadline)}
                       </span>
                     )}
@@ -201,24 +201,24 @@ export default function DeadlinesPage() {
   )
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/50 dark:from-slate-950 dark:via-blue-950/20 dark:to-indigo-950/30">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/50 dark:bg-none dark:bg-background">
       <SiteHeader />
 
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white mb-4">
+            <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-foreground mb-4">
               Conference Deadlines
             </h1>
             <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto rounded-full"></div>
-            <p className="mt-4 text-slate-600 dark:text-slate-400">
+            <p className="mt-4 text-slate-600 dark:text-muted-foreground">
               Upcoming submission deadlines for major conferences.
             </p>
           </div>
 
           {/* Filter Section */}
           <div className="mb-8 flex flex-wrap items-center justify-center gap-2">
-            <div className="flex items-center mr-2 text-slate-600 dark:text-slate-400">
+            <div className="flex items-center mr-2 text-slate-600 dark:text-muted-foreground">
               <Filter className="w-4 h-4 mr-2" />
               <span className="text-sm font-medium">Filter by:</span>
             </div>
@@ -227,8 +227,8 @@ export default function DeadlinesPage() {
                 key={tag}
                 variant={selectedTags.includes(tag) ? "default" : "outline"}
                 className={`cursor-pointer transition-all ${selectedTags.includes(tag)
-                    ? "bg-blue-600 hover:bg-blue-700"
-                    : "hover:bg-slate-100 dark:hover:bg-slate-800"
+                  ? "bg-blue-600 hover:bg-blue-700"
+                  : "hover:bg-slate-100 dark:hover:bg-secondary"
                   }`}
                 onClick={() => toggleTag(tag)}
               >
@@ -253,7 +253,7 @@ export default function DeadlinesPage() {
             <ConferenceTable conferences={filteredPast} title="Past Deadlines (2025/2026 Cycle)" />
           )}
 
-          <div className="mt-8 text-center text-sm text-slate-500 dark:text-slate-400">
+          <div className="mt-8 text-center text-sm text-slate-500 dark:text-muted-foreground">
             * Deadlines marked TBD are estimates based on previous years. Please verify with official websites.
           </div>
         </div>
