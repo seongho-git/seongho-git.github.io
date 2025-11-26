@@ -7,10 +7,10 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "CompilerDev - Compiler Engineer & Language Designer",
+  title: "Seongho Kim - Compiler Engineer",
   description:
-    "Professional website of a compiler engineer specializing in optimization, performance, and language design.",
-    generator: 'v0.dev'
+    "Seongho Kim - Compiler Engineer specializing in optimization for homomorphic encryption and deep learning",
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({

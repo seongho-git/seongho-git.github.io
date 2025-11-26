@@ -1,39 +1,93 @@
-# Seongho Kim - Personal Website
+# Seongho Kim - Portfolio Website
 
-This is the repository for my personal website hosted on GitHub Pages.
+This is a personal portfolio website built with **Next.js 15**, **React 19**, **Tailwind CSS**, and **Framer Motion**.
 
-Homepage: [https://seongho-git.github.io/](https://seongho-git.github.io/)
+## Project Structure
 
-## Overview
+The project follows a modular Next.js App Router structure:
 
-This website showcases my work as a compiler engineer, including:
+```
+.
+├── app/
+│   ├── layout.tsx       # Root layout (metadata, fonts, theme provider)
+│   ├── page.tsx         # Main landing page (composed of sections)
+│   └── deadlines/       # Deadlines page
+├── components/
+│   ├── sections/        # Modular sections for the landing page
+│   │   ├── Hero.tsx
+│   │   ├── About.tsx
+│   │   ├── Publications.tsx
+│   │   ├── Experience.tsx
+│   │   ├── Projects.tsx
+│   │   ├── Skills.tsx
+│   │   └── Contact.tsx
+│   ├── ui/              # Reusable UI components (buttons, cards, etc.)
+│   ├── site-header.tsx  # Navigation header
+│   └── theme-toggle.tsx # Dark mode toggle
+├── lib/
+│   ├── data.ts             # CV data (Personal info, Publications, etc.)
+│   └── conference-data.ts  # Conference deadlines data
+└── public/              # Static assets (images, PDFs)
+```
 
-- Research interests in compiler optimization for homomorphic encryption and deep learning
-- Publications and research papers
-- Professional experience
-- Projects and contributions
-- Skills and education
+## Getting Started
 
-## Technologies Used
+### Prerequisites
+- Node.js 18+ 
+- npm or pnpm
 
-- Next.js
-- React
-- Tailwind CSS
-- GitHub Pages
+### Installation
 
-## Local Development
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/seongho-git/seongho-git.github.io.git
+   cd seongho-git.github.io
+   ```
 
-To run this website locally:
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   pnpm install
+   ```
 
-1. Clone the repository
-2. Install dependencies: `npm install`
-3. Start the development server: `npm run dev`
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+### Running Locally
 
-## Deployment
+Start the development server:
 
-This website is automatically deployed to GitHub Pages when changes are pushed to the main branch.
+```bash
+npm run dev
+# or
+pnpm dev
+```
 
-## License
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-All rights reserved.
+You can also view the conference deadlines at [http://localhost:3000/deadlines](http://localhost:3000/deadlines).
+
+### Building for Production
+
+To create an optimized production build:
+
+```bash
+npm run build
+# or
+pnpm build
+```
+
+The output will be in the `out` directory (static export).
+
+## Customization
+
+- **Content**: Edit `lib/data.ts` to update your personal info, publications, experience, etc.
+- **Deadlines**: Edit `lib/conference-data.ts` to update the conference list.
+- **Styling**: Tailwind CSS classes are used throughout the components. Configuration is in `tailwind.config.ts`.
+
+## Technologies
+
+- [Next.js](https://nextjs.org/)
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Lucide React](https://lucide.dev/) (Icons)
+- [shadcn/ui](https://ui.shadcn.com/) (UI Components)
