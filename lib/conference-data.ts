@@ -30,21 +30,21 @@ export const conferenceMetadata: { [key: string]: ConferenceMetadata } = {
         name: "USENIX Security",
         full: "USENIX Security Symposium",
         tags: ["Security", "Sys", "Privacy", "Net", "ML"],
-        bkScore: 4,
+        bkScore: 3,
         link: "https://www.usenix.org/conference/"
     },
     "Crypto": {
         name: "Crypto",
         full: "International Cryptology Conference",
         tags: ["Crypto", "Security", "Theory"],
-        bkScore: 3,
+        bkScore: 4,
         link: "https://crypto.iacr.org/"
     },
     "OOPSLA": {
         name: "OOPSLA",
         full: "Object-Oriented Programming, Systems, Languages & Applications",
         tags: ["PL", "Sys", "SE", "Compiler"],
-        bkScore: 3,
+        bkScore: 4,
         link: "https://splashcon.org/"
     },
     "MICRO": {
@@ -65,14 +65,14 @@ export const conferenceMetadata: { [key: string]: ConferenceMetadata } = {
         name: "NDSS",
         full: "Network and Distributed System Security Symposium",
         tags: ["Security", "Sys", "Net", "Privacy"],
-        bkScore: 4,
+        bkScore: 2,
         link: "https://www.ndss-symposium.org/"
     },
     "EuroSys": {
         name: "EuroSys",
         full: "European Conference on Computer Systems",
         tags: ["Sys", "OS", "Cloud", "Dist"],
-        bkScore: 3,
+        bkScore: 2,
         link: "https://www.eurosys.org/"
     },
     "IEEE S&P": {
@@ -121,8 +121,22 @@ export const conferenceMetadata: { [key: string]: ConferenceMetadata } = {
         name: "ESORICS",
         full: "European Symposium on Research in Computer Security",
         tags: ["Security", "Privacy", "Sys"],
-        bkScore: 3,
+        bkScore: 2,
         link: "https://esorics.org/"
+    },
+    "OSDI": {
+        name: "OSDI",
+        full: "USENIX Symposium on Operating Systems Design and Implementation",
+        tags: ["OS", "Sys", "Dist", "Cloud"],
+        bkScore: 4, // BKCSA039
+        link: "https://www.usenix.org/conference/"
+    },
+    "HPCA": {
+        name: "HPCA",
+        full: "IEEE International Symposium on High-Performance Computer Architecture",
+        tags: ["Arch", "Sys", "Hardware"],
+        bkScore: 4, // BKCSA018
+        link: "https://www.hpca-conf.org/"
     }
 }
 
@@ -143,7 +157,7 @@ export const upcomingConferences: Conference[] = [
         ...conferenceMetadata["USENIX Security"],
         deadline: "2026-02-05T23:59:59",
         abstract: "2026-01-29",
-        cycle: "(2 / 3)",
+        cycle: "(2 / 2)",
         year: 2026,
         location: "Baltimore, USA",
         link: "https://www.usenix.org/conference/usenixsecurity26",
@@ -166,7 +180,7 @@ export const upcomingConferences: Conference[] = [
         cycle: "(2 / 2)",
         year: 2026,
         location: "Oakland, USA",
-        link: "https://2026.splashcon.org/track/splash-2026-oopsla",
+        link: "https://2026.splashcon.org/track/oopsla-2026",
         conferenceDate: "Oct 3-9, 2026",
         conferenceEndDate: "2026-10-09"
     },
@@ -183,7 +197,7 @@ export const upcomingConferences: Conference[] = [
     },
     {
         ...conferenceMetadata["CCS"],
-        deadline: "2026-04-29T23:59:59", // Confirmed
+        deadline: "2026-04-29T23:59:59",
         cycle: "(2 / 2)",
         year: 2026,
         location: "The Hague, Netherlands",
@@ -252,11 +266,11 @@ export const upcomingConferences: Conference[] = [
     },
     {
         ...conferenceMetadata["USENIX Security"],
-        deadline: "2026-09-04T23:59:59",
-        cycle: "(1 / 3)",
+        deadline: "2026-08-26T23:59:59",
+        cycle: "(1 / 2)",
         year: 2027,
         location: "TBD",
-        link: "https://www.usenix.org/",
+        link: "https://www.usenix.org/conference/usenixsecurity27",
         isPredicted: true,
         conferenceDate: "Aug 2027 (TBD)",
         conferenceEndDate: "2027-08-31"
@@ -506,6 +520,16 @@ export const pastConferences: Conference[] = [
         conferenceEndDate: "2025-08-15"
     },
     {
+        ...conferenceMetadata["USENIX Security"],
+        deadline: "2025-08-26T23:59:59",
+        cycle: "(1 / 2)",
+        year: 2026,
+        location: "Baltimore, USA",
+        link: "https://www.usenix.org/conference/usenixsecurity26",
+        conferenceDate: "Aug 12-14, 2026",
+        conferenceEndDate: "2026-08-14"
+    },
+    {
         ...conferenceMetadata["Crypto"],
         deadline: "2025-02-13T23:59:59",
         cycle: "(1 / 1)",
@@ -517,13 +541,13 @@ export const pastConferences: Conference[] = [
     },
     {
         ...conferenceMetadata["OOPSLA"],
-        deadline: "2025-03-25T23:59:59",
-        cycle: "(2 / 2)",
-        year: 2025,
-        location: "Singapore",
-        link: "https://2025.splashcon.org/track/splash-2025-oopsla",
-        conferenceDate: "Oct 12-18, 2025",
-        conferenceEndDate: "2025-10-18"
+        deadline: "2025-10-10T23:59:59",
+        cycle: "(1 / 2)",
+        year: 2026,
+        location: "Oakland, USA",
+        link: "https://2026.splashcon.org/track/oopsla-2026",
+        conferenceDate: "Oct 3-9, 2026",
+        conferenceEndDate: "2026-10-09"
     },
     {
         ...conferenceMetadata["MICRO"],
@@ -531,7 +555,7 @@ export const pastConferences: Conference[] = [
         abstract: "2025-04-04",
         cycle: "(1 / 1)",
         year: 2025,
-        location: "Austin, USA",
+        location: "Seoul, Korea",
         link: "https://microarch.org/micro58/",
         conferenceDate: "Oct 18-22, 2025",
         conferenceEndDate: "2025-10-22"
