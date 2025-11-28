@@ -31,9 +31,9 @@ export const experience = [
     company: "CoreLab in Yonsei University",
     advisor: "Prof. Hanjun Kim",
     period: "2025.03 - Present",
-    description: "Homomorphic Encryption",
+    description: "Design latency- and memory-aware algorithm and layout for homomorphic encrypted DNNs",
     link: "https://corelab.yonsei.ac.kr/",
-    technologies: ["MLIR", "Python", "C/C++", "CUDA", "A6000"],
+    technologies: ["MLIR", "Python", "C/C++", "CUDA"],
     color: "blue"
   },
   {
@@ -41,7 +41,7 @@ export const experience = [
     company: "CoreLab in Yonsei University",
     advisor: "Prof. Hanjun Kim",
     period: "2024.06 - 2025.02",
-    description: "Study LLVM",
+    description: "Analyze and break down homomorphic encrypted benchmarks",
     link: "https://corelab.yonsei.ac.kr/",
     technologies: ["LLVM", "Python", "C/C++"],
     color: "blue"
@@ -53,7 +53,7 @@ export const experience = [
     period: "2024.03 - 2024.06",
     description: "Authored and published a research paper titled \"Survey and Evaluation of Converging Architecture in LLM based on Footsteps of Operations\". Spearheaded a research team of 3 undergraduates and a graduate. Experimented with Gemma and Llama on RTX 6000 Ada.",
     link: "https://arxiv.org/abs/2410.11381",
-    technologies: ["Python", "C/C++", "NVIDIA RTX 6000 Ada"],
+    technologies: ["Python", "C/C++"],
     color: "slate"
   },
   {
