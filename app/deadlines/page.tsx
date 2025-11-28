@@ -31,10 +31,10 @@ const bkScoreColors: { [key: number]: string } = {
 
 export default function DeadlinesPage() {
   const [selectedTags, setSelectedTags] = useState<string[]>([])
-  const [now, setNow] = useState(new Date())
+  const [now, setNow] = useState<Date | null>(null)
 
-  // Update timer every second
   useEffect(() => {
+    setNow(new Date())
     const timer = setInterval(() => setNow(new Date()), 1000)
     return () => clearInterval(timer)
   }, [])
@@ -56,6 +56,8 @@ export default function DeadlinesPage() {
   const filteredPast = filterConferences(pastConferences).sort((a, b) => new Date(b.deadline).getTime() - new Date(a.deadline).getTime())
 
   const getCountdown = (deadlineStr: string) => {
+    if (!now) return ""
+
     const deadline = parseISO(deadlineStr)
     if (now > deadline) return "Passed"
 
@@ -93,8 +95,8 @@ export default function DeadlinesPage() {
           <TableBody>
             {conferences.map((conf) => {
               const date = parseISO(conf.deadline)
-              const isPassed = now > date
-              const isConferencePassed = conf.conferenceEndDate ? now > parseISO(conf.conferenceEndDate) : false
+              const isPassed = now ? now > date : false
+              const isConferencePassed = (conf.conferenceEndDate && now) ? now > parseISO(conf.conferenceEndDate) : false
 
               return (
                 <TableRow key={`${conf.name}-${conf.year}-${conf.cycle}-${conf.deadline}`} className="group hover:bg-slate-50/50 dark:hover:bg-muted/50 transition-colors">
