@@ -13,13 +13,13 @@ import {
 } from "@/components/ui/table"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { format, differenceInDays, differenceInHours, differenceInMinutes, differenceInSeconds, parseISO } from "date-fns"
+import { format, differenceInDays, differenceInHours, differenceInMinutes, differenceInSeconds } from "date-fns"
 import { Filter, ExternalLink } from "lucide-react"
-import { upcomingConferences, pastConferences, Conference } from "@/lib/conference-data"
+import { getUpcomingConferences, getPastConferences, allConferences, Conference, parseDeadline } from "@/lib/conference-data"
 import { Button } from "@/components/ui/button"
 
 // Helper to get all unique tags
-const allTags = Array.from(new Set([...upcomingConferences, ...pastConferences].flatMap(c => c.tags))).sort()
+const allTags = Array.from(new Set(allConferences.flatMap(c => c.tags))).sort()
 
 // BK Score Colors: 1=Red, 2=Yellow, 3=Green, 4=Blue
 const bkScoreColors: { [key: number]: string } = {
@@ -51,6 +51,10 @@ export default function DeadlinesPage() {
       .sort((a, b) => new Date(a.deadline).getTime() - new Date(b.deadline).getTime())
   }
 
+  // Dynamically get conferences based on current time
+  const upcomingConferences = now ? getUpcomingConferences(now) : []
+  const pastConferences = now ? getPastConferences(now) : []
+
   const filteredUpcoming = filterConferences(upcomingConferences)
   // Sort past conferences in descending order (most recent first)
   const filteredPast = filterConferences(pastConferences).sort((a, b) => new Date(b.deadline).getTime() - new Date(a.deadline).getTime())
@@ -58,7 +62,7 @@ export default function DeadlinesPage() {
   const getCountdown = (deadlineStr: string) => {
     if (!now) return ""
 
-    const deadline = parseISO(deadlineStr)
+    const deadline = parseDeadline(deadlineStr)
     if (now > deadline) return "Passed"
 
     const days = differenceInDays(deadline, now)
@@ -94,9 +98,9 @@ export default function DeadlinesPage() {
           </TableHeader>
           <TableBody>
             {conferences.map((conf) => {
-              const date = parseISO(conf.deadline)
+              const date = parseDeadline(conf.deadline)
               const isPassed = now ? now > date : false
-              const isConferencePassed = (conf.conferenceEndDate && now) ? now > parseISO(conf.conferenceEndDate) : false
+              const isConferencePassed = (conf.conferenceEndDate && now) ? now > parseDeadline(conf.conferenceEndDate) : false
 
               return (
                 <TableRow key={`${conf.name}-${conf.year}-${conf.cycle}-${conf.deadline}`} className="group hover:bg-slate-50/50 dark:hover:bg-muted/50 transition-colors">

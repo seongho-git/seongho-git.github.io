@@ -137,11 +137,23 @@ export const conferenceMetadata: { [key: string]: ConferenceMetadata } = {
         tags: ["Arch", "Sys", "Hardware"],
         bkScore: 4, // BKCSA018
         link: "https://www.hpca-conf.org/"
-    }
+    },
 }
 
-// 2. Upcoming Conferences (Manually curated + Predicted)
-export const upcomingConferences: Conference[] = [
+// Helper function to parse deadline strings (handles timezone suffixes like EST)
+export function parseDeadline(deadlineStr: string): Date {
+    // Handle timezone-prefixed times like "2025-12-11EST17:59:59"
+    const tzMatch = deadlineStr.match(/^(\d{4}-\d{2}-\d{2})([A-Z]+)(\d{2}:\d{2}:\d{2})$/)
+    if (tzMatch) {
+        const [, datePart, , timePart] = tzMatch
+        // Convert to ISO format (timezone handling simplified - treat as local)
+        return new Date(`${datePart}T${timePart}`)
+    }
+    return new Date(deadlineStr)
+}
+
+// 2. All Conference Deadlines (unified - no manual moving between arrays needed)
+export const allConferences: Conference[] = [
     // 2026 Cycles (Confirmed)
     {
         ...conferenceMetadata["CCS"],
@@ -186,14 +198,14 @@ export const upcomingConferences: Conference[] = [
     },
     {
         ...conferenceMetadata["MICRO"],
-        deadline: "2026-04-02T04:59:59",
-        abstract: "2026-03-26",
+        deadline: "2026-04-09T04:59:59",
+        abstract: "2026-04-02",
         cycle: "(1 / 1)",
         year: 2026,
-        location: "TBD",
+        location: "Athens, Greece",
         link: "https://microarch.org/",
-        conferenceDate: "Oct 2026 (TBD)",
-        conferenceEndDate: "2026-10-31"
+        conferenceDate: "Oct 31-Nov 4, 2026",
+        conferenceEndDate: "2026-11-04"
     },
     {
         ...conferenceMetadata["CCS"],
@@ -204,6 +216,17 @@ export const upcomingConferences: Conference[] = [
         link: "https://www.sigsac.org/ccs/CCS2026/",
         conferenceDate: "Nov 15-19, 2026",
         conferenceEndDate: "2026-11-19"
+    },
+    {
+        ...conferenceMetadata["OSDI"],
+        deadline: "2025-12-11EST17:59:59",
+        abstract: "2025-12-04",
+        cycle: "(1 / 1)",
+        year: 2026,
+        location: "Seattle, USA",
+        link: "https://www.usenix.org/conference/osdi26",
+        conferenceDate: "July 13-15, 2026",
+        conferenceEndDate: "2026-07-15"
     },
 
     // Predicted / Future Cycles (Nearest Only)
@@ -333,10 +356,19 @@ export const upcomingConferences: Conference[] = [
         conferenceDate: "Jul 2027 (TBD)",
         conferenceEndDate: "2027-07-31"
     },
-]
 
-export const pastConferences: Conference[] = [
-    // 2026 Cycle Past Deadlines
+    // Past Deadlines (kept for history and TBD generation reference)
+    {
+        ...conferenceMetadata["OSDI"],
+        deadline: "2024-12-15EST17:59:59",
+        abstract: "2024-12-03",
+        cycle: "(1 / 1)",
+        year: 2025,
+        location: "Boston, USA",
+        link: "https://www.usenix.org/conference/osdi25",
+        conferenceDate: "July 7-9, 2025",
+        conferenceEndDate: "2025-07-09"
+    },
     {
         ...conferenceMetadata["IEEE S&P"],
         deadline: "2025-11-13T23:59:59",
@@ -486,7 +518,6 @@ export const pastConferences: Conference[] = [
         conferenceDate: "Feb 23-27, 2026",
         conferenceEndDate: "2026-02-27"
     },
-    // 2025 Cycle Past Deadlines
     {
         ...conferenceMetadata["CCS"],
         deadline: "2025-04-14T23:59:59",
@@ -590,4 +621,104 @@ export const pastConferences: Conference[] = [
         conferenceDate: "Jun 16-20, 2025",
         conferenceEndDate: "2025-06-20"
     },
+    {
+        ...conferenceMetadata["HPCA"],
+        deadline: "2024-07-25T23:59:59",
+        abstract: "2024-07-18",
+        cycle: "(1 / 1)",
+        year: 2025,
+        location: "Las Vegas, USA",
+        link: "https://www.hpca-conf.org/2025/",
+        conferenceDate: "Mar 1-5, 2025",
+        conferenceEndDate: "2025-03-05"
+    },
 ]
+
+// 3. Helper Functions for Dynamic Filtering
+
+/**
+ * Get conferences with deadlines that haven't passed yet
+ */
+export function getUpcomingConferences(currentDate: Date = new Date()): Conference[] {
+    const allWithTBD = [...allConferences, ...generateTBDConferences(currentDate)]
+
+    return allWithTBD
+        .filter(conf => parseDeadline(conf.deadline) > currentDate)
+        .sort((a, b) => parseDeadline(a.deadline).getTime() - parseDeadline(b.deadline).getTime())
+}
+
+/**
+ * Get conferences with deadlines that have already passed
+ */
+export function getPastConferences(currentDate: Date = new Date()): Conference[] {
+    return allConferences
+        .filter(conf => parseDeadline(conf.deadline) <= currentDate)
+        .sort((a, b) => parseDeadline(b.deadline).getTime() - parseDeadline(a.deadline).getTime())
+}
+
+/**
+ * Generate TBD conferences for conferences in metadata that don't have
+ * an upcoming deadline registered (looking ~14 months ahead)
+ */
+export function generateTBDConferences(currentDate: Date = new Date()): Conference[] {
+    const lookAheadMonths = 14
+    const lookAheadDate = new Date(currentDate)
+    lookAheadDate.setMonth(lookAheadDate.getMonth() + lookAheadMonths)
+
+    const tbdConferences: Conference[] = []
+
+    // For each conference in metadata, check if there's an upcoming deadline
+    for (const confName of Object.keys(conferenceMetadata)) {
+        const metadata = conferenceMetadata[confName]
+
+        // Find the most recent past deadline for this conference
+        const pastDeadlines = allConferences
+            .filter(c => c.name === confName && parseDeadline(c.deadline) <= currentDate)
+            .sort((a, b) => parseDeadline(b.deadline).getTime() - parseDeadline(a.deadline).getTime())
+
+        // Find any upcoming deadline for this conference
+        const upcomingDeadlines = allConferences
+            .filter(c => c.name === confName && parseDeadline(c.deadline) > currentDate)
+
+        // If there's no upcoming deadline and we have past data, generate TBD
+        if (upcomingDeadlines.length === 0 && pastDeadlines.length > 0) {
+            const mostRecent = pastDeadlines[0]
+            const mostRecentDeadline = parseDeadline(mostRecent.deadline)
+
+            // Create a TBD entry with +1 year from the most recent deadline
+            const tbdDeadline = new Date(mostRecentDeadline)
+            tbdDeadline.setFullYear(tbdDeadline.getFullYear() + 1)
+
+            // Only add if it's within our look-ahead window
+            if (tbdDeadline <= lookAheadDate && tbdDeadline > currentDate) {
+                tbdConferences.push({
+                    ...metadata,
+                    deadline: tbdDeadline.toISOString().replace('.000Z', ''),
+                    cycle: mostRecent.cycle,
+                    year: mostRecent.year + 1,
+                    location: "TBD",
+                    isPredicted: true,
+                    conferenceDate: `${getMonthName(tbdDeadline)} ${tbdDeadline.getFullYear()} (TBD)`,
+                    conferenceEndDate: `${tbdDeadline.getFullYear()}-12-31`
+                })
+            }
+        }
+    }
+
+    return tbdConferences
+}
+
+function getMonthName(date: Date): string {
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+        'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    return months[date.getMonth()]
+}
+
+// Legacy exports for backward compatibility
+export const upcomingConferences = allConferences.filter(c =>
+    parseDeadline(c.deadline) > new Date()
+)
+export const pastConferences = allConferences.filter(c =>
+    parseDeadline(c.deadline) <= new Date()
+)
+
