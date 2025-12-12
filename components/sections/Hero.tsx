@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Mail, Cpu, Download } from "lucide-react"
+import { Github, Linkedin, Mail, Cpu, Download, GraduationCap } from "lucide-react"
 import { personalInfo } from "@/lib/data"
 
 export function Hero() {
@@ -49,7 +49,7 @@ export function Hero() {
                                 transition={{ delay: 0.3, duration: 0.5 }}
                                 className="text-lg sm:text-xl font-medium text-slate-700 dark:text-muted-foreground mb-4"
                             >
-                                Ph.D. Student at <a href="https://corelab.yonsei.ac.kr/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">CORE Lab</a>, Yonsei University
+                                Ph.D. Student at <a href="https://corelab.yonsei.ac.kr/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">CoreLab</a>, Yonsei University
                             </motion.div>
 
                             <motion.p
@@ -87,6 +87,14 @@ export function Hero() {
                                 </Button>
 
                                 <div className="flex items-center gap-2 ml-2 border-l border-slate-200 dark:border-border pl-4">
+                                    <a
+                                        href={personalInfo.scholar}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-slate-500 hover:text-blue-600 dark:text-muted-foreground dark:hover:text-primary transition-colors p-2 hover:bg-slate-100 dark:hover:bg-accent rounded-md"
+                                    >
+                                        <GraduationCap className="h-5 w-5" />
+                                    </a>
                                     <a
                                         href={personalInfo.github}
                                         target="_blank"
