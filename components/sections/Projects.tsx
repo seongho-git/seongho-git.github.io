@@ -2,7 +2,8 @@
 
 import { motion } from "framer-motion"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
-import { ExternalLink, Calendar, ChevronRight } from "lucide-react"
+import { Badge } from "@/components/ui/badge"
+import { ExternalLink } from "lucide-react"
 import { projects } from "@/lib/data"
 
 export function Projects() {
@@ -20,57 +21,46 @@ export function Projects() {
                         <div className="w-12 h-1 bg-primary rounded-full"></div>
                     </motion.div>
 
-                    <div className="grid md:grid-cols-2 gap-8">
+                    <div className="space-y-8">
                         {projects.map((project, index) => (
                             <motion.div
                                 key={index}
-                                initial={{ opacity: 0, scale: 0.9 }}
-                                whileInView={{ opacity: 1, scale: 1 }}
+                                initial={{ opacity: 0, x: -20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.1 }}
                             >
-                                <Card className="border border-slate-200 dark:border-border shadow-sm hover:shadow-md transition-all duration-300 bg-white dark:bg-card h-full flex flex-col">
+                                <Card className="border border-slate-200 dark:border-border shadow-sm hover:shadow-md transition-all duration-300 bg-white dark:bg-card">
                                     <CardHeader className="pb-3">
-                                        <div className="flex items-start justify-between gap-2">
-                                            <CardTitle className="text-lg font-semibold text-slate-900 dark:text-foreground group-hover:text-blue-600 dark:group-hover:text-primary transition-colors leading-tight">
-                                                {project.title}
-                                            </CardTitle>
-                                            {project.link.startsWith("http") ? (
-                                                <a
-                                                    href={project.link}
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    className="text-slate-400 hover:text-blue-600 dark:hover:text-primary transition-colors flex-shrink-0 mt-1"
+                                        <div className="flex flex-col gap-2">
+                                            <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1">
+                                                <CardTitle className="text-lg font-semibold text-slate-900 dark:text-foreground leading-tight">
+                                                    {project.link ? (
+                                                        <a
+                                                            href={project.link}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            className="hover:underline inline-flex items-center gap-2"
+                                                        >
+                                                            {project.title}
+                                                            <ExternalLink className="h-4 w-4" />
+                                                        </a>
+                                                    ) : (
+                                                        project.title
+                                                    )}
+                                                </CardTitle>
+                                                <Badge
+                                                    variant="secondary"
+                                                    className="w-fit bg-slate-100 text-slate-600 dark:bg-secondary dark:text-secondary-foreground font-normal text-xs sm:text-sm whitespace-nowrap"
                                                 >
-                                                    <ExternalLink className="h-4 w-4" />
-                                                </a>
-                                            ) : (
-                                                <ExternalLink className="h-4 w-4 text-slate-300 flex-shrink-0 mt-1" />
-                                            )}
-
-                                        </div>
-                                        <div className="mb-2">
-                                            <span className="text-sm font-medium text-primary block">
-                                                {project.affiliation}
-                                            </span>
-                                        </div>
-                                        <div className="flex items-center space-x-2">
-                                            <Calendar className="w-3 h-3 text-slate-400" />
-                                            <CardDescription className="text-xs sm:text-sm text-slate-500 dark:text-muted-foreground">{project.period}</CardDescription>
+                                                    {project.period}
+                                                </Badge>
+                                            </div>
+                                            <CardDescription className="text-slate-600 dark:text-muted-foreground text-sm">
+                                                Related with: {project.relatedExperience}
+                                            </CardDescription>
                                         </div>
                                     </CardHeader>
-                                    <CardContent className="flex-1 flex flex-col justify-between">
-                                        <p className="text-sm text-slate-600 dark:text-muted-foreground mb-4 leading-relaxed">
-                                            {project.description}
-                                        </p>
-                                        <div className="flex items-center text-xs text-primary font-medium pt-2 border-t border-slate-100 dark:border-border">
-                                            <ChevronRight className="w-3 h-3 mr-1" />
-                                            Related to{" "}
-                                            <span className="ml-1 truncate">
-                                                {project.relatedTo}
-                                            </span>
-                                        </div>
-                                    </CardContent>
                                 </Card>
                             </motion.div>
                         ))}
