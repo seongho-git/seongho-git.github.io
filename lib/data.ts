@@ -42,7 +42,7 @@ export const experience = [
     advisor: "Prof. Hanjun Kim",
     period: "2025.03 - Present",
     description: [
-      "Designed sparsity-aware matrix-vector multiplication algorithm for fully homomorphic encryption",
+      "Designed multiplication algorithm for fully homomorphic encryption",
       "LLM-based compiler optimization framework with runtime verification (CGO'26)"
     ],
     link: "https://corelab.yonsei.ac.kr/",
