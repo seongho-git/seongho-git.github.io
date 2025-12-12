@@ -3,7 +3,7 @@
 import * as React from "react"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Home, Menu, X } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import { ThemeToggle } from "@/components/theme-toggle"
 import Link from "next/link"
 
@@ -15,23 +15,18 @@ export function SiteHeader() {
   }
 
   const navItems = [
-    { label: "About", href: "/#about" },
+    { label: "Home", href: "/" },
     { label: "Publications", href: "/#publications" },
     { label: "Experience", href: "/#experience" },
-    { label: "Projects", href: "/#projects" },
-    { label: "Skills", href: "/#skills" },
     { label: "Contact", href: "/#contact" },
-    { label: "Deadlines", href: "/deadlines" }, // 새로 추가된 링크
+    { label: "Deadlines", href: "/deadlines" },
   ]
 
   return (
     <header className="border-b border-slate-200/60 dark:border-border/60 bg-white/80 dark:bg-background/80 backdrop-blur-xl supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity" onClick={scrollToTop}>
-            <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg">
-              <Home className="h-5 w-5 text-white" />
-            </div>
+          <Link href="/" className="hover:opacity-80 transition-opacity" onClick={scrollToTop}>
             <span className="text-xl font-bold text-slate-900 dark:text-foreground">
               Seongho Kim
             </span>
