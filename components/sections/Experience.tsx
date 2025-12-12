@@ -62,14 +62,22 @@ export function Experience() {
                                         </div>
                                     </CardHeader>
                                     <CardContent>
-                                        <p className="text-sm text-slate-600 dark:text-muted-foreground mb-4 leading-relaxed">{exp.description}</p>
-                                        <div className="flex flex-wrap gap-2">
-                                            {exp.technologies.map((tech, i) => (
-                                                <Badge key={i} variant="outline" className="text-xs border-slate-200 dark:border-border text-slate-500 dark:text-muted-foreground">
-                                                    {tech}
-                                                </Badge>
+                                        <ul className="list-disc list-outside ml-5 space-y-1">
+                                            {exp.description.map((item, i) => (
+                                                <li key={i} className="text-sm text-slate-600 dark:text-muted-foreground leading-relaxed">
+                                                    {item}
+                                                </li>
                                             ))}
-                                        </div>
+                                        </ul>
+                                        {exp.technologies && exp.technologies.length > 0 && (
+                                            <div className="flex flex-wrap gap-2 mt-4">
+                                                {exp.technologies.map((tech, i) => (
+                                                    <Badge key={i} variant="outline" className="text-xs border-slate-200 dark:border-border text-slate-500 dark:text-muted-foreground">
+                                                        {tech}
+                                                    </Badge>
+                                                ))}
+                                            </div>
+                                        )}
                                     </CardContent>
                                 </Card>
                             </motion.div>
