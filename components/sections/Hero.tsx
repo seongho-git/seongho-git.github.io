@@ -80,7 +80,7 @@ export function Hero() {
                                     className="border-slate-200 dark:border-border hover:bg-slate-50 dark:hover:bg-accent rounded-md px-6 h-10"
                                     asChild
                                 >
-                                    <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://drive.google.com/file/d/1-PXNZdidaO_WG5gnaT5eh_1Ggg1Ocz0D/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                                         <Download className="mr-2 h-4 w-4" />
                                         CV
                                     </a>
