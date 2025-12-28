@@ -109,6 +109,18 @@ export const experience = [
 
 export const projects = [
   {
+    title: "LLM Optimization Competition Project",
+    period: "2024",
+    relatedExperience: "Undergraduate Research Assistant at CoreLab, Yonsei University",
+    link: "https://github.com/seongho-git/continuous_batching_optimization.git",
+    description: [
+      "Developed dynamic batching optimization for Microsoft Phi-3 on NVIDIA Jetson Orin (32GB)",
+      "Ranked 7th among 47 teams in edge-deployed large language model inference acceleration",
+      "Leveraged architectural insights from systematic LLM bottleneck analysis (OJCS'25)"
+    ],
+    color: "slate"
+  },
+  {
     title: "LLM Architecture Bottleneck Analysis",
     period: "2024.02 - 2024.06",
     relatedExperience: "Undergraduate Research Lead at Design and Architecture for Intelligent Systems Laboratory, Yonsei University",

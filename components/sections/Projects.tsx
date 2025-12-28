@@ -61,6 +61,18 @@ export function Projects() {
                                             </CardDescription>
                                         </div>
                                     </CardHeader>
+                                    {project.description && project.description.length > 0 && (
+                                        <CardContent className="pt-0">
+                                            <ul className="space-y-2 text-sm text-slate-600 dark:text-muted-foreground">
+                                                {project.description.map((item, i) => (
+                                                    <li key={i} className="flex items-start">
+                                                        <span className="mr-2 mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary"></span>
+                                                        <span>{item}</span>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </CardContent>
+                                    )}
                                 </Card>
                             </motion.div>
                         ))}
