@@ -110,7 +110,7 @@ export const experience = [
 export const projects = [
   {
     title: "LLM Optimization Competition Project",
-    period: "2024",
+    period: "2024.07 - 2024.10",
     relatedExperience: "Undergraduate Research Assistant at CoreLab, Yonsei University",
     link: "https://github.com/seongho-git/continuous_batching_optimization.git",
     description: [
