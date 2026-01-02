@@ -36,7 +36,7 @@ export const conferencePublications = [
   {
     title: "Compiler-Runtime Co-operative Chain of Verification for LLM-Based Code Optimization",
     journal: "Proceedings of the 2026 International Symposium on Code Generation and Optimization (CGO), January 2026",
-    badges: ["Accept Rate: 35% (45/128)"],
+    badges: [],
     link: "#",
     authors: "Hyunho Kwon, Sanggyu Shin, Ju Min Lee, Hoyun Youm, Seungbin Song, Seongho Kim, Hanwoong Jung, Seungwon Lee, and Hanjun Kim"
   }
