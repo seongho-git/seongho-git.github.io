@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ExternalLink } from "lucide-react"
-import { firstAuthorPublications, coAuthorPublications } from "@/lib/data"
+import { journalPublications, conferencePublications } from "@/lib/data"
 
 // Helper function to highlight "Seongho Kim" in author list
 const formatAuthors = (authors: string) => {
@@ -35,11 +35,11 @@ export function Publications() {
                         <div className="w-12 h-1 bg-primary rounded-full"></div>
                     </motion.div>
 
-                    {/* First Author Publications */}
+                    {/* Journal Publications */}
                     <div className="mb-10">
                         <h3 className="text-lg font-semibold text-slate-900 dark:text-foreground mb-4">Refereed Journal Publications</h3>
                         <div className="space-y-6">
-                            {firstAuthorPublications.map((pub, index) => (
+                            {journalPublications.map((pub, index) => (
                                 <motion.div
                                     key={index}
                                     initial={{ opacity: 0, y: 20 }}
@@ -92,17 +92,17 @@ export function Publications() {
                         </div>
                     </div>
 
-                    {/* Co-Author Publications */}
+                    {/* Conference Publications */}
                     <div>
                         <h3 className="text-lg font-semibold text-slate-900 dark:text-foreground mb-4">Refereed Conference Publications</h3>
                         <div className="space-y-6">
-                            {coAuthorPublications.map((pub, index) => (
+                            {conferencePublications.map((pub, index) => (
                                 <motion.div
                                     key={index}
                                     initial={{ opacity: 0, y: 20 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
-                                    transition={{ delay: (firstAuthorPublications.length + index) * 0.1 }}
+                                    transition={{ delay: (journalPublications.length + index) * 0.1 }}
                                 >
                                     <Card className="border border-slate-200 dark:border-border shadow-sm hover:shadow-md transition-all duration-300 bg-white dark:bg-card">
                                         <CardContent className="p-5 sm:p-6">
