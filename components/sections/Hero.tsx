@@ -49,7 +49,7 @@ export function Hero() {
                                 transition={{ delay: 0.3, duration: 0.5 }}
                                 className="text-lg sm:text-xl font-medium text-slate-700 dark:text-muted-foreground mb-4"
                             >
-                                Ph.D. Student at <a href="https://corelab.yonsei.ac.kr/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">CoreLab</a>, Yonsei University
+                                Ph.D. Student at <a href="http://corelab.yonsei.ac.kr/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">CoreLab</a>, Yonsei University
                             </motion.div>
 
                             <motion.p

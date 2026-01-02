@@ -17,19 +17,26 @@ export const personalInfo = {
 
 export const firstAuthorPublications = [
   {
+    title: "Tensor Abstraction Enabling Explicit Layout Optimization in Homomorphic Encryption",
+    journal: "IEEE/ACM International Symposium on Code Generation and Optimization (CGO), January 2026",
+    badges: ["CGO 2026 SRC"],
+    link: "#",
+    authors: "Seongho Kim and Hanjun Kim"
+  },
+  {
     title: "Survey and Evaluation of Converging Architecture in LLMs Based on Footsteps of Operations",
     journal: "IEEE Open Journal of the Computer Society, July 2025",
     badges: ["IF=8.2, Q1 (JCR 2024)"],
     link: "https://doi.org/10.1109/OJCS.2025.3587005",
     authors: "Seongho Kim, Jihyun Moon, Juntaek Oh, Insu Choi, and Joon-Sung Yang"
-  }
+  },
 ]
 
 export const coAuthorPublications = [
   {
     title: "Compiler-Runtime Co-operative Chain of Verification for LLM-Based Code Optimization",
     journal: "Proceedings of the 2026 International Symposium on Code Generation and Optimization (CGO), January 2026",
-    badges: ["To Appear"],
+    badges: ["CGO 2026"],
     link: "#",
     authors: "Hyunho Kwon, Sanggyu Shin, Ju Min Lee, Hoyun Youm, Seungbin Song, Seongho Kim, Hanwoong Jung, Seungwon Lee, and Hanjun Kim"
   }

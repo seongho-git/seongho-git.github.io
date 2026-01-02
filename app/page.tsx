@@ -6,10 +6,10 @@ import { ScrollToTop } from "@/components/scroll-to-top"
 import { Hero } from "@/components/sections/Hero"
 import { About } from "@/components/sections/About"
 import { Publications } from "@/components/sections/Publications"
-import { Experience } from "@/components/sections/Experience"
 import { Recognition } from "@/components/sections/Recognition"
-import { Activities } from "@/components/sections/Activities"
+import { Experience } from "@/components/sections/Experience"
 import { Projects } from "@/components/sections/Projects"
+import { Activities } from "@/components/sections/Activities"
 import { Skills } from "@/components/sections/Skills"
 import { Contact } from "@/components/sections/Contact"
 
@@ -31,11 +31,11 @@ export default function HomePage() {
         <Hero />
         <About />
         <Publications />
+        <Recognition />
         <Experience />
         <Projects />
-        <Skills />
-        <Recognition />
         <Activities />
+        <Skills />
         <Contact />
       </main>
       <ScrollToTop />
