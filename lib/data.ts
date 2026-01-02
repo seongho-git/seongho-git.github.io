@@ -28,15 +28,15 @@ export const journalPublications = [
 export const conferencePublications = [
   {
     title: "Tensor Abstraction Enabling Explicit Layout Optimization in Homomorphic Encryption",
-    journal: "IEEE/ACM International Symposium on Code Generation and Optimization (CGO), January 2026",
-    badges: ["CGO 2026 SRC"],
+    journal: "International Symposium on Code Generation and Optimization Student Research Competition (CGO SRC), January 2026",
+    badges: [],
     link: "#",
     authors: "Seongho Kim and Hanjun Kim"
   },
   {
     title: "Compiler-Runtime Co-operative Chain of Verification for LLM-Based Code Optimization",
     journal: "Proceedings of the 2026 International Symposium on Code Generation and Optimization (CGO), January 2026",
-    badges: ["CGO 2026"],
+    badges: ["Accept Rate: 35% (45/128)"],
     link: "#",
     authors: "Hyunho Kwon, Sanggyu Shin, Ju Min Lee, Hoyun Youm, Seungbin Song, Seongho Kim, Hanwoong Jung, Seungwon Lee, and Hanjun Kim"
   }
