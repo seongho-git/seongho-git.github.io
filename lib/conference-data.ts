@@ -207,7 +207,7 @@ export const allConferences: Conference[] = [
         ...conferenceMetadata["MICRO"],
         deadline: "2026-04-09T04:59:59",
         abstract: "2026-04-02",
-        cycle: "(1 / 1)",
+        cycle: "(1 / 2)",
         year: 2026,
         location: "Athens, Greece",
         link: "https://microarch.org/",
@@ -309,18 +309,6 @@ export const allConferences: Conference[] = [
         year: 2027,
         location: "Rabat, Morocco",
         link: "https://2027.eurosys.org/",
-        conferenceDate: "Apr 19-23, 2027",
-        conferenceEndDate: "2027-04-23"
-    },
-    {
-        ...conferenceMetadata["EuroSys"],
-        deadline: "2026-09-24T23:59:59",
-        abstract: "2026-09-17",
-        cycle: "(2 / 2)",
-        year: 2027,
-        location: "Rabat, Morocco",
-        link: "https://2027.eurosys.org/cfp.html",
-        isPredicted: true,
         conferenceDate: "Apr 19-23, 2027",
         conferenceEndDate: "2027-04-23"
     },
