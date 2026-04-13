@@ -138,6 +138,13 @@ export const conferenceMetadata: { [key: string]: ConferenceMetadata } = {
         bkScore: 4, // BKCSA018
         link: "https://www.hpca-conf.org/"
     },
+    "ICPP": {
+        name: "ICPP",
+        full: "International Conference on Parallel Processing",
+        tags: ["Sys", "Arch", "HPC", "Parallel"],
+        bkScore: 2,
+        link: "https://icpp2026.github.io/"
+    },
 }
 
 // Helper function to parse deadline strings (handles timezone suffixes like EST)
@@ -179,7 +186,7 @@ export const allConferences: Conference[] = [
     {
         ...conferenceMetadata["Crypto"],
         deadline: "2026-02-12T23:59:59",
-        cycle: "(1 / 1)",
+        cycle: "(1 / 2)",
         year: 2026,
         location: "Santa Barbara, USA",
         link: "https://crypto.iacr.org/2026/",
@@ -208,6 +215,16 @@ export const allConferences: Conference[] = [
         conferenceEndDate: "2026-11-04"
     },
     {
+        ...conferenceMetadata["ESORICS"],
+        deadline: "2026-04-21T23:59:59",
+        cycle: "(2 / 2)",
+        year: 2026,
+        location: "Rome, Italy",
+        link: "https://sites.google.com/di.uniroma1.it/esorics2026/",
+        conferenceDate: "Sep 14-18, 2026",
+        conferenceEndDate: "2026-09-18"
+    },
+    {
         ...conferenceMetadata["CCS"],
         deadline: "2026-04-29T23:59:59",
         cycle: "(2 / 2)",
@@ -216,6 +233,17 @@ export const allConferences: Conference[] = [
         link: "https://www.sigsac.org/ccs/CCS2026/",
         conferenceDate: "Nov 15-19, 2026",
         conferenceEndDate: "2026-11-19"
+    },
+    {
+        ...conferenceMetadata["ICPP"],
+        deadline: "2026-05-01T23:59:59",
+        abstract: "2026-04-24",
+        cycle: "(1 / 1)",
+        year: 2026,
+        location: "Singapore",
+        link: "https://icpp2026.github.io/",
+        conferenceDate: "Sep 28-Oct 1, 2026",
+        conferenceEndDate: "2026-10-01"
     },
     {
         ...conferenceMetadata["OSDI"],
@@ -232,22 +260,32 @@ export const allConferences: Conference[] = [
     // Predicted / Future Cycles (Nearest Only)
     {
         ...conferenceMetadata["ASPLOS"],
-        deadline: "2026-02-28T23:59:59", // Predicted Spring Cycle
+        deadline: "2026-04-15T23:59:59",
+        abstract: "2026-04-08",
         cycle: "(1 / 2)",
         year: 2027,
-        location: "TBD",
-        link: "https://asplos-conference.org/",
-        isPredicted: true,
-        conferenceDate: "Mar 2027 (TBD)",
-        conferenceEndDate: "2027-03-31"
+        location: "Heraklion, Greece",
+        link: "https://www.asplos-conference.org/asplos2027/cfp/",
+        conferenceDate: "Apr 11-15, 2027",
+        conferenceEndDate: "2027-04-15"
     },
     {
         ...conferenceMetadata["NDSS"],
-        deadline: "2026-04-23T23:59:59",
+        deadline: "2026-05-06T23:59:59",
         cycle: "(1 / 2)",
         year: 2027,
         location: "San Diego, USA",
-        link: "https://www.ndss-symposium.org/",
+        link: "https://www.ndss-symposium.org/ndss2027/submission-process/",
+        conferenceDate: "Feb 2027 (TBD)",
+        conferenceEndDate: "2027-02-28"
+    },
+    {
+        ...conferenceMetadata["NDSS"],
+        deadline: "2026-08-19T23:59:59",
+        cycle: "(2 / 2)",
+        year: 2027,
+        location: "San Diego, USA",
+        link: "https://www.ndss-symposium.org/ndss2027/submission-process/",
         isPredicted: true,
         conferenceDate: "Feb 2027 (TBD)",
         conferenceEndDate: "2027-02-28"
@@ -257,7 +295,7 @@ export const allConferences: Conference[] = [
         deadline: "2026-05-30T23:59:59",
         cycle: "(1 / 1)", // Usually single cycle
         year: 2027,
-        location: "Sydney, Australia",
+        location: "Salt Lake City, USA",
         link: "https://conf.researchr.org/home/cgo-2027",
         isPredicted: true,
         conferenceDate: "Feb 2027 (TBD)",
@@ -265,15 +303,26 @@ export const allConferences: Conference[] = [
     },
     {
         ...conferenceMetadata["EuroSys"],
-        deadline: "2026-05-15T23:59:59",
-        abstract: "2026-05-08",
+        deadline: "2026-05-14T23:59:59",
+        abstract: "2026-05-07",
         cycle: "(1 / 2)",
         year: 2027,
-        location: "Edinburgh, UK",
-        link: "https://www.eurosys.org/",
+        location: "Rabat, Morocco",
+        link: "https://2027.eurosys.org/",
+        conferenceDate: "Apr 19-23, 2027",
+        conferenceEndDate: "2027-04-23"
+    },
+    {
+        ...conferenceMetadata["EuroSys"],
+        deadline: "2026-09-24T23:59:59",
+        abstract: "2026-09-17",
+        cycle: "(2 / 2)",
+        year: 2027,
+        location: "Rabat, Morocco",
+        link: "https://2027.eurosys.org/cfp.html",
         isPredicted: true,
-        conferenceDate: "Apr 2027 (TBD)",
-        conferenceEndDate: "2027-04-30"
+        conferenceDate: "Apr 19-23, 2027",
+        conferenceEndDate: "2027-04-23"
     },
     {
         ...conferenceMetadata["IEEE S&P"],
@@ -290,13 +339,13 @@ export const allConferences: Conference[] = [
     {
         ...conferenceMetadata["USENIX Security"],
         deadline: "2026-08-26T23:59:59",
+        abstract: "2026-08-19",
         cycle: "(1 / 2)",
         year: 2027,
-        location: "TBD",
+        location: "Denver, USA",
         link: "https://www.usenix.org/conference/usenixsecurity27",
-        isPredicted: true,
-        conferenceDate: "Aug 2027 (TBD)",
-        conferenceEndDate: "2027-08-31"
+        conferenceDate: "Aug 11-13, 2027",
+        conferenceEndDate: "2027-08-13"
     },
     {
         ...conferenceMetadata["OOPSLA"],
@@ -721,4 +770,3 @@ export const upcomingConferences = allConferences.filter(c =>
 export const pastConferences = allConferences.filter(c =>
     parseDeadline(c.deadline) <= new Date()
 )
-
