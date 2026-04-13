@@ -138,6 +138,13 @@ export const conferenceMetadata: { [key: string]: ConferenceMetadata } = {
         bkScore: 4, // BKCSA018
         link: "https://www.hpca-conf.org/"
     },
+    "ICPP": {
+        name: "ICPP",
+        full: "International Conference on Parallel Processing",
+        tags: ["Sys", "Arch", "HPC", "Parallel"],
+        bkScore: 2,
+        link: "https://icpp2026.github.io/"
+    },
 }
 
 // Helper function to parse deadline strings (handles timezone suffixes like EST)
@@ -200,12 +207,22 @@ export const allConferences: Conference[] = [
         ...conferenceMetadata["MICRO"],
         deadline: "2026-04-09T04:59:59",
         abstract: "2026-04-02",
-        cycle: "(1 / 2)",
+        cycle: "(1 / 1)",
         year: 2026,
         location: "Athens, Greece",
         link: "https://microarch.org/",
         conferenceDate: "Oct 31-Nov 4, 2026",
         conferenceEndDate: "2026-11-04"
+    },
+    {
+        ...conferenceMetadata["ESORICS"],
+        deadline: "2026-04-21T23:59:59",
+        cycle: "(2 / 2)",
+        year: 2026,
+        location: "Rome, Italy",
+        link: "https://sites.google.com/di.uniroma1.it/esorics2026/",
+        conferenceDate: "Sep 14-18, 2026",
+        conferenceEndDate: "2026-09-18"
     },
     {
         ...conferenceMetadata["CCS"],
@@ -216,6 +233,17 @@ export const allConferences: Conference[] = [
         link: "https://www.sigsac.org/ccs/CCS2026/",
         conferenceDate: "Nov 15-19, 2026",
         conferenceEndDate: "2026-11-19"
+    },
+    {
+        ...conferenceMetadata["ICPP"],
+        deadline: "2026-05-01T23:59:59",
+        abstract: "2026-04-24",
+        cycle: "(1 / 1)",
+        year: 2026,
+        location: "Singapore",
+        link: "https://icpp2026.github.io/",
+        conferenceDate: "Sep 28-Oct 1, 2026",
+        conferenceEndDate: "2026-10-01"
     },
     {
         ...conferenceMetadata["OSDI"],
@@ -244,10 +272,21 @@ export const allConferences: Conference[] = [
     {
         ...conferenceMetadata["NDSS"],
         deadline: "2026-05-06T23:59:59",
-        cycle: "(1 / 1)",
+        cycle: "(1 / 2)",
         year: 2027,
-        location: "TBD",
+        location: "San Diego, USA",
         link: "https://www.ndss-symposium.org/ndss2027/submission-process/",
+        conferenceDate: "Feb 2027 (TBD)",
+        conferenceEndDate: "2027-02-28"
+    },
+    {
+        ...conferenceMetadata["NDSS"],
+        deadline: "2026-08-19T23:59:59",
+        cycle: "(2 / 2)",
+        year: 2027,
+        location: "San Diego, USA",
+        link: "https://www.ndss-symposium.org/ndss2027/submission-process/",
+        isPredicted: true,
         conferenceDate: "Feb 2027 (TBD)",
         conferenceEndDate: "2027-02-28"
     },
@@ -267,6 +306,17 @@ export const allConferences: Conference[] = [
         deadline: "2026-05-14T23:59:59",
         abstract: "2026-05-07",
         cycle: "(1 / 2)",
+        year: 2027,
+        location: "Rabat, Morocco",
+        link: "https://2027.eurosys.org/",
+        conferenceDate: "Apr 19-23, 2027",
+        conferenceEndDate: "2027-04-23"
+    },
+    {
+        ...conferenceMetadata["EuroSys"],
+        deadline: "2026-09-24T23:59:59",
+        abstract: "2026-09-17",
+        cycle: "(2 / 2)",
         year: 2027,
         location: "Rabat, Morocco",
         link: "https://2027.eurosys.org/",
