@@ -292,12 +292,21 @@ export const allConferences: Conference[] = [
     },
     {
         ...conferenceMetadata["CGO"],
-        deadline: "2026-05-30T23:59:59",
-        cycle: "(1 / 1)", // Usually single cycle
+        deadline: "2026-09-10T23:59:59",
+        cycle: "(2 / 2)",
         year: 2027,
         location: "Salt Lake City, USA",
         link: "https://conf.researchr.org/home/cgo-2027",
-        isPredicted: true,
+        conferenceDate: "Feb 2027 (TBD)",
+        conferenceEndDate: "2027-02-28"
+    },
+    {
+        ...conferenceMetadata["CGO"],
+        deadline: "2026-06-11T23:59:59",
+        cycle: "(1 / 2)",
+        year: 2027,
+        location: "Salt Lake City, USA",
+        link: "https://conf.researchr.org/home/cgo-2027",
         conferenceDate: "Feb 2027 (TBD)",
         conferenceEndDate: "2027-02-28"
     },
