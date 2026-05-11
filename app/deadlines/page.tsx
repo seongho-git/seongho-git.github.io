@@ -80,8 +80,8 @@ export default function DeadlinesPage() {
   }
 
   const ConferenceTable = ({ conferences, title }: { conferences: Conference[], title: string }) => (
-    <Card className="border-0 shadow-xl bg-white/80 dark:bg-card/80 backdrop-blur-xl ring-1 ring-slate-200/50 dark:ring-border/50 mb-12">
-      <CardHeader className="bg-gradient-to-r from-slate-50/80 to-slate-100/80 dark:from-secondary/30 dark:to-secondary/30 rounded-t-2xl border-b border-slate-200/50 dark:border-border/50">
+    <Card className="border border-border shadow-sm bg-card mb-12">
+      <CardHeader className="bg-secondary/30 rounded-t-2xl border-b border-border">
         <CardTitle>{title}</CardTitle>
       </CardHeader>
       <CardContent className="p-0 overflow-x-auto">
@@ -103,8 +103,7 @@ export default function DeadlinesPage() {
               const isConferencePassed = (conf.conferenceEndDate && now) ? now > parseDeadline(conf.conferenceEndDate) : false
 
               return (
-                <TableRow key={`${conf.name}-${conf.year}-${conf.cycle}-${conf.deadline}`} className="group hover:bg-slate-50/50 dark:hover:bg-muted/50 transition-colors">
-                  {/* Conference */}
+                <TableRow key={`${conf.name}-${conf.year}-${conf.cycle}-${conf.deadline}`} className="group hover:bg-muted/50 transition-colors">
                   <TableCell className="font-medium">
                     <div className="flex flex-col">
                       <div className="flex items-center gap-2">
@@ -113,8 +112,8 @@ export default function DeadlinesPage() {
                           target="_blank"
                           rel="noopener noreferrer"
                           className={`text-lg transition-colors flex items-center gap-2 ${isConferencePassed
-                            ? "text-slate-400 line-through decoration-slate-400"
-                            : "text-slate-900 dark:text-foreground group-hover:text-blue-600 dark:group-hover:text-primary"
+                            ? "text-muted-foreground/50 line-through"
+                            : "text-foreground group-hover:text-primary"
                             }`}
                         >
                           {conf.name} {conf.year}
@@ -129,7 +128,7 @@ export default function DeadlinesPage() {
                       <span className="text-xs text-muted-foreground truncate max-w-[280px]" title={conf.full}>
                         {conf.full}
                       </span>
-                      <span className="text-xs text-slate-500 mt-1">
+                      <span className="text-xs text-muted-foreground mt-1">
                         {conf.conferenceDate}
                       </span>
                     </div>
@@ -139,20 +138,20 @@ export default function DeadlinesPage() {
                   <TableCell>
                     <div className="flex flex-col space-y-1">
                       <div className="flex items-center gap-2">
-                        <span className={`font-medium ${isPassed ? "text-slate-400 line-through" : ""}`}>
+                        <span className={`font-medium ${isPassed ? "text-muted-foreground/50 line-through" : ""}`}>
                           {format(date, "MMM d, yyyy")}
                         </span>
-                        <span className="text-xs font-mono text-muted-foreground bg-slate-100 dark:bg-secondary px-1.5 py-0.5 rounded">
+                        <span className="text-xs font-mono text-muted-foreground bg-secondary px-1.5 py-0.5 rounded">
                           {formatDeadlineTime(date)}
                         </span>
                       </div>
                       {conf.cycle && (
-                        <span className="text-xs text-blue-600 dark:text-primary font-medium">
+                        <span className="text-xs text-primary font-medium">
                           Cycle {conf.cycle}
                         </span>
                       )}
                       {conf.abstract && (
-                        <span className="text-xs text-slate-500">
+                        <span className="text-xs text-muted-foreground">
                           Abstract: {conf.abstract}
                         </span>
                       )}
@@ -162,9 +161,9 @@ export default function DeadlinesPage() {
                   {/* Countdown */}
                   <TableCell>
                     {isPassed ? (
-                      <span className="text-slate-400 text-sm">Passed</span>
+                      <span className="text-muted-foreground text-sm">Passed</span>
                     ) : (
-                      <span className="font-mono text-slate-900 dark:text-foreground font-bold whitespace-nowrap text-sm">
+                      <span className="font-mono text-foreground font-bold whitespace-nowrap text-sm">
                         {getCountdown(conf.deadline)}
                       </span>
                     )}
@@ -173,7 +172,7 @@ export default function DeadlinesPage() {
                   {/* BK Score */}
                   <TableCell className="text-center">
                     {conf.bkScore && (
-                      <Badge variant="outline" className={`border ${bkScoreColors[conf.bkScore] || "bg-slate-100 text-slate-800"}`}>
+                      <Badge variant="outline" className={`border ${bkScoreColors[conf.bkScore] || "bg-secondary text-secondary-foreground"}`}>
                         {conf.bkScore}
                       </Badge>
                     )}
@@ -207,24 +206,24 @@ export default function DeadlinesPage() {
   )
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/50 dark:bg-none dark:bg-background">
+    <div className="min-h-screen bg-background text-foreground">
       <SiteHeader />
 
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-foreground mb-4">
+            <h1 className="text-3xl sm:text-4xl font-bold font-serif text-foreground mb-4">
               Conference Deadlines
             </h1>
-            <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto rounded-full"></div>
-            <p className="mt-4 text-slate-600 dark:text-muted-foreground">
+            <div className="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+            <p className="mt-4 text-muted-foreground">
               Upcoming submission deadlines for major conferences.
             </p>
           </div>
 
           {/* Filter Section */}
           <div className="mb-8 flex flex-wrap items-center justify-center gap-2">
-            <div className="flex items-center mr-2 text-slate-600 dark:text-muted-foreground">
+            <div className="flex items-center mr-2 text-muted-foreground">
               <Filter className="w-4 h-4 mr-2" />
               <span className="text-sm font-medium">Filter by:</span>
             </div>
@@ -233,8 +232,8 @@ export default function DeadlinesPage() {
                 key={tag}
                 variant={selectedTags.includes(tag) ? "default" : "outline"}
                 className={`cursor-pointer transition-all ${selectedTags.includes(tag)
-                  ? "bg-blue-600 hover:bg-blue-700"
-                  : "hover:bg-slate-100 dark:hover:bg-secondary"
+                  ? "bg-primary hover:bg-primary/90 text-primary-foreground"
+                  : "hover:bg-accent dark:hover:bg-secondary"
                   }`}
                 onClick={() => toggleTag(tag)}
               >
@@ -246,7 +245,7 @@ export default function DeadlinesPage() {
                 variant="ghost"
                 size="sm"
                 onClick={() => setSelectedTags([])}
-                className="ml-2 text-xs text-slate-500 hover:text-slate-700"
+                className="ml-2 text-xs text-muted-foreground hover:text-foreground"
               >
                 Clear
               </Button>
@@ -259,7 +258,7 @@ export default function DeadlinesPage() {
             <ConferenceTable conferences={filteredPast} title="Past Deadlines (2025/2026 Cycle)" />
           )}
 
-          <div className="mt-8 text-center text-sm text-slate-500 dark:text-muted-foreground">
+          <div className="mt-8 text-center text-sm text-muted-foreground">
             * Deadlines marked TBD are estimates based on previous years. Please verify with official websites.
           </div>
         </div>

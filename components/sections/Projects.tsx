@@ -17,7 +17,7 @@ export function Projects() {
                         viewport={{ once: true }}
                         className="mb-8"
                     >
-                        <h2 className="text-2xl font-bold text-slate-900 dark:text-foreground mb-4">Projects</h2>
+                        <h2 className="text-2xl font-semibold font-serif text-foreground mb-4">Projects</h2>
                         <div className="w-12 h-1 bg-primary rounded-full"></div>
                     </motion.div>
 
@@ -30,11 +30,11 @@ export function Projects() {
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.1 }}
                             >
-                                <Card className="border border-slate-200 dark:border-border shadow-sm hover:shadow-md transition-all duration-300 bg-white dark:bg-card">
+                                <Card className="border border-border shadow-sm hover:shadow-md transition-all duration-300 bg-card">
                                     <CardHeader className="pb-3">
                                         <div className="flex flex-col gap-2">
                                             <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1">
-                                                <CardTitle className="text-lg font-semibold text-slate-900 dark:text-foreground leading-tight">
+                                                <CardTitle className="text-base font-semibold text-foreground leading-tight">
                                                     {project.link ? (
                                                         <a
                                                             href={project.link}
@@ -51,19 +51,19 @@ export function Projects() {
                                                 </CardTitle>
                                                 <Badge
                                                     variant="secondary"
-                                                    className="w-fit bg-slate-100 text-slate-600 dark:bg-secondary dark:text-secondary-foreground font-normal text-xs sm:text-sm whitespace-nowrap"
+                                                    className="w-fit bg-secondary text-secondary-foreground font-normal text-xs sm:text-sm whitespace-nowrap"
                                                 >
                                                     {project.period}
                                                 </Badge>
                                             </div>
-                                            <CardDescription className="text-slate-600 dark:text-muted-foreground text-sm">
+                                            <CardDescription className="text-muted-foreground text-sm">
                                                 Related with: {project.relatedExperience}
                                             </CardDescription>
                                         </div>
                                     </CardHeader>
                                     {project.description && project.description.length > 0 && (
                                         <CardContent className="pt-0">
-                                            <ul className="space-y-2 text-sm text-slate-600 dark:text-muted-foreground">
+                                            <ul className="space-y-2 text-sm text-muted-foreground">
                                                 {project.description.map((item, i) => (
                                                     <li key={i} className="flex items-start">
                                                         <span className="mr-2 mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary"></span>
