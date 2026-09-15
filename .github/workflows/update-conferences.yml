@@ -1,0 +1,30 @@
+name: Update conference data
+
+on:
+  schedule:
+    # Every Monday 00:00 UTC (09:00 KST)
+    - cron: "0 0 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - run: npm ci --legacy-peer-deps
+      - name: Fetch latest conference data
+        run: node scripts/update-conferences.mjs
+      - name: Commit and push if changed
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "data(conferences): weekly automatic update"
+          file_pattern: data/conferences.json
+          commit_user_name: github-actions[bot]
+          commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com

@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    /* Light (default): white, near-black text, neutral grays, blue accent */
+    /* Light theme (default) */
     --background: 0 0% 100%;
     --foreground: 0 0% 9%;
 
@@ -51,7 +51,7 @@
     --popover: 0 0% 9%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 217 91% 68%;          /* #60a5fa */
+    --primary: 213 94% 68%;          /* #60a5fa */
     --primary-foreground: 0 0% 7%;
 
     --secondary: 0 0% 13%;
@@ -96,7 +96,7 @@
 }
 
 @layer components {
-  /* Prose-like link used throughout content */
+  /* Inline text link */
   .link {
     @apply text-primary underline-offset-4 hover:underline;
   }

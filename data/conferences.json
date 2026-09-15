@@ -1,0 +1,6383 @@
+{
+  "generatedAt": "2026-09-15T14:09:56.147Z",
+  "sources": {
+    "heelim": {
+      "url": "https://profile.heelim.com/",
+      "lastUpdated": "September 8, 2026"
+    },
+    "ccfDeadlines": "https://github.com/ccfddl/ccf-deadlines",
+    "tiers": "https://gist.github.com/Pusnow/6eb933355b5cb8d31ef1abcb3c3e1206"
+  },
+  "categories": [
+    "Computer Architecture",
+    "Compilers and Programming Languages",
+    "Operating and Distributed Systems",
+    "Parallel and High-Performance Computing",
+    "Security and Cryptography",
+    "Networking and Mobile Systems",
+    "Design Automation and Embedded Systems",
+    "Data Management and Web",
+    "Software Engineering",
+    "Machine Learning and Computer Vision"
+  ],
+  "venues": [
+    {
+      "id": "micro",
+      "name": "MICRO",
+      "fullName": "Annual IEEE/ACM International Symposium on Microarchitecture (MICRO)",
+      "category": "Computer Architecture",
+      "domains": [
+        "Computer Architecture"
+      ],
+      "keywords": [
+        "Microarchitecture",
+        "Hardware Accelerators",
+        "Computer Architecture",
+        "Instruction-level Parallelism"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 4,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/micro",
+      "url": "http://www.microarch.org/micro59",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "October 18-22, 2025",
+          "startDate": "2025-10-18",
+          "endDate": "2025-10-22",
+          "approximateDate": false,
+          "location": "Seoul, Korea",
+          "url": "http://www.microarch.org/micro58",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-04-11",
+              "abstractDeadline": null,
+              "notification": "2025-07-14",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "October 31 - November 4, 2026",
+          "startDate": "2026-10-31",
+          "endDate": "2026-11-04",
+          "approximateDate": false,
+          "location": "Athens, Greece",
+          "url": "http://www.microarch.org/micro59",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-04-07",
+              "abstractDeadline": "2026-03-31",
+              "notification": "2026-07-07",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "October 31 - November 4, 2027",
+          "startDate": "2027-10-31",
+          "endDate": "2027-11-04",
+          "approximateDate": false,
+          "location": null,
+          "url": "http://www.microarch.org/micro59",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-04-07",
+              "abstractDeadline": "2027-03-31",
+              "notification": "2027-07-07",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 1
+    },
+    {
+      "id": "isca",
+      "name": "ISCA",
+      "fullName": "International Symposium on Computer Architecture (ISCA)",
+      "category": "Computer Architecture",
+      "domains": [
+        "Computer Architecture"
+      ],
+      "keywords": [
+        "Computer Architecture",
+        "Memory Systems",
+        "Hardware/Software Co-design"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 4,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/isca",
+      "url": "http://iscaconf.org/isca2027",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "June 21-25, 2025",
+          "startDate": "2025-06-21",
+          "endDate": "2025-06-25",
+          "approximateDate": false,
+          "location": null,
+          "url": "http://iscaconf.org/isca2025",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2024-11-22",
+              "abstractDeadline": null,
+              "notification": "2025-03-17",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "June 27 - July 1, 2026",
+          "startDate": "2026-06-27",
+          "endDate": "2026-07-01",
+          "approximateDate": false,
+          "location": "Raleigh, NC, USA",
+          "url": "http://iscaconf.org/isca2026",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-11-17",
+              "abstractDeadline": null,
+              "notification": "2026-03-27",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "June 2027",
+          "startDate": "2027-06-14",
+          "endDate": "2027-06-18",
+          "approximateDate": false,
+          "location": "TBD",
+          "url": "http://iscaconf.org/isca2027",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-11-17",
+              "abstractDeadline": null,
+              "notification": "2027-03-27",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 1010
+    },
+    {
+      "id": "hpca",
+      "name": "HPCA",
+      "fullName": "International Symposium on High-Performance Computer Architecture (HPCA)",
+      "category": "Computer Architecture",
+      "domains": [
+        "Computer Architecture"
+      ],
+      "keywords": [
+        "Computer Architecture",
+        "Memory Hierarchy",
+        "Multi-core",
+        "Hardware Accelerators"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 4,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/hpca",
+      "url": "https://conf.researchr.org/home/hpca-2027",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "March 1-5, 2025",
+          "startDate": "2025-03-01",
+          "endDate": "2025-03-05",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://www.hpca-conf.org/2025",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2024-08-02",
+              "abstractDeadline": null,
+              "notification": "2024-11-05",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "January 31 - February 4, 2026",
+          "startDate": "2026-01-31",
+          "endDate": "2026-02-04",
+          "approximateDate": false,
+          "location": "Sydney, Australia",
+          "url": "https://www.hpca-conf.org/2026",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-08-01",
+              "abstractDeadline": null,
+              "notification": "2025-11-07",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "January 30 - February 3, 2027",
+          "startDate": "2027-01-30",
+          "endDate": "2027-02-03",
+          "approximateDate": false,
+          "location": "TBD",
+          "url": "https://conf.researchr.org/home/hpca-2027",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-07-31",
+              "abstractDeadline": "2026-07-24",
+              "notification": "2026-11-06",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 2008
+    },
+    {
+      "id": "asplos",
+      "name": "ASPLOS",
+      "fullName": "International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)",
+      "category": "Computer Architecture",
+      "domains": [
+        "Computer Architecture",
+        "Operating Systems",
+        "Programming Languages"
+      ],
+      "keywords": [
+        "Computer Architecture",
+        "Operating Systems",
+        "Compilers",
+        "Hardware/Software Co-design"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 4,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/asplos",
+      "url": "https://www.asplos-conference.org/asplos2027/cfp/",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "March 30-3, 2025",
+          "startDate": "2025-03-30",
+          "endDate": "2025-03-03",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://www.asplos-conference.org/asplos2025/cfp/",
+          "cycles": [
+            {
+              "name": "Spring",
+              "deadline": "2024-03-01",
+              "abstractDeadline": null,
+              "notification": "2024-06-06",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "Summer",
+              "deadline": "2024-06-24",
+              "abstractDeadline": null,
+              "notification": "2024-10-02",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "March 22-26, 2026",
+          "startDate": "2026-03-22",
+          "endDate": "2026-03-26",
+          "approximateDate": false,
+          "location": "Pittsburgh, PA, USA",
+          "url": "https://www.asplos-conference.org/asplos2026/cfp/",
+          "cycles": [
+            {
+              "name": "Spring",
+              "deadline": "2025-03-12",
+              "abstractDeadline": null,
+              "notification": "2025-06-24",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "Summer",
+              "deadline": "2025-08-20",
+              "abstractDeadline": "2025-08-13",
+              "notification": "2025-11-24",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "April 11-15, 2027",
+          "startDate": "2027-04-11",
+          "endDate": "2027-04-15",
+          "approximateDate": false,
+          "location": "Heraklion, Crete, Greece",
+          "url": "https://www.asplos-conference.org/asplos2027/cfp/",
+          "cycles": [
+            {
+              "name": "Spring",
+              "deadline": "2026-04-15",
+              "abstractDeadline": null,
+              "notification": "2026-07-27",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "Summer",
+              "deadline": "2026-09-09",
+              "abstractDeadline": null,
+              "notification": "2026-12-21",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 3002
+    },
+    {
+      "id": "pact",
+      "name": "PACT",
+      "fullName": "International Conference on Parallel Architectures and Compilation Techniques (PACT)",
+      "category": "Computer Architecture",
+      "domains": [
+        "Parallel Computing",
+        "Computer Architecture"
+      ],
+      "keywords": [
+        "Parallel Computing",
+        "Compilers",
+        "Parallel Architectures"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 3,
+      "lists": {
+        "kaist": false,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/IEEEpact",
+      "url": "https://pact2026.github.io/",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "November 3-6, 2025",
+          "startDate": "2025-11-03",
+          "endDate": "2025-11-06",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://pact2025.github.io/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-04-25",
+              "abstractDeadline": null,
+              "notification": "2025-08-01",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "October 19-22, 2026",
+          "startDate": "2026-10-19",
+          "endDate": "2026-10-22",
+          "approximateDate": false,
+          "location": "Chicago, IL, USA",
+          "url": "https://pact2026.github.io/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-04-30",
+              "abstractDeadline": "2026-04-23",
+              "notification": "2026-08-05",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "October 19-22, 2027",
+          "startDate": "2027-10-19",
+          "endDate": "2027-10-22",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://pact2026.github.io/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-04-30",
+              "abstractDeadline": "2027-04-23",
+              "notification": "2027-08-05",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 4003
+    },
+    {
+      "id": "ispass",
+      "name": "ISPASS",
+      "fullName": "IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS)",
+      "category": "Computer Architecture",
+      "domains": [
+        "Computer Architecture",
+        "Performance"
+      ],
+      "keywords": [
+        "Performance Evaluation",
+        "Computer Architecture",
+        "Workload Characterization",
+        "Simulation"
+      ],
+      "kiise": "우수",
+      "bk21plus": 1,
+      "lists": {
+        "kaist": false,
+        "snu": false,
+        "postech": "우수"
+      },
+      "dblp": "conf/ispass",
+      "url": "https://ispass.org/ispass2026/",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "May 11-13, 2025",
+          "startDate": "2025-05-11",
+          "endDate": "2025-05-13",
+          "approximateDate": false,
+          "location": null,
+          "url": "http://www.ispass.org/ispass2025",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2024-12-16",
+              "abstractDeadline": null,
+              "notification": "2025-03-23",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "April 26-28, 2026",
+          "startDate": "2026-04-26",
+          "endDate": "2026-04-28",
+          "approximateDate": false,
+          "location": "Seoul, South Korea",
+          "url": "https://ispass.org/ispass2026/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-12-15",
+              "abstractDeadline": "2025-12-08",
+              "notification": null,
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "April 26-28, 2027",
+          "startDate": "2027-04-26",
+          "endDate": "2027-04-28",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://ispass.org/ispass2026/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-12-15",
+              "abstractDeadline": "2026-12-08",
+              "notification": null,
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 5035
+    },
+    {
+      "id": "iccd",
+      "name": "ICCD",
+      "fullName": "International Conference on Computer Design (ICCD)",
+      "category": "Computer Architecture",
+      "domains": [
+        "Computer Architecture",
+        "Hardware",
+        "Design Automation"
+      ],
+      "keywords": [
+        "Computer Design",
+        "Computer Architecture",
+        "Electronic Design Automation",
+        "Hardware Design",
+        "Verification and Test"
+      ],
+      "kiise": "우수",
+      "bk21plus": 1,
+      "lists": {
+        "kaist": false,
+        "snu": false,
+        "postech": "우수"
+      },
+      "dblp": "conf/iccd",
+      "url": "https://www.iccd-conf.com/home.html",
+      "editions": [
+        {
+          "year": 2026,
+          "dateText": "November 16-18, 2026",
+          "startDate": "2026-11-16",
+          "endDate": "2026-11-18",
+          "approximateDate": false,
+          "location": "Hong Kong SAR, China",
+          "url": "https://www.iccd-conf.com/home.html",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-06-05",
+              "abstractDeadline": "2026-05-29",
+              "notification": "2026-08-20",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "November 16-18, 2027",
+          "startDate": "2027-11-16",
+          "endDate": "2027-11-18",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://www.iccd-conf.com/home.html",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-06-05",
+              "abstractDeadline": "2027-05-29",
+              "notification": "2027-08-20",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 6034
+    },
+    {
+      "id": "cf",
+      "name": "CF",
+      "fullName": "ACM International Conference on Computing Frontiers (CF)",
+      "category": "Computer Architecture",
+      "domains": [
+        "Computer Architecture",
+        "Embedded Systems"
+      ],
+      "keywords": [
+        "Hardware Accelerators",
+        "Embedded Systems",
+        "Hardware/Software Co-design",
+        "Computer Architecture"
+      ],
+      "kiise": null,
+      "bk21plus": null,
+      "dblp": null,
+      "url": "http://www.computingfrontiers.org/2026",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "May 28-30, 2025",
+          "startDate": "2025-05-28",
+          "endDate": "2025-05-30",
+          "approximateDate": false,
+          "location": null,
+          "url": "http://www.computingfrontiers.org/2025",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-01-20",
+              "abstractDeadline": null,
+              "notification": "2025-03-03",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "May 19-21, 2026",
+          "startDate": "2026-05-19",
+          "endDate": "2026-05-21",
+          "approximateDate": false,
+          "location": "Catania, Sicily, Italy",
+          "url": "http://www.computingfrontiers.org/2026",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-01-19",
+              "abstractDeadline": null,
+              "notification": "2026-03-09",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "May 19-21, 2027",
+          "startDate": "2027-05-19",
+          "endDate": "2027-05-21",
+          "approximateDate": false,
+          "location": null,
+          "url": "http://www.computingfrontiers.org/2026",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-01-19",
+              "abstractDeadline": null,
+              "notification": "2027-03-09",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 7999
+    },
+    {
+      "id": "vlsi-symposium",
+      "name": "VLSI Symposium",
+      "fullName": "IEEE Symposium on VLSI Technology and Circuits",
+      "category": "Computer Architecture",
+      "domains": [
+        "Hardware",
+        "Computer Architecture",
+        "VLSI"
+      ],
+      "keywords": [
+        "VLSI Technology",
+        "Circuit Design",
+        "Semiconductor Devices",
+        "Integrated Circuits",
+        "Hardware Design"
+      ],
+      "kiise": null,
+      "bk21plus": null,
+      "dblp": null,
+      "url": "https://www.vlsisymposium.org/",
+      "editions": [
+        {
+          "year": 2026,
+          "dateText": "June 14-18, 2026",
+          "startDate": "2026-06-14",
+          "endDate": "2026-06-18",
+          "approximateDate": false,
+          "location": "Honolulu, HI, USA",
+          "url": "https://vlsisymposium.org/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-01-26",
+              "abstractDeadline": null,
+              "notification": "2026-04-15",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "June 20-24, 2027",
+          "startDate": "2027-06-20",
+          "endDate": "2027-06-24",
+          "approximateDate": false,
+          "location": "Kyoto, Japan",
+          "url": "https://www.vlsisymposium.org/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-01-25",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 8999
+    },
+    {
+      "id": "cgo",
+      "name": "CGO",
+      "fullName": "IEEE/ACM International Symposium on Code Generation and Optimization (CGO)",
+      "category": "Compilers and Programming Languages",
+      "domains": [
+        "Compilers",
+        "Programming Languages"
+      ],
+      "keywords": [
+        "Compiler Optimization",
+        "Code Generation",
+        "Binary Analysis"
+      ],
+      "kiise": "우수",
+      "bk21plus": 2,
+      "lists": {
+        "kaist": false,
+        "snu": false,
+        "postech": "우수"
+      },
+      "dblp": "conf/cgo",
+      "url": "https://conf.researchr.org/home/cgo-2027",
+      "editions": [
+        {
+          "year": 2026,
+          "dateText": "January 31 - February 4, 2026",
+          "startDate": "2026-01-31",
+          "endDate": "2026-02-04",
+          "approximateDate": false,
+          "location": "Sydney, Australia",
+          "url": "https://cgo.org/cgo2026/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-09-11",
+              "abstractDeadline": null,
+              "notification": "2025-11-03",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": null,
+          "startDate": null,
+          "endDate": null,
+          "approximateDate": false,
+          "location": "Salt Lake City, Utah, USA",
+          "url": "https://conf.researchr.org/home/cgo-2027",
+          "cycles": [
+            {
+              "name": "R1",
+              "deadline": "2026-06-11",
+              "abstractDeadline": null,
+              "notification": "2026-08-03",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "R2",
+              "deadline": "2026-09-10",
+              "abstractDeadline": null,
+              "notification": "2026-11-02",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 1000000
+    },
+    {
+      "id": "cc",
+      "name": "CC",
+      "fullName": "International Conference on Compiler Construction (CC)",
+      "category": "Compilers and Programming Languages",
+      "domains": [
+        "Compilers",
+        "Programming Languages"
+      ],
+      "keywords": [
+        "Compiler Construction",
+        "Language Translation",
+        "Compiler Optimization"
+      ],
+      "kiise": "우수",
+      "bk21plus": 2,
+      "lists": {
+        "kaist": false,
+        "snu": false,
+        "postech": "우수"
+      },
+      "dblp": "conf/cc",
+      "url": "https://conf.researchr.org/home/CC-2026",
+      "editions": [
+        {
+          "year": 2026,
+          "dateText": "January 31 - February 1, 2026",
+          "startDate": "2026-01-31",
+          "endDate": "2026-02-01",
+          "approximateDate": false,
+          "location": "Sydney, Australia",
+          "url": "https://conf.researchr.org/home/CC-2026",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-11-10",
+              "abstractDeadline": null,
+              "notification": "2025-12-10",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "January 31 - February 1, 2027",
+          "startDate": "2027-01-31",
+          "endDate": "2027-02-01",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://conf.researchr.org/home/CC-2026",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-11-10",
+              "abstractDeadline": null,
+              "notification": "2026-12-10",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 1001015
+    },
+    {
+      "id": "pldi",
+      "name": "PLDI",
+      "fullName": "ACM-SIGPLAN Symposium on Programming Language Design and Implementation (PLDI)",
+      "category": "Compilers and Programming Languages",
+      "domains": [
+        "Programming Languages",
+        "Compilers"
+      ],
+      "keywords": [
+        "Compiler Optimization",
+        "Program Analysis",
+        "Compilers",
+        "Language Design"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 4,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/pldi",
+      "url": "https://pldi27.sigplan.org/dates",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "June 16-20, 2025",
+          "startDate": "2025-06-16",
+          "endDate": "2025-06-20",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://pldi25.sigplan.org/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2024-11-14",
+              "abstractDeadline": null,
+              "notification": "2025-03-05",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "June 15-19, 2026",
+          "startDate": "2026-06-15",
+          "endDate": "2026-06-19",
+          "approximateDate": false,
+          "location": "Boulder, CO, USA",
+          "url": "https://pldi26.sigplan.org",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-11-13",
+              "abstractDeadline": null,
+              "notification": "2026-03-05",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "June 5-11, 2027",
+          "startDate": "2027-06-05",
+          "endDate": "2027-06-11",
+          "approximateDate": false,
+          "location": "Atlanta, GA, USA",
+          "url": "https://pldi27.sigplan.org/dates",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-11-12",
+              "abstractDeadline": null,
+              "notification": "2027-03-04",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 1002007
+    },
+    {
+      "id": "popl",
+      "name": "POPL",
+      "fullName": "ACM-SIGACT Symposium on Principles of Programming Languages (POPL)",
+      "category": "Compilers and Programming Languages",
+      "domains": [
+        "Programming Languages",
+        "Algorithms"
+      ],
+      "keywords": [
+        "Program Semantics",
+        "Formal Methods",
+        "Program Analysis",
+        "Language Theory"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 4,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/popl",
+      "url": "https://popl27.sigplan.org",
+      "editions": [
+        {
+          "year": 2026,
+          "dateText": "January 11-17, 2026",
+          "startDate": "2026-01-11",
+          "endDate": "2026-01-17",
+          "approximateDate": false,
+          "location": "Chicago, IL, USA",
+          "url": "https://popl26.sigplan.org/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-07-10",
+              "abstractDeadline": null,
+              "notification": "2025-10-02",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "January 10–16, 2027",
+          "startDate": "2027-01-10",
+          "endDate": "2027-01-16",
+          "approximateDate": false,
+          "location": "Mexico City, Mexico",
+          "url": "https://popl27.sigplan.org",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-07-09",
+              "abstractDeadline": null,
+              "notification": "2026-11-09",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 1003032
+    },
+    {
+      "id": "oopsla",
+      "name": "OOPSLA",
+      "fullName": "ACM SIGPLAN International Conference on Object-Oriented Programming Systems, Languages, and Applications (OOPSLA)",
+      "category": "Compilers and Programming Languages",
+      "domains": [
+        "Programming Languages",
+        "Software Engineering"
+      ],
+      "keywords": [
+        "Programming Models",
+        "Software Engineering",
+        "Language Design"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 4,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/oopsla",
+      "url": "https://conf.researchr.org/track/splash-2027/splashoopsla2027",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "October 12-18, 2025",
+          "startDate": "2025-10-12",
+          "endDate": "2025-10-18",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://2025.splashcon.org/track/OOPSLA",
+          "cycles": [
+            {
+              "name": "Cycle 1",
+              "deadline": "2024-10-15",
+              "abstractDeadline": null,
+              "notification": "2024-12-18",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "Cycle 2",
+              "deadline": "2025-03-25",
+              "abstractDeadline": null,
+              "notification": "2025-06-12",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "October 3-9, 2026",
+          "startDate": "2026-10-03",
+          "endDate": "2026-10-09",
+          "approximateDate": false,
+          "location": "Oakland, CA, USA",
+          "url": "https://conf.researchr.org/track/splash-2026/oopsla-2026",
+          "cycles": [
+            {
+              "name": "Cycle-1",
+              "deadline": "2025-10-10",
+              "abstractDeadline": null,
+              "notification": "2025-12-17",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "Cycle-2",
+              "deadline": "2026-03-17",
+              "abstractDeadline": null,
+              "notification": "2026-06-10",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "October 10-15, 2027",
+          "startDate": "2027-10-10",
+          "endDate": "2027-10-15",
+          "approximateDate": false,
+          "location": "Prague, Czechia",
+          "url": "https://conf.researchr.org/track/splash-2027/splashoopsla2027",
+          "cycles": [
+            {
+              "name": "Cycle-1",
+              "deadline": "2026-10-14",
+              "abstractDeadline": null,
+              "notification": "2026-12-18",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "Cycle-2",
+              "deadline": "2027-04-07",
+              "abstractDeadline": null,
+              "notification": "2027-07-02",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 1004031
+    },
+    {
+      "id": "ppopp",
+      "name": "PPoPP",
+      "fullName": "ACM SIGPLAN Symposium on Principles & Practice of Parallel Programming (PPoPP)",
+      "category": "Compilers and Programming Languages",
+      "domains": [
+        "Parallel Computing",
+        "Programming Languages"
+      ],
+      "keywords": [
+        "Parallel Programming",
+        "Concurrency",
+        "Runtime Systems"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 3,
+      "lists": {
+        "kaist": false,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/ppopp",
+      "url": "https://ppopp27.sigplan.org",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "March 1-5, 2025",
+          "startDate": "2025-03-01",
+          "endDate": "2025-03-05",
+          "approximateDate": false,
+          "location": null,
+          "url": "http://conf.researchr.org/home/ppopp-2025",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2024-08-16",
+              "abstractDeadline": null,
+              "notification": "2024-11-11",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "January 31 - February 4, 2026",
+          "startDate": "2026-01-31",
+          "endDate": "2026-02-04",
+          "approximateDate": false,
+          "location": "Sydney, Australia",
+          "url": "https://ppopp26.sigplan.org",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-09-01",
+              "abstractDeadline": null,
+              "notification": "2025-11-10",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "January 30 - February 3, 2027",
+          "startDate": "2027-01-30",
+          "endDate": "2027-02-03",
+          "approximateDate": false,
+          "location": "Salt Lake City, Utah, USA",
+          "url": "https://ppopp27.sigplan.org",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-08-03",
+              "abstractDeadline": null,
+              "notification": "2026-10-26",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 1005005
+    },
+    {
+      "id": "lctes",
+      "name": "LCTES",
+      "fullName": "ACM SIGPLAN/SIGBED International Conference on Languages, Compilers, and Tools for Embedded Systems (LCTES)",
+      "category": "Compilers and Programming Languages",
+      "domains": [
+        "Embedded Systems",
+        "Compilers"
+      ],
+      "keywords": [
+        "Embedded Systems",
+        "Compiler Optimization",
+        "Resource Management",
+        "Real-Time Systems"
+      ],
+      "kiise": "우수",
+      "bk21plus": 2,
+      "lists": {
+        "kaist": false,
+        "snu": false,
+        "postech": "우수"
+      },
+      "dblp": "conf/lctrts",
+      "url": "https://pldi26.sigplan.org/home/LCTES-2026",
+      "editions": [
+        {
+          "year": 2026,
+          "dateText": "June 15-16, 2026",
+          "startDate": "2026-06-15",
+          "endDate": "2026-06-16",
+          "approximateDate": false,
+          "location": "Boulder, CO, USA",
+          "url": "https://pldi26.sigplan.org/home/LCTES-2026",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-03-20",
+              "abstractDeadline": "2026-03-13",
+              "notification": "2026-05-01",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "June 15-16, 2027",
+          "startDate": "2027-06-15",
+          "endDate": "2027-06-16",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://pldi26.sigplan.org/home/LCTES-2026",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-03-20",
+              "abstractDeadline": "2027-03-13",
+              "notification": "2027-05-01",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 1006016
+    },
+    {
+      "id": "ismm",
+      "name": "ISMM",
+      "fullName": "ACM SIGPLAN International Symposium on Memory Management (ISMM)",
+      "category": "Compilers and Programming Languages",
+      "domains": [
+        "Programming Languages",
+        "Memory Management"
+      ],
+      "keywords": [
+        "Memory Management",
+        "Runtime Systems",
+        "Compilers"
+      ],
+      "kiise": null,
+      "bk21plus": null,
+      "dblp": null,
+      "url": "https://conf.researchr.org/home/ismm-2026",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "June 17, 2025",
+          "startDate": "2025-06-17",
+          "endDate": "2025-06-17",
+          "approximateDate": false,
+          "location": "Seoul, South Korea",
+          "url": "https://conf.researchr.org/home/ismm-2025",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-03-11",
+              "abstractDeadline": null,
+              "notification": "2025-05-06",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "June 16, 2026",
+          "startDate": "2026-06-16",
+          "endDate": "2026-06-16",
+          "approximateDate": false,
+          "location": "Boulder, CO, USA",
+          "url": "https://conf.researchr.org/home/ismm-2026",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-03-27",
+              "abstractDeadline": null,
+              "notification": "2026-05-04",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "June 16, 2027",
+          "startDate": "2027-06-16",
+          "endDate": "2027-06-16",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://conf.researchr.org/home/ismm-2026",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-03-27",
+              "abstractDeadline": null,
+              "notification": "2027-05-04",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 1007999
+    },
+    {
+      "id": "osdi",
+      "name": "OSDI",
+      "fullName": "USENIX Symposium on Operating Systems Design and Implementation (OSDI)",
+      "category": "Operating and Distributed Systems",
+      "domains": [
+        "Operating Systems",
+        "Distributed Systems",
+        "Storage Systems"
+      ],
+      "keywords": [
+        "Operating Systems",
+        "Distributed Systems",
+        "Storage Systems",
+        "Cloud Computing",
+        "Reliability"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 4,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/osdi",
+      "url": "https://www.usenix.org/conference/osdi27/call-for-papers",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "July 7-9, 2025",
+          "startDate": "2025-07-07",
+          "endDate": "2025-07-09",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://www.usenix.org/conference/osdi25",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2024-12-10",
+              "abstractDeadline": null,
+              "notification": "2025-03-25",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "July 13-15, 2026",
+          "startDate": "2026-07-13",
+          "endDate": "2026-07-15",
+          "approximateDate": false,
+          "location": "Seattle, WA, USA",
+          "url": "https://www.usenix.org/conference/osdi26",
+          "cycles": [
+            {
+              "name": "annual",
+              "deadline": "2025-12-11",
+              "abstractDeadline": null,
+              "notification": "2026-03-26",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "July 7-9, 2027",
+          "startDate": "2027-07-07",
+          "endDate": "2027-07-09",
+          "approximateDate": false,
+          "location": "Baltimore, MD, USA",
+          "url": "https://www.usenix.org/conference/osdi27/call-for-papers",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-12-08",
+              "abstractDeadline": "2026-12-01",
+              "notification": "2027-03-16",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 2000011
+    },
+    {
+      "id": "sosp",
+      "name": "SOSP",
+      "fullName": "Symposium on Operating Systems Principles (SOSP)",
+      "category": "Operating and Distributed Systems",
+      "domains": [
+        "Operating Systems",
+        "Distributed Systems",
+        "Storage Systems"
+      ],
+      "keywords": [
+        "Operating Systems",
+        "Distributed Systems",
+        "Storage Systems",
+        "Cloud Computing"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 4,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/sosp",
+      "url": "https://sigops.org/s/conferences/sosp/2027",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "October 13-16, 2025",
+          "startDate": "2025-10-13",
+          "endDate": "2025-10-16",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://sigops.org/s/conferences/sosp/2025",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-04-17",
+              "abstractDeadline": null,
+              "notification": "2025-07-15",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "September 29 - October 2, 2026",
+          "startDate": "2026-09-29",
+          "endDate": "2026-10-02",
+          "approximateDate": false,
+          "location": "Prague, Czech Republic",
+          "url": "https://sigops.org/s/conferences/sosp/2026",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-04-01",
+              "abstractDeadline": "2026-03-26",
+              "notification": "2026-07-03",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "September 28 - October 1, 2027",
+          "startDate": "2027-09-28",
+          "endDate": "2027-10-01",
+          "approximateDate": false,
+          "location": "TBD",
+          "url": "https://sigops.org/s/conferences/sosp/2027",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-03-31",
+              "abstractDeadline": "2027-03-25",
+              "notification": "2027-07-02",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 2001012
+    },
+    {
+      "id": "eurosys",
+      "name": "EuroSys",
+      "fullName": "European Conference on Computer Systems (EuroSys)",
+      "category": "Operating and Distributed Systems",
+      "domains": [
+        "Operating Systems",
+        "Distributed Systems"
+      ],
+      "keywords": [
+        "Distributed Systems",
+        "Operating Systems",
+        "Cloud Computing",
+        "Virtualization"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 2,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/eurosys",
+      "url": "https://2027.eurosys.org/cfp.html",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "March 30-3, 2025",
+          "startDate": "2025-03-30",
+          "endDate": "2025-03-03",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://2025.eurosys.org/",
+          "cycles": [
+            {
+              "name": "Spring",
+              "deadline": "2024-05-21",
+              "abstractDeadline": null,
+              "notification": "2024-08-21",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "Fall",
+              "deadline": "2024-10-22",
+              "abstractDeadline": null,
+              "notification": "2025-01-25",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "April 27-30, 2026",
+          "startDate": "2026-04-27",
+          "endDate": "2026-04-30",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://2026.eurosys.org/",
+          "cycles": [
+            {
+              "name": "Spring",
+              "deadline": "2025-05-15",
+              "abstractDeadline": null,
+              "notification": "2025-08-22",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "Fall",
+              "deadline": "2025-09-25",
+              "abstractDeadline": null,
+              "notification": "2026-01-30",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "April 19-23, 2027",
+          "startDate": "2027-04-19",
+          "endDate": "2027-04-23",
+          "approximateDate": false,
+          "location": "Rabat, Morocco",
+          "url": "https://2027.eurosys.org/cfp.html",
+          "cycles": [
+            {
+              "name": "Spring",
+              "deadline": "2026-05-14",
+              "abstractDeadline": "2026-05-07",
+              "notification": "2026-08-21",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "Fall",
+              "deadline": "2026-09-24",
+              "abstractDeadline": "2026-09-17",
+              "notification": "2027-01-29",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 2002006
+    },
+    {
+      "id": "usenix-atc",
+      "name": "USENIX ATC",
+      "fullName": "USENIX Annual Technical Conference (USENIX ATC)",
+      "category": "Operating and Distributed Systems",
+      "domains": [
+        "Operating Systems",
+        "Storage Systems",
+        "Cloud Computing"
+      ],
+      "keywords": [
+        "Operating Systems",
+        "Cloud Computing",
+        "Storage Systems",
+        "File Systems",
+        "Virtualization"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 3,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/usenix",
+      "url": "https://www.usenix.org/conference/atc25",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "July 7-9, 2025",
+          "startDate": "2025-07-07",
+          "endDate": "2025-07-09",
+          "approximateDate": false,
+          "location": "Boston, MA, USA",
+          "url": "https://www.usenix.org/conference/atc25",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-01-14",
+              "abstractDeadline": null,
+              "notification": "2025-04-25",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "July 7-9, 2026",
+          "startDate": "2026-07-07",
+          "endDate": "2026-07-09",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://www.usenix.org/conference/atc25",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-01-14",
+              "abstractDeadline": null,
+              "notification": "2026-04-25",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "July 7-9, 2027",
+          "startDate": "2027-07-07",
+          "endDate": "2027-07-09",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://www.usenix.org/conference/atc25",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-01-14",
+              "abstractDeadline": null,
+              "notification": "2027-04-25",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 2003999
+    },
+    {
+      "id": "acm-atc",
+      "name": "ACM ATC",
+      "fullName": "ACM Annual Technical Conference (ATC), successor of USENIX ATC",
+      "category": "Operating and Distributed Systems",
+      "domains": [],
+      "keywords": [],
+      "kiise": "최우수",
+      "bk21plus": 3,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/usenix",
+      "url": "https://sigops.org/s/conferences/atc/2026/",
+      "editions": [
+        {
+          "year": 2026,
+          "dateText": "November 16-18, 2026",
+          "startDate": "2026-11-16",
+          "endDate": "2026-11-18",
+          "approximateDate": false,
+          "location": "Hong Kong",
+          "url": "https://sigops.org/s/conferences/atc/2026/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-06-10",
+              "abstractDeadline": null,
+              "notification": "2026-09-18",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "November 16-18, 2027",
+          "startDate": "2027-11-16",
+          "endDate": "2027-11-18",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://sigops.org/s/conferences/atc/2026/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-06-10",
+              "abstractDeadline": null,
+              "notification": "2027-09-18",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 2004999
+    },
+    {
+      "id": "hotos",
+      "name": "HotOS",
+      "fullName": "Workshop on Hot Topics in Operating Systems (HotOS)",
+      "category": "Operating and Distributed Systems",
+      "domains": [
+        "Operating Systems"
+      ],
+      "keywords": [
+        "Operating Systems",
+        "Experimental Systems"
+      ],
+      "kiise": null,
+      "bk21plus": null,
+      "dblp": null,
+      "url": "https://sigops.org/s/conferences/hotos/2027/",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "May 14-16, 2025",
+          "startDate": "2025-05-14",
+          "endDate": "2025-05-16",
+          "approximateDate": false,
+          "location": "Banff, Alberta",
+          "url": "https://sigops.org/s/conferences/hotos/2025",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-01-15",
+              "abstractDeadline": null,
+              "notification": "2025-04-01",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "May 24-26, 2027",
+          "startDate": "2027-05-24",
+          "endDate": "2027-05-26",
+          "approximateDate": false,
+          "location": "Burghausen, Bavaria, Germany",
+          "url": "https://sigops.org/s/conferences/hotos/2027/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-01-15",
+              "abstractDeadline": null,
+              "notification": "2027-04-01",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 2005999
+    },
+    {
+      "id": "fast",
+      "name": "FAST",
+      "fullName": "USENIX Conference on File and Storage Technologies (FAST)",
+      "category": "Operating and Distributed Systems",
+      "domains": [
+        "Storage Systems",
+        "Operating Systems"
+      ],
+      "keywords": [
+        "Storage Systems",
+        "File Systems",
+        "Non-volatile Memory"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 3,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/fast",
+      "url": "https://www.usenix.org/conference/fast27",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "February 25-27, 2025",
+          "startDate": "2025-02-25",
+          "endDate": "2025-02-27",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://www.usenix.org/conference/fast25",
+          "cycles": [
+            {
+              "name": "Fall",
+              "deadline": "2024-09-17",
+              "abstractDeadline": null,
+              "notification": "2024-12-06",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "February 24-26, 2026",
+          "startDate": "2026-02-24",
+          "endDate": "2026-02-26",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://www.usenix.org/conference/fast26",
+          "cycles": [
+            {
+              "name": "Spring",
+              "deadline": "2025-03-18",
+              "abstractDeadline": null,
+              "notification": "2025-06-05",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "Fall",
+              "deadline": "2025-09-16",
+              "abstractDeadline": null,
+              "notification": "2025-12-08",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "February 23-25, 2027",
+          "startDate": "2027-02-23",
+          "endDate": "2027-02-25",
+          "approximateDate": false,
+          "location": "Renton, WA, USA",
+          "url": "https://www.usenix.org/conference/fast27",
+          "cycles": [
+            {
+              "name": "Spring",
+              "deadline": "2026-03-17",
+              "abstractDeadline": null,
+              "notification": "2026-06-04",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "Fall",
+              "deadline": "2026-09-15",
+              "abstractDeadline": null,
+              "notification": "2026-12-08",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 2006036
+    },
+    {
+      "id": "hotstorage",
+      "name": "HotStorage",
+      "fullName": "ACM Workshop on Hot Topics in Storage and File Systems (HotStorage)",
+      "category": "Operating and Distributed Systems",
+      "domains": [
+        "Storage Systems"
+      ],
+      "keywords": [
+        "Storage Systems",
+        "Non-volatile Memory",
+        "File Systems"
+      ],
+      "kiise": null,
+      "bk21plus": null,
+      "dblp": null,
+      "url": "https://www.hotstorage.org/2026/",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "July 10-11, 2025",
+          "startDate": "2025-07-10",
+          "endDate": "2025-07-11",
+          "approximateDate": false,
+          "location": "Boston, MA, USA",
+          "url": "https://www.hotstorage.org/2025",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-04-04",
+              "abstractDeadline": null,
+              "notification": "2025-05-16",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "September 28-29, 2026",
+          "startDate": "2026-09-28",
+          "endDate": "2026-09-29",
+          "approximateDate": false,
+          "location": "Prague, Czechia",
+          "url": "https://www.hotstorage.org/2026/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-06-12",
+              "abstractDeadline": null,
+              "notification": "2026-07-24",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "September 28-29, 2027",
+          "startDate": "2027-09-28",
+          "endDate": "2027-09-29",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://www.hotstorage.org/2026/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-06-12",
+              "abstractDeadline": null,
+              "notification": "2027-07-24",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 2007999
+    },
+    {
+      "id": "socc",
+      "name": "SoCC",
+      "fullName": "ACM Symposium on Cloud Computing (SoCC)",
+      "category": "Operating and Distributed Systems",
+      "domains": [
+        "Cloud Computing",
+        "Distributed Systems"
+      ],
+      "keywords": [
+        "Cloud Computing",
+        "Distributed Databases",
+        "Resource Management"
+      ],
+      "kiise": "우수",
+      "bk21plus": 1,
+      "lists": {
+        "kaist": false,
+        "snu": false,
+        "postech": "우수"
+      },
+      "dblp": "conf/cloud",
+      "url": "https://acmsocc.org/2026/index.html",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "November 19-21, 2025",
+          "startDate": "2025-11-19",
+          "endDate": "2025-11-21",
+          "approximateDate": false,
+          "location": "Virtual event",
+          "url": "http://acmsocc.org/2025/papers.html",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-07-14",
+              "abstractDeadline": null,
+              "notification": "2025-09-26",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "November 18-20, 2026",
+          "startDate": "2026-11-18",
+          "endDate": "2026-11-20",
+          "approximateDate": false,
+          "location": "Singapore",
+          "url": "https://acmsocc.org/2026/index.html",
+          "cycles": [
+            {
+              "name": "Round-1",
+              "deadline": "2026-02-14",
+              "abstractDeadline": null,
+              "notification": "2026-04-29",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "Round-2",
+              "deadline": "2026-07-14",
+              "abstractDeadline": "2026-07-07",
+              "notification": "2026-09-26",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "November 18-20, 2027",
+          "startDate": "2027-11-18",
+          "endDate": "2027-11-20",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://acmsocc.org/2026/index.html",
+          "cycles": [
+            {
+              "name": "Round-1",
+              "deadline": "2027-02-14",
+              "abstractDeadline": null,
+              "notification": "2027-04-29",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "Round-2",
+              "deadline": "2027-07-14",
+              "abstractDeadline": "2027-07-07",
+              "notification": "2027-09-26",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 2008999
+    },
+    {
+      "id": "middleware",
+      "name": "Middleware",
+      "fullName": "International Middleware Conference (Middleware)",
+      "category": "Operating and Distributed Systems",
+      "domains": [
+        "Distributed Systems"
+      ],
+      "keywords": [
+        "Distributed Systems",
+        "Middleware",
+        "Edge Computing"
+      ],
+      "kiise": "우수",
+      "bk21plus": 2,
+      "lists": {
+        "kaist": false,
+        "snu": false,
+        "postech": "우수"
+      },
+      "dblp": "conf/middleware",
+      "url": "https://middleware-conf.github.io/2026",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "December 15-19, 2025",
+          "startDate": "2025-12-15",
+          "endDate": "2025-12-19",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://middleware-conf.github.io/2025",
+          "cycles": [
+            {
+              "name": "Winter",
+              "deadline": "2024-12-13",
+              "abstractDeadline": null,
+              "notification": "2025-03-07",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "Summer",
+              "deadline": "2025-05-30",
+              "abstractDeadline": null,
+              "notification": "2025-09-05",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "December 14-18, 2026",
+          "startDate": "2026-12-14",
+          "endDate": "2026-12-18",
+          "approximateDate": false,
+          "location": "Tarragona, Spain",
+          "url": "https://middleware-conf.github.io/2026",
+          "cycles": [
+            {
+              "name": "Winter",
+              "deadline": "2025-12-11",
+              "abstractDeadline": null,
+              "notification": "2026-03-06",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "Summer",
+              "deadline": "2026-06-05",
+              "abstractDeadline": "2026-05-29",
+              "notification": "2026-08-28",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "December 14-18, 2027",
+          "startDate": "2027-12-14",
+          "endDate": "2027-12-18",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://middleware-conf.github.io/2026",
+          "cycles": [
+            {
+              "name": "Winter",
+              "deadline": "2026-12-11",
+              "abstractDeadline": null,
+              "notification": "2027-03-06",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "Summer",
+              "deadline": "2027-06-05",
+              "abstractDeadline": "2027-05-29",
+              "notification": "2027-08-28",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 2009038
+    },
+    {
+      "id": "icdcs",
+      "name": "ICDCS",
+      "fullName": "IEEE International Conference on Distributed Computing Systems (ICDCS)",
+      "category": "Operating and Distributed Systems",
+      "domains": [
+        "Distributed Systems",
+        "Networking"
+      ],
+      "keywords": [
+        "Distributed Systems",
+        "Cloud Computing",
+        "Distributed Algorithms"
+      ],
+      "kiise": "우수",
+      "bk21plus": 3,
+      "lists": {
+        "kaist": false,
+        "snu": true,
+        "postech": "우수"
+      },
+      "dblp": "conf/icdcs",
+      "url": "https://icdcs2027.icdcs.org/",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "July 20-23, 2025",
+          "startDate": "2025-07-20",
+          "endDate": "2025-07-23",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://icdcs2025.icdcs.org/cfp/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2024-12-11",
+              "abstractDeadline": null,
+              "notification": "2025-04-02",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "June 22-25, 2026",
+          "startDate": "2026-07-01",
+          "endDate": "2026-06-25",
+          "approximateDate": false,
+          "location": "South Korea",
+          "url": "https://icdcs2026.icdcs.org",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-12-12",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "July 5-8, 2027",
+          "startDate": "2027-07-05",
+          "endDate": "2027-07-08",
+          "approximateDate": false,
+          "location": "Melbourne, Australia",
+          "url": "https://icdcs2027.icdcs.org/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-12-12",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 2010040
+    },
+    {
+      "id": "dsn",
+      "name": "DSN",
+      "fullName": "Dependable Systems and Networks (DSN)",
+      "category": "Operating and Distributed Systems",
+      "domains": [
+        "Distributed Systems",
+        "Computer Security"
+      ],
+      "keywords": [
+        "Fault Tolerance",
+        "Dependable Systems",
+        "System Security"
+      ],
+      "kiise": "우수",
+      "bk21plus": 2,
+      "lists": {
+        "kaist": false,
+        "snu": false,
+        "postech": "우수"
+      },
+      "dblp": "conf/dsn",
+      "url": "https://dsn2027-berlin.github.io/call-for-contributions/",
+      "editions": [
+        {
+          "year": 2026,
+          "dateText": "June 22-25, 2026",
+          "startDate": "2026-06-22",
+          "endDate": "2026-06-25",
+          "approximateDate": false,
+          "location": "Budapest, Hungary",
+          "url": "https://dsn2026.github.io/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-12-04",
+              "abstractDeadline": null,
+              "notification": "2026-03-19",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "June 22-25, 2027",
+          "startDate": "2027-06-22",
+          "endDate": "2027-06-25",
+          "approximateDate": false,
+          "location": "Berlin, Germany",
+          "url": "https://dsn2027-berlin.github.io/call-for-contributions/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-12-02",
+              "abstractDeadline": "2026-11-25",
+              "notification": "2027-03-18",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 2011028
+    },
+    {
+      "id": "sigmetrics",
+      "name": "SIGMETRICS",
+      "fullName": "International Conference on Measurement and Modeling of Computer Systems (SIGMETRICS)",
+      "category": "Operating and Distributed Systems",
+      "domains": [
+        "Performance",
+        "Operating Systems"
+      ],
+      "keywords": [
+        "Performance Evaluation",
+        "Workload Characterization",
+        "Analytical Modeling"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 3,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/sigmetrics",
+      "url": "https://www.sigmetrics.org/sigmetrics2027/",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "June 9-13, 2025",
+          "startDate": "2025-06-09",
+          "endDate": "2025-06-13",
+          "approximateDate": false,
+          "location": "Stony Brook University, New York, USA",
+          "url": "http://www.sigmetrics.org/sigmetrics2025",
+          "cycles": [
+            {
+              "name": "Summer",
+              "deadline": "2024-08-07",
+              "abstractDeadline": null,
+              "notification": "2024-09-24",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "Fall",
+              "deadline": "2024-10-09",
+              "abstractDeadline": null,
+              "notification": "2024-12-10",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "Winter",
+              "deadline": "2025-01-22",
+              "abstractDeadline": "2025-01-15",
+              "notification": "2025-03-18",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "June 8-12, 2026",
+          "startDate": "2026-06-08",
+          "endDate": "2026-06-12",
+          "approximateDate": false,
+          "location": "Ann Arbor, MI, USA",
+          "url": "http://www.sigmetrics.org/sigmetrics2026",
+          "cycles": [
+            {
+              "name": "Summer",
+              "deadline": "2025-07-29",
+              "abstractDeadline": "2025-07-22",
+              "notification": "2025-09-26",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "Fall",
+              "deadline": "2025-10-14",
+              "abstractDeadline": "2025-10-07",
+              "notification": "2025-12-12",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "Winter",
+              "deadline": "2026-01-13",
+              "abstractDeadline": "2026-01-06",
+              "notification": "2026-03-13",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "June 7-11, 2027",
+          "startDate": "2027-06-07",
+          "endDate": "2027-06-11",
+          "approximateDate": false,
+          "location": "Atlanta, GA, USA",
+          "url": "https://www.sigmetrics.org/sigmetrics2027/",
+          "cycles": [
+            {
+              "name": "Summer",
+              "deadline": "2026-07-10",
+              "abstractDeadline": "2026-07-03",
+              "notification": "2026-09-09",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "Fall",
+              "deadline": "2026-10-09",
+              "abstractDeadline": "2026-10-02",
+              "notification": "2026-12-09",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "Winter",
+              "deadline": "2027-01-11",
+              "abstractDeadline": "2027-01-04",
+              "notification": "2027-03-10",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 2012037
+    },
+    {
+      "id": "sc",
+      "name": "SC",
+      "fullName": "International Conference for High Performance Computing, Networking, Storage and Analysis (SC)",
+      "category": "Parallel and High-Performance Computing",
+      "domains": [
+        "High-Performance Computing",
+        "Networking",
+        "Storage Systems"
+      ],
+      "keywords": [
+        "High-Performance Computing",
+        "Supercomputing",
+        "Data Analysis"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 3,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/sc",
+      "url": "https://sc26.supercomputing.org/all-dates-deadlines",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "November 16-21, 2025",
+          "startDate": "2025-11-16",
+          "endDate": "2025-11-21",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://sc25.supercomputing.org/all-dates-deadlines",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-04-14",
+              "abstractDeadline": null,
+              "notification": "2025-06-27",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "November 15-20, 2026",
+          "startDate": "2026-11-15",
+          "endDate": "2026-11-20",
+          "approximateDate": false,
+          "location": "Chicago, IL, USA",
+          "url": "https://sc26.supercomputing.org/all-dates-deadlines",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-04-08",
+              "abstractDeadline": "2026-04-01",
+              "notification": "2026-07-01",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "November 15-20, 2027",
+          "startDate": "2027-11-15",
+          "endDate": "2027-11-20",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://sc26.supercomputing.org/all-dates-deadlines",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-04-08",
+              "abstractDeadline": "2027-04-01",
+              "notification": "2027-07-01",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 3000018
+    },
+    {
+      "id": "icpp",
+      "name": "ICPP",
+      "fullName": "International Conference on Parallel Processing (ICPP)",
+      "category": "Parallel and High-Performance Computing",
+      "domains": [
+        "Parallel Computing",
+        "High-Performance Computing"
+      ],
+      "keywords": [
+        "Parallel Computing",
+        "Parallel Algorithms",
+        "Software Systems"
+      ],
+      "kiise": "우수",
+      "bk21plus": 2,
+      "lists": {
+        "kaist": false,
+        "snu": false,
+        "postech": "우수"
+      },
+      "dblp": "conf/icpp",
+      "url": "https://icpp2026.github.io",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "September 8-11, 2025",
+          "startDate": "2025-09-08",
+          "endDate": "2025-09-11",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://icpp2025.sdsc.edu/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-05-01",
+              "abstractDeadline": null,
+              "notification": "2025-06-11",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "September 28 - October 1, 2026",
+          "startDate": "2026-09-28",
+          "endDate": "2026-10-01",
+          "approximateDate": false,
+          "location": "Singapore",
+          "url": "https://icpp2026.github.io",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-05-01",
+              "abstractDeadline": "2026-04-24",
+              "notification": "2026-06-30",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "September 28 - October 1, 2027",
+          "startDate": "2027-09-28",
+          "endDate": "2027-10-01",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://icpp2026.github.io",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-05-01",
+              "abstractDeadline": "2027-04-24",
+              "notification": "2027-06-30",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 3001009
+    },
+    {
+      "id": "ipdps",
+      "name": "IPDPS",
+      "fullName": "IEEE International Parallel and Distributed Processing Symposium (IPDPS)",
+      "category": "Parallel and High-Performance Computing",
+      "domains": [
+        "Parallel Computing",
+        "High-Performance Computing"
+      ],
+      "keywords": [
+        "Parallel Computing",
+        "Parallel Algorithms",
+        "High-Performance Computing"
+      ],
+      "kiise": "우수",
+      "bk21plus": 2,
+      "lists": {
+        "kaist": false,
+        "snu": false,
+        "postech": "우수"
+      },
+      "dblp": "conf/ipps",
+      "url": "https://www.ipdps.org/ipdps2027/2027-call-for-papers.html",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "June 3-7, 2025",
+          "startDate": "2025-06-03",
+          "endDate": "2025-06-07",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://www.ipdps.org/ipdps2025/2025-call-for-papers.html",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2024-10-10",
+              "abstractDeadline": null,
+              "notification": "2024-12-19",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "May 25-29, 2026",
+          "startDate": "2026-05-25",
+          "endDate": "2026-05-29",
+          "approximateDate": false,
+          "location": "New Orleans, LA, USA",
+          "url": "https://www.ipdps.org/ipdps2026/2026-call-for-papers.html",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-10-09",
+              "abstractDeadline": null,
+              "notification": "2025-12-18",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "June 1-5, 2027",
+          "startDate": "2027-06-01",
+          "endDate": "2027-06-05",
+          "approximateDate": false,
+          "location": "Seattle, WA, USA",
+          "url": "https://www.ipdps.org/ipdps2027/2027-call-for-papers.html",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-10-08",
+              "abstractDeadline": "2026-10-01",
+              "notification": "2026-12-18",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 3002043
+    },
+    {
+      "id": "hpdc",
+      "name": "HPDC",
+      "fullName": "International Symposium on High-Performance Parallel Distributed Computing (HPDC)",
+      "category": "Parallel and High-Performance Computing",
+      "domains": [
+        "Distributed Systems",
+        "High-Performance Computing"
+      ],
+      "keywords": [
+        "Distributed Systems",
+        "High-Performance Computing",
+        "Cloud Computing",
+        "Resource Management"
+      ],
+      "kiise": "우수",
+      "bk21plus": 2,
+      "lists": {
+        "kaist": false,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/hpdc",
+      "url": "https://hpdc.sci.utah.edu/2026",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "July 20-23, 2025",
+          "startDate": "2025-07-20",
+          "endDate": "2025-07-23",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://hpdc.sci.utah.edu/2025",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-02-06",
+              "abstractDeadline": null,
+              "notification": "2025-04-04",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "July 13-16, 2026",
+          "startDate": "2026-07-13",
+          "endDate": "2026-07-16",
+          "approximateDate": false,
+          "location": "Cleveland, OH, USA",
+          "url": "https://hpdc.sci.utah.edu/2026",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-02-05",
+              "abstractDeadline": "2026-01-29",
+              "notification": "2026-03-31",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "July 13-16, 2027",
+          "startDate": "2027-07-13",
+          "endDate": "2027-07-16",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://hpdc.sci.utah.edu/2026",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-02-05",
+              "abstractDeadline": "2027-01-29",
+              "notification": "2027-03-31",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 3003042
+    },
+    {
+      "id": "ics",
+      "name": "ICS",
+      "fullName": "ACM International Conference on Supercomputing (ICS)",
+      "category": "Parallel and High-Performance Computing",
+      "domains": [
+        "High-Performance Computing",
+        "Computer Architecture"
+      ],
+      "keywords": [
+        "High-Performance Computing",
+        "Computer Architecture",
+        "Parallel Computing",
+        "Supercomputing"
+      ],
+      "kiise": "우수",
+      "bk21plus": 2,
+      "lists": {
+        "kaist": false,
+        "snu": true,
+        "postech": "우수"
+      },
+      "dblp": "conf/ics",
+      "url": "https://www.ics-conference.org/",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "June 9-11, 2025",
+          "startDate": "2025-06-09",
+          "endDate": "2025-06-11",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://hpcrl.github.io/ICS2025-webpage/",
+          "cycles": [
+            {
+              "name": "Cycle 2",
+              "deadline": "2025-01-16",
+              "abstractDeadline": null,
+              "notification": "2025-03-14",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "July 6-9, 2026",
+          "startDate": "2026-07-06",
+          "endDate": "2026-07-09",
+          "approximateDate": false,
+          "location": "Belfast, UK",
+          "url": "https://dipsa-qub.github.io/ICS2026-webpage",
+          "cycles": [
+            {
+              "name": "Cycle-1",
+              "deadline": "2025-12-16",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "Cycle-2",
+              "deadline": "2026-02-09",
+              "abstractDeadline": "2026-02-02",
+              "notification": "2026-04-06",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "July 6-9, 2027",
+          "startDate": "2027-07-06",
+          "endDate": "2027-07-09",
+          "approximateDate": false,
+          "location": "Atlanta, GA, USA",
+          "url": "https://www.ics-conference.org/",
+          "cycles": [
+            {
+              "name": "Cycle-1",
+              "deadline": "2026-12-16",
+              "abstractDeadline": null,
+              "notification": "2027-03-01",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "Cycle-2",
+              "deadline": "2027-02-09",
+              "abstractDeadline": "2027-02-02",
+              "notification": "2027-04-06",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 3004029
+    },
+    {
+      "id": "spaa",
+      "name": "SPAA",
+      "fullName": "ACM Symposium on Parallelism in Algorithms and Architectures (SPAA)",
+      "category": "Parallel and High-Performance Computing",
+      "domains": [
+        "Parallel Computing",
+        "Algorithms"
+      ],
+      "keywords": [
+        "Parallel Algorithms",
+        "Distributed Algorithms",
+        "Complexity Theory"
+      ],
+      "kiise": "우수",
+      "bk21plus": 3,
+      "lists": {
+        "kaist": false,
+        "snu": true,
+        "postech": "우수"
+      },
+      "dblp": "conf/spaa",
+      "url": "https://spaa.acm.org/spaa-2027-call-for-papers/",
+      "editions": [
+        {
+          "year": 2026,
+          "dateText": "July 6-10, 2026",
+          "startDate": "2026-07-06",
+          "endDate": "2026-07-10",
+          "approximateDate": false,
+          "location": "Raleigh, NC, USA",
+          "url": "https://spaa.acm.org/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-02-27",
+              "abstractDeadline": "2026-02-20",
+              "notification": "2026-05-15",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "June 5-11, 2027",
+          "startDate": "2027-06-05",
+          "endDate": "2027-06-11",
+          "approximateDate": false,
+          "location": "Atlanta, GA, USA",
+          "url": "https://spaa.acm.org/spaa-2027-call-for-papers/",
+          "cycles": [
+            {
+              "name": "Cycle-1",
+              "deadline": "2026-09-25",
+              "abstractDeadline": "2026-09-18",
+              "notification": "2026-12-05",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "Cycle-2",
+              "deadline": "2027-01-29",
+              "abstractDeadline": "2027-01-22",
+              "notification": "2027-04-10",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 3005041
+    },
+    {
+      "id": "euro-par",
+      "name": "Euro-Par",
+      "fullName": "European Conference on Parallel Processing (Euro-Par)",
+      "category": "Parallel and High-Performance Computing",
+      "domains": [
+        "Parallel Computing",
+        "High-Performance Computing"
+      ],
+      "keywords": [
+        "Parallel Computing",
+        "Distributed Systems",
+        "High-Performance Computing",
+        "Multi-core"
+      ],
+      "kiise": "우수",
+      "bk21plus": 1,
+      "lists": {
+        "kaist": false,
+        "snu": false,
+        "postech": "우수"
+      },
+      "dblp": "conf/europar",
+      "url": "https://2027.euro-par.org/",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "August 25-29, 2025",
+          "startDate": "2025-08-25",
+          "endDate": "2025-08-29",
+          "approximateDate": false,
+          "location": null,
+          "url": "http://2025.euro-par.org/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-03-17",
+              "abstractDeadline": null,
+              "notification": "2025-04-30",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "August 24-28, 2026",
+          "startDate": "2026-08-24",
+          "endDate": "2026-08-28",
+          "approximateDate": false,
+          "location": "Pisa, Italy",
+          "url": "http://2026.euro-par.org",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-03-06",
+              "abstractDeadline": "2026-02-26",
+              "notification": "2026-04-30",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "August 23-27, 2027",
+          "startDate": "2027-08-23",
+          "endDate": "2027-08-27",
+          "approximateDate": false,
+          "location": "Groningen, Netherlands",
+          "url": "https://2027.euro-par.org/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-03-06",
+              "abstractDeadline": "2027-02-26",
+              "notification": "2027-04-30",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 3006044
+    },
+    {
+      "id": "ccs",
+      "name": "CCS",
+      "fullName": "Annual ACM Conference on Computer and Communications Security (CCS)",
+      "category": "Security and Cryptography",
+      "domains": [
+        "Computer Security",
+        "Network Security"
+      ],
+      "keywords": [
+        "Computer Security",
+        "Network Security",
+        "Privacy",
+        "Cryptography"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 4,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/ccs",
+      "url": "https://www.sigsac.org/ccs/CCS2027/",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "October 13-17, 2025",
+          "startDate": "2025-10-13",
+          "endDate": "2025-10-17",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://www.sigsac.org/ccs/CCS2025/call-for-papers",
+          "cycles": [
+            {
+              "name": "Cycle-1",
+              "deadline": "2025-01-09",
+              "abstractDeadline": null,
+              "notification": "2025-03-28",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "Cycle-2",
+              "deadline": "2025-04-04",
+              "abstractDeadline": null,
+              "notification": "2025-07-01",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "November 15-19, 2026",
+          "startDate": "2026-11-15",
+          "endDate": "2026-11-19",
+          "approximateDate": false,
+          "location": "The Hague, The Netherlands",
+          "url": "https://www.sigsac.org/ccs/CCS2026/call-for/call-for-papers.html",
+          "cycles": [
+            {
+              "name": "Cycle-1",
+              "deadline": "2026-01-14",
+              "abstractDeadline": "2026-01-07",
+              "notification": "2026-04-09",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "Cycle-2",
+              "deadline": "2026-04-29",
+              "abstractDeadline": "2026-04-22",
+              "notification": "2026-07-17",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "October 11-15, 2027",
+          "startDate": "2027-10-11",
+          "endDate": "2027-10-15",
+          "approximateDate": false,
+          "location": "Atlanta, GA, USA",
+          "url": "https://www.sigsac.org/ccs/CCS2027/",
+          "cycles": [
+            {
+              "name": "Cycle-1",
+              "deadline": "2027-01-14",
+              "abstractDeadline": "2027-01-07",
+              "notification": "2027-04-09",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "Cycle-2",
+              "deadline": "2027-04-29",
+              "abstractDeadline": "2027-04-22",
+              "notification": "2027-07-17",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 4000020
+    },
+    {
+      "id": "ieee-s-p",
+      "name": "IEEE S&P",
+      "fullName": "IEEE Symposium on Security and Privacy (SP)",
+      "category": "Security and Cryptography",
+      "domains": [
+        "Computer Security"
+      ],
+      "keywords": [
+        "System Security",
+        "Privacy",
+        "Cryptography",
+        "Computer Security"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 4,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/sp",
+      "url": "https://www.ieee-security.org/TC/SP2027/cfpapers.html",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "May 12-15, 2025",
+          "startDate": "2025-05-12",
+          "endDate": "2025-05-15",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://www.ieee-security.org/TC/SP2025/cfpapers.html",
+          "cycles": [
+            {
+              "name": "Summer",
+              "deadline": "2024-06-06",
+              "abstractDeadline": null,
+              "notification": "2024-09-09",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "Winter",
+              "deadline": "2024-11-14",
+              "abstractDeadline": null,
+              "notification": "2025-03-10",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "May 18-21, 2026",
+          "startDate": "2026-05-18",
+          "endDate": "2026-05-21",
+          "approximateDate": false,
+          "location": "San Francisco, CA, USA",
+          "url": "https://www.ieee-security.org/TC/SP2026/cfpapers.html",
+          "cycles": [
+            {
+              "name": "Summer",
+              "deadline": "2025-06-05",
+              "abstractDeadline": null,
+              "notification": "2025-09-09",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "Winter",
+              "deadline": "2025-11-13",
+              "abstractDeadline": null,
+              "notification": "2026-03-09",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": null,
+          "startDate": null,
+          "endDate": null,
+          "approximateDate": false,
+          "location": "Montreal, Canada",
+          "url": "https://www.ieee-security.org/TC/SP2027/cfpapers.html",
+          "cycles": [
+            {
+              "name": "Cycle-1",
+              "deadline": "2026-06-11",
+              "abstractDeadline": "2026-06-04",
+              "notification": "2026-09-11",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "Cycle-2",
+              "deadline": "2026-11-17",
+              "abstractDeadline": "2026-11-10",
+              "notification": "2027-03-05",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 4001021
+    },
+    {
+      "id": "usenix-security",
+      "name": "USENIX Security",
+      "fullName": "USENIX Security Symposium",
+      "category": "Security and Cryptography",
+      "domains": [
+        "Computer Security",
+        "Operating Systems"
+      ],
+      "keywords": [
+        "System Security",
+        "Network Security",
+        "Privacy",
+        "Software Security"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 3,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/uss",
+      "url": "https://www.usenix.org/conference/usenixsecurity27/call-for-papers",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "August 13-15, 2025",
+          "startDate": "2025-08-13",
+          "endDate": "2025-08-15",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://www.usenix.org/conference/usenixsecurity25",
+          "cycles": [
+            {
+              "name": "Cycle 2",
+              "deadline": "2024-09-04",
+              "abstractDeadline": null,
+              "notification": "2024-12-11",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "Cycle 1",
+              "deadline": "2025-01-22",
+              "abstractDeadline": null,
+              "notification": "2025-04-30",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "August 12-14, 2026",
+          "startDate": "2026-08-12",
+          "endDate": "2026-08-14",
+          "approximateDate": false,
+          "location": "Baltimore, MD, USA",
+          "url": "https://www.usenix.org/conference/usenixsecurity26",
+          "cycles": [
+            {
+              "name": "Cycle 2",
+              "deadline": "2025-08-26",
+              "abstractDeadline": null,
+              "notification": "2025-12-04",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "Cycle 1",
+              "deadline": "2026-02-05",
+              "abstractDeadline": "2026-01-29",
+              "notification": "2026-05-14",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "August 11-13, 2027",
+          "startDate": "2027-08-11",
+          "endDate": "2027-08-13",
+          "approximateDate": false,
+          "location": "Denver, CO, USA",
+          "url": "https://www.usenix.org/conference/usenixsecurity27/call-for-papers",
+          "cycles": [
+            {
+              "name": "Cycle 1",
+              "deadline": "2026-08-25",
+              "abstractDeadline": "2026-08-18",
+              "notification": "2026-12-03",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "Cycle 2",
+              "deadline": "2027-01-26",
+              "abstractDeadline": "2027-01-19",
+              "notification": "2027-05-06",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 4002019
+    },
+    {
+      "id": "ndss",
+      "name": "NDSS",
+      "fullName": "Network and Distributed System Security Symposium (NDSS)",
+      "category": "Security and Cryptography",
+      "domains": [
+        "Computer Security",
+        "Network Security"
+      ],
+      "keywords": [
+        "Network Security",
+        "System Security",
+        "Web Security"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 2,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/ndss",
+      "url": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "February 24-28, 2025",
+          "startDate": "2025-02-24",
+          "endDate": "2025-02-28",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://www.ndss-symposium.org/ndss2025",
+          "cycles": [
+            {
+              "name": "Summer",
+              "deadline": "2024-04-17",
+              "abstractDeadline": null,
+              "notification": "2024-06-20",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "Fall",
+              "deadline": "2024-07-10",
+              "abstractDeadline": null,
+              "notification": "2024-09-19",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "February 23-27, 2026",
+          "startDate": "2026-02-23",
+          "endDate": "2026-02-27",
+          "approximateDate": false,
+          "location": "San Diego, CA, USA",
+          "url": "https://www.ndss-symposium.org/ndss2026",
+          "cycles": [
+            {
+              "name": "Summer",
+              "deadline": "2025-04-23",
+              "abstractDeadline": null,
+              "notification": "2025-07-02",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "Fall",
+              "deadline": "2025-08-06",
+              "abstractDeadline": null,
+              "notification": "2025-10-22",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "March 22-26, 2027",
+          "startDate": "2027-03-22",
+          "endDate": "2027-03-26",
+          "approximateDate": false,
+          "location": "Seoul, South Korea",
+          "url": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
+          "cycles": [
+            {
+              "name": "Summer Cycle",
+              "deadline": "2026-05-06",
+              "abstractDeadline": null,
+              "notification": "2026-07-29",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "Fall Cycle",
+              "deadline": "2026-08-19",
+              "abstractDeadline": null,
+              "notification": "2026-11-04",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 4003022
+    },
+    {
+      "id": "asiaccs",
+      "name": "AsiaCCS",
+      "fullName": "ACM Asia Conference on Computer and Communications Security (AsiaCCS)",
+      "category": "Security and Cryptography",
+      "domains": [
+        "Computer Security",
+        "Network Security"
+      ],
+      "keywords": [
+        "Information Security",
+        "Network Security",
+        "Privacy"
+      ],
+      "kiise": "우수",
+      "bk21plus": 1,
+      "lists": {
+        "kaist": false,
+        "snu": false,
+        "postech": "우수"
+      },
+      "dblp": "conf/asiaccs",
+      "url": "https://asiaccs2027.cityu.edu.mo/call-for-papers/index.html",
+      "editions": [
+        {
+          "year": 2026,
+          "dateText": "June 1-6, 2026",
+          "startDate": "2026-06-01",
+          "endDate": "2026-06-06",
+          "approximateDate": false,
+          "location": "Bangalore, India",
+          "url": "https://asiaccs2026.cse.iitkgp.ac.in/",
+          "cycles": [
+            {
+              "name": "Cycle-1",
+              "deadline": "2025-08-25",
+              "abstractDeadline": null,
+              "notification": "2025-11-19",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "Cycle-2",
+              "deadline": "2025-12-12",
+              "abstractDeadline": null,
+              "notification": "2026-03-10",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "July 12-16, 2027",
+          "startDate": "2027-07-12",
+          "endDate": "2027-07-16",
+          "approximateDate": false,
+          "location": "Macau",
+          "url": "https://asiaccs2027.cityu.edu.mo/call-for-papers/index.html",
+          "cycles": [
+            {
+              "name": "Cycle-1",
+              "deadline": "2026-08-21",
+              "abstractDeadline": null,
+              "notification": "2026-11-13",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "Cycle-2",
+              "deadline": "2026-12-11",
+              "abstractDeadline": null,
+              "notification": "2027-03-31",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 4004039
+    },
+    {
+      "id": "raid",
+      "name": "RAID",
+      "fullName": "International Symposium on Recent Advances in Intrusion Detection (RAID)",
+      "category": "Security and Cryptography",
+      "domains": [
+        "Computer Security"
+      ],
+      "keywords": [
+        "System Security",
+        "Intrusion Detection",
+        "Attack Analysis"
+      ],
+      "kiise": "우수",
+      "bk21plus": 2,
+      "lists": {
+        "kaist": false,
+        "snu": false,
+        "postech": "우수"
+      },
+      "dblp": "conf/raid",
+      "url": "https://raid2026.org/",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "October 19-22, 2025",
+          "startDate": "2025-10-19",
+          "endDate": "2025-10-22",
+          "approximateDate": false,
+          "location": "Ploen, Germany",
+          "url": "https://raid-2025.github.io/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-04-24",
+              "abstractDeadline": null,
+              "notification": "2025-07-09",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "October 11-14, 2026",
+          "startDate": "2026-10-11",
+          "endDate": "2026-10-14",
+          "approximateDate": false,
+          "location": "Lancaster, United Kingdom",
+          "url": "https://raid2026.org/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-04-16",
+              "abstractDeadline": null,
+              "notification": "2026-07-10",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "October 11-14, 2027",
+          "startDate": "2027-10-11",
+          "endDate": "2027-10-14",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://raid2026.org/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-04-16",
+              "abstractDeadline": null,
+              "notification": "2027-07-10",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 4005999
+    },
+    {
+      "id": "crypto",
+      "name": "Crypto",
+      "fullName": "Annual International Cryptology Conference (CRYPTO)",
+      "category": "Security and Cryptography",
+      "domains": [],
+      "keywords": [],
+      "kiise": "최우수",
+      "bk21plus": 4,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/crypto",
+      "url": "https://crypto.iacr.org/2026/",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "August 17-21, 2025",
+          "startDate": "2025-08-17",
+          "endDate": "2025-08-21",
+          "approximateDate": false,
+          "location": "Santa Barbara, USA",
+          "url": "https://crypto.iacr.org/2025/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-02-13",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "UTC-12"
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "August 17-20, 2026",
+          "startDate": "2026-08-17",
+          "endDate": "2026-08-20",
+          "approximateDate": false,
+          "location": "Santa Barbara, USA",
+          "url": "https://crypto.iacr.org/2026/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-02-12",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "UTC-12"
+            }
+          ]
+        }
+      ],
+      "source": "ccf-deadlines",
+      "sortKey": 4006999
+    },
+    {
+      "id": "eurocrypt",
+      "name": "Eurocrypt",
+      "fullName": "Annual International Conference on the Theory and Applications of Cryptographic Techniques (EUROCRYPT)",
+      "category": "Security and Cryptography",
+      "domains": [],
+      "keywords": [],
+      "kiise": "최우수",
+      "bk21plus": 4,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/eurocrypt",
+      "url": "https://eurocrypt.iacr.org/2027/",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "May 4-8, 2025",
+          "startDate": "2025-05-04",
+          "endDate": "2025-05-08",
+          "approximateDate": false,
+          "location": "Madrid, Spain",
+          "url": "https://eurocrypt.iacr.org/2025/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2024-10-02",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "AoE"
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "May 10-14, 2026",
+          "startDate": "2026-05-10",
+          "endDate": "2026-05-14",
+          "approximateDate": false,
+          "location": "Rome, Italy",
+          "url": "https://eurocrypt.iacr.org/2026/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-10-02",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "AoE"
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "April 11-15, 2027",
+          "startDate": "2027-04-11",
+          "endDate": "2027-04-15",
+          "approximateDate": false,
+          "location": "Eindhoven, Netherlands",
+          "url": "https://eurocrypt.iacr.org/2027/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-09-17",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "AoE"
+            }
+          ]
+        }
+      ],
+      "source": "ccf-deadlines",
+      "sortKey": 4007999
+    },
+    {
+      "id": "ches",
+      "name": "CHES",
+      "fullName": "Conference on Cryptographic Hardware and Embedded Systems (CHES)",
+      "category": "Security and Cryptography",
+      "domains": [],
+      "keywords": [],
+      "kiise": "우수",
+      "bk21plus": null,
+      "lists": {
+        "kaist": false,
+        "snu": false,
+        "postech": null
+      },
+      "dblp": "conf/ches",
+      "url": "https://ches.iacr.org/2027/",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "September 14-18, 2025",
+          "startDate": "2025-09-14",
+          "endDate": "2025-09-18",
+          "approximateDate": false,
+          "location": "Kuala Lumpur, Malaysia",
+          "url": "https://ches.iacr.org/2025/",
+          "cycles": [
+            {
+              "name": "Schedule for TCHES Volume 2025/1",
+              "deadline": "2024-07-15",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "AoE"
+            },
+            {
+              "name": "Schedule for TCHES Volume 2025/2",
+              "deadline": "2024-10-15",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "AoE"
+            },
+            {
+              "name": "Schedule for TCHES Volume 2025/3",
+              "deadline": "2025-01-15",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "AoE"
+            },
+            {
+              "name": "Schedule for TCHES Volume 2025/4",
+              "deadline": "2025-04-15",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "AoE"
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "October 11-15, 2026",
+          "startDate": "2026-10-11",
+          "endDate": "2026-10-15",
+          "approximateDate": false,
+          "location": "Antalya, Türkiye",
+          "url": "https://ches.iacr.org/2026/",
+          "cycles": [
+            {
+              "name": "Schedule for TCHES Volume 2026/1",
+              "deadline": "2025-07-15",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "AoE"
+            },
+            {
+              "name": "Schedule for TCHES Volume 2026/2",
+              "deadline": "2025-10-15",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "AoE"
+            },
+            {
+              "name": "Schedule for TCHES Volume 2026/3",
+              "deadline": "2026-01-15",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "AoE"
+            },
+            {
+              "name": "Schedule for TCHES Volume 2026/4",
+              "deadline": "2026-04-15",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "AoE"
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "September 6 - 9, 2027",
+          "startDate": "2027-09-06",
+          "endDate": "2027-09-09",
+          "approximateDate": false,
+          "location": "Cancún, Mexico",
+          "url": "https://ches.iacr.org/2027/",
+          "cycles": [
+            {
+              "name": "Schedule for TCHES Volume 2027/1",
+              "deadline": "2026-07-15",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "AoE"
+            },
+            {
+              "name": "Schedule for TCHES Volume 2027/2",
+              "deadline": "2026-10-15",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "AoE"
+            },
+            {
+              "name": "Schedule for TCHES Volume 2027/3",
+              "deadline": "2027-01-15",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "AoE"
+            },
+            {
+              "name": "Schedule for TCHES Volume 2027/4",
+              "deadline": "2027-04-15",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "AoE"
+            }
+          ]
+        }
+      ],
+      "source": "ccf-deadlines",
+      "sortKey": 4008999
+    },
+    {
+      "id": "esorics",
+      "name": "ESORICS",
+      "fullName": "European Symposium on Research in Computer Security (ESORICS)",
+      "category": "Security and Cryptography",
+      "domains": [],
+      "keywords": [],
+      "kiise": "우수",
+      "bk21plus": 2,
+      "lists": {
+        "kaist": false,
+        "snu": false,
+        "postech": "우수"
+      },
+      "dblp": "conf/esorics",
+      "url": "https://sites.google.com/di.uniroma1.it/esorics2026/home",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "September 22-26, 2025",
+          "startDate": "2025-09-22",
+          "endDate": "2025-09-26",
+          "approximateDate": false,
+          "location": "Toulouse, France",
+          "url": "https://esorics2025.sciencesconf.org/",
+          "cycles": [
+            {
+              "name": "First Submission deadline",
+              "deadline": "2025-01-10",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "AoE"
+            },
+            {
+              "name": "Second Submission deadline",
+              "deadline": "2025-04-29",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "AoE"
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "September 14-18, 2026",
+          "startDate": "2026-09-14",
+          "endDate": "2026-09-18",
+          "approximateDate": false,
+          "location": "Rome, Italy",
+          "url": "https://sites.google.com/di.uniroma1.it/esorics2026/home",
+          "cycles": [
+            {
+              "name": "First Submission deadline",
+              "deadline": "2026-01-09",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "AoE"
+            },
+            {
+              "name": "Second Submission deadline",
+              "deadline": "2026-04-21",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "AoE"
+            }
+          ]
+        }
+      ],
+      "source": "ccf-deadlines",
+      "sortKey": 4009999
+    },
+    {
+      "id": "pets",
+      "name": "PETS",
+      "fullName": "Privacy Enhancing Technologies Symposium (PETS)",
+      "category": "Security and Cryptography",
+      "domains": [],
+      "keywords": [],
+      "kiise": "우수",
+      "bk21plus": null,
+      "lists": {
+        "kaist": false,
+        "snu": false,
+        "postech": "우수"
+      },
+      "dblp": "journals/popets",
+      "url": "https://petsymposium.org/cfp27.php",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "July 14-19, 2025",
+          "startDate": "2025-07-14",
+          "endDate": "2025-07-19",
+          "approximateDate": false,
+          "location": "Washington, DC and Online",
+          "url": "https://petsymposium.org/cfp25.php",
+          "cycles": [
+            {
+              "name": "Issue 1 Paper Submission Deadline",
+              "deadline": "2024-05-31",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "AoE"
+            },
+            {
+              "name": "Issue 2 Paper Submission Deadline",
+              "deadline": "2024-08-31",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "AoE"
+            },
+            {
+              "name": "Issue 3 Paper Submission Deadline",
+              "deadline": "2024-11-30",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "AoE"
+            },
+            {
+              "name": "Issue 4 Paper Submission Deadline",
+              "deadline": "2025-02-28",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "AoE"
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "July 20-25, 2026",
+          "startDate": "2026-07-20",
+          "endDate": "2026-07-25",
+          "approximateDate": false,
+          "location": "Calgary, Canada",
+          "url": "https://petsymposium.org/cfp26.php",
+          "cycles": [
+            {
+              "name": "Issue 1 Paper Submission Deadline",
+              "deadline": "2025-05-31",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "AoE"
+            },
+            {
+              "name": "Issue 2 Paper Submission Deadline",
+              "deadline": "2025-08-31",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "AoE"
+            },
+            {
+              "name": "Issue 3 Paper Submission Deadline",
+              "deadline": "2025-11-30",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "AoE"
+            },
+            {
+              "name": "Issue 4 Paper Submission Deadline",
+              "deadline": "2026-02-28",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "AoE"
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "July 19-24, 2027",
+          "startDate": "2027-07-19",
+          "endDate": "2027-07-24",
+          "approximateDate": false,
+          "location": "Delft, The Netherlands",
+          "url": "https://petsymposium.org/cfp27.php",
+          "cycles": [
+            {
+              "name": "Issue 1 Paper Submission Deadline",
+              "deadline": "2026-05-31",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "AoE"
+            },
+            {
+              "name": "Issue 2 Paper Submission Deadline",
+              "deadline": "2026-08-31",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "AoE"
+            },
+            {
+              "name": "Issue 3 Paper Submission Deadline",
+              "deadline": "2026-11-30",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "AoE"
+            },
+            {
+              "name": "Issue 4 Paper Submission Deadline",
+              "deadline": "2027-02-28",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true,
+              "timezone": "AoE"
+            }
+          ]
+        }
+      ],
+      "source": "ccf-deadlines",
+      "sortKey": 4010999
+    },
+    {
+      "id": "sigcomm",
+      "name": "SIGCOMM",
+      "fullName": "ACM SIGCOMM Conference (SIGCOMM)",
+      "category": "Networking and Mobile Systems",
+      "domains": [
+        "Networking"
+      ],
+      "keywords": [
+        "Network Architecture",
+        "Network Protocols",
+        "Internet Measurement"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 4,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/sigcomm",
+      "url": "https://conferences.sigcomm.org/sigcomm/2027/",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "September 8-11, 2025",
+          "startDate": "2025-09-08",
+          "endDate": "2025-09-11",
+          "approximateDate": false,
+          "location": null,
+          "url": "http://conferences.sigcomm.org/sigcomm/2025",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-01-31",
+              "abstractDeadline": null,
+              "notification": "2025-04-29",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "August 5-7, 2026",
+          "startDate": "2026-08-05",
+          "endDate": "2026-08-07",
+          "approximateDate": false,
+          "location": "Denver, CO, USA",
+          "url": "http://conferences.sigcomm.org/sigcomm/2026",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-02-06",
+              "abstractDeadline": "2026-01-30",
+              "notification": null,
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "August 8-12, 2027",
+          "startDate": "2027-08-08",
+          "endDate": "2027-08-12",
+          "approximateDate": false,
+          "location": "Bangkok, Thailand",
+          "url": "https://conferences.sigcomm.org/sigcomm/2027/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-02-06",
+              "abstractDeadline": "2027-01-30",
+              "notification": "2027-04-01",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 5000046
+    },
+    {
+      "id": "nsdi",
+      "name": "NSDI",
+      "fullName": "Symposium on Networked Systems Design and Implementation (NSDI)",
+      "category": "Networking and Mobile Systems",
+      "domains": [
+        "Networked Systems",
+        "Distributed Systems"
+      ],
+      "keywords": [
+        "Networked Systems",
+        "Cloud Networking",
+        "Datacenters",
+        "Distributed Systems"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 4,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/nsdi",
+      "url": "https://www.usenix.org/conference/nsdi27",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "April 16-18, 2025",
+          "startDate": "2025-04-16",
+          "endDate": "2025-04-18",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://www.usenix.org/conference/nsdi25",
+          "cycles": [
+            {
+              "name": "Spring",
+              "deadline": "2024-05-07",
+              "abstractDeadline": null,
+              "notification": "2024-07-24",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "Fall",
+              "deadline": "2024-09-19",
+              "abstractDeadline": null,
+              "notification": "2024-12-10",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "May 4-6, 2026",
+          "startDate": "2026-05-04",
+          "endDate": "2026-05-06",
+          "approximateDate": false,
+          "location": "Renton, WA, USA",
+          "url": "https://www.usenix.org/conference/nsdi26",
+          "cycles": [
+            {
+              "name": "Spring",
+              "deadline": "2025-04-25",
+              "abstractDeadline": null,
+              "notification": "2025-07-24",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "Fall",
+              "deadline": "2025-09-18",
+              "abstractDeadline": null,
+              "notification": "2025-12-09",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "April 2027",
+          "startDate": "2027-04-01",
+          "endDate": "2027-04-05",
+          "approximateDate": false,
+          "location": "Providence, RI, USA",
+          "url": "https://www.usenix.org/conference/nsdi27",
+          "cycles": [
+            {
+              "name": "Spring",
+              "deadline": "2026-04-23",
+              "abstractDeadline": "2026-04-16",
+              "notification": "2026-07-01",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "Fall",
+              "deadline": "2026-09-17",
+              "abstractDeadline": "2026-09-10",
+              "notification": "2026-12-01",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 5001023
+    },
+    {
+      "id": "mobicom",
+      "name": "MobiCom",
+      "fullName": "Annual International Conference on Mobile Computing and Networking (MobiCom)",
+      "category": "Networking and Mobile Systems",
+      "domains": [
+        "Networking",
+        "Mobile Systems"
+      ],
+      "keywords": [
+        "Mobile Systems",
+        "Wireless Networking"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 4,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/mobicom",
+      "url": "https://www.sigmobile.org/mobicom/2027/",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "November 4-8, 2025",
+          "startDate": "2025-11-04",
+          "endDate": "2025-11-08",
+          "approximateDate": false,
+          "location": "Washington, D.C.",
+          "url": "https://www.sigmobile.org/mobicom/2025/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-03-18",
+              "abstractDeadline": null,
+              "notification": "2025-06-24",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "October 26-30, 2026",
+          "startDate": "2026-10-26",
+          "endDate": "2026-10-30",
+          "approximateDate": false,
+          "location": "Austin, TX, USA",
+          "url": "https://www.sigmobile.org/mobicom/2026/",
+          "cycles": [
+            {
+              "name": "Cycle-2",
+              "deadline": "2026-03-13",
+              "abstractDeadline": "2026-03-06",
+              "notification": "2026-06-22",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "October 18-22, 2027",
+          "startDate": "2027-10-18",
+          "endDate": "2027-10-22",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://www.sigmobile.org/mobicom/2027/",
+          "cycles": [
+            {
+              "name": "Cycle-1",
+              "deadline": "2026-09-02",
+              "abstractDeadline": "2026-08-26",
+              "notification": "2026-11-19",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "Cycle-2",
+              "deadline": "2027-03-13",
+              "abstractDeadline": "2027-03-06",
+              "notification": "2027-06-22",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 5002045
+    },
+    {
+      "id": "conext",
+      "name": "CoNEXT",
+      "fullName": "Conference on Emerging Network Experiment and Technology (CoNEXT)",
+      "category": "Networking and Mobile Systems",
+      "domains": [
+        "Networking"
+      ],
+      "keywords": [
+        "Network Protocols",
+        "Traffic Analysis",
+        "Internet Architecture"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 3,
+      "lists": {
+        "kaist": false,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/conext",
+      "url": "https://conferences2.sigcomm.org/co-next/2026",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "December 1-4, 2025",
+          "startDate": "2025-12-01",
+          "endDate": "2025-12-04",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://conferences2.sigcomm.org/co-next/2025",
+          "cycles": [
+            {
+              "name": "Winter",
+              "deadline": "2024-12-05",
+              "abstractDeadline": null,
+              "notification": "2025-04-04",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "Summer",
+              "deadline": "2025-06-05",
+              "abstractDeadline": null,
+              "notification": "2025-09-12",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "December 7-10, 2026",
+          "startDate": "2026-12-07",
+          "endDate": "2026-12-10",
+          "approximateDate": false,
+          "location": "Utrecht, The Netherlands",
+          "url": "https://conferences2.sigcomm.org/co-next/2026",
+          "cycles": [
+            {
+              "name": "Winter",
+              "deadline": "2025-12-11",
+              "abstractDeadline": null,
+              "notification": "2025-12-08",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "June",
+              "deadline": "2026-06-05",
+              "abstractDeadline": "2026-05-29",
+              "notification": "2026-09-11",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "Summer",
+              "deadline": "2026-06-05",
+              "abstractDeadline": null,
+              "notification": "2026-09-11",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "December 7-10, 2027",
+          "startDate": "2027-12-07",
+          "endDate": "2027-12-10",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://conferences2.sigcomm.org/co-next/2026",
+          "cycles": [
+            {
+              "name": "Winter",
+              "deadline": "2026-12-11",
+              "abstractDeadline": null,
+              "notification": "2026-12-08",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "June",
+              "deadline": "2027-06-05",
+              "abstractDeadline": "2027-05-29",
+              "notification": "2027-09-11",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "Summer",
+              "deadline": "2027-06-05",
+              "abstractDeadline": null,
+              "notification": "2027-09-11",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 5003999
+    },
+    {
+      "id": "hotnets",
+      "name": "HotNets",
+      "fullName": "ACM Workshop on Hot Topics in Networks (HotNets)",
+      "category": "Networking and Mobile Systems",
+      "domains": [
+        "Networking"
+      ],
+      "keywords": [
+        "Network Architecture",
+        "Experimental Networking"
+      ],
+      "kiise": null,
+      "bk21plus": null,
+      "dblp": null,
+      "url": "https://conferences.sigcomm.org/hotnets/2026/",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "November 17-18, 2025",
+          "startDate": "2025-11-17",
+          "endDate": "2025-11-18",
+          "approximateDate": false,
+          "location": "College Park, MD, USA",
+          "url": "https://conferences.sigcomm.org/hotnets/2025",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-07-09",
+              "abstractDeadline": null,
+              "notification": "2025-09-17",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "November 16-17, 2026",
+          "startDate": "2026-11-16",
+          "endDate": "2026-11-17",
+          "approximateDate": false,
+          "location": "Salt Lake City, Utah, USA",
+          "url": "https://conferences.sigcomm.org/hotnets/2026/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-07-16",
+              "abstractDeadline": null,
+              "notification": "2026-09-24",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "November 16-17, 2027",
+          "startDate": "2027-11-16",
+          "endDate": "2027-11-17",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://conferences.sigcomm.org/hotnets/2026/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-07-16",
+              "abstractDeadline": null,
+              "notification": "2027-09-24",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 5004999
+    },
+    {
+      "id": "infocom",
+      "name": "INFOCOM",
+      "fullName": "IEEE Conference on Computer Communications (INFOCOM)",
+      "category": "Networking and Mobile Systems",
+      "domains": [
+        "Networking",
+        "Wireless Networking"
+      ],
+      "keywords": [
+        "Computer Networks",
+        "Wireless Networking",
+        "Network Theory",
+        "Network Protocols"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 4,
+      "lists": {
+        "kaist": false,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/infocom",
+      "url": "https://infocom2026.ieee-infocom.org/",
+      "editions": [
+        {
+          "year": 2026,
+          "dateText": "May 18-21, 2026",
+          "startDate": "2026-05-18",
+          "endDate": "2026-05-21",
+          "approximateDate": false,
+          "location": "Tokyo, Japan",
+          "url": "https://infocom2026.ieee-infocom.org/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-07-31",
+              "abstractDeadline": "2025-07-24",
+              "notification": "2025-12-08",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "May 18-21, 2027",
+          "startDate": "2027-05-18",
+          "endDate": "2027-05-21",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://infocom2026.ieee-infocom.org/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-07-31",
+              "abstractDeadline": "2026-07-24",
+              "notification": "2026-12-08",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 5005999
+    },
+    {
+      "id": "hotmobile",
+      "name": "HotMobile",
+      "fullName": "International Workshop on Mobile Computing Systems and Applications (HotMobile)",
+      "category": "Networking and Mobile Systems",
+      "domains": [
+        "Mobile Systems"
+      ],
+      "keywords": [
+        "Mobile Systems",
+        "Ubiquitous Computing"
+      ],
+      "kiise": null,
+      "bk21plus": null,
+      "dblp": null,
+      "url": "https://www.hotmobile.org/2027/index.php?id=cfp",
+      "editions": [
+        {
+          "year": 2026,
+          "dateText": "February 25-26, 2026",
+          "startDate": "2026-02-25",
+          "endDate": "2026-02-26",
+          "approximateDate": false,
+          "location": "Atlanta, GA, USA",
+          "url": "https://hotmobile.org/2026/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-10-31",
+              "abstractDeadline": null,
+              "notification": "2025-12-16",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "February 24-25, 2027",
+          "startDate": "2027-02-24",
+          "endDate": "2027-02-25",
+          "approximateDate": false,
+          "location": "Tucson, AZ, USA",
+          "url": "https://www.hotmobile.org/2027/index.php?id=cfp",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-10-09",
+              "abstractDeadline": null,
+              "notification": "2026-12-16",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 5006999
+    },
+    {
+      "id": "dac",
+      "name": "DAC",
+      "fullName": "Design Automation Conference (DAC)",
+      "category": "Design Automation and Embedded Systems",
+      "domains": [
+        "Hardware",
+        "Design Automation"
+      ],
+      "keywords": [
+        "Electronic Design Automation",
+        "Hardware Security",
+        "System Design",
+        "VLSI"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 3,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/dac",
+      "url": "https://dac.com/2027",
+      "editions": [
+        {
+          "year": 2026,
+          "dateText": "July 26-29, 2026",
+          "startDate": "2026-07-26",
+          "endDate": "2026-07-29",
+          "approximateDate": false,
+          "location": "Long Beach, CA, USA",
+          "url": "https://www.dac.com/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-11-19",
+              "abstractDeadline": "2025-11-11",
+              "notification": "2026-03-09",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "July 11-14, 2027",
+          "startDate": "2027-07-11",
+          "endDate": "2027-07-14",
+          "approximateDate": false,
+          "location": "San Jose, CA, USA",
+          "url": "https://dac.com/2027",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-10-14",
+              "abstractDeadline": "2026-10-07",
+              "notification": "2027-03-09",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 6000004
+    },
+    {
+      "id": "date",
+      "name": "DATE",
+      "fullName": "Design, Automation, and Test in Europe (DATE)",
+      "category": "Design Automation and Embedded Systems",
+      "domains": [
+        "Hardware",
+        "Design Automation",
+        "Embedded Systems"
+      ],
+      "keywords": [
+        "Electronic Design Automation",
+        "Hardware Design",
+        "System Design",
+        "VLSI",
+        "Embedded Systems"
+      ],
+      "kiise": "우수",
+      "bk21plus": 2,
+      "lists": {
+        "kaist": false,
+        "snu": false,
+        "postech": "우수"
+      },
+      "dblp": "conf/date",
+      "url": "https://www.date-conference.com/date-2027-call-papers",
+      "editions": [
+        {
+          "year": 2027,
+          "dateText": "March 22-24, 2027",
+          "startDate": "2027-03-22",
+          "endDate": "2027-03-24",
+          "approximateDate": false,
+          "location": "Dresden, Germany",
+          "url": "https://www.date-conference.com/date-2027-call-papers",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-09-20",
+              "abstractDeadline": "2026-09-13",
+              "notification": "2026-11-23",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 6001033
+    },
+    {
+      "id": "emsoft",
+      "name": "EMSOFT",
+      "fullName": "International Conference on Embedded Software (EMSOFT)",
+      "category": "Design Automation and Embedded Systems",
+      "domains": [
+        "Embedded Systems",
+        "Real-Time Systems"
+      ],
+      "keywords": [
+        "Embedded Systems",
+        "Cyber-Physical Systems",
+        "Formal Verification"
+      ],
+      "kiise": "우수",
+      "bk21plus": 2,
+      "lists": {
+        "kaist": false,
+        "snu": false,
+        "postech": "우수"
+      },
+      "dblp": "conf/emsoft",
+      "url": "https://esweek.org/emsoft/",
+      "editions": [
+        {
+          "year": 2026,
+          "dateText": "October 4-9, 2026",
+          "startDate": "2026-10-04",
+          "endDate": "2026-10-09",
+          "approximateDate": false,
+          "location": "Barcelona, Spain",
+          "url": "https://esweek.org/emsoft/",
+          "cycles": [
+            {
+              "name": "Journal Track",
+              "deadline": "2026-03-30",
+              "abstractDeadline": "2026-03-23",
+              "notification": "2026-07-17",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "October 4-9, 2027",
+          "startDate": "2027-10-04",
+          "endDate": "2027-10-09",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://esweek.org/emsoft/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-03-30",
+              "abstractDeadline": "2027-03-23",
+              "notification": "2027-07-17",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 6002017
+    },
+    {
+      "id": "rtss",
+      "name": "RTSS",
+      "fullName": "IEEE Real-Time Systems Symposium (RTSS)",
+      "category": "Design Automation and Embedded Systems",
+      "domains": [
+        "Real-Time Systems",
+        "Embedded Systems"
+      ],
+      "keywords": [
+        "Real-Time Systems",
+        "Cyber-Physical Systems",
+        "Embedded Systems",
+        "IoT"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 4,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/rtss",
+      "url": "https://2026.rtss.org/",
+      "editions": [
+        {
+          "year": 2026,
+          "dateText": "December 9-11, 2026",
+          "startDate": "2026-12-09",
+          "endDate": "2026-12-11",
+          "approximateDate": false,
+          "location": "Yokohama, Japan",
+          "url": "https://2026.rtss.org/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-05-21",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "December 9-11, 2027",
+          "startDate": "2027-12-09",
+          "endDate": "2027-12-11",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://2026.rtss.org/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-05-21",
+              "abstractDeadline": null,
+              "notification": "2027-07-01",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 6003013
+    },
+    {
+      "id": "rtas",
+      "name": "RTAS",
+      "fullName": "IEEE Real Time Technology and Applications Symposium (RTAS)",
+      "category": "Design Automation and Embedded Systems",
+      "domains": [
+        "Real-Time Systems",
+        "Embedded Systems"
+      ],
+      "keywords": [
+        "Real-Time Systems",
+        "Embedded Systems",
+        "Cyber-Physical Systems"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 2,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/rtas",
+      "url": "https://2027.rtas.org/cfp/",
+      "editions": [
+        {
+          "year": 2026,
+          "dateText": "May 12-14, 2026",
+          "startDate": "2026-05-12",
+          "endDate": "2026-05-14",
+          "approximateDate": false,
+          "location": "Saint Malo, France",
+          "url": "https://www.rtas.org/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-11-13",
+              "abstractDeadline": null,
+              "notification": "2026-01-29",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "May 17-20, 2027",
+          "startDate": "2027-05-17",
+          "endDate": "2027-05-20",
+          "approximateDate": false,
+          "location": "Boulder, CO, USA",
+          "url": "https://2027.rtas.org/cfp/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-11-05",
+              "abstractDeadline": null,
+              "notification": "2027-01-28",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 6004014
+    },
+    {
+      "id": "ecrts",
+      "name": "ECRTS",
+      "fullName": "Euromicro Conference on Real-Time Systems (ECRTS)",
+      "category": "Design Automation and Embedded Systems",
+      "domains": [
+        "Real-Time Systems",
+        "Embedded Systems"
+      ],
+      "keywords": [
+        "Real-Time Systems",
+        "Embedded Systems",
+        "Scheduling Analysis"
+      ],
+      "kiise": "우수",
+      "bk21plus": 1,
+      "lists": {
+        "kaist": false,
+        "snu": true,
+        "postech": "우수"
+      },
+      "dblp": "conf/ecrts",
+      "url": "https://www.ecrts.org/",
+      "editions": [
+        {
+          "year": 2026,
+          "dateText": "July 7-10, 2026",
+          "startDate": "2026-07-07",
+          "endDate": "2026-07-10",
+          "approximateDate": false,
+          "location": "Lund, Sweden",
+          "url": "https://www.ecrts.org/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-02-26",
+              "abstractDeadline": null,
+              "notification": "2026-04-20",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "July 7-10, 2027",
+          "startDate": "2027-07-07",
+          "endDate": "2027-07-10",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://www.ecrts.org/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-02-26",
+              "abstractDeadline": null,
+              "notification": "2027-04-20",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 6005030
+    },
+    {
+      "id": "sigmod",
+      "name": "SIGMOD",
+      "fullName": "ACM SIGMOD Conference (SIGMOD)",
+      "category": "Data Management and Web",
+      "domains": [
+        "Data Management",
+        "Distributed Systems"
+      ],
+      "keywords": [
+        "Databases",
+        "Data Management",
+        "Data Systems",
+        "Scalable Data Processing"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 4,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/sigmod",
+      "url": "https://2027.sigmod.org/",
+      "editions": [
+        {
+          "year": 2027,
+          "dateText": "June 13-19, 2027",
+          "startDate": "2027-06-13",
+          "endDate": "2027-06-19",
+          "approximateDate": false,
+          "location": "Huntington Beach, CA, USA",
+          "url": "https://2027.sigmod.org/",
+          "cycles": [
+            {
+              "name": "Cycle-1",
+              "deadline": "2026-01-17",
+              "abstractDeadline": "2026-01-10",
+              "notification": "2026-04-19",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "Cycle-2",
+              "deadline": "2026-04-17",
+              "abstractDeadline": "2026-04-10",
+              "notification": "2026-07-19",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "Cycle-3",
+              "deadline": "2026-07-17",
+              "abstractDeadline": "2026-07-10",
+              "notification": "2026-10-19",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "Cycle-4",
+              "deadline": "2026-10-17",
+              "abstractDeadline": "2026-10-10",
+              "notification": "2027-01-19",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 7000024
+    },
+    {
+      "id": "vldb",
+      "name": "VLDB",
+      "fullName": "Very Large Data Bases Conference (VLDB)",
+      "category": "Data Management and Web",
+      "domains": [
+        "Data Management",
+        "Distributed Systems"
+      ],
+      "keywords": [
+        "Databases",
+        "Data Management",
+        "Data Systems",
+        "Scalable Data Processing"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 4,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/vldb",
+      "url": "https://vldb.org/2027/",
+      "editions": [
+        {
+          "year": 2026,
+          "dateText": "August 31 - September 4, 2026",
+          "startDate": "2026-08-31",
+          "endDate": "2026-09-04",
+          "approximateDate": false,
+          "location": "Boston, MA, USA",
+          "url": "https://vldb.org/2026/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-03-01",
+              "abstractDeadline": null,
+              "notification": "2026-04-15",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "August 23-27, 2027",
+          "startDate": "2027-08-23",
+          "endDate": "2027-08-27",
+          "approximateDate": false,
+          "location": "Athens, Greece",
+          "url": "https://vldb.org/2027/",
+          "cycles": [
+            {
+              "name": "April Cycle",
+              "deadline": "2026-04-01",
+              "abstractDeadline": "2026-03-25",
+              "notification": "2026-05-15",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "May Cycle",
+              "deadline": "2026-05-01",
+              "abstractDeadline": "2026-04-25",
+              "notification": "2026-06-15",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "June Cycle",
+              "deadline": "2026-06-01",
+              "abstractDeadline": "2026-05-25",
+              "notification": "2026-07-15",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "July Cycle",
+              "deadline": "2026-07-01",
+              "abstractDeadline": "2026-06-25",
+              "notification": "2026-08-15",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "August Cycle",
+              "deadline": "2026-08-01",
+              "abstractDeadline": "2026-07-25",
+              "notification": "2026-09-15",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "September Cycle",
+              "deadline": "2026-09-01",
+              "abstractDeadline": "2026-08-25",
+              "notification": "2026-10-15",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "October Cycle",
+              "deadline": "2026-10-01",
+              "abstractDeadline": "2026-09-25",
+              "notification": "2026-11-15",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "November Cycle",
+              "deadline": "2026-11-01",
+              "abstractDeadline": "2026-10-25",
+              "notification": "2026-12-15",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "December Cycle",
+              "deadline": "2026-12-01",
+              "abstractDeadline": "2026-11-25",
+              "notification": "2027-01-15",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "January Cycle",
+              "deadline": "2027-01-01",
+              "abstractDeadline": "2026-12-25",
+              "notification": "2027-02-15",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "February Cycle",
+              "deadline": "2027-02-01",
+              "abstractDeadline": "2027-01-25",
+              "notification": "2027-03-15",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "March Cycle",
+              "deadline": "2027-03-01",
+              "abstractDeadline": "2027-02-25",
+              "notification": "2027-04-15",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 7001025
+    },
+    {
+      "id": "www",
+      "name": "WWW",
+      "fullName": "The Web Conference (WWW)",
+      "category": "Data Management and Web",
+      "domains": [
+        "Web",
+        "Information Systems",
+        "Machine Learning",
+        "Data Mining"
+      ],
+      "keywords": [
+        "World Wide Web",
+        "Web Search",
+        "Social Networks",
+        "Information Retrieval",
+        "Semantic Web",
+        "Web Infrastructure"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 4,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/www",
+      "url": "https://www2027.thewebconf.org/research-track-papers/",
+      "editions": [
+        {
+          "year": 2027,
+          "dateText": "May 10-14, 2027",
+          "startDate": "2027-05-10",
+          "endDate": "2027-05-14",
+          "approximateDate": false,
+          "location": "Dublin, Ireland",
+          "url": "https://www2027.thewebconf.org/research-track-papers/",
+          "cycles": [
+            {
+              "name": "Full Paper",
+              "deadline": "2026-10-25",
+              "abstractDeadline": "2026-10-18",
+              "notification": "2027-01-04",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "Short Paper",
+              "deadline": "2026-11-16",
+              "abstractDeadline": "2026-11-09",
+              "notification": "2027-01-04",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 7002026
+    },
+    {
+      "id": "kdd",
+      "name": "KDD",
+      "fullName": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)",
+      "category": "Data Management and Web",
+      "domains": [
+        "Machine Learning",
+        "Data Mining"
+      ],
+      "keywords": [
+        "Data Mining",
+        "Machine Learning",
+        "Knowledge Discovery",
+        "Big Data"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 4,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/kdd",
+      "url": "https://kdd2027.kdd.org/research-track-call-for-papers/",
+      "editions": [
+        {
+          "year": 2026,
+          "dateText": "August 9-13, 2026",
+          "startDate": "2026-08-09",
+          "endDate": "2026-08-13",
+          "approximateDate": false,
+          "location": "Jeju, South Korea",
+          "url": "https://kdd2026.kdd.org",
+          "cycles": [
+            {
+              "name": "Cycle-2",
+              "deadline": "2026-02-08",
+              "abstractDeadline": "2026-02-01",
+              "notification": "2026-05-16",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "August 1-5, 2027",
+          "startDate": "2027-08-01",
+          "endDate": "2027-08-05",
+          "approximateDate": false,
+          "location": "San Jose, CA, USA",
+          "url": "https://kdd2027.kdd.org/research-track-call-for-papers/",
+          "cycles": [
+            {
+              "name": "Cycle-1",
+              "deadline": "2026-07-26",
+              "abstractDeadline": "2026-07-19",
+              "notification": "2026-11-14",
+              "estimated": false,
+              "verified": true
+            },
+            {
+              "name": "Cycle-2",
+              "deadline": "2027-02-08",
+              "abstractDeadline": "2027-02-01",
+              "notification": "2027-05-16",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 7003027
+    },
+    {
+      "id": "icse",
+      "name": "ICSE",
+      "fullName": "International Conference on Software Engineering (ICSE)",
+      "category": "Software Engineering",
+      "domains": [
+        "Software Engineering"
+      ],
+      "keywords": [
+        "Software Engineering",
+        "Software Systems",
+        "Software Quality"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 4,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/icse",
+      "url": "https://conf.researchr.org/home/icse-2027",
+      "editions": [
+        {
+          "year": 2027,
+          "dateText": "April 25 - May 1, 2027",
+          "startDate": "2027-04-25",
+          "endDate": "2027-05-01",
+          "approximateDate": false,
+          "location": "Dublin, Ireland",
+          "url": "https://conf.researchr.org/home/icse-2027",
+          "cycles": [
+            {
+              "name": "Summer",
+              "deadline": "2026-06-30",
+              "abstractDeadline": "2026-06-23",
+              "notification": "2026-10-20",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 8000047
+    },
+    {
+      "id": "ase",
+      "name": "ASE",
+      "fullName": "International Conference on Automated Software Engineering (ASE)",
+      "category": "Software Engineering",
+      "domains": [
+        "Software Engineering"
+      ],
+      "keywords": [
+        "Software Engineering",
+        "Automated Software Engineering",
+        "Software Maintenance"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 3,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/kbse",
+      "url": "https://conf.researchr.org/home/ase-2026",
+      "editions": [
+        {
+          "year": 2026,
+          "dateText": "October 12-16, 2026",
+          "startDate": "2026-10-12",
+          "endDate": "2026-10-16",
+          "approximateDate": false,
+          "location": "Munich, Germany",
+          "url": "https://conf.researchr.org/home/ase-2026",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-03-26",
+              "abstractDeadline": null,
+              "notification": "2026-06-18",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "October 12-16, 2027",
+          "startDate": "2027-10-12",
+          "endDate": "2027-10-16",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://conf.researchr.org/home/ase-2026",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-03-26",
+              "abstractDeadline": null,
+              "notification": "2027-06-18",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 8001048
+    },
+    {
+      "id": "neurips",
+      "name": "NeurIPS",
+      "fullName": "Conference on Neural Information Processing Systems (NeurIPS)",
+      "category": "Machine Learning and Computer Vision",
+      "domains": [
+        "Machine Learning",
+        "Deep Learning",
+        "AI"
+      ],
+      "keywords": [
+        "Deep Learning",
+        "Neural Networks",
+        "Machine Learning",
+        "AI",
+        "Reinforcement Learning",
+        "Computer Vision"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 4,
+      "tierVariants": [
+        {
+          "variant": "oral",
+          "kiise": "최우수",
+          "bk21plus": 4
+        },
+        {
+          "variant": "poster",
+          "kiise": "최우수",
+          "bk21plus": null
+        },
+        {
+          "variant": "spotlight",
+          "kiise": "최우수",
+          "bk21plus": 2
+        }
+      ],
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/nips",
+      "url": "https://neurips.cc/Conferences/2026",
+      "editions": [
+        {
+          "year": 2026,
+          "dateText": "December 6-12, 2026",
+          "startDate": "2026-12-06",
+          "endDate": "2026-12-12",
+          "approximateDate": false,
+          "location": "Sydney, Australia",
+          "url": "https://neurips.cc/Conferences/2026",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-05-06",
+              "abstractDeadline": "2026-05-04",
+              "notification": "2026-09-24",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "December 6-12, 2027",
+          "startDate": "2027-12-06",
+          "endDate": "2027-12-12",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://neurips.cc/Conferences/2026",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-05-06",
+              "abstractDeadline": "2027-05-04",
+              "notification": "2027-09-24",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 9000055
+    },
+    {
+      "id": "icml",
+      "name": "ICML",
+      "fullName": "International Conference on Machine Learning (ICML)",
+      "category": "Machine Learning and Computer Vision",
+      "domains": [
+        "Machine Learning",
+        "Deep Learning"
+      ],
+      "keywords": [
+        "Deep Learning",
+        "Reinforcement Learning",
+        "AI",
+        "Neural Networks"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 4,
+      "tierVariants": [
+        {
+          "variant": "oral",
+          "kiise": "최우수",
+          "bk21plus": 4
+        },
+        {
+          "variant": "poster",
+          "kiise": "최우수",
+          "bk21plus": null
+        },
+        {
+          "variant": "spotlight",
+          "kiise": "최우수",
+          "bk21plus": null
+        }
+      ],
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/icml",
+      "url": "https://icml.cc/Conferences/2026",
+      "editions": [
+        {
+          "year": 2026,
+          "dateText": "July 6-11, 2026",
+          "startDate": "2026-07-06",
+          "endDate": "2026-07-11",
+          "approximateDate": false,
+          "location": "Seoul, South Korea",
+          "url": "https://icml.cc/Conferences/2026",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-01-28",
+              "abstractDeadline": "2026-01-23",
+              "notification": null,
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "July 6-11, 2027",
+          "startDate": "2027-07-06",
+          "endDate": "2027-07-11",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://icml.cc/Conferences/2026",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-01-28",
+              "abstractDeadline": "2027-01-23",
+              "notification": "2027-05-01",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 9001053
+    },
+    {
+      "id": "iclr",
+      "name": "ICLR",
+      "fullName": "International Conference on Learning Representations (ICLR)",
+      "category": "Machine Learning and Computer Vision",
+      "domains": [
+        "Machine Learning",
+        "Deep Learning"
+      ],
+      "keywords": [
+        "Deep Learning",
+        "Representation Learning",
+        "Neural Networks",
+        "Machine Learning",
+        "AI",
+        "Reinforcement Learning",
+        "Large Language Models"
+      ],
+      "kiise": "최우수",
+      "bk21plus": null,
+      "tierVariants": [
+        {
+          "variant": "oral",
+          "kiise": "최우수",
+          "bk21plus": null
+        },
+        {
+          "variant": "poster",
+          "kiise": "최우수",
+          "bk21plus": null
+        },
+        {
+          "variant": "spotlight",
+          "kiise": "최우수",
+          "bk21plus": null
+        }
+      ],
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/iclr",
+      "url": "https://iclr.cc/Conferences/2027/CallForPapers",
+      "editions": [
+        {
+          "year": 2026,
+          "dateText": "April 23-27, 2026",
+          "startDate": "2026-04-23",
+          "endDate": "2026-04-27",
+          "approximateDate": false,
+          "location": "Rio de Janeiro, Brazil",
+          "url": "https://iclr.cc/Conferences/2026",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-09-24",
+              "abstractDeadline": "2025-09-19",
+              "notification": "2026-01-25",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "April 26-30, 2027",
+          "startDate": "2027-04-26",
+          "endDate": "2027-04-30",
+          "approximateDate": false,
+          "location": "San Francisco, CA, USA",
+          "url": "https://iclr.cc/Conferences/2027/CallForPapers",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-09-25",
+              "abstractDeadline": "2026-09-18",
+              "notification": "2026-12-16",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 9002054
+    },
+    {
+      "id": "aaai",
+      "name": "AAAI",
+      "fullName": "AAAI Conference on Artificial Intelligence (AAAI)",
+      "category": "Machine Learning and Computer Vision",
+      "domains": [
+        "Machine Learning",
+        "Deep Learning",
+        "AI"
+      ],
+      "keywords": [
+        "Deep Learning",
+        "Neural Networks",
+        "Machine Learning",
+        "AI",
+        "Reinforcement Learning",
+        "Natural Language Processing",
+        "Computer Vision"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 4,
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/aaai",
+      "url": "https://aaai.org/conference/aaai/aaai-27/",
+      "editions": [
+        {
+          "year": 2027,
+          "dateText": "February 16-23, 2027",
+          "startDate": "2027-02-16",
+          "endDate": "2027-02-23",
+          "approximateDate": false,
+          "location": "Montréal, Canada",
+          "url": "https://aaai.org/conference/aaai/aaai-27/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-07-28",
+              "abstractDeadline": "2026-07-21",
+              "notification": "2026-11-30",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 9003052
+    },
+    {
+      "id": "cvpr",
+      "name": "CVPR",
+      "fullName": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+      "category": "Machine Learning and Computer Vision",
+      "domains": [
+        "Computer Vision",
+        "Machine Learning",
+        "AI"
+      ],
+      "keywords": [
+        "Computer Vision",
+        "Pattern Recognition",
+        "Deep Learning",
+        "Image Processing",
+        "AI",
+        "Machine Learning"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 4,
+      "tierVariants": [
+        {
+          "variant": "oral",
+          "kiise": "최우수",
+          "bk21plus": 4
+        },
+        {
+          "variant": "poster",
+          "kiise": "최우수",
+          "bk21plus": null
+        },
+        {
+          "variant": "spotlight",
+          "kiise": "최우수",
+          "bk21plus": 2
+        }
+      ],
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/cvpr",
+      "url": "https://cvpr.thecvf.com/Conferences/2027/CallForPapers",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "June 11-15, 2025",
+          "startDate": "2025-06-11",
+          "endDate": "2025-06-15",
+          "approximateDate": false,
+          "location": "Nashville, TN, USA",
+          "url": "https://cvpr.thecvf.com/Conferences/2025",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2024-11-14",
+              "abstractDeadline": "2024-11-07",
+              "notification": "2025-02-26",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "June 3-7, 2026",
+          "startDate": "2026-06-03",
+          "endDate": "2026-06-07",
+          "approximateDate": false,
+          "location": "Denver, CO, USA",
+          "url": "https://cvpr.thecvf.com/Conferences/2026",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-11-13",
+              "abstractDeadline": "2025-11-07",
+              "notification": "2026-02-20",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "June 20-25, 2027",
+          "startDate": "2027-06-20",
+          "endDate": "2027-06-25",
+          "approximateDate": false,
+          "location": "Seattle, WA, USA",
+          "url": "https://cvpr.thecvf.com/Conferences/2027/CallForPapers",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-11-16",
+              "abstractDeadline": "2026-11-10",
+              "notification": "2027-02-25",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 9004049
+    },
+    {
+      "id": "iccv",
+      "name": "ICCV",
+      "fullName": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+      "category": "Machine Learning and Computer Vision",
+      "domains": [
+        "Computer Vision",
+        "Machine Learning",
+        "AI"
+      ],
+      "keywords": [
+        "Computer Vision",
+        "Deep Learning",
+        "Image Processing",
+        "AI",
+        "Machine Learning"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 4,
+      "tierVariants": [
+        {
+          "variant": "oral",
+          "kiise": "최우수",
+          "bk21plus": 4
+        },
+        {
+          "variant": "poster",
+          "kiise": "최우수",
+          "bk21plus": null
+        },
+        {
+          "variant": "spotlight",
+          "kiise": "최우수",
+          "bk21plus": 2
+        }
+      ],
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/iccv",
+      "url": "https://iccv.thecvf.com/",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "October 19-23, 2025",
+          "startDate": "2025-10-19",
+          "endDate": "2025-10-23",
+          "approximateDate": false,
+          "location": "Honolulu, HI, USA",
+          "url": "https://iccv.thecvf.com/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-03-07",
+              "abstractDeadline": "2025-03-03",
+              "notification": "2025-06-26",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "October 2-8, 2027",
+          "startDate": "2027-10-02",
+          "endDate": "2027-10-08",
+          "approximateDate": false,
+          "location": "Hong Kong",
+          "url": "https://iccv.thecvf.com/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-03-07",
+              "abstractDeadline": "2027-03-03",
+              "notification": "2027-06-25",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 9005050
+    },
+    {
+      "id": "eccv",
+      "name": "ECCV",
+      "fullName": "European Conference on Computer Vision (ECCV)",
+      "category": "Machine Learning and Computer Vision",
+      "domains": [
+        "Computer Vision",
+        "Machine Learning",
+        "AI"
+      ],
+      "keywords": [
+        "Computer Vision",
+        "Deep Learning",
+        "Image Processing",
+        "AI",
+        "Machine Learning"
+      ],
+      "kiise": "최우수",
+      "bk21plus": 2,
+      "tierVariants": [
+        {
+          "variant": "oral",
+          "kiise": "최우수",
+          "bk21plus": 2
+        },
+        {
+          "variant": "poster",
+          "kiise": "최우수",
+          "bk21plus": null
+        },
+        {
+          "variant": "spotlight",
+          "kiise": "최우수",
+          "bk21plus": 1
+        }
+      ],
+      "lists": {
+        "kaist": true,
+        "snu": true,
+        "postech": "최우수"
+      },
+      "dblp": "conf/eccv",
+      "url": "https://eccv.ecva.net/",
+      "editions": [
+        {
+          "year": 2026,
+          "dateText": "September 8-13, 2026",
+          "startDate": "2026-09-08",
+          "endDate": "2026-09-13",
+          "approximateDate": false,
+          "location": "Malmö, Sweden",
+          "url": "https://eccv.ecva.net/Conferences/2026",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-03-05",
+              "abstractDeadline": "2026-02-26",
+              "notification": "2026-06-17",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2028,
+          "dateText": "September 2028",
+          "startDate": "2028-09-08",
+          "endDate": "2028-09-13",
+          "approximateDate": false,
+          "location": "Bucharest, Romania",
+          "url": "https://eccv.ecva.net/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2028-03-03",
+              "abstractDeadline": "2028-02-25",
+              "notification": "2028-06-16",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 9006051
+    }
+  ]
+}

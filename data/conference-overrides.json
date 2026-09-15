@@ -1,0 +1,12 @@
+{
+  "$comment": "Manual corrections merged after automatic updates. Keys are venue names; values are partial venue objects (fullName, url, kiise, bk21plus, ...).",
+  "CGO": { "fullName": "IEEE/ACM International Symposium on Code Generation and Optimization (CGO)" },
+  "ACM ATC": { "fullName": "ACM Annual Technical Conference (ATC), successor of USENIX ATC" },
+  "CF": { "fullName": "ACM International Conference on Computing Frontiers (CF)" },
+  "VLSI Symposium": { "fullName": "IEEE Symposium on VLSI Technology and Circuits" },
+  "ISMM": { "fullName": "ACM SIGPLAN International Symposium on Memory Management (ISMM)" },
+  "HotOS": { "fullName": "Workshop on Hot Topics in Operating Systems (HotOS)" },
+  "HotStorage": { "fullName": "ACM Workshop on Hot Topics in Storage and File Systems (HotStorage)" },
+  "HotNets": { "fullName": "ACM Workshop on Hot Topics in Networks (HotNets)" },
+  "HotMobile": { "fullName": "International Workshop on Mobile Computing Systems and Applications (HotMobile)" }
+}

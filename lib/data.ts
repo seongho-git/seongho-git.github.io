@@ -1,6 +1,4 @@
-// ---------------------------------------------------------------------------
-// Site content. Edit this file to update the homepage.
-// ---------------------------------------------------------------------------
+// All homepage content. Components under components/sections render this file.
 
 export const personalInfo = {
   name: "Seongho Kim",
@@ -38,7 +36,7 @@ export type Publication = {
   venue?: string
   date?: string
   location?: string
-  // Rendered on its own line; a number after "IF=" is highlighted.
+  // Rendered on its own line in bold red.
   note?: string
   // The first link is attached to the title; the rest are shown as separate [Label] links.
   links: PublicationLink[]

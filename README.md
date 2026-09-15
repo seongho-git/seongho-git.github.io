@@ -1,96 +1,68 @@
-# Seongho Kim - Portfolio Website
+# seongho-git.github.io
 
-This is a personal portfolio website built with **Next.js 15**, **React 19**, **Tailwind CSS**, and **Framer Motion**.
+Personal academic homepage of Seongho Kim, built with Next.js 15 (static export), React 19, Tailwind CSS, and shadcn/ui.
 
-- **Live Site:** [https://seongho-git.github.io](https://seongho-git.github.io)
-- **Conference Deadlines:** [https://seongho-git.github.io/deadlines](https://seongho-git.github.io/deadlines)
+- Live site: https://seongho-git.github.io
+- Conferences: https://seongho-git.github.io/conferences/ (calendar) and https://seongho-git.github.io/conferences/deadlines/
 
-## Project Structure
-
-The project follows a modular Next.js App Router structure:
+## Structure
 
 ```
-.
-├── app/
-│   ├── layout.tsx       # Root layout (metadata, fonts, theme provider)
-│   ├── page.tsx         # Main landing page (composed of sections)
-│   └── deadlines/       # Deadlines page
-├── components/
-│   ├── sections/        # Modular sections for the landing page
-│   │   ├── Hero.tsx
-│   │   ├── About.tsx
-│   │   ├── Publications.tsx
-│   │   ├── Experience.tsx
-│   │   ├── Projects.tsx
-│   │   ├── Skills.tsx
-│   │   └── Contact.tsx
-│   ├── ui/              # Reusable UI components (buttons, cards, etc.)
-│   ├── site-header.tsx  # Navigation header
-│   └── theme-toggle.tsx # Dark mode toggle
-├── lib/
-│   ├── data.ts             # CV data (Personal info, Publications, etc.)
-│   └── conference-data.ts  # Conference deadlines data
-└── public/              # Static assets (images, PDFs)
+app/
+  layout.tsx                 # metadata (Open Graph, JSON-LD), fonts, theme provider
+  page.tsx                   # homepage, composed of sections
+  icon.svg                   # favicon
+  conferences/page.tsx       # submission-to-conference calendar (default view)
+  conferences/deadlines/     # deadlines table
+  deadlines/                 # legacy redirect to /conferences/deadlines
+components/
+  sections/                  # Hero, About, Publications, Education, Experience, Honors, Projects, Service, Contact
+  conferences/               # shell (tabs + filters), deadlines table, calendar, tier badges, filter state
+  site-header.tsx, site-footer.tsx, entry.tsx, section-heading.tsx
+lib/
+  data.ts                    # all homepage content (edit this to update the CV)
+  conferences.ts             # typed access to data/conferences.json
+data/
+  conferences.json           # generated conference dataset (do not edit by hand)
+  conference-config.json     # categories, extra venues, name aliases
+  conference-overrides.json  # manual corrections merged after each update
+scripts/
+  update-conferences.mjs     # fetches sources and regenerates data/conferences.json
 ```
 
-## Getting Started
-
-### Prerequisites
-- Node.js 18+ 
-- npm or pnpm
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/seongho-git/seongho-git.github.io.git
-   cd seongho-git.github.io
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   # or
-   pnpm install
-   ```
-
-### Running Locally
-
-Start the development server:
+## Local development
 
 ```bash
-npm run dev
-# or
-pnpm dev
+npm install --legacy-peer-deps
+npm run dev                 # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can also view the conference deadlines at [http://localhost:3000/deadlines](http://localhost:3000/deadlines).
-
-### Building for Production
-
-To create an optimized production build:
+Preview the exact static export that GitHub Pages serves:
 
 ```bash
-npm run build
-# or
-pnpm build
+npm run build               # writes ./out
+npm run preview             # serves ./out at http://localhost:3000
 ```
 
-The output will be in the `out` directory (static export).
+## Updating content
 
-## Customization
+- Homepage text, publications, experience: edit `lib/data.ts`.
+- Title shown across the site: `personalInfo.role` in `lib/data.ts`.
+- Conference list, categories, aliases: `data/conference-config.json`, then run `npm run update:conferences`.
+- One-off corrections to conference data: `data/conference-overrides.json` (survives automatic updates).
 
-- **Content**: Edit `lib/data.ts` to update your personal info, publications, experience, etc.
-- **Deadlines**: Edit `lib/conference-data.ts` to update the conference list.
-- **Styling**: Tailwind CSS classes are used throughout the components. Configuration is in `tailwind.config.ts`.
+## Conference data pipeline
 
-## Technologies
+`scripts/update-conferences.mjs` merges three public sources into `data/conferences.json`:
 
-- [Next.js](https://nextjs.org/)
-- [React](https://react.dev/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [Lucide React](https://lucide.dev/) (Icons)
-- [shadcn/ui](https://ui.shadcn.com/) (UI Components)
+1. `profile.heelim.com` (`cfp.json`, `conf_info.json`, `conf_order.json`): deadlines, notification dates, conference dates, domains.
+2. `ccfddl/ccf-deadlines`: additional venues listed under `extraFromCcf` in the config (cryptography and privacy venues).
+3. Pusnow's "CS 분야 우수 학술대회 목록" gist: KIISE 2024 tier (최우수/우수), BK21+ IF (2018), and KAIST/SNU/POSTECH lists.
+
+The GitHub Actions workflow `.github/workflows/update-conferences.yml` runs the script every Monday (09:00 KST) and commits `data/conferences.json` if anything changed, which triggers a redeploy. It can also be run manually from the Actions tab.
+
+Deadlines are date-only in the sources and are treated as 23:59 Anywhere on Earth (UTC−12).
+
+## Deployment
+
+Pushes to `main` build and deploy to GitHub Pages via `.github/workflows/deploy.yml`. Pull requests only build.

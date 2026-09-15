@@ -1,0 +1,41 @@
+{
+  "$comment": "Read by scripts/update-conferences.mjs. renames: heelim venue key -> display name. tierAliases: display name -> key in the tier CSV. extraFromCcf: venues fetched from ccfddl/ccf-deadlines. categories: display order and grouping.",
+  "renames": {
+    "Usenix Security": "USENIX Security",
+    "ATC": "USENIX ATC"
+  },
+  "tierAliases": {
+    "USENIX Security": "USENIX SECURITY",
+    "IEEE S&P": "S&P",
+    "AsiaCCS": "ASIACCS",
+    "Euro-Par": "EURO-PAR",
+    "VLDB": "VLDB / PVLDB",
+    "USENIX ATC": "USENIX ATC",
+    "ACM ATC": "USENIX ATC",
+    "VLSI Symposium": "VLSI",
+    "NeurIPS": "NEURIPS",
+    "CoNEXT": "CONEXT",
+    "SoCC": "SOCC",
+    "Crypto": "CRYPTO",
+    "Eurocrypt": "EUROCRYPT"
+  },
+  "extraFromCcf": [
+    { "name": "Crypto", "path": "SC/crypto.yml", "fullName": "Annual International Cryptology Conference (CRYPTO)" },
+    { "name": "Eurocrypt", "path": "SC/eurocrypt.yml", "fullName": "Annual International Conference on the Theory and Applications of Cryptographic Techniques (EUROCRYPT)" },
+    { "name": "CHES", "path": "SC/ches.yml", "fullName": "Conference on Cryptographic Hardware and Embedded Systems (CHES)" },
+    { "name": "ESORICS", "path": "SC/esorics.yml", "fullName": "European Symposium on Research in Computer Security (ESORICS)" },
+    { "name": "PETS", "path": "SC/pets.yml", "fullName": "Privacy Enhancing Technologies Symposium (PETS)" }
+  ],
+  "categories": [
+    { "name": "Computer Architecture", "venues": ["MICRO", "ISCA", "HPCA", "ASPLOS", "PACT", "ISPASS", "ICCD", "CF", "VLSI Symposium"] },
+    { "name": "Compilers and Programming Languages", "venues": ["CGO", "CC", "PLDI", "POPL", "OOPSLA", "PPoPP", "LCTES", "ISMM"] },
+    { "name": "Operating and Distributed Systems", "venues": ["OSDI", "SOSP", "EuroSys", "USENIX ATC", "ACM ATC", "HotOS", "FAST", "HotStorage", "SoCC", "Middleware", "ICDCS", "DSN", "SIGMETRICS"] },
+    { "name": "Parallel and High-Performance Computing", "venues": ["SC", "ICPP", "IPDPS", "HPDC", "ICS", "SPAA", "Euro-Par"] },
+    { "name": "Security and Cryptography", "venues": ["CCS", "IEEE S&P", "USENIX Security", "NDSS", "AsiaCCS", "RAID", "Crypto", "Eurocrypt", "CHES", "ESORICS", "PETS"] },
+    { "name": "Networking and Mobile Systems", "venues": ["SIGCOMM", "NSDI", "MobiCom", "CoNEXT", "HotNets", "INFOCOM", "HotMobile"] },
+    { "name": "Design Automation and Embedded Systems", "venues": ["DAC", "DATE", "EMSOFT", "RTSS", "RTAS", "ECRTS"] },
+    { "name": "Data Management and Web", "venues": ["SIGMOD", "VLDB", "WWW", "KDD"] },
+    { "name": "Software Engineering", "venues": ["ICSE", "ASE"] },
+    { "name": "Machine Learning and Computer Vision", "venues": ["NeurIPS", "ICML", "ICLR", "AAAI", "CVPR", "ICCV", "ECCV"] }
+  ]
+}
