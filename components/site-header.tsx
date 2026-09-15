@@ -1,86 +1,78 @@
 "use client"
 
-import * as React from "react"
 import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Menu, X } from "lucide-react"
-import { ThemeToggle } from "@/components/theme-toggle"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
+import { Menu, X } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { ThemeToggle } from "@/components/theme-toggle"
+import { personalInfo } from "@/lib/data"
+
+const navItems = [
+  { label: "Research", href: "/#about" },
+  { label: "Publications", href: "/#publications" },
+  { label: "Experience", href: "/#experience" },
+  { label: "Conferences", href: "/conferences/" },
+  { label: "Contact", href: "/#contact" },
+]
 
 export function SiteHeader() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [open, setOpen] = useState(false)
+  const pathname = usePathname()
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" })
-  }
-
-  const navItems = [
-    { label: "Home", href: "/" },
-    { label: "Publications", href: "/#publications" },
-    { label: "Experience", href: "/#experience" },
-    { label: "Contact", href: "/#contact" },
-    { label: "Deadlines", href: "/deadlines" },
-  ]
+  const isActive = (href: string) => href.startsWith("/conferences") && pathname?.startsWith("/conferences")
 
   return (
-    <header className="border-b border-border bg-background/80 backdrop-blur-xl supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="hover:opacity-80 transition-opacity" onClick={scrollToTop}>
-            <span className="text-xl font-semibold font-serif text-foreground">
-              Seongho Kim
-            </span>
-          </Link>
+    <header className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur supports-[backdrop-filter]:bg-background/75">
+      <div className="mx-auto flex h-14 max-w-5xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        <Link href="/" className="text-base font-semibold tracking-tight text-foreground hover:text-primary transition-colors">
+          {personalInfo.name}
+        </Link>
 
-          <nav className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.label}
-                href={item.href}
-                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
-              >
-                {item.label}
-              </Link>
-            ))}
-          </nav>
+        <nav className="hidden md:flex items-center gap-7" aria-label="Primary">
+          {navItems.map((item) => (
+            <Link
+              key={item.label}
+              href={item.href}
+              className={`text-sm transition-colors hover:text-foreground ${
+                isActive(item.href) ? "text-foreground font-medium" : "text-muted-foreground"
+              }`}
+            >
+              {item.label}
+            </Link>
+          ))}
+        </nav>
 
-          <div className="flex items-center space-x-4">
-            <ThemeToggle />
-            <Button
-              size="sm"
-              className="hidden sm:flex bg-primary hover:bg-primary/90 text-primary-foreground rounded-full shadow-sm"
-              asChild
-            >
-              <a href="mailto:seongho-kim@yonsei.ac.kr">Contact Me</a>
-            </Button>
-            <Button
-              variant="ghost"
-              size="icon"
-              className="md:hidden"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </Button>
-          </div>
+        <div className="flex items-center gap-1">
+          <ThemeToggle />
+          <Button
+            variant="ghost"
+            size="icon"
+            className="md:hidden"
+            aria-label={open ? "Close menu" : "Open menu"}
+            aria-expanded={open}
+            onClick={() => setOpen(!open)}
+          >
+            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </Button>
         </div>
       </div>
 
-      {/* Mobile menu */}
-      {isMenuOpen && (
-        <div className="md:hidden bg-background/95 backdrop-blur-xl border-b border-border">
-          <nav className="container mx-auto px-4 py-4 flex flex-col space-y-4">
+      {open && (
+        <nav className="md:hidden border-t border-border bg-background" aria-label="Mobile">
+          <div className="mx-auto flex max-w-5xl flex-col px-4 py-3 sm:px-6">
             {navItems.map((item) => (
               <Link
                 key={item.label}
                 href={item.href}
-                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
-                onClick={() => setIsMenuOpen(false)}
+                className="py-2 text-sm text-muted-foreground hover:text-foreground"
+                onClick={() => setOpen(false)}
               >
                 {item.label}
               </Link>
             ))}
-          </nav>
-        </div>
+          </div>
+        </nav>
       )}
     </header>
   )

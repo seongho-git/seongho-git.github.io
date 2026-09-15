@@ -5,40 +5,25 @@ import { ArrowUp } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function ScrollToTop() {
-    const [isVisible, setIsVisible] = useState(false)
+  const [visible, setVisible] = useState(false)
 
-    useEffect(() => {
-        const toggleVisibility = () => {
-            if (window.pageYOffset > 300) {
-                setIsVisible(true)
-            } else {
-                setIsVisible(false)
-            }
-        }
+  useEffect(() => {
+    const onScroll = () => setVisible(window.scrollY > 400)
+    onScroll()
+    window.addEventListener("scroll", onScroll, { passive: true })
+    return () => window.removeEventListener("scroll", onScroll)
+  }, [])
 
-        window.addEventListener("scroll", toggleVisibility)
-
-        return () => window.removeEventListener("scroll", toggleVisibility)
-    }, [])
-
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        })
-    }
-
-    return (
-        <>
-            {isVisible && (
-                <Button
-                    onClick={scrollToTop}
-                    className="fixed bottom-8 right-8 z-50 h-12 w-12 rounded-full shadow-lg bg-primary hover:bg-primary/90 text-primary-foreground"
-                    size="icon"
-                >
-                    <ArrowUp className="h-5 w-5" />
-                </Button>
-            )}
-        </>
-    )
+  if (!visible) return null
+  return (
+    <Button
+      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      variant="outline"
+      size="icon"
+      aria-label="Scroll to top"
+      className="fixed bottom-6 right-6 z-40 h-10 w-10 rounded-full bg-background shadow-sm"
+    >
+      <ArrowUp className="h-4 w-4" />
+    </Button>
+  )
 }

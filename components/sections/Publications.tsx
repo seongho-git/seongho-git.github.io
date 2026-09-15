@@ -1,169 +1,43 @@
-"use client"
+import { SectionHeading } from "@/components/section-heading"
+import { TitleLink } from "@/components/title-link"
+import { highlightName } from "@/components/highlight-name"
+import { publications } from "@/lib/data"
 
-import { motion } from "framer-motion"
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { ExternalLink } from "lucide-react"
-import { journalPublications, conferencePublications } from "@/lib/data"
-
-// Highlights "Seongho Kim" in the author list with primary color
-const formatAuthors = (authors: string) => {
-  const parts = authors.split("Seongho Kim")
-  if (parts.length === 1) return <span>{authors}</span>
-
-  return (
-    <span>
-      {parts[0]}
-      <span className="font-semibold not-italic text-primary">Seongho Kim</span>
-      {parts[1]}
-    </span>
-  )
-}
+const hasEqualContribution = publications.some((group) => group.items.some((pub) => pub.authors.includes("*")))
 
 export function Publications() {
   return (
-    <section id="publications" className="py-8 sm:py-12">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-8"
-          >
-            <h2 className="text-2xl font-semibold font-serif text-foreground mb-4">Publications</h2>
-            <div className="w-12 h-1 bg-primary rounded-full"></div>
-          </motion.div>
-
-          {/* Journal Publications */}
-          <div className="mb-10">
-            <h3 className="text-base font-semibold text-foreground mb-4 uppercase tracking-wider text-muted-foreground">
-              Refereed Journal Publications
-            </h3>
-            <div className="space-y-4">
-              {journalPublications.map((pub, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                >
-                  <Card className="border border-border shadow-sm hover:shadow-md transition-all duration-300 bg-card">
-                    <CardContent className="p-5 sm:p-6">
-                      <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
-                        <div className="flex-1">
-                          <h4 className="text-base font-semibold text-foreground mb-2 leading-snug">
-                            <a
-                              href={pub.link}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="hover:text-primary transition-colors"
-                            >
-                              {pub.title}
-                            </a>
-                          </h4>
-                          <p className="text-sm text-muted-foreground mb-3 italic">
-                            {formatAuthors(pub.authors)}
-                          </p>
-                          <div className="flex flex-wrap items-center gap-2">
-                            <Badge className="bg-primary/10 text-primary hover:bg-primary/15 border-0 text-xs font-medium">
-                              {pub.journal}
-                            </Badge>
-                            {pub.badges.map((badge, i) => (
-                              <Badge
-                                key={i}
-                                variant="outline"
-                                className="border-border text-muted-foreground text-xs"
-                              >
-                                {badge}
-                              </Badge>
-                            ))}
-                          </div>
-                        </div>
-                        <div className="flex sm:flex-col gap-2">
-                          <a
-                            href={pub.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-muted-foreground/50 hover:text-primary transition-colors p-2 hover:bg-accent rounded-lg flex-shrink-0 self-start"
-                          >
-                            <ExternalLink className="h-4 w-4" />
-                          </a>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </motion.div>
-              ))}
-            </div>
+    <section id="publications" className="py-10">
+      <SectionHeading title="Publications" />
+      <div className="space-y-8">
+        {publications.map((group) => (
+          <div key={group.category}>
+            <h3 className="mb-3 text-xs font-medium uppercase tracking-wider text-muted-foreground">{group.category}</h3>
+            <ol className="divide-y divide-border">
+              {group.items.map((pub) => {
+                const venueParts = [pub.venue, pub.location, pub.date].filter(Boolean)
+                return (
+                  <li key={pub.title} className="py-4 first:pt-0 last:pb-0">
+                    <p className="text-[15px] font-medium leading-snug text-foreground">
+                      <TitleLink title={pub.title} links={pub.links} />
+                    </p>
+                    <p className="mt-1 text-sm text-muted-foreground">{highlightName(pub.authors)}</p>
+                    {(pub.venueShort || venueParts.length > 0) && (
+                      <p className="mt-1 text-sm text-muted-foreground">
+                        {pub.venueShort && <span className="font-semibold text-foreground">{pub.venueShort}</span>}
+                        {pub.venueShort && venueParts.length > 0 && ", "}
+                        {venueParts.join(", ")}
+                      </p>
+                    )}
+                    {pub.note && <p className="mt-1 text-sm font-semibold text-red-600 dark:text-red-400">{pub.note}</p>}
+                  </li>
+                )
+              })}
+            </ol>
           </div>
-
-          {/* Conference Publications */}
-          <div>
-            <h3 className="text-base font-semibold text-foreground mb-4 uppercase tracking-wider text-muted-foreground">
-              Refereed Conference Publications
-            </h3>
-            <div className="space-y-4">
-              {conferencePublications.map((pub, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: (journalPublications.length + index) * 0.1 }}
-                >
-                  <Card className="border border-border shadow-sm hover:shadow-md transition-all duration-300 bg-card">
-                    <CardContent className="p-5 sm:p-6">
-                      <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
-                        <div className="flex-1">
-                          <h4 className="text-base font-semibold text-foreground mb-2 leading-snug">
-                            <a
-                              href={pub.link}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="hover:text-primary transition-colors"
-                            >
-                              {pub.title}
-                            </a>
-                          </h4>
-                          <p className="text-sm text-muted-foreground mb-3 italic">
-                            {formatAuthors(pub.authors)}
-                          </p>
-                          <div className="flex flex-wrap items-center gap-2">
-                            <Badge className="bg-primary/10 text-primary hover:bg-primary/15 border-0 text-xs font-medium">
-                              {pub.journal}
-                            </Badge>
-                            {pub.badges.map((badge, i) => (
-                              <Badge
-                                key={i}
-                                variant="outline"
-                                className="border-border text-muted-foreground text-xs"
-                              >
-                                {badge}
-                              </Badge>
-                            ))}
-                          </div>
-                        </div>
-                        <div className="flex sm:flex-col gap-2">
-                          <a
-                            href={pub.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-muted-foreground/50 hover:text-primary transition-colors p-2 hover:bg-accent rounded-lg flex-shrink-0 self-start"
-                          >
-                            <ExternalLink className="h-4 w-4" />
-                          </a>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
+      {hasEqualContribution && <p className="mt-6 text-xs text-muted-foreground">* Equal contribution.</p>}
     </section>
   )
 }

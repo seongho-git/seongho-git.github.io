@@ -1,43 +1,32 @@
-"use client"
-
-import { useState, useEffect } from "react"
 import { SiteHeader } from "@/components/site-header"
+import { SiteFooter } from "@/components/site-footer"
 import { ScrollToTop } from "@/components/scroll-to-top"
 import { Hero } from "@/components/sections/Hero"
 import { About } from "@/components/sections/About"
 import { Publications } from "@/components/sections/Publications"
-import { Recognition } from "@/components/sections/Recognition"
+import { Education } from "@/components/sections/Education"
 import { Experience } from "@/components/sections/Experience"
+import { Honors } from "@/components/sections/Honors"
 import { Projects } from "@/components/sections/Projects"
-import { Activities } from "@/components/sections/Activities"
-import { Skills } from "@/components/sections/Skills"
+import { Service } from "@/components/sections/Service"
 import { Contact } from "@/components/sections/Contact"
 
 export default function HomePage() {
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
-
-  if (!mounted) {
-    return null
-  }
-
   return (
     <div className="min-h-screen bg-background text-foreground">
       <SiteHeader />
-      <main>
+      <main className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <Hero />
         <About />
         <Publications />
-        <Recognition />
+        <Education />
         <Experience />
+        <Honors />
         <Projects />
-        <Activities />
-        <Skills />
+        <Service />
         <Contact />
       </main>
+      <SiteFooter />
       <ScrollToTop />
     </div>
   )
