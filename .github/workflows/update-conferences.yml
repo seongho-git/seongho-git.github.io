@@ -13,16 +13,16 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
-          node-version: "20"
+          node-version: "22"
           cache: npm
       - run: npm ci --legacy-peer-deps
       - name: Fetch latest conference data
         run: node scripts/update-conferences.mjs
       - name: Commit and push if changed
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "data(conferences): weekly automatic update"
           file_pattern: data/conferences.json
