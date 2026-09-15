@@ -5,8 +5,13 @@
 export const personalInfo = {
   name: "Seongho Kim",
   role: "Ph.D. Candidate",
+  // Small uppercase label above the name.
+  headline: "Compiler Engineer",
+  researchInterestsLine:
+    "Research Interests: Compiler Optimization for Homomorphic Encryption and Deep Learning",
   department: "School of Electrical and Electronic Engineering",
   university: "Yonsei University",
+  universityUrl: "https://ee.yonsei.ac.kr/ee/",
   location: "Seoul, Republic of Korea",
   lab: "Compiler Research Laboratory (CoreLab)",
   labUrl: "https://corelab.yonsei.ac.kr/",
@@ -17,9 +22,8 @@ export const personalInfo = {
   scholar: "https://scholar.google.com/citations?user=YosbfkYAAAAJ",
   orcid: "https://orcid.org/0009-0008-9306-9301",
   cv: "https://drive.google.com/file/d/15cjSGRjWUS0Wyid8og2MaLmghFh6fZoo/view?usp=sharing",
-  researchInterests: [
-    "Compiler optimization for fully homomorphic encryption (FHE)",
-    "Compiler optimization for deep learning and LLM inference",
+  about: [
+    "I am a Ph.D. candidate in the School of Electrical and Electronic Engineering at Yonsei University, advised by Prof. Hanjun Kim at the Compiler Research Laboratory (CoreLab). I work on compiler optimization for fully homomorphic encryption (FHE) and deep learning.",
   ],
 }
 

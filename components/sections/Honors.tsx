@@ -11,11 +11,11 @@ export function Honors() {
       <EntryList>
         {honors.map((item, index) => (
           <Entry key={index} aside={item.date}>
-            <p className="text-[15px] font-medium text-foreground">
+            <p className="text-base sm:text-lg font-medium text-foreground">
               <TitleLink title={item.title} links={item.link ? [{ label: item.linkLabel ?? "Link", url: item.link }] : []} />
             </p>
-            <p className="text-sm text-muted-foreground">{item.organization}</p>
-            {item.detail && <p className="mt-1 text-sm text-muted-foreground">{highlightName(item.detail)}</p>}
+            <p className="text-base text-muted-foreground">{item.organization}</p>
+            {item.detail && <p className="mt-1 text-base text-muted-foreground">{highlightName(item.detail)}</p>}
           </Entry>
         ))}
       </EntryList>

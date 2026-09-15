@@ -9,8 +9,8 @@ export function Experience() {
       <EntryList>
         {experience.map((exp, index) => (
           <Entry key={index} aside={exp.period}>
-            <p className="text-[15px] font-medium text-foreground">{exp.title}</p>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-base sm:text-lg font-medium text-foreground">{exp.title}</p>
+            <p className="text-base text-muted-foreground">
               {exp.link ? (
                 <a href={exp.link} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                   {exp.organization}
@@ -19,7 +19,7 @@ export function Experience() {
                 exp.organization
               )}
             </p>
-            {exp.advisor && <p className="text-sm text-muted-foreground">Advised by {exp.advisor}</p>}
+            {exp.advisor && <p className="text-base text-muted-foreground">Advised by {exp.advisor}</p>}
             <Bullets items={exp.bullets} />
           </Entry>
         ))}

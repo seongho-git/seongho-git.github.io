@@ -4,7 +4,7 @@ import type { ReactNode } from "react"
  * Title with its primary link attached as a small blue "[Label]" inside the same anchor.
  * Extra links are rendered as separate small blue "[Label]" anchors after the title.
  */
-const labelClass = "ml-1.5 align-baseline text-xs font-normal text-primary"
+const labelClass = "ml-1.5 align-baseline text-sm font-normal text-primary"
 
 export function TitleLink({
   title,

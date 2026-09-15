@@ -10,13 +10,13 @@ export function Projects() {
       <EntryList>
         {projects.map((project, index) => (
           <Entry key={index} aside={project.period}>
-            <p className="text-[15px] font-medium text-foreground">
+            <p className="text-base sm:text-lg font-medium text-foreground">
               <TitleLink
                 title={project.title}
                 links={project.link ? [{ label: project.linkLabel ?? "Link", url: project.link }] : []}
               />
             </p>
-            <p className="text-sm text-muted-foreground">{project.affiliation}</p>
+            <p className="text-base text-muted-foreground">{project.affiliation}</p>
             <Bullets items={project.bullets} />
           </Entry>
         ))}

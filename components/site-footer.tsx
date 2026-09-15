@@ -5,7 +5,7 @@ const lastUpdated = new Date().toLocaleDateString("en-US", { year: "numeric", mo
 export function SiteFooter() {
   return (
     <footer className="border-t border-border">
-      <div className="mx-auto flex max-w-3xl flex-col gap-2 px-4 py-8 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-5xl flex-col gap-2 px-4 py-8 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
         <p>
           © {new Date().getFullYear()} {personalInfo.name}. Last updated {lastUpdated}.
         </p>

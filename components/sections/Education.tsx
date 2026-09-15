@@ -9,8 +9,8 @@ export function Education() {
       <EntryList>
         {education.map((edu, index) => (
           <Entry key={index} aside={edu.period}>
-            <p className="text-[15px] font-medium text-foreground">{edu.degree}</p>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-base sm:text-lg font-medium text-foreground">{edu.degree}</p>
+            <p className="text-base text-muted-foreground">
               {edu.school}, {edu.location}
             </p>
             <Bullets items={edu.details} />

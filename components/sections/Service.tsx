@@ -9,8 +9,8 @@ export function Service() {
       <EntryList>
         {service.map((item, index) => (
           <Entry key={index} aside={item.date}>
-            <p className="text-[15px] font-medium text-foreground">{item.role}</p>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-base sm:text-lg font-medium text-foreground">{item.role}</p>
+            <p className="text-base text-muted-foreground">
               {item.link ? (
                 <a href={item.link} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                   {item.event}

@@ -9,7 +9,7 @@ import { ThemeToggle } from "@/components/theme-toggle"
 import { personalInfo } from "@/lib/data"
 
 const navItems = [
-  { label: "Research", href: "/#about" },
+  { label: "About", href: "/#about" },
   { label: "Publications", href: "/#publications" },
   { label: "Experience", href: "/#experience" },
   { label: "Conferences", href: "/conferences/" },
