@@ -1,5 +1,6 @@
 {
-  "$comment": "Read by scripts/update-conferences.mjs. renames: heelim venue key -> display name. tierAliases: display name -> key in the tier CSV. extraFromCcf: venues fetched from ccfddl/ccf-deadlines. categories: display order and grouping.",
+  "$comment": "Read by scripts/update-conferences.mjs. hiddenVenues: venues dropped from the output. renames: heelim venue key -> display name. tierAliases: display name -> key in the tier CSV. extraFromCcf: venues fetched from ccfddl/ccf-deadlines. categories: display order and grouping.",
+  "hiddenVenues": ["USENIX ATC"],
   "renames": {
     "Usenix Security": "USENIX Security",
     "ATC": "USENIX ATC"

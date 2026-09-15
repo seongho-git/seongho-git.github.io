@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T14:09:56.147Z",
+  "generatedAt": "2026-09-15T14:45:45.230Z",
   "sources": {
     "heelim": {
       "url": "https://profile.heelim.com/",
@@ -43,7 +43,7 @@
         "postech": "최우수"
       },
       "dblp": "conf/micro",
-      "url": "http://www.microarch.org/micro59",
+      "url": "https://www.microarch.org/",
       "editions": [
         {
           "year": 2025,
@@ -90,7 +90,7 @@
           "endDate": "2027-11-04",
           "approximateDate": false,
           "location": null,
-          "url": "http://www.microarch.org/micro59",
+          "url": "https://www.microarch.org/",
           "cycles": [
             {
               "name": null,
@@ -104,7 +104,8 @@
         }
       ],
       "source": "heelim",
-      "sortKey": 1
+      "sortKey": 1,
+      "homepage": "https://www.microarch.org/"
     },
     {
       "id": "isca",
@@ -127,7 +128,7 @@
         "postech": "최우수"
       },
       "dblp": "conf/isca",
-      "url": "http://iscaconf.org/isca2027",
+      "url": "https://iscaconf.org/",
       "editions": [
         {
           "year": 2025,
@@ -174,7 +175,7 @@
           "endDate": "2027-06-18",
           "approximateDate": false,
           "location": "TBD",
-          "url": "http://iscaconf.org/isca2027",
+          "url": "https://iscaconf.org/",
           "cycles": [
             {
               "name": null,
@@ -494,7 +495,7 @@
         "postech": "우수"
       },
       "dblp": "conf/ispass",
-      "url": "https://ispass.org/ispass2026/",
+      "url": "https://ispass.org/",
       "editions": [
         {
           "year": 2025,
@@ -541,7 +542,7 @@
           "endDate": "2027-04-28",
           "approximateDate": false,
           "location": null,
-          "url": "https://ispass.org/ispass2026/",
+          "url": "https://ispass.org/",
           "cycles": [
             {
               "name": null,
@@ -555,7 +556,8 @@
         }
       ],
       "source": "heelim",
-      "sortKey": 5035
+      "sortKey": 5035,
+      "homepage": "https://ispass.org/"
     },
     {
       "id": "iccd",
@@ -582,7 +584,7 @@
         "postech": "우수"
       },
       "dblp": "conf/iccd",
-      "url": "https://www.iccd-conf.com/home.html",
+      "url": "https://www.iccd-conf.com/",
       "editions": [
         {
           "year": 2026,
@@ -610,7 +612,7 @@
           "endDate": "2027-11-18",
           "approximateDate": false,
           "location": null,
-          "url": "https://www.iccd-conf.com/home.html",
+          "url": "https://www.iccd-conf.com/",
           "cycles": [
             {
               "name": null,
@@ -624,7 +626,8 @@
         }
       ],
       "source": "heelim",
-      "sortKey": 6034
+      "sortKey": 6034,
+      "homepage": "https://www.iccd-conf.com/"
     },
     {
       "id": "cf",
@@ -644,7 +647,7 @@
       "kiise": null,
       "bk21plus": null,
       "dblp": null,
-      "url": "http://www.computingfrontiers.org/2026",
+      "url": "https://www.computingfrontiers.org/",
       "editions": [
         {
           "year": 2025,
@@ -691,7 +694,7 @@
           "endDate": "2027-05-21",
           "approximateDate": false,
           "location": null,
-          "url": "http://www.computingfrontiers.org/2026",
+          "url": "https://www.computingfrontiers.org/",
           "cycles": [
             {
               "name": null,
@@ -705,7 +708,8 @@
         }
       ],
       "source": "heelim",
-      "sortKey": 7999
+      "sortKey": 7999,
+      "homepage": "https://www.computingfrontiers.org/"
     },
     {
       "id": "vlsi-symposium",
@@ -802,7 +806,7 @@
           "endDate": "2026-02-04",
           "approximateDate": false,
           "location": "Sydney, Australia",
-          "url": "https://cgo.org/cgo2026/",
+          "url": "https://2026.cgo.org/",
           "cycles": [
             {
               "name": null,
@@ -867,7 +871,7 @@
         "postech": "우수"
       },
       "dblp": "conf/cc",
-      "url": "https://conf.researchr.org/home/CC-2026",
+      "url": "https://conf.researchr.org/series/CC",
       "editions": [
         {
           "year": 2026,
@@ -895,7 +899,7 @@
           "endDate": "2027-02-01",
           "approximateDate": false,
           "location": null,
-          "url": "https://conf.researchr.org/home/CC-2026",
+          "url": "https://conf.researchr.org/series/CC",
           "cycles": [
             {
               "name": null,
@@ -909,7 +913,8 @@
         }
       ],
       "source": "heelim",
-      "sortKey": 1001015
+      "sortKey": 1001015,
+      "homepage": "https://conf.researchr.org/series/CC"
     },
     {
       "id": "pldi",
@@ -1281,7 +1286,7 @@
         "postech": "우수"
       },
       "dblp": "conf/lctrts",
-      "url": "https://pldi26.sigplan.org/home/LCTES-2026",
+      "url": "https://conf.researchr.org/series/LCTES",
       "editions": [
         {
           "year": 2026,
@@ -1309,7 +1314,7 @@
           "endDate": "2027-06-16",
           "approximateDate": false,
           "location": null,
-          "url": "https://pldi26.sigplan.org/home/LCTES-2026",
+          "url": "https://conf.researchr.org/series/LCTES",
           "cycles": [
             {
               "name": null,
@@ -1323,7 +1328,8 @@
         }
       ],
       "source": "heelim",
-      "sortKey": 1006016
+      "sortKey": 1006016,
+      "homepage": "https://conf.researchr.org/series/LCTES"
     },
     {
       "id": "ismm",
@@ -1342,7 +1348,7 @@
       "kiise": null,
       "bk21plus": null,
       "dblp": null,
-      "url": "https://conf.researchr.org/home/ismm-2026",
+      "url": "https://conf.researchr.org/series/ismm",
       "editions": [
         {
           "year": 2025,
@@ -1389,7 +1395,7 @@
           "endDate": "2027-06-16",
           "approximateDate": false,
           "location": null,
-          "url": "https://conf.researchr.org/home/ismm-2026",
+          "url": "https://conf.researchr.org/series/ismm",
           "cycles": [
             {
               "name": null,
@@ -1403,7 +1409,8 @@
         }
       ],
       "source": "heelim",
-      "sortKey": 1007999
+      "sortKey": 1007999,
+      "homepage": "https://conf.researchr.org/series/ismm"
     },
     {
       "id": "osdi",
@@ -1691,94 +1698,6 @@
       "sortKey": 2002006
     },
     {
-      "id": "usenix-atc",
-      "name": "USENIX ATC",
-      "fullName": "USENIX Annual Technical Conference (USENIX ATC)",
-      "category": "Operating and Distributed Systems",
-      "domains": [
-        "Operating Systems",
-        "Storage Systems",
-        "Cloud Computing"
-      ],
-      "keywords": [
-        "Operating Systems",
-        "Cloud Computing",
-        "Storage Systems",
-        "File Systems",
-        "Virtualization"
-      ],
-      "kiise": "최우수",
-      "bk21plus": 3,
-      "lists": {
-        "kaist": true,
-        "snu": true,
-        "postech": "최우수"
-      },
-      "dblp": "conf/usenix",
-      "url": "https://www.usenix.org/conference/atc25",
-      "editions": [
-        {
-          "year": 2025,
-          "dateText": "July 7-9, 2025",
-          "startDate": "2025-07-07",
-          "endDate": "2025-07-09",
-          "approximateDate": false,
-          "location": "Boston, MA, USA",
-          "url": "https://www.usenix.org/conference/atc25",
-          "cycles": [
-            {
-              "name": null,
-              "deadline": "2025-01-14",
-              "abstractDeadline": null,
-              "notification": "2025-04-25",
-              "estimated": true,
-              "verified": false
-            }
-          ]
-        },
-        {
-          "year": 2026,
-          "dateText": "July 7-9, 2026",
-          "startDate": "2026-07-07",
-          "endDate": "2026-07-09",
-          "approximateDate": false,
-          "location": null,
-          "url": "https://www.usenix.org/conference/atc25",
-          "cycles": [
-            {
-              "name": null,
-              "deadline": "2026-01-14",
-              "abstractDeadline": null,
-              "notification": "2026-04-25",
-              "estimated": true,
-              "verified": false
-            }
-          ]
-        },
-        {
-          "year": 2027,
-          "dateText": "July 7-9, 2027",
-          "startDate": "2027-07-07",
-          "endDate": "2027-07-09",
-          "approximateDate": false,
-          "location": null,
-          "url": "https://www.usenix.org/conference/atc25",
-          "cycles": [
-            {
-              "name": null,
-              "deadline": "2027-01-14",
-              "abstractDeadline": null,
-              "notification": "2027-04-25",
-              "estimated": true,
-              "verified": false
-            }
-          ]
-        }
-      ],
-      "source": "heelim",
-      "sortKey": 2003999
-    },
-    {
       "id": "acm-atc",
       "name": "ACM ATC",
       "fullName": "ACM Annual Technical Conference (ATC), successor of USENIX ATC",
@@ -2013,7 +1932,7 @@
       "kiise": null,
       "bk21plus": null,
       "dblp": null,
-      "url": "https://www.hotstorage.org/2026/",
+      "url": "https://www.hotstorage.org/",
       "editions": [
         {
           "year": 2025,
@@ -2060,7 +1979,7 @@
           "endDate": "2027-09-29",
           "approximateDate": false,
           "location": null,
-          "url": "https://www.hotstorage.org/2026/",
+          "url": "https://www.hotstorage.org/",
           "cycles": [
             {
               "name": null,
@@ -2074,7 +1993,8 @@
         }
       ],
       "source": "heelim",
-      "sortKey": 2007999
+      "sortKey": 2007999,
+      "homepage": "https://www.hotstorage.org/"
     },
     {
       "id": "socc",
@@ -2098,7 +2018,7 @@
         "postech": "우수"
       },
       "dblp": "conf/cloud",
-      "url": "https://acmsocc.org/2026/index.html",
+      "url": "https://acmsocc.org/",
       "editions": [
         {
           "year": 2025,
@@ -2153,7 +2073,7 @@
           "endDate": "2027-11-20",
           "approximateDate": false,
           "location": null,
-          "url": "https://acmsocc.org/2026/index.html",
+          "url": "https://acmsocc.org/",
           "cycles": [
             {
               "name": "Round-1",
@@ -2175,7 +2095,8 @@
         }
       ],
       "source": "heelim",
-      "sortKey": 2008999
+      "sortKey": 2008999,
+      "homepage": "https://acmsocc.org/"
     },
     {
       "id": "middleware",
@@ -2198,7 +2119,7 @@
         "postech": "우수"
       },
       "dblp": "conf/middleware",
-      "url": "https://middleware-conf.github.io/2026",
+      "url": "https://middleware-conf.github.io/",
       "editions": [
         {
           "year": 2025,
@@ -2261,7 +2182,7 @@
           "endDate": "2027-12-18",
           "approximateDate": false,
           "location": null,
-          "url": "https://middleware-conf.github.io/2026",
+          "url": "https://middleware-conf.github.io/",
           "cycles": [
             {
               "name": "Winter",
@@ -2283,7 +2204,8 @@
         }
       ],
       "source": "heelim",
-      "sortKey": 2009038
+      "sortKey": 2009038,
+      "homepage": "https://middleware-conf.github.io/"
     },
     {
       "id": "icdcs",
@@ -2316,7 +2238,7 @@
           "endDate": "2025-07-23",
           "approximateDate": false,
           "location": null,
-          "url": "https://icdcs2025.icdcs.org/cfp/",
+          "url": "https://icdcs2025.icdcs.org/",
           "cycles": [
             {
               "name": null,
@@ -2592,7 +2514,7 @@
         "postech": "최우수"
       },
       "dblp": "conf/sc",
-      "url": "https://sc26.supercomputing.org/all-dates-deadlines",
+      "url": "https://supercomputing.org/",
       "editions": [
         {
           "year": 2025,
@@ -2639,7 +2561,7 @@
           "endDate": "2027-11-20",
           "approximateDate": false,
           "location": null,
-          "url": "https://sc26.supercomputing.org/all-dates-deadlines",
+          "url": "https://supercomputing.org/",
           "cycles": [
             {
               "name": null,
@@ -2653,7 +2575,8 @@
         }
       ],
       "source": "heelim",
-      "sortKey": 3000018
+      "sortKey": 3000018,
+      "homepage": "https://supercomputing.org/"
     },
     {
       "id": "icpp",
@@ -2677,7 +2600,7 @@
         "postech": "우수"
       },
       "dblp": "conf/icpp",
-      "url": "https://icpp2026.github.io",
+      "url": "https://www.icpp-conf.org/",
       "editions": [
         {
           "year": 2025,
@@ -2724,7 +2647,7 @@
           "endDate": "2027-10-01",
           "approximateDate": false,
           "location": null,
-          "url": "https://icpp2026.github.io",
+          "url": "https://www.icpp-conf.org/",
           "cycles": [
             {
               "name": null,
@@ -2738,7 +2661,8 @@
         }
       ],
       "source": "heelim",
-      "sortKey": 3001009
+      "sortKey": 3001009,
+      "homepage": "https://www.icpp-conf.org/"
     },
     {
       "id": "ipdps",
@@ -3723,7 +3647,7 @@
           "endDate": "2025-10-22",
           "approximateDate": false,
           "location": "Ploen, Germany",
-          "url": "https://raid-2025.github.io/",
+          "url": "https://raid2025.github.io/",
           "cycles": [
             {
               "name": null,
@@ -4629,7 +4553,7 @@
         "postech": "최우수"
       },
       "dblp": "conf/conext",
-      "url": "https://conferences2.sigcomm.org/co-next/2026",
+      "url": "https://conferences2.sigcomm.org/co-next/2027/",
       "editions": [
         {
           "year": 2025,
@@ -4700,7 +4624,7 @@
           "endDate": "2027-12-10",
           "approximateDate": false,
           "location": null,
-          "url": "https://conferences2.sigcomm.org/co-next/2026",
+          "url": "https://conferences2.sigcomm.org/co-next/2027/",
           "cycles": [
             {
               "name": "Winter",
@@ -4747,7 +4671,7 @@
       "kiise": null,
       "bk21plus": null,
       "dblp": null,
-      "url": "https://conferences.sigcomm.org/hotnets/2026/",
+      "url": "https://conferences.sigcomm.org/hotnets/",
       "editions": [
         {
           "year": 2025,
@@ -4794,7 +4718,7 @@
           "endDate": "2027-11-17",
           "approximateDate": false,
           "location": null,
-          "url": "https://conferences.sigcomm.org/hotnets/2026/",
+          "url": "https://conferences.sigcomm.org/hotnets/",
           "cycles": [
             {
               "name": null,
@@ -4808,7 +4732,8 @@
         }
       ],
       "source": "heelim",
-      "sortKey": 5004999
+      "sortKey": 5004999,
+      "homepage": "https://conferences.sigcomm.org/hotnets/"
     },
     {
       "id": "infocom",
@@ -4833,7 +4758,7 @@
         "postech": "최우수"
       },
       "dblp": "conf/infocom",
-      "url": "https://infocom2026.ieee-infocom.org/",
+      "url": "https://infocom2027.ieee-infocom.org/",
       "editions": [
         {
           "year": 2026,
@@ -4861,7 +4786,7 @@
           "endDate": "2027-05-21",
           "approximateDate": false,
           "location": null,
-          "url": "https://infocom2026.ieee-infocom.org/",
+          "url": "https://infocom2027.ieee-infocom.org/",
           "cycles": [
             {
               "name": null,
@@ -4968,7 +4893,7 @@
           "endDate": "2026-07-29",
           "approximateDate": false,
           "location": "Long Beach, CA, USA",
-          "url": "https://www.dac.com/",
+          "url": "https://dac.com/2026",
           "cycles": [
             {
               "name": null,
@@ -5142,7 +5067,7 @@
         "postech": "최우수"
       },
       "dblp": "conf/rtss",
-      "url": "https://2026.rtss.org/",
+      "url": "https://www.rtss.org/",
       "editions": [
         {
           "year": 2026,
@@ -5170,7 +5095,7 @@
           "endDate": "2027-12-11",
           "approximateDate": false,
           "location": null,
-          "url": "https://2026.rtss.org/",
+          "url": "https://www.rtss.org/",
           "cycles": [
             {
               "name": null,
@@ -5184,7 +5109,8 @@
         }
       ],
       "source": "heelim",
-      "sortKey": 6003013
+      "sortKey": 6003013,
+      "homepage": "https://www.rtss.org/"
     },
     {
       "id": "rtas",
@@ -5217,7 +5143,7 @@
           "endDate": "2026-05-14",
           "approximateDate": false,
           "location": "Saint Malo, France",
-          "url": "https://www.rtas.org/",
+          "url": "https://2026.rtas.org/",
           "cycles": [
             {
               "name": null,
@@ -5747,7 +5673,7 @@
         "postech": "최우수"
       },
       "dblp": "conf/kbse",
-      "url": "https://conf.researchr.org/home/ase-2026",
+      "url": "https://conf.researchr.org/series/ase",
       "editions": [
         {
           "year": 2026,
@@ -5775,7 +5701,7 @@
           "endDate": "2027-10-16",
           "approximateDate": false,
           "location": null,
-          "url": "https://conf.researchr.org/home/ase-2026",
+          "url": "https://conf.researchr.org/series/ase",
           "cycles": [
             {
               "name": null,
@@ -5789,7 +5715,8 @@
         }
       ],
       "source": "heelim",
-      "sortKey": 8001048
+      "sortKey": 8001048,
+      "homepage": "https://conf.researchr.org/series/ase"
     },
     {
       "id": "neurips",
@@ -5834,7 +5761,7 @@
         "postech": "최우수"
       },
       "dblp": "conf/nips",
-      "url": "https://neurips.cc/Conferences/2026",
+      "url": "https://neurips.cc/",
       "editions": [
         {
           "year": 2026,
@@ -5862,7 +5789,7 @@
           "endDate": "2027-12-12",
           "approximateDate": false,
           "location": null,
-          "url": "https://neurips.cc/Conferences/2026",
+          "url": "https://neurips.cc/",
           "cycles": [
             {
               "name": null,
@@ -5876,7 +5803,8 @@
         }
       ],
       "source": "heelim",
-      "sortKey": 9000055
+      "sortKey": 9000055,
+      "homepage": "https://neurips.cc/"
     },
     {
       "id": "icml",
@@ -5918,7 +5846,7 @@
         "postech": "최우수"
       },
       "dblp": "conf/icml",
-      "url": "https://icml.cc/Conferences/2026",
+      "url": "https://icml.cc/",
       "editions": [
         {
           "year": 2026,
@@ -5946,7 +5874,7 @@
           "endDate": "2027-07-11",
           "approximateDate": false,
           "location": null,
-          "url": "https://icml.cc/Conferences/2026",
+          "url": "https://icml.cc/",
           "cycles": [
             {
               "name": null,
@@ -5960,7 +5888,8 @@
         }
       ],
       "source": "heelim",
-      "sortKey": 9001053
+      "sortKey": 9001053,
+      "homepage": "https://icml.cc/"
     },
     {
       "id": "iclr",

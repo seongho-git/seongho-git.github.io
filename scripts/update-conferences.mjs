@@ -271,7 +271,8 @@ async function main() {
   config.categories.forEach((cat, ci) => cat.venues.forEach((v, vi) => categoryOf.set(v, { name: cat.name, order: ci * 1000 + vi })))
   const heelimOrder = new Map(order.map((v, i) => [config.renames[v] || v, i]))
 
-  let venues = [...venuesFromHeelim(cfp, info), ...ccfVenues]
+  const hidden = new Set(config.hiddenVenues || [])
+  let venues = [...venuesFromHeelim(cfp, info), ...ccfVenues].filter((v) => !hidden.has(v.name))
   venues = venues.map((v) => {
     const tier = lookupTier(tiers, v.name)
     const cat = categoryOf.get(v.name)
@@ -288,7 +289,7 @@ async function main() {
       tierVariants: tier?.variants,
       lists: tier ? { kaist: tier.kaist, snu: tier.snu, postech: tier.postech } : undefined,
       dblp: tier?.dblp || null,
-      url: v.url,
+      url: null,
       editions: v.editions,
       source: v.source,
       sortKey: (cat?.order ?? 99999) * 1000 + (heelimOrder.get(v.name) ?? 999),
@@ -296,7 +297,26 @@ async function main() {
     // Drop editions that ended before last year; the cutoff changes only once a year, so weekly runs stay stable.
     const cutoff = `${new Date().getFullYear() - 1}-01-01`
     merged.editions = merged.editions.filter((e) => (e.endDate || `${e.year}-12-31`) >= cutoff)
-    return overrides[v.name] ? deepMerge(merged, overrides[v.name]) : merged
+    // Overrides: `editions` is keyed by year and merged into the matching edition; other fields replace.
+    const { editions: editionOverrides, ...venueOverrides } = overrides[v.name] || {}
+    if (editionOverrides) {
+      merged.editions = merged.editions.map((e) =>
+        editionOverrides[e.year] ? deepMerge(e, editionOverrides[e.year]) : e,
+      )
+    }
+    const out = deepMerge(merged, venueOverrides)
+    // An estimated edition usually inherits the previous edition's link from the source.
+    // When the venue has a `homepage` override, link such editions there instead.
+    if (out.homepage) {
+      out.editions.forEach((e, i) => {
+        const estimated = e.cycles.length > 0 && e.cycles.every((c) => c.estimated)
+        const inherited = out.editions.slice(0, i).some((prev) => prev.url && prev.url === e.url)
+        if (estimated && inherited) e.url = out.homepage
+      })
+    }
+    // The venue link is the latest edition's link unless overridden.
+    out.url = out.url || out.editions.at(-1)?.url || null
+    return out
   })
   venues.sort((a, b) => a.sortKey - b.sortKey || a.name.localeCompare(b.name))
 
