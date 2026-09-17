@@ -1,11 +1,10 @@
 import type { ReactNode } from "react"
 import { personalInfo } from "@/lib/data"
 
-/** Bold, blue site-owner name inside an author list (keeps a trailing equal-contribution asterisk). */
+/** Renders the site owner's name in bold blue inside an author list. */
 export function highlightName(text: string): ReactNode[] {
-  const pattern = new RegExp(`(${personalInfo.name}\\*?)`)
-  return text.split(pattern).map((part, i) =>
-    part.startsWith(personalInfo.name) ? (
+  return text.split(new RegExp(`(${personalInfo.name})`)).map((part, i) =>
+    part === personalInfo.name ? (
       <span key={i} className="font-semibold text-primary">
         {part}
       </span>

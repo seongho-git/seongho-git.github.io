@@ -29,7 +29,6 @@ export type PublicationLink = { label: string; url: string }
 
 export type Publication = {
   title: string
-  // Mark equal contribution with a trailing asterisk, e.g. "Seongho Kim*".
   authors: string
   // Short venue name shown in bold, e.g. "CGO 2026".
   venueShort?: string
@@ -77,7 +76,7 @@ export const publications: { category: string; items: Publication[] }[] = [
     items: [
       {
         title: "Survey and Evaluation of Converging Architecture in LLMs Based on Footsteps of Operations",
-        authors: "Seongho Kim*, Jihyun Moon*, Juntaek Oh*, Insu Choi, and Joon-Sung Yang",
+        authors: "Seongho Kim, Jihyun Moon, Juntaek Oh, Insu Choi, and Joon-Sung Yang",
         venueShort: "IEEE OJCS",
         venue: "IEEE Open Journal of the Computer Society, vol. 6, pp. 1214–1226",
         date: "July 2025",
@@ -201,26 +200,25 @@ export const experience = [
 
 export const projects = [
   {
-    title: "Edge LLM Inference Acceleration Competition",
+    title: "Edge LLM Inference Acceleration",
     period: "Jul 2024 – Oct 2024",
-    affiliation: "Compiler Research Laboratory (CoreLab), Yonsei University",
+    affiliation: "SAIT Samsung Computer Engineering Challenge 2024 · Compiler Research Laboratory (CoreLab), Yonsei University",
     link: "https://github.com/seongho-git/continuous_batching_optimization",
     linkLabel: "GitHub",
     bullets: [
-      "Implemented dynamic batching for Microsoft Phi-3 inference on an NVIDIA Jetson Orin (32 GB)",
-      "Ranked 7th of 47 teams in an edge LLM inference acceleration competition",
-      "Applied findings from the LLM bottleneck analysis published in OJCS 2025",
+      "Dynamic batching optimization framework for Microsoft Phi-3 on NVIDIA Jetson Orin (32 GB)",
+      "Ranked 7th of 47 teams",
+      "Architectural insights from the LLM bottleneck analysis (IEEE OJCS 2025)",
     ],
   },
   {
-    title: "Backdrop Build V3 and V4: Small Language Model Acceleration",
+    title: "Small Language Model Inference Acceleration",
     period: "Feb 2024 – Jun 2024",
-    affiliation: "Backdrop Labs (Invited Project Builder)",
+    affiliation: "Backdrop Build V3 and V4, Backdrop Labs · Invited Project Builder",
     link: "https://github.com/seongho-git/lab_TensorRT-LLM",
     linkLabel: "GitHub",
     bullets: [
-      "Invited project builder for Backdrop Build V3 and V4",
-      "Evaluated inference acceleration of Gemma 2B with TensorRT-LLM",
+      "Inference acceleration of Gemma 2B (Google DeepMind) with TensorRT-LLM",
     ],
   },
 ]

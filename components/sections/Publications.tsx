@@ -3,8 +3,6 @@ import { TitleLink } from "@/components/title-link"
 import { highlightName } from "@/components/highlight-name"
 import { publications } from "@/lib/data"
 
-const hasEqualContribution = publications.some((group) => group.items.some((pub) => pub.authors.includes("*")))
-
 export function Publications() {
   return (
     <section id="publications" className="py-10">
@@ -37,7 +35,6 @@ export function Publications() {
           </div>
         ))}
       </div>
-      {hasEqualContribution && <p className="mt-6 text-sm text-muted-foreground">* Equal contribution.</p>}
     </section>
   )
 }
