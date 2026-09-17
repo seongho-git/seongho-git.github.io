@@ -65,7 +65,7 @@ export const publications: { category: string; items: Publication[] }[] = [
           "Hyunho Kwon, Sanggyu Shin, Ju Min Lee, Hoyun Youm, Seungbin Song, Seongho Kim, Hanwoong Jung, Seungwon Lee, and Hanjun Kim",
         venueShort: "CGO 2026",
         venue: "IEEE/ACM International Symposium on Code Generation and Optimization",
-        date: "February 2026",
+        date: "January 2026",
         location: "Sydney, Australia",
         links: [{ label: "IEEE Xplore", url: "https://ieeexplore.ieee.org/abstract/document/11395240" }],
       },
@@ -96,7 +96,7 @@ export const publications: { category: string; items: Publication[] }[] = [
         authors: "Seongho Kim and Hanjun Kim",
         venueShort: "CGO 2026 SRC",
         venue: "Student Research Competition, IEEE/ACM International Symposium on Code Generation and Optimization",
-        date: "February 2026",
+        date: "January 2026",
         location: "Sydney, Australia",
         links: [
           {
