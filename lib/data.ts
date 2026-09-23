@@ -200,6 +200,17 @@ export const experience = [
 
 export const projects = [
   {
+    title: "HECATE Compiler",
+    period: "2025 – Present",
+    affiliation: "Maintainer, open-source project · Compiler Research Laboratory (CoreLab), Yonsei University",
+    link: "https://github.com/corelab-src/hecate-compiler",
+    linkLabel: "GitHub",
+    bullets: [
+      "MLIR-based compiler for privacy-preserving machine learning on RNS-CKKS FHE",
+      "Python frontend, compiler transformations, and CPU, GPU, and accelerator backends",
+    ],
+  },
+  {
     title: "Edge LLM Inference Acceleration",
     period: "Jul 2024 – Oct 2024",
     affiliation: "SAIT Samsung Computer Engineering Challenge 2024 · Compiler Research Laboratory (CoreLab), Yonsei University",
