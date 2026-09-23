@@ -19,7 +19,7 @@ export const personalInfo = {
   linkedin: "https://www.linkedin.com/in/seongho-kim/",
   scholar: "https://scholar.google.com/citations?user=YosbfkYAAAAJ",
   orcid: "https://orcid.org/0009-0008-9306-9301",
-  cv: "https://drive.google.com/file/d/15cjSGRjWUS0Wyid8og2MaLmghFh6fZoo/view?usp=sharing",
+  cv: "/seongho-cv.pdf",
   about: [
     "I am a Ph.D. candidate in the School of Electrical and Electronic Engineering at Yonsei University, advised by Prof. Hanjun Kim at the Compiler Research Laboratory (CoreLab). I work on compiler optimization for fully homomorphic encryption (FHE) and deep learning.",
   ],
