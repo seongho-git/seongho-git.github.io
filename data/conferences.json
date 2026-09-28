@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T14:45:45.230Z",
+  "generatedAt": "2026-09-28T04:54:22.526Z",
   "sources": {
     "heelim": {
       "url": "https://profile.heelim.com/",
@@ -3754,7 +3754,7 @@
               "notification": null,
               "estimated": false,
               "verified": true,
-              "timezone": "UTC-12"
+              "timezone": "PT"
             }
           ]
         }
