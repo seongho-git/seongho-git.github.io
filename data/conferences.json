@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-28T04:54:22.526Z",
+  "generatedAt": "2026-10-05T05:08:41.210Z",
   "sources": {
     "heelim": {
       "url": "https://profile.heelim.com/",
-      "lastUpdated": "September 8, 2026"
+      "lastUpdated": "September 29, 2026"
     },
     "ccfDeadlines": "https://github.com/ccfddl/ccf-deadlines",
     "tiers": "https://gist.github.com/Pusnow/6eb933355b5cb8d31ef1abcb3c3e1206"
@@ -170,11 +170,11 @@
         },
         {
           "year": 2027,
-          "dateText": "June 2027",
-          "startDate": "2027-06-14",
-          "endDate": "2027-06-18",
+          "dateText": "June 5-11, 2027",
+          "startDate": "2027-06-05",
+          "endDate": "2027-06-11",
           "approximateDate": false,
-          "location": "TBD",
+          "location": "Atlanta, GA, USA",
           "url": "https://iscaconf.org/",
           "cycles": [
             {
@@ -213,7 +213,7 @@
         "postech": "최우수"
       },
       "dblp": "conf/hpca",
-      "url": "https://conf.researchr.org/home/hpca-2027",
+      "url": "https://hpca-conf.org/",
       "editions": [
         {
           "year": 2025,
@@ -255,12 +255,12 @@
         },
         {
           "year": 2027,
-          "dateText": "January 30 - February 3, 2027",
-          "startDate": "2027-01-30",
-          "endDate": "2027-02-03",
+          "dateText": "March 20-24, 2027",
+          "startDate": "2027-03-20",
+          "endDate": "2027-03-24",
           "approximateDate": false,
-          "location": "TBD",
-          "url": "https://conf.researchr.org/home/hpca-2027",
+          "location": "Salt Lake City, UT, USA",
+          "url": "https://hpca-conf.org/2027/",
           "cycles": [
             {
               "name": null,
@@ -269,6 +269,25 @@
               "notification": "2026-11-06",
               "estimated": false,
               "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2028,
+          "dateText": "March 20-24, 2028",
+          "startDate": "2028-03-20",
+          "endDate": "2028-03-24",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://hpca-conf.org/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-07-31",
+              "abstractDeadline": "2027-07-24",
+              "notification": "2027-11-06",
+              "estimated": true,
+              "verified": false
             }
           ]
         }
@@ -300,7 +319,7 @@
         "postech": "최우수"
       },
       "dblp": "conf/asplos",
-      "url": "https://www.asplos-conference.org/asplos2027/cfp/",
+      "url": "https://www.asplos-conference.org/",
       "editions": [
         {
           "year": 2025,
@@ -380,6 +399,33 @@
               "notification": "2026-12-21",
               "estimated": false,
               "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2028,
+          "dateText": "April 11-15, 2028",
+          "startDate": "2028-04-11",
+          "endDate": "2028-04-15",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://www.asplos-conference.org/",
+          "cycles": [
+            {
+              "name": "Spring",
+              "deadline": "2027-04-15",
+              "abstractDeadline": null,
+              "notification": "2027-07-27",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "Summer",
+              "deadline": "2027-09-09",
+              "abstractDeadline": null,
+              "notification": "2027-12-21",
+              "estimated": true,
+              "verified": false
             }
           ]
         }
@@ -797,7 +843,7 @@
         "postech": "우수"
       },
       "dblp": "conf/cgo",
-      "url": "https://conf.researchr.org/home/cgo-2027",
+      "url": "https://cgo.org/",
       "editions": [
         {
           "year": 2026,
@@ -820,11 +866,11 @@
         },
         {
           "year": 2027,
-          "dateText": null,
-          "startDate": null,
-          "endDate": null,
+          "dateText": "March 20-24, 2027",
+          "startDate": "2027-03-20",
+          "endDate": "2027-03-24",
           "approximateDate": false,
-          "location": "Salt Lake City, Utah, USA",
+          "location": "Salt Lake City, UT, USA",
           "url": "https://conf.researchr.org/home/cgo-2027",
           "cycles": [
             {
@@ -842,6 +888,33 @@
               "notification": "2026-11-02",
               "estimated": false,
               "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2028,
+          "dateText": "March 20-24, 2028",
+          "startDate": "2028-03-20",
+          "endDate": "2028-03-24",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://cgo.org/",
+          "cycles": [
+            {
+              "name": "R1",
+              "deadline": "2027-06-11",
+              "abstractDeadline": null,
+              "notification": "2027-08-03",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "R2",
+              "deadline": "2027-09-10",
+              "abstractDeadline": null,
+              "notification": "2027-11-02",
+              "estimated": true,
+              "verified": false
             }
           ]
         }
@@ -871,7 +944,7 @@
         "postech": "우수"
       },
       "dblp": "conf/cc",
-      "url": "https://conf.researchr.org/series/CC",
+      "url": "https://conf.researchr.org/home/CC-2027",
       "editions": [
         {
           "year": 2026,
@@ -894,12 +967,12 @@
         },
         {
           "year": 2027,
-          "dateText": "January 31 - February 1, 2027",
-          "startDate": "2027-01-31",
-          "endDate": "2027-02-01",
+          "dateText": "March 20-24, 2027",
+          "startDate": "2027-03-20",
+          "endDate": "2027-03-24",
           "approximateDate": false,
-          "location": null,
-          "url": "https://conf.researchr.org/series/CC",
+          "location": "Salt Lake City, UT, USA",
+          "url": "https://conf.researchr.org/home/CC-2027",
           "cycles": [
             {
               "name": null,
@@ -1025,7 +1098,7 @@
         "postech": "최우수"
       },
       "dblp": "conf/popl",
-      "url": "https://popl27.sigplan.org",
+      "url": "https://popl28.sigplan.org/",
       "editions": [
         {
           "year": 2026,
@@ -1048,12 +1121,12 @@
         },
         {
           "year": 2027,
-          "dateText": "January 10–16, 2027",
+          "dateText": "January 10-16, 2027",
           "startDate": "2027-01-10",
           "endDate": "2027-01-16",
           "approximateDate": false,
           "location": "Mexico City, Mexico",
-          "url": "https://popl27.sigplan.org",
+          "url": "https://conf.researchr.org/home/POPL-2027",
           "cycles": [
             {
               "name": null,
@@ -1062,6 +1135,25 @@
               "notification": "2026-11-09",
               "estimated": false,
               "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2028,
+          "dateText": "January 10-16, 2028",
+          "startDate": "2028-01-10",
+          "endDate": "2028-01-16",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://popl28.sigplan.org/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-07-09",
+              "abstractDeadline": null,
+              "notification": "2027-11-09",
+              "estimated": true,
+              "verified": false
             }
           ]
         }
@@ -1200,7 +1292,7 @@
         "postech": "최우수"
       },
       "dblp": "conf/ppopp",
-      "url": "https://ppopp27.sigplan.org",
+      "url": "https://ppopp28.sigplan.org/",
       "editions": [
         {
           "year": 2025,
@@ -1242,12 +1334,12 @@
         },
         {
           "year": 2027,
-          "dateText": "January 30 - February 3, 2027",
-          "startDate": "2027-01-30",
-          "endDate": "2027-02-03",
+          "dateText": "March 20-24, 2027",
+          "startDate": "2027-03-20",
+          "endDate": "2027-03-24",
           "approximateDate": false,
-          "location": "Salt Lake City, Utah, USA",
-          "url": "https://ppopp27.sigplan.org",
+          "location": "Salt Lake City, UT, USA",
+          "url": "https://ppopp27.sigplan.org/",
           "cycles": [
             {
               "name": null,
@@ -1256,6 +1348,25 @@
               "notification": "2026-10-26",
               "estimated": false,
               "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2028,
+          "dateText": "March 20-24, 2028",
+          "startDate": "2028-03-20",
+          "endDate": "2028-03-24",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://ppopp28.sigplan.org/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-08-03",
+              "abstractDeadline": null,
+              "notification": "2027-10-26",
+              "estimated": true,
+              "verified": false
             }
           ]
         }
@@ -1286,7 +1397,7 @@
         "postech": "우수"
       },
       "dblp": "conf/lctrts",
-      "url": "https://conf.researchr.org/series/LCTES",
+      "url": "https://pldi27.sigplan.org/",
       "editions": [
         {
           "year": 2026,
@@ -1309,12 +1420,12 @@
         },
         {
           "year": 2027,
-          "dateText": "June 15-16, 2027",
-          "startDate": "2027-06-15",
-          "endDate": "2027-06-16",
+          "dateText": "June 5-11, 2027",
+          "startDate": "2027-06-05",
+          "endDate": "2027-06-11",
           "approximateDate": false,
-          "location": null,
-          "url": "https://conf.researchr.org/series/LCTES",
+          "location": "Atlanta, GA, USA",
+          "url": "https://pldi27.sigplan.org/",
           "cycles": [
             {
               "name": null,
@@ -1348,7 +1459,7 @@
       "kiise": null,
       "bk21plus": null,
       "dblp": null,
-      "url": "https://conf.researchr.org/series/ismm",
+      "url": "https://pldi27.sigplan.org/",
       "editions": [
         {
           "year": 2025,
@@ -1390,12 +1501,12 @@
         },
         {
           "year": 2027,
-          "dateText": "June 16, 2027",
-          "startDate": "2027-06-16",
-          "endDate": "2027-06-16",
+          "dateText": "June 5-11, 2027",
+          "startDate": "2027-06-05",
+          "endDate": "2027-06-11",
           "approximateDate": false,
-          "location": null,
-          "url": "https://conf.researchr.org/series/ismm",
+          "location": "Atlanta, GA, USA",
+          "url": "https://pldi27.sigplan.org/",
           "cycles": [
             {
               "name": null,
@@ -1437,7 +1548,7 @@
         "postech": "최우수"
       },
       "dblp": "conf/osdi",
-      "url": "https://www.usenix.org/conference/osdi27/call-for-papers",
+      "url": "https://www.usenix.org/conference/osdi27",
       "editions": [
         {
           "year": 2025,
@@ -1484,7 +1595,7 @@
           "endDate": "2027-07-09",
           "approximateDate": false,
           "location": "Baltimore, MD, USA",
-          "url": "https://www.usenix.org/conference/osdi27/call-for-papers",
+          "url": "https://www.usenix.org/conference/osdi27",
           "cycles": [
             {
               "name": null,
@@ -1610,7 +1721,7 @@
         "postech": "최우수"
       },
       "dblp": "conf/eurosys",
-      "url": "https://2027.eurosys.org/cfp.html",
+      "url": "https://www.eurosys.org/",
       "editions": [
         {
           "year": 2025,
@@ -1690,6 +1801,33 @@
               "notification": "2027-01-29",
               "estimated": false,
               "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2028,
+          "dateText": "April 19-23, 2028",
+          "startDate": "2028-04-19",
+          "endDate": "2028-04-23",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://www.eurosys.org/",
+          "cycles": [
+            {
+              "name": "Spring",
+              "deadline": "2027-05-14",
+              "abstractDeadline": "2027-05-07",
+              "notification": "2027-08-21",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "Fall",
+              "deadline": "2027-09-24",
+              "abstractDeadline": "2027-09-17",
+              "notification": "2028-01-29",
+              "estimated": true,
+              "verified": false
             }
           ]
         }
@@ -1837,7 +1975,7 @@
         "postech": "최우수"
       },
       "dblp": "conf/fast",
-      "url": "https://www.usenix.org/conference/fast27",
+      "url": "https://www.usenix.org/conference/fast28",
       "editions": [
         {
           "year": 2025,
@@ -1909,6 +2047,33 @@
               "notification": "2026-12-08",
               "estimated": false,
               "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2028,
+          "dateText": "February 28 - March 1, 2028",
+          "startDate": "2028-02-28",
+          "endDate": "2028-03-01",
+          "approximateDate": false,
+          "location": "Seattle, WA, USA",
+          "url": "https://www.usenix.org/conference/fast28",
+          "cycles": [
+            {
+              "name": "Spring",
+              "deadline": "2027-03-17",
+              "abstractDeadline": null,
+              "notification": "2027-06-04",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "Fall",
+              "deadline": "2027-09-15",
+              "abstractDeadline": null,
+              "notification": "2027-12-08",
+              "estimated": true,
+              "verified": false
             }
           ]
         }
@@ -2560,7 +2725,7 @@
           "startDate": "2027-11-15",
           "endDate": "2027-11-20",
           "approximateDate": false,
-          "location": null,
+          "location": "Denver, CO, USA",
           "url": "https://supercomputing.org/",
           "cycles": [
             {
@@ -3080,7 +3245,7 @@
           "startDate": "2027-08-23",
           "endDate": "2027-08-27",
           "approximateDate": false,
-          "location": "Groningen, Netherlands",
+          "location": "Groningen, The Netherlands",
           "url": "https://2027.euro-par.org/",
           "cycles": [
             {
@@ -3448,7 +3613,7 @@
         "postech": "최우수"
       },
       "dblp": "conf/ndss",
-      "url": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
+      "url": "https://www.ndss-symposium.org/",
       "editions": [
         {
           "year": 2025,
@@ -3528,6 +3693,33 @@
               "notification": "2026-11-04",
               "estimated": false,
               "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2028,
+          "dateText": "March 22-26, 2028",
+          "startDate": "2028-03-22",
+          "endDate": "2028-03-26",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://www.ndss-symposium.org/",
+          "cycles": [
+            {
+              "name": "Summer Cycle",
+              "deadline": "2027-05-06",
+              "abstractDeadline": null,
+              "notification": "2027-07-29",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "Fall Cycle",
+              "deadline": "2027-08-19",
+              "abstractDeadline": null,
+              "notification": "2027-11-04",
+              "estimated": true,
+              "verified": false
             }
           ]
         }
@@ -3870,7 +4062,7 @@
           "url": "https://ches.iacr.org/2025/",
           "cycles": [
             {
-              "name": "Schedule for TCHES Volume 2025/1",
+              "name": "TCHES 2025/1",
               "deadline": "2024-07-15",
               "abstractDeadline": null,
               "notification": null,
@@ -3879,7 +4071,7 @@
               "timezone": "AoE"
             },
             {
-              "name": "Schedule for TCHES Volume 2025/2",
+              "name": "TCHES 2025/2",
               "deadline": "2024-10-15",
               "abstractDeadline": null,
               "notification": null,
@@ -3888,7 +4080,7 @@
               "timezone": "AoE"
             },
             {
-              "name": "Schedule for TCHES Volume 2025/3",
+              "name": "TCHES 2025/3",
               "deadline": "2025-01-15",
               "abstractDeadline": null,
               "notification": null,
@@ -3897,7 +4089,7 @@
               "timezone": "AoE"
             },
             {
-              "name": "Schedule for TCHES Volume 2025/4",
+              "name": "TCHES 2025/4",
               "deadline": "2025-04-15",
               "abstractDeadline": null,
               "notification": null,
@@ -3917,7 +4109,7 @@
           "url": "https://ches.iacr.org/2026/",
           "cycles": [
             {
-              "name": "Schedule for TCHES Volume 2026/1",
+              "name": "TCHES 2026/1",
               "deadline": "2025-07-15",
               "abstractDeadline": null,
               "notification": null,
@@ -3926,7 +4118,7 @@
               "timezone": "AoE"
             },
             {
-              "name": "Schedule for TCHES Volume 2026/2",
+              "name": "TCHES 2026/2",
               "deadline": "2025-10-15",
               "abstractDeadline": null,
               "notification": null,
@@ -3935,7 +4127,7 @@
               "timezone": "AoE"
             },
             {
-              "name": "Schedule for TCHES Volume 2026/3",
+              "name": "TCHES 2026/3",
               "deadline": "2026-01-15",
               "abstractDeadline": null,
               "notification": null,
@@ -3944,7 +4136,7 @@
               "timezone": "AoE"
             },
             {
-              "name": "Schedule for TCHES Volume 2026/4",
+              "name": "TCHES 2026/4",
               "deadline": "2026-04-15",
               "abstractDeadline": null,
               "notification": null,
@@ -4024,15 +4216,15 @@
       "editions": [
         {
           "year": 2025,
-          "dateText": "September 22-26, 2025",
+          "dateText": "September 22-24, 2025",
           "startDate": "2025-09-22",
-          "endDate": "2025-09-26",
+          "endDate": "2025-09-24",
           "approximateDate": false,
           "location": "Toulouse, France",
           "url": "https://esorics2025.sciencesconf.org/",
           "cycles": [
             {
-              "name": "First Submission deadline",
+              "name": "Winter",
               "deadline": "2025-01-10",
               "abstractDeadline": null,
               "notification": null,
@@ -4041,7 +4233,7 @@
               "timezone": "AoE"
             },
             {
-              "name": "Second Submission deadline",
+              "name": "Spring",
               "deadline": "2025-04-29",
               "abstractDeadline": null,
               "notification": null,
@@ -4053,15 +4245,15 @@
         },
         {
           "year": 2026,
-          "dateText": "September 14-18, 2026",
+          "dateText": "September 14-16, 2026",
           "startDate": "2026-09-14",
-          "endDate": "2026-09-18",
+          "endDate": "2026-09-16",
           "approximateDate": false,
           "location": "Rome, Italy",
           "url": "https://sites.google.com/di.uniroma1.it/esorics2026/home",
           "cycles": [
             {
-              "name": "First Submission deadline",
+              "name": "Winter",
               "deadline": "2026-01-09",
               "abstractDeadline": null,
               "notification": null,
@@ -4070,7 +4262,7 @@
               "timezone": "AoE"
             },
             {
-              "name": "Second Submission deadline",
+              "name": "Spring",
               "deadline": "2026-04-21",
               "abstractDeadline": null,
               "notification": null,
@@ -4103,15 +4295,15 @@
       "editions": [
         {
           "year": 2025,
-          "dateText": "July 14-19, 2025",
-          "startDate": "2025-07-14",
-          "endDate": "2025-07-19",
+          "dateText": "July 15-17, 2025",
+          "startDate": "2025-07-15",
+          "endDate": "2025-07-17",
           "approximateDate": false,
           "location": "Washington, DC and Online",
           "url": "https://petsymposium.org/cfp25.php",
           "cycles": [
             {
-              "name": "Issue 1 Paper Submission Deadline",
+              "name": "Issue 1",
               "deadline": "2024-05-31",
               "abstractDeadline": null,
               "notification": null,
@@ -4120,7 +4312,7 @@
               "timezone": "AoE"
             },
             {
-              "name": "Issue 2 Paper Submission Deadline",
+              "name": "Issue 2",
               "deadline": "2024-08-31",
               "abstractDeadline": null,
               "notification": null,
@@ -4129,7 +4321,7 @@
               "timezone": "AoE"
             },
             {
-              "name": "Issue 3 Paper Submission Deadline",
+              "name": "Issue 3",
               "deadline": "2024-11-30",
               "abstractDeadline": null,
               "notification": null,
@@ -4138,7 +4330,7 @@
               "timezone": "AoE"
             },
             {
-              "name": "Issue 4 Paper Submission Deadline",
+              "name": "Issue 4",
               "deadline": "2025-02-28",
               "abstractDeadline": null,
               "notification": null,
@@ -4150,15 +4342,15 @@
         },
         {
           "year": 2026,
-          "dateText": "July 20-25, 2026",
-          "startDate": "2026-07-20",
-          "endDate": "2026-07-25",
+          "dateText": "July 21-23, 2026",
+          "startDate": "2026-07-21",
+          "endDate": "2026-07-23",
           "approximateDate": false,
           "location": "Calgary, Canada",
           "url": "https://petsymposium.org/cfp26.php",
           "cycles": [
             {
-              "name": "Issue 1 Paper Submission Deadline",
+              "name": "Issue 1",
               "deadline": "2025-05-31",
               "abstractDeadline": null,
               "notification": null,
@@ -4167,7 +4359,7 @@
               "timezone": "AoE"
             },
             {
-              "name": "Issue 2 Paper Submission Deadline",
+              "name": "Issue 2",
               "deadline": "2025-08-31",
               "abstractDeadline": null,
               "notification": null,
@@ -4176,7 +4368,7 @@
               "timezone": "AoE"
             },
             {
-              "name": "Issue 3 Paper Submission Deadline",
+              "name": "Issue 3",
               "deadline": "2025-11-30",
               "abstractDeadline": null,
               "notification": null,
@@ -4185,7 +4377,7 @@
               "timezone": "AoE"
             },
             {
-              "name": "Issue 4 Paper Submission Deadline",
+              "name": "Issue 4",
               "deadline": "2026-02-28",
               "abstractDeadline": null,
               "notification": null,
@@ -4353,7 +4545,7 @@
         "postech": "최우수"
       },
       "dblp": "conf/nsdi",
-      "url": "https://www.usenix.org/conference/nsdi27",
+      "url": "https://www.usenix.org/conference/nsdi28",
       "editions": [
         {
           "year": 2025,
@@ -4433,6 +4625,33 @@
               "notification": "2026-12-01",
               "estimated": false,
               "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2028,
+          "dateText": "May 9-11, 2028",
+          "startDate": "2028-05-09",
+          "endDate": "2028-05-11",
+          "approximateDate": false,
+          "location": "Santa Clara, CA, USA",
+          "url": "https://www.usenix.org/conference/nsdi28",
+          "cycles": [
+            {
+              "name": "Spring",
+              "deadline": "2027-04-23",
+              "abstractDeadline": "2027-04-16",
+              "notification": "2027-07-01",
+              "estimated": true,
+              "verified": false
+            },
+            {
+              "name": "Fall",
+              "deadline": "2027-09-17",
+              "abstractDeadline": "2027-09-10",
+              "notification": "2027-12-01",
+              "estimated": true,
+              "verified": false
             }
           ]
         }
@@ -4641,14 +4860,6 @@
               "notification": "2027-09-11",
               "estimated": true,
               "verified": false
-            },
-            {
-              "name": "Summer",
-              "deadline": "2027-06-05",
-              "abstractDeadline": null,
-              "notification": "2027-09-11",
-              "estimated": true,
-              "verified": false
             }
           ]
         }
@@ -4758,7 +4969,7 @@
         "postech": "최우수"
       },
       "dblp": "conf/infocom",
-      "url": "https://infocom2027.ieee-infocom.org/",
+      "url": "https://infocom2026.ieee-infocom.org/",
       "editions": [
         {
           "year": 2026,
@@ -4793,6 +5004,25 @@
               "deadline": "2026-07-31",
               "abstractDeadline": "2026-07-24",
               "notification": "2026-12-08",
+              "estimated": true,
+              "verified": false
+            }
+          ]
+        },
+        {
+          "year": 2028,
+          "dateText": "May 18-21, 2028",
+          "startDate": "2028-05-18",
+          "endDate": "2028-05-21",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://infocom2026.ieee-infocom.org/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-07-31",
+              "abstractDeadline": "2027-07-24",
+              "notification": "2027-12-08",
               "estimated": true,
               "verified": false
             }
@@ -4884,7 +5114,7 @@
         "postech": "최우수"
       },
       "dblp": "conf/dac",
-      "url": "https://dac.com/2027",
+      "url": "https://www.dac.com/",
       "editions": [
         {
           "year": 2026,
@@ -4907,20 +5137,20 @@
         },
         {
           "year": 2027,
-          "dateText": "July 11-14, 2027",
+          "dateText": "July 11-15, 2027",
           "startDate": "2027-07-11",
-          "endDate": "2027-07-14",
+          "endDate": "2027-07-15",
           "approximateDate": false,
           "location": "San Jose, CA, USA",
-          "url": "https://dac.com/2027",
+          "url": "https://www.dac.com/",
           "cycles": [
             {
               "name": null,
-              "deadline": "2026-10-14",
-              "abstractDeadline": "2026-10-07",
-              "notification": "2027-03-09",
-              "estimated": true,
-              "verified": false
+              "deadline": "2026-11-18",
+              "abstractDeadline": "2026-11-11",
+              "notification": "2027-02-24",
+              "estimated": false,
+              "verified": true
             }
           ]
         }
@@ -4953,7 +5183,7 @@
         "postech": "우수"
       },
       "dblp": "conf/date",
-      "url": "https://www.date-conference.com/date-2027-call-papers",
+      "url": "https://www.date-conference.com/",
       "editions": [
         {
           "year": 2027,
@@ -4971,6 +5201,25 @@
               "notification": "2026-11-23",
               "estimated": false,
               "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2028,
+          "dateText": "March 22-24, 2028",
+          "startDate": "2028-03-22",
+          "endDate": "2028-03-24",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://www.date-conference.com/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-09-20",
+              "abstractDeadline": "2027-09-13",
+              "notification": "2027-11-23",
+              "estimated": true,
+              "verified": false
             }
           ]
         }
@@ -5627,7 +5876,7 @@
         "postech": "최우수"
       },
       "dblp": "conf/icse",
-      "url": "https://conf.researchr.org/home/icse-2027",
+      "url": "https://conf.researchr.org/home/icse-2028",
       "editions": [
         {
           "year": 2027,
@@ -5645,6 +5894,25 @@
               "notification": "2026-10-20",
               "estimated": false,
               "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2028,
+          "dateText": "April 25 - May 1, 2028",
+          "startDate": "2028-04-25",
+          "endDate": "2028-05-01",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://conf.researchr.org/home/icse-2028",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-06-30",
+              "abstractDeadline": "2027-06-23",
+              "notification": "2027-10-20",
+              "estimated": true,
+              "verified": false
             }
           ]
         }
@@ -5934,7 +6202,7 @@
         "postech": "최우수"
       },
       "dblp": "conf/iclr",
-      "url": "https://iclr.cc/Conferences/2027/CallForPapers",
+      "url": "https://iclr.cc/",
       "editions": [
         {
           "year": 2026,
@@ -5973,6 +6241,25 @@
               "verified": true
             }
           ]
+        },
+        {
+          "year": 2028,
+          "dateText": "April 26-30, 2028",
+          "startDate": "2028-04-26",
+          "endDate": "2028-04-30",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://iclr.cc/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-09-25",
+              "abstractDeadline": "2027-09-18",
+              "notification": "2027-12-16",
+              "estimated": true,
+              "verified": false
+            }
+          ]
         }
       ],
       "source": "heelim",
@@ -6005,7 +6292,7 @@
         "postech": "최우수"
       },
       "dblp": "conf/aaai",
-      "url": "https://aaai.org/conference/aaai/aaai-27/",
+      "url": "https://aaai.org/",
       "editions": [
         {
           "year": 2027,
@@ -6023,6 +6310,25 @@
               "notification": "2026-11-30",
               "estimated": false,
               "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2028,
+          "dateText": "February 16-23, 2028",
+          "startDate": "2028-02-16",
+          "endDate": "2028-02-23",
+          "approximateDate": false,
+          "location": null,
+          "url": "https://aaai.org/",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2027-07-28",
+              "abstractDeadline": "2027-07-21",
+              "notification": "2027-11-30",
+              "estimated": true,
+              "verified": false
             }
           ]
         }
@@ -6205,7 +6511,7 @@
           "startDate": "2027-10-02",
           "endDate": "2027-10-08",
           "approximateDate": false,
-          "location": "Hong Kong",
+          "location": "Hong Kong, China",
           "url": "https://iccv.thecvf.com/",
           "cycles": [
             {
