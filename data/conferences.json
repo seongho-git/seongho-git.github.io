@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-26T04:16:50.253Z",
+  "generatedAt": "2026-11-02T05:32:08.380Z",
   "sources": {
     "heelim": {
       "url": "https://profile.heelim.com/",
-      "lastUpdated": "October 23, 2026"
+      "lastUpdated": "October 27, 2026"
     },
     "ccfDeadlines": "https://github.com/ccfddl/ccf-deadlines",
     "tiers": "https://gist.github.com/Pusnow/6eb933355b5cb8d31ef1abcb3c3e1206"
@@ -630,7 +630,7 @@
         "postech": "우수"
       },
       "dblp": "conf/iccd",
-      "url": "https://www.iccd-conf.com/",
+      "url": "https://www.iccd-conf.com/home.html",
       "editions": [
         {
           "year": 2026,
@@ -639,12 +639,12 @@
           "endDate": "2026-11-18",
           "approximateDate": false,
           "location": "Hong Kong SAR, China",
-          "url": "https://www.iccd-conf.com/home.html",
+          "url": "https://www.iccd-conf.com/2026/home.html",
           "cycles": [
             {
               "name": null,
-              "deadline": "2026-06-05",
-              "abstractDeadline": "2026-05-29",
+              "deadline": "2026-06-10",
+              "abstractDeadline": "2026-06-03",
               "notification": "2026-08-20",
               "estimated": false,
               "verified": true
@@ -658,7 +658,7 @@
           "endDate": "2027-11-18",
           "approximateDate": false,
           "location": null,
-          "url": "https://www.iccd-conf.com/",
+          "url": "https://www.iccd-conf.com/home.html",
           "cycles": [
             {
               "name": null,
@@ -693,7 +693,7 @@
       "kiise": null,
       "bk21plus": null,
       "dblp": null,
-      "url": "https://www.computingfrontiers.org/",
+      "url": "https://www.computingfrontiers.org/2027/",
       "editions": [
         {
           "year": 2025,
@@ -735,20 +735,20 @@
         },
         {
           "year": 2027,
-          "dateText": "May 19-21, 2027",
-          "startDate": "2027-05-19",
-          "endDate": "2027-05-21",
+          "dateText": "May 25-27, 2027",
+          "startDate": "2027-05-25",
+          "endDate": "2027-05-27",
           "approximateDate": false,
-          "location": null,
-          "url": "https://www.computingfrontiers.org/",
+          "location": "Trento, Italy",
+          "url": "https://www.computingfrontiers.org/2027/",
           "cycles": [
             {
               "name": null,
-              "deadline": "2027-01-19",
-              "abstractDeadline": null,
-              "notification": "2027-03-09",
-              "estimated": true,
-              "verified": false
+              "deadline": "2027-01-25",
+              "abstractDeadline": "2027-01-18",
+              "notification": "2027-03-15",
+              "estimated": false,
+              "verified": true
             }
           ]
         }
@@ -1635,7 +1635,7 @@
         "postech": "최우수"
       },
       "dblp": "conf/sosp",
-      "url": "https://sigops.org/s/conferences/sosp/2027",
+      "url": "https://www.sosp.org/",
       "editions": [
         {
           "year": 2025,
@@ -1682,7 +1682,7 @@
           "endDate": "2027-12-03",
           "approximateDate": false,
           "location": "Vancouver, Canada",
-          "url": "https://sigops.org/s/conferences/sosp/2027",
+          "url": "https://www.sosp.org/",
           "cycles": [
             {
               "name": null,
@@ -1941,11 +1941,11 @@
           "cycles": [
             {
               "name": null,
-              "deadline": "2027-01-15",
+              "deadline": "2027-02-01",
               "abstractDeadline": null,
-              "notification": "2027-04-01",
-              "estimated": true,
-              "verified": false
+              "notification": "2027-04-09",
+              "estimated": false,
+              "verified": true
             }
           ]
         }
@@ -2284,7 +2284,7 @@
         "postech": "우수"
       },
       "dblp": "conf/middleware",
-      "url": "https://middleware-conf.github.io/",
+      "url": "https://middleware-conf.github.io/2027/",
       "editions": [
         {
           "year": 2025,
@@ -2342,28 +2342,28 @@
         },
         {
           "year": 2027,
-          "dateText": "December 14-18, 2027",
-          "startDate": "2027-12-14",
-          "endDate": "2027-12-18",
+          "dateText": "December 13-17, 2027",
+          "startDate": "2027-12-13",
+          "endDate": "2027-12-17",
           "approximateDate": false,
-          "location": null,
-          "url": "https://middleware-conf.github.io/",
+          "location": "Kyoto, Japan",
+          "url": "https://middleware-conf.github.io/2027/",
           "cycles": [
             {
               "name": "Winter",
-              "deadline": "2026-12-11",
-              "abstractDeadline": null,
-              "notification": "2027-03-06",
-              "estimated": true,
-              "verified": false
+              "deadline": "2026-12-04",
+              "abstractDeadline": "2026-11-27",
+              "notification": null,
+              "estimated": false,
+              "verified": true
             },
             {
               "name": "Summer",
-              "deadline": "2027-06-05",
-              "abstractDeadline": "2027-05-29",
-              "notification": "2027-08-28",
-              "estimated": true,
-              "verified": false
+              "deadline": "2027-06-04",
+              "abstractDeadline": "2027-05-28",
+              "notification": null,
+              "estimated": false,
+              "verified": true
             }
           ]
         }
@@ -4502,11 +4502,11 @@
           "cycles": [
             {
               "name": null,
-              "deadline": "2027-02-06",
-              "abstractDeadline": "2027-01-30",
-              "notification": "2027-04-01",
-              "estimated": true,
-              "verified": false
+              "deadline": "2027-02-02",
+              "abstractDeadline": null,
+              "notification": null,
+              "estimated": false,
+              "verified": true
             }
           ]
         }
@@ -4830,28 +4830,28 @@
         },
         {
           "year": 2027,
-          "dateText": "December 7-10, 2027",
-          "startDate": "2027-12-07",
-          "endDate": "2027-12-10",
+          "dateText": "December 6-9, 2027",
+          "startDate": "2027-12-06",
+          "endDate": "2027-12-09",
           "approximateDate": false,
-          "location": null,
+          "location": "Rio de Janeiro, Brazil",
           "url": "https://conferences2.sigcomm.org/co-next/2027/",
           "cycles": [
             {
               "name": "Winter",
-              "deadline": "2026-12-11",
-              "abstractDeadline": null,
-              "notification": "2026-12-08",
-              "estimated": true,
-              "verified": false
+              "deadline": "2026-12-04",
+              "abstractDeadline": "2026-11-27",
+              "notification": "2027-03-31",
+              "estimated": false,
+              "verified": true
             },
             {
               "name": "June",
-              "deadline": "2027-06-05",
-              "abstractDeadline": "2027-05-29",
-              "notification": "2027-09-11",
-              "estimated": true,
-              "verified": false
+              "deadline": "2027-06-04",
+              "abstractDeadline": "2027-05-28",
+              "notification": "2027-09-10",
+              "estimated": false,
+              "verified": true
             }
           ]
         }
@@ -4984,11 +4984,11 @@
         },
         {
           "year": 2027,
-          "dateText": "May 18-21, 2027",
-          "startDate": "2027-05-18",
-          "endDate": "2027-05-21",
+          "dateText": "May 24-27, 2027",
+          "startDate": "2027-05-24",
+          "endDate": "2027-05-27",
           "approximateDate": false,
-          "location": null,
+          "location": "Honolulu, HI, USA",
           "url": "https://infocom2027.ieee-infocom.org/",
           "cycles": [
             {
@@ -4996,8 +4996,8 @@
               "deadline": "2026-07-31",
               "abstractDeadline": "2026-07-24",
               "notification": "2026-12-08",
-              "estimated": true,
-              "verified": false
+              "estimated": false,
+              "verified": true
             }
           ]
         },
@@ -5520,9 +5520,9 @@
       "editions": [
         {
           "year": 2027,
-          "dateText": "June 13-19, 2027",
+          "dateText": "June 13-18, 2027",
           "startDate": "2027-06-13",
-          "endDate": "2027-06-19",
+          "endDate": "2027-06-18",
           "approximateDate": false,
           "location": "Huntington Beach, CA, USA",
           "url": "https://2027.sigmod.org/",
@@ -5899,11 +5899,11 @@
         },
         {
           "year": 2028,
-          "dateText": "April 25 - May 1, 2028",
-          "startDate": "2028-04-25",
-          "endDate": "2028-05-01",
+          "dateText": "April 30 - May 6, 2028",
+          "startDate": "2028-04-30",
+          "endDate": "2028-05-06",
           "approximateDate": false,
-          "location": null,
+          "location": "Hawaii, USA",
           "url": "https://conf.researchr.org/home/icse-2028",
           "cycles": [
             {
@@ -6310,14 +6310,6 @@
               "notification": "2026-11-30",
               "estimated": false,
               "verified": true
-            },
-            {
-              "name": null,
-              "deadline": "2026-07-28",
-              "abstractDeadline": null,
-              "notification": "2026-11-30",
-              "estimated": true,
-              "verified": true
             }
           ]
         },
@@ -6492,7 +6484,7 @@
         "postech": "최우수"
       },
       "dblp": "conf/iccv",
-      "url": "https://iccv.thecvf.com/",
+      "url": "https://iccv.thecvf.com/Conferences/2027",
       "editions": [
         {
           "year": 2025,
@@ -6515,12 +6507,12 @@
         },
         {
           "year": 2027,
-          "dateText": "October 2-8, 2027",
-          "startDate": "2027-10-02",
-          "endDate": "2027-10-08",
+          "dateText": "October 3-7, 2027",
+          "startDate": "2027-10-03",
+          "endDate": "2027-10-07",
           "approximateDate": false,
           "location": "Hong Kong, China",
-          "url": "https://iccv.thecvf.com/",
+          "url": "https://iccv.thecvf.com/Conferences/2027",
           "cycles": [
             {
               "name": null,
@@ -6840,7 +6832,7 @@
         "postech": "우수"
       },
       "dblp": "conf/esop",
-      "url": "https://etaps.org/2027/",
+      "url": "https://etaps.org/2028/",
       "editions": [
         {
           "year": 2025,
@@ -6901,12 +6893,12 @@
         },
         {
           "year": 2028,
-          "dateText": "April 10-15, 2028",
-          "startDate": "2028-04-10",
-          "endDate": "2028-04-15",
+          "dateText": "April 2-7, 2028",
+          "startDate": "2028-04-02",
+          "endDate": "2028-04-07",
           "approximateDate": false,
-          "location": null,
-          "url": "https://etaps.org/2027/",
+          "location": "Karlsruhe, Germany",
+          "url": "https://etaps.org/2028/",
           "cycles": [
             {
               "name": null,
