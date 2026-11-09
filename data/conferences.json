@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-02T05:32:08.380Z",
+  "generatedAt": "2026-11-09T05:46:26.746Z",
   "sources": {
     "heelim": {
       "url": "https://profile.heelim.com/",
-      "lastUpdated": "October 27, 2026"
+      "lastUpdated": "November 3, 2026"
     },
     "ccfDeadlines": "https://github.com/ccfddl/ccf-deadlines",
     "tiers": "https://gist.github.com/Pusnow/6eb933355b5cb8d31ef1abcb3c3e1206"
@@ -1756,24 +1756,24 @@
           "startDate": "2026-04-27",
           "endDate": "2026-04-30",
           "approximateDate": false,
-          "location": null,
+          "location": "Edinburgh, UK",
           "url": "https://2026.eurosys.org/",
           "cycles": [
             {
               "name": "Spring",
               "deadline": "2025-05-15",
-              "abstractDeadline": null,
+              "abstractDeadline": "2025-05-08",
               "notification": "2025-08-22",
-              "estimated": true,
-              "verified": false
+              "estimated": false,
+              "verified": true
             },
             {
               "name": "Fall",
               "deadline": "2025-09-25",
-              "abstractDeadline": null,
+              "abstractDeadline": "2025-09-18",
               "notification": "2026-01-30",
-              "estimated": true,
-              "verified": false
+              "estimated": false,
+              "verified": true
             }
           ]
         },
@@ -5140,17 +5140,9 @@
               "name": null,
               "deadline": "2026-11-18",
               "abstractDeadline": "2026-11-11",
-              "notification": "2027-02-24",
+              "notification": "2027-03-08",
               "estimated": false,
               "verified": true
-            },
-            {
-              "name": null,
-              "deadline": null,
-              "abstractDeadline": null,
-              "notification": null,
-              "estimated": true,
-              "verified": false
             }
           ]
         }
@@ -5449,7 +5441,7 @@
         "postech": "우수"
       },
       "dblp": "conf/ecrts",
-      "url": "https://www.ecrts.org/",
+      "url": "https://www.ecrts.org/call-for-papers/",
       "editions": [
         {
           "year": 2026,
@@ -5472,20 +5464,20 @@
         },
         {
           "year": 2027,
-          "dateText": "July 7-10, 2027",
-          "startDate": "2027-07-07",
-          "endDate": "2027-07-10",
+          "dateText": "July 13-16, 2027",
+          "startDate": "2027-07-13",
+          "endDate": "2027-07-16",
           "approximateDate": false,
-          "location": null,
-          "url": "https://www.ecrts.org/",
+          "location": "Prague, Czech Republic",
+          "url": "https://www.ecrts.org/call-for-papers/",
           "cycles": [
             {
               "name": null,
               "deadline": "2027-02-26",
               "abstractDeadline": null,
-              "notification": "2027-04-20",
-              "estimated": true,
-              "verified": false
+              "notification": null,
+              "estimated": false,
+              "verified": true
             }
           ]
         }
@@ -6071,7 +6063,7 @@
         }
       ],
       "source": "heelim",
-      "sortKey": 9000058,
+      "sortKey": 9000059,
       "homepage": "https://neurips.cc/"
     },
     {
@@ -6913,6 +6905,96 @@
       ],
       "source": "heelim",
       "sortKey": 99999035
+    },
+    {
+      "id": "mlsys",
+      "name": "MLSys",
+      "fullName": "Conference on Machine Learning and Systems (MLSys)",
+      "category": "Other",
+      "domains": [
+        "Machine Learning",
+        "Systems",
+        "High-Performance Computing"
+      ],
+      "keywords": [
+        "Machine Learning Systems",
+        "ML Infrastructure",
+        "Large Language Models",
+        "Distributed Training",
+        "Hardware Accelerators",
+        "ML Compilers",
+        "Model Training and Inference"
+      ],
+      "kiise": "우수",
+      "bk21plus": null,
+      "lists": {
+        "kaist": false,
+        "snu": false,
+        "postech": "우수"
+      },
+      "dblp": "conf/mlsys",
+      "url": "https://mlsys.org/Conferences/2027",
+      "editions": [
+        {
+          "year": 2025,
+          "dateText": "May 12-15, 2025",
+          "startDate": "2025-05-12",
+          "endDate": "2025-05-15",
+          "approximateDate": false,
+          "location": "Santa Clara, CA, USA",
+          "url": "https://mlsys.org/Conferences/2025",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2024-10-31",
+              "abstractDeadline": null,
+              "notification": "2025-01-27",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "dateText": "May 18-22, 2026",
+          "startDate": "2026-05-18",
+          "endDate": "2026-05-22",
+          "approximateDate": false,
+          "location": "Bellevue, WA, USA",
+          "url": "https://mlsys.org/Conferences/2026",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2025-10-30",
+              "abstractDeadline": null,
+              "notification": "2026-01-26",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "year": 2027,
+          "dateText": "June 21-25, 2027",
+          "startDate": "2027-06-21",
+          "endDate": "2027-06-25",
+          "approximateDate": false,
+          "location": "Bellevue, WA, USA",
+          "url": "https://mlsys.org/Conferences/2027",
+          "cycles": [
+            {
+              "name": null,
+              "deadline": "2026-10-30",
+              "abstractDeadline": null,
+              "notification": "2027-02-28",
+              "estimated": false,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "source": "heelim",
+      "sortKey": 99999058
     }
   ]
 }
