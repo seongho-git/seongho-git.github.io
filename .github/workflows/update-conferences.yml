@@ -8,6 +8,8 @@ on:
 
 permissions:
   contents: write
+  # Needed to start the deploy workflow: pushes made with GITHUB_TOKEN do not trigger other workflows.
+  actions: write
 
 jobs:
   update:
@@ -22,9 +24,16 @@ jobs:
       - name: Fetch latest conference data
         run: node scripts/update-conferences.mjs
       - name: Commit and push if changed
+        id: commit
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "data(conferences): weekly automatic update"
           file_pattern: data/conferences.json
           commit_user_name: github-actions[bot]
           commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
+      - name: Redeploy the site
+        # The push above cannot trigger deploy.yml by itself, so dispatch it explicitly.
+        if: steps.commit.outputs.changes_detected == 'true'
+        run: gh workflow run deploy.yml --ref main --repo "$GITHUB_REPOSITORY"
+        env:
+          GH_TOKEN: ${{ github.token }}
