@@ -29,3 +29,18 @@ export function TierBadges({ venue, compact }: { venue: Venue; compact?: boolean
     </span>
   )
 }
+
+/** "ACM", "IEEE", "ACM/IEEE", "USENIX", or the organizing body for other venues (IACR, ISOC, ...). */
+export function SponsorBadge({ venue }: { venue: Venue }) {
+  if (!venue.sponsor) return null
+  const { group, names } = venue.sponsor
+  const label = group === "Other" ? venue.sponsor.label ?? "Other" : group
+  return (
+    <span
+      title={`Sponsor: ${names}`}
+      className="inline-flex flex-shrink-0 items-center whitespace-nowrap rounded bg-secondary px-1.5 py-px text-[10px] font-medium leading-4 text-secondary-foreground"
+    >
+      {label}
+    </span>
+  )
+}

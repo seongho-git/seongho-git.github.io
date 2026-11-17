@@ -5,7 +5,7 @@ import { ConferenceCalendar } from "@/components/conferences/calendar"
 import { useFilters } from "@/components/conferences/use-filters"
 
 export default function ConferenceCalendarPage() {
-  const { filters, toggleCategory, setTier, setHideEstimated, reset } = useFilters()
+  const { filters, toggleCategory, setTier, setHideEstimated, setIncludeUnranked, reset } = useFilters()
   return (
     <ConferencesShell
       wide
@@ -13,6 +13,7 @@ export default function ConferenceCalendarPage() {
       onToggleCategory={toggleCategory}
       onTier={setTier}
       onHideEstimated={setHideEstimated}
+      onIncludeUnranked={setIncludeUnranked}
       onReset={reset}
     >
       <ConferenceCalendar filters={filters} />

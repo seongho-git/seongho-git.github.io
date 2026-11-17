@@ -5,8 +5,8 @@ import { usePathname } from "next/navigation"
 import type { ReactNode } from "react"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
-import { conferenceData, categories } from "@/lib/conferences"
-import type { Filters, TierFilter } from "@/components/conferences/use-filters"
+import { conferenceData, categories, venues } from "@/lib/conferences"
+import { isRanked, matchesVenue, type Filters, type TierFilter } from "@/components/conferences/use-filters"
 
 const tabs = [
   { label: "Calendar", href: "/conferences/" },
@@ -25,13 +25,17 @@ type Props = {
   onToggleCategory: (c: string) => void
   onTier: (t: TierFilter) => void
   onHideEstimated: (v: boolean) => void
+  onIncludeUnranked: (v: boolean) => void
   onReset: () => void
   wide?: boolean
 }
 
-export function ConferencesShell({ children, filters, onToggleCategory, onTier, onHideEstimated, onReset, wide }: Props) {
+export function ConferencesShell({ children, filters, onToggleCategory, onTier, onHideEstimated, onIncludeUnranked, onReset, wide }: Props) {
   const pathname = usePathname() ?? ""
-  const active = filters.categories.length > 0 || filters.tier !== "all" || filters.hideEstimated
+  const active = filters.categories.length > 0 || filters.tier !== "all" || filters.hideEstimated || filters.includeUnranked
+  // Unranked venues (no BK21+ score, no KIISE tier) that the other filters would show; the toggle adds or removes exactly these.
+  const unranked = venues.filter((v) => !isRanked(v) && matchesVenue({ ...filters, includeUnranked: true }, v))
+  const shown = venues.filter((v) => matchesVenue(filters, v)).length
   const updated = conferenceData.sources.heelim.lastUpdated ?? conferenceData.generatedAt.slice(0, 10)
 
   return (
@@ -42,7 +46,7 @@ export function ConferencesShell({ children, filters, onToggleCategory, onTier, 
           <div>
             <h1 className="text-2xl font-semibold tracking-tight">Conferences</h1>
             <p className="mt-1 text-sm text-muted-foreground">
-              Submission deadlines and dates for systems, architecture, compiler, and security venues, with KIISE and BK21+ tiers.
+              Submission deadlines and dates for systems, ML systems, architecture, compiler, and security venues, with KIISE and BK21+ tiers.
             </p>
           </div>
           <nav className="flex gap-1 rounded-md border border-border p-1 text-sm" aria-label="Conference views">
@@ -86,6 +90,26 @@ export function ConferencesShell({ children, filters, onToggleCategory, onTier, 
             })}
           </div>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-muted-foreground">
+            <div className="flex items-center gap-2">
+              <span className="tabular-nums">
+                {shown} venues{filters.includeUnranked ? "" : " with a BK21+ score or KIISE tier"}
+              </span>
+              {(unranked.length > 0 || filters.includeUnranked) && (
+                <button
+                  type="button"
+                  onClick={() => onIncludeUnranked(!filters.includeUnranked)}
+                  aria-pressed={filters.includeUnranked}
+                  title={unranked.map((v) => v.name).join(", ")}
+                  className={`rounded border px-2 py-1 transition-colors ${
+                    filters.includeUnranked
+                      ? "border-primary bg-primary/10 text-primary"
+                      : "border-border text-foreground hover:border-primary hover:text-primary"
+                  }`}
+                >
+                  {filters.includeUnranked ? "Hide unranked venues" : `Show ${unranked.length} more without a BK21+ or KIISE rank`}
+                </button>
+              )}
+            </div>
             <div className="flex items-center gap-1">
               {tierOptions.map((o) => (
                 <button
@@ -122,13 +146,16 @@ export function ConferencesShell({ children, filters, onToggleCategory, onTier, 
 
         <div className="mt-10 space-y-1 text-xs text-muted-foreground">
           <p>
-            Deadlines are treated as 23:59 Anywhere on Earth (UTC−12). Entries marked <em>Est.</em> are estimates based on
-            previous years; always confirm on the official call for papers.
+            Deadline times follow the official call for papers where it states one; otherwise 23:59 Anywhere on Earth (UTC−12)
+            is assumed. Entries marked <em>Est.</em> are estimates based on previous years; always confirm on the official call
+            for papers.
           </p>
           <p>
             KIISE tier follows the 2024 Korean Institute of Information Scientists and Engineers list; BK21+ IF follows the
-            2018 BK21 Plus Computer Science conference list. For CVPR, ICCV, ECCV, ICML, and ICLR the BK21+ IF depends on the
-            presentation type and the oral value is shown.
+            2018 BK21 Plus Computer Science conference list. By default only venues with a BK21+ IF or a KIISE tier
+            are listed. For NeurIPS,
+            ICML, CVPR, ICCV, and ECCV the BK21+ IF depends on the presentation type and the oral value is shown; ICLR has no
+            BK21+ IF for any presentation type.
           </p>
           <p>
             Data updated {updated}. Sources:{" "}
@@ -143,7 +170,7 @@ export function ConferencesShell({ children, filters, onToggleCategory, onTier, 
             <a href={conferenceData.sources.tiers} target="_blank" rel="noopener noreferrer" className="link">
               CS 분야 우수 학술대회 목록
             </a>
-            .
+            , with manual corrections from official conference websites.
           </p>
         </div>
       </main>

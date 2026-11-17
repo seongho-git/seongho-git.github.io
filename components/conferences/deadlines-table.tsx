@@ -1,24 +1,11 @@
 "use client"
 
 import { useEffect, useMemo, useState } from "react"
-import { format, differenceInDays, differenceInHours, differenceInMinutes } from "date-fns"
+import { format, differenceInDays } from "date-fns"
 import { ExternalLink } from "lucide-react"
-import { flattenDeadlines, dateInstant, editionLabel, venues, type DeadlineRow } from "@/lib/conferences"
-import { TierBadges } from "@/components/conferences/tier-badges"
+import { countdown, deadlineTimeLabel, editionLabel, flattenDeadlines, formatDate, venues, type DeadlineRow } from "@/lib/conferences"
+import { SponsorBadge, TierBadges } from "@/components/conferences/tier-badges"
 import { matchesVenue, type Filters } from "@/components/conferences/use-filters"
-
-function formatDate(date: string | null) {
-  return date ? format(dateInstant(date), "MMM d, yyyy") : "TBA"
-}
-
-function countdown(target: Date, now: Date) {
-  const mins = differenceInMinutes(target, now)
-  if (mins <= 0) return "Passed"
-  const days = differenceInDays(target, now)
-  const hours = differenceInHours(target, now) % 24
-  if (days >= 1) return `${days}d ${hours}h`
-  return `${hours}h ${mins % 60}m`
-}
 
 function Row({ row, now }: { row: DeadlineRow; now: Date }) {
   const { venue, edition, cycle } = row
@@ -41,6 +28,7 @@ function Row({ row, now }: { row: DeadlineRow; now: Date }) {
             <ExternalLink className="h-3 w-3 text-muted-foreground/60" aria-hidden="true" />
           </a>
           <TierBadges venue={venue} compact />
+          <SponsorBadge venue={venue} />
           {cycle.estimated && (
             <span className="rounded border border-dashed border-border px-1.5 text-[10px] leading-4 text-muted-foreground" title="Estimated from previous years">
               Est.
@@ -54,14 +42,20 @@ function Row({ row, now }: { row: DeadlineRow; now: Date }) {
       </td>
       <td className="py-3 pr-4 whitespace-nowrap">
         <p className={`text-sm tabular-nums ${passed ? "line-through" : ""}`}>{formatDate(cycle.deadline)}</p>
+        <p className="text-xs text-muted-foreground">{deadlineTimeLabel(cycle)}</p>
         {cycle.name && <p className="text-xs text-muted-foreground">{cycle.name}</p>}
         {cycle.abstractDeadline && <p className="text-xs text-muted-foreground">Abstract {formatDate(cycle.abstractDeadline)}</p>}
         {cycle.notification && <p className="text-xs text-muted-foreground">Notification {formatDate(cycle.notification)}</p>}
       </td>
-      <td className={`py-3 pr-4 whitespace-nowrap text-sm tabular-nums ${urgency}`}>{countdown(row.deadlineAt, now)}</td>
+      <td className="py-3 pr-4 whitespace-nowrap">
+        <p className={`text-sm tabular-nums ${urgency}`}>{countdown(row.deadlineAt, now)}</p>
+        <p className="text-xs text-muted-foreground tabular-nums" title="Deadline in your local time">
+          {format(row.deadlineAt, "MMM d, HH:mm")} local
+        </p>
+      </td>
       <td className="py-3 pr-4 text-sm">
         <p className="whitespace-nowrap">{editionLabel(edition)}</p>
-        {edition.location && <p className="text-xs text-muted-foreground">{edition.location}</p>}
+        <p className="text-xs text-muted-foreground">{edition.location ?? "Location TBA"}</p>
       </td>
     </tr>
   )
