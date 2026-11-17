@@ -1,35 +1,2966 @@
 {
-  "$comment": "Manual corrections merged after automatic updates. Keys are venue names. `editions` is keyed by year and merged into that edition. `homepage` replaces the link of estimated editions that inherited the previous edition's link.",
+  "$comment": "Manual corrections, checked against official conference websites and merged after each automatic update. Keys are venue names. Venue fields (fullName, homepage, ...) replace the source values. `editions` is keyed by year and merged into that edition; an edition `cycles` list replaces the whole list (deadlineTime + timezone as stated in the official CFP). A year missing from the sources adds that edition. `homepage` is the series site, used to link estimated editions.",
   "CGO": {
     "fullName": "IEEE/ACM International Symposium on Code Generation and Optimization (CGO)",
-    "editions": { "2026": { "url": "https://2026.cgo.org/" } }
+    "editions": {
+      "2026": {
+        "url": "https://2026.cgo.org/",
+        "dateText": "January 31 - February 4, 2026",
+        "startDate": "2026-01-31",
+        "endDate": "2026-02-04",
+        "location": "Sydney, Australia",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Round 1","abstractDeadline":null,"deadline":"2025-05-29","notification":"2025-07-21","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Round 2","abstractDeadline":null,"deadline":"2025-09-11","notification":"2025-11-03","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "March 20-24, 2027",
+        "startDate": "2027-03-20",
+        "endDate": "2027-03-24",
+        "location": "Salt Lake City, UT, USA",
+        "url": "https://2027.cgo.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Round 1","abstractDeadline":null,"deadline":"2026-06-11","notification":"2026-08-03","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Round 2","abstractDeadline":null,"deadline":"2026-09-10","notification":"2026-11-09","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "homepage": "https://cgo.org/",
+    "sponsor": {"group":"ACM/IEEE","names":"IEEE Computer Society TCuARCH, ACM SIGMICRO, ACM SIGPLAN"}
   },
-  "ISCA": { "editions": { "2027": { "url": "https://iscaconf.org/" } } },
-  "RAID": { "editions": { "2025": { "url": "https://raid2025.github.io/" } } },
-  "ICDCS": { "editions": { "2025": { "url": "https://icdcs2025.icdcs.org/" } } },
-  "DAC": { "editions": { "2026": { "url": "https://dac.com/2026" } } },
-  "RTAS": { "editions": { "2026": { "url": "https://2026.rtas.org/" } } },
-  "CoNEXT": { "editions": { "2027": { "url": "https://conferences2.sigcomm.org/co-next/2027/" } } },
-  "INFOCOM": { "editions": { "2027": { "url": "https://infocom2027.ieee-infocom.org/" } } },
-  "MICRO": { "homepage": "https://www.microarch.org/" },
-  "ISPASS": { "homepage": "https://ispass.org/" },
-  "ICCD": { "homepage": "https://www.iccd-conf.com/" },
-  "CF": { "fullName": "ACM International Conference on Computing Frontiers (CF)", "homepage": "https://www.computingfrontiers.org/" },
-  "CC": { "homepage": "https://conf.researchr.org/series/CC" },
-  "LCTES": { "homepage": "https://conf.researchr.org/series/LCTES" },
-  "ISMM": { "fullName": "ACM SIGPLAN International Symposium on Memory Management (ISMM)", "homepage": "https://conf.researchr.org/series/ismm" },
-  "HotStorage": { "fullName": "ACM Workshop on Hot Topics in Storage and File Systems (HotStorage)", "homepage": "https://www.hotstorage.org/" },
-  "SoCC": { "homepage": "https://acmsocc.org/" },
-  "Middleware": { "homepage": "https://middleware-conf.github.io/" },
-  "ICPP": { "homepage": "https://www.icpp-conf.org/" },
-  "ASE": { "homepage": "https://conf.researchr.org/series/ase" },
-  "NeurIPS": { "homepage": "https://neurips.cc/" },
-  "ICML": { "homepage": "https://icml.cc/" },
-  "SC": { "homepage": "https://supercomputing.org/" },
-  "RTSS": { "homepage": "https://www.rtss.org/" },
-  "HotNets": { "fullName": "ACM Workshop on Hot Topics in Networks (HotNets)", "homepage": "https://conferences.sigcomm.org/hotnets/" },
-  "ACM ATC": { "fullName": "ACM Annual Technical Conference (ATC), successor of USENIX ATC" },
-  "VLSI Symposium": { "fullName": "IEEE Symposium on VLSI Technology and Circuits" },
-  "HotOS": { "fullName": "Workshop on Hot Topics in Operating Systems (HotOS)" },
-  "HotMobile": { "fullName": "International Workshop on Mobile Computing Systems and Applications (HotMobile)" }
+  "ISCA": {
+    "editions": {
+      "2026": {"dateText":"June 27 - July 1, 2026","startDate":"2026-06-27","endDate":"2026-07-01","location":"Raleigh, NC, USA","approximateDate":false},
+      "2027": {
+        "url": "https://iscaconf.org/isca2027/",
+        "dateText": "June 5-9, 2027",
+        "startDate": "2027-06-05",
+        "endDate": "2027-06-09",
+        "location": "Atlanta, GA, USA",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-11-09","deadline":"2026-11-16","notification":"2027-03-26","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "homepage": "https://iscaconf.org/",
+    "sponsor": {"group":"ACM/IEEE","names":"ACM SIGARCH, IEEE Computer Society TCCA"}
+  },
+  "RAID": {
+    "editions": {
+      "2025": {"url":"https://raid2025.github.io/"},
+      "2026": {
+        "dateText": "October 11-14, 2026",
+        "startDate": "2026-10-11",
+        "endDate": "2026-10-14",
+        "location": "Lancaster, United Kingdom",
+        "url": "https://raid2026.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-04-16","notification":"2026-07-10","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {"location":"Chicago, IL, USA","url":"https://www.raid2027.org/"}
+    },
+    "sponsor": {"group":"Other","label":"Independent","names":"RAID steering committee (2026: technical sponsor AACI; proceedings: Springer LNCS)"}
+  },
+  "ICDCS": {
+    "editions": {
+      "2025": {"url":"https://icdcs2025.icdcs.org/"},
+      "2026": {
+        "dateText": "June 22-25, 2026",
+        "startDate": "2026-06-22",
+        "endDate": "2026-06-25",
+        "location": "Seoul, South Korea",
+        "url": "https://icdcs2026.icdcs.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-01-21","notification":"2026-04-27","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "July 5-8, 2027",
+        "startDate": "2027-07-05",
+        "endDate": "2027-07-08",
+        "location": "Melbourne, Australia",
+        "url": "https://icdcs2027.icdcs.org/",
+        "approximateDate": false
+      }
+    },
+    "sponsor": {"group":"IEEE","names":"IEEE Computer Society (Technical Committee on Distributed Processing, TCDP)"}
+  },
+  "DAC": {
+    "editions": {
+      "2026": {
+        "url": "https://dac.com/2026",
+        "dateText": "July 26-29, 2026",
+        "startDate": "2026-07-26",
+        "endDate": "2026-07-29",
+        "location": "Long Beach, CA, USA",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2025-11-11","deadline":"2025-11-19","notification":"2026-03-09","estimated":false,"verified":true,"deadlineTime":"17:00","timezone":"PT"}
+        ]
+      },
+      "2027": {
+        "dateText": "July 11-14, 2027",
+        "startDate": "2027-07-11",
+        "endDate": "2027-07-14",
+        "location": "San Jose, CA, USA",
+        "url": "https://dac.com/2027",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-11-11","deadline":"2026-11-18","notification":"2027-03-08","estimated":false,"verified":true,"deadlineTime":"17:00","timezone":"PT"}
+        ]
+      }
+    },
+    "homepage": "https://www.dac.com/",
+    "sponsor": {"group":"ACM/IEEE","names":"ACM SIGDA, IEEE CEDA"}
+  },
+  "RTAS": {
+    "editions": {
+      "2026": {
+        "url": "https://2026.rtas.org/",
+        "dateText": "May 12-14, 2026",
+        "startDate": "2026-05-12",
+        "endDate": "2026-05-14",
+        "location": "Saint-Malo, France",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2025-11-13","notification":"2026-01-29","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "May 17-20, 2027",
+        "startDate": "2027-05-17",
+        "endDate": "2027-05-20",
+        "location": "Boulder, CO, USA",
+        "url": "https://2027.rtas.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-11-05","notification":"2027-01-28","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "homepage": "https://www.rtas.org/",
+    "sponsor": {"group":"IEEE","names":"IEEE Computer Society TCRTS"}
+  },
+  "CoNEXT": {
+    "editions": {
+      "2026": {
+        "dateText": "December 7-10, 2026",
+        "startDate": "2026-12-07",
+        "endDate": "2026-12-10",
+        "location": "Utrecht, Netherlands",
+        "url": "https://conferences2.sigcomm.org/co-next/2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"December","abstractDeadline":"2025-12-05","deadline":"2025-12-12","notification":"2026-03-31","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"June","abstractDeadline":"2026-05-29","deadline":"2026-06-05","notification":"2026-09-11","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "url": "https://conferences2.sigcomm.org/co-next/2027/",
+        "dateText": "December 6-9, 2027",
+        "startDate": "2027-12-06",
+        "endDate": "2027-12-09",
+        "location": "Rio de Janeiro, Brazil",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"December","abstractDeadline":"2026-11-27","deadline":"2026-12-04","notification":"2027-03-31","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"June","abstractDeadline":"2027-05-28","deadline":"2027-06-04","notification":"2027-09-10","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "homepage": "https://www.sigcomm.org/events/conext-conference",
+    "sponsor": {"group":"ACM","names":"ACM SIGCOMM"}
+  },
+  "INFOCOM": {
+    "editions": {
+      "2026": {
+        "dateText": "May 18-21, 2026",
+        "startDate": "2026-05-18",
+        "endDate": "2026-05-21",
+        "location": "Tokyo, Japan",
+        "url": "https://infocom2026.ieee-infocom.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2025-07-24","deadline":"2025-07-31","notification":"2025-12-08","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "url": "https://infocom2027.ieee-infocom.org/",
+        "dateText": "May 24-27, 2027",
+        "startDate": "2027-05-24",
+        "endDate": "2027-05-27",
+        "location": "Honolulu, HI, USA",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-07-24","deadline":"2026-07-31","notification":"2026-12-08","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "homepage": "https://ieee-infocom.org/",
+    "sponsor": {"group":"IEEE","names":"IEEE Communications Society (ComSoc)"}
+  },
+  "MICRO": {
+    "homepage": "https://www.microarch.org/",
+    "editions": {
+      "2026": {
+        "dateText": "October 31 - November 4, 2026",
+        "startDate": "2026-10-31",
+        "endDate": "2026-11-04",
+        "location": "Athens, Greece",
+        "url": "https://www.microarch.org/micro59/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-03-31","deadline":"2026-04-07","notification":"2026-07-07","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"ET"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM/IEEE","names":"ACM SIGMICRO, IEEE Computer Society TCuARCH"}
+  },
+  "ISPASS": {
+    "homepage": "https://ispass.org/",
+    "editions": {
+      "2026": {
+        "dateText": "April 26-28, 2026",
+        "startDate": "2026-04-26",
+        "endDate": "2026-04-28",
+        "location": "Seoul, South Korea",
+        "url": "https://ispass.org/ispass2026/",
+        "approximateDate": false
+      },
+      "2027": {
+        "dateText": "May 9-11, 2027",
+        "startDate": "2027-05-09",
+        "endDate": "2027-05-11",
+        "location": "New York, NY, USA",
+        "url": "https://ispass.org/2027/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-12-11","deadline":"2026-12-18","notification":"2027-03-08","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"IEEE","names":"IEEE Computer Society (TCCA, TCuARCH)"}
+  },
+  "ICCD": {
+    "homepage": "https://www.iccd-conf.com/home.html",
+    "editions": {
+      "2026": {
+        "dateText": "November 16-18, 2026",
+        "startDate": "2026-11-16",
+        "endDate": "2026-11-18",
+        "location": "Hong Kong SAR, China",
+        "url": "https://www.iccd-conf.com/2026/home.html",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-06-03","deadline":"2026-06-10","notification":"2026-08-20","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"IEEE","names":"IEEE, IEEE Computer Society (TCCA)"}
+  },
+  "CF": {
+    "fullName": "ACM International Conference on Computing Frontiers (CF)",
+    "homepage": "https://www.computingfrontiers.org/",
+    "editions": {
+      "2026": {
+        "dateText": "May 19-21, 2026",
+        "startDate": "2026-05-19",
+        "endDate": "2026-05-21",
+        "location": "Catania, Sicily, Italy",
+        "url": "https://www.computingfrontiers.org/2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-02-01","notification":"2026-03-09","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "May 25-27, 2027",
+        "startDate": "2027-05-25",
+        "endDate": "2027-05-27",
+        "location": "Trento, Italy",
+        "url": "https://www.computingfrontiers.org/2027/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2027-01-18","deadline":"2027-01-25","notification":"2027-03-15","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGMICRO"}
+  },
+  "CC": {
+    "homepage": "https://conf.researchr.org/series/CC",
+    "editions": {
+      "2026": {
+        "dateText": "January 31 - February 1, 2026",
+        "startDate": "2026-01-31",
+        "endDate": "2026-02-01",
+        "location": "Sydney, Australia",
+        "url": "https://conf.researchr.org/home/CC-2026",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2025-11-11","notification":"2025-12-10","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "March 20-21, 2027",
+        "startDate": "2027-03-20",
+        "endDate": "2027-03-21",
+        "location": "Salt Lake City, UT, USA",
+        "url": "https://conf.researchr.org/home/CC-2027",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-12-01","deadline":"2026-12-03","notification":"2027-01-15","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGPLAN"}
+  },
+  "LCTES": {
+    "homepage": "https://conf.researchr.org/series/lctes",
+    "editions": {
+      "2026": {
+        "dateText": "June 15-16, 2026",
+        "startDate": "2026-06-15",
+        "endDate": "2026-06-16",
+        "location": "Boulder, CO, USA",
+        "url": "https://pldi26.sigplan.org/home/LCTES-2026",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-03-13","deadline":"2026-03-20","notification":"2026-05-01","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGPLAN, ACM SIGBED"}
+  },
+  "ISMM": {
+    "fullName": "ACM SIGPLAN International Symposium on Memory Management (ISMM)",
+    "homepage": "https://conf.researchr.org/series/ismm",
+    "editions": {
+      "2026": {
+        "dateText": "June 16, 2026",
+        "startDate": "2026-06-16",
+        "endDate": "2026-06-16",
+        "location": "Boulder, CO, USA",
+        "url": "https://conf.researchr.org/home/ismm-2026",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-04-03","notification":"2026-05-04","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGPLAN"}
+  },
+  "HotStorage": {
+    "fullName": "ACM Workshop on Hot Topics in Storage and File Systems (HotStorage)",
+    "homepage": "https://www.hotstorage.org/",
+    "editions": {
+      "2026": {
+        "dateText": "September 28-29, 2026",
+        "startDate": "2026-09-28",
+        "endDate": "2026-09-29",
+        "location": "Prague, Czechia",
+        "url": "https://www.hotstorage.org/2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-06-12","notification":"2026-07-24","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGOPS"}
+  },
+  "SoCC": {
+    "homepage": "https://acmsocc.org/",
+    "editions": {
+      "2026": {
+        "dateText": "November 18-20, 2026",
+        "startDate": "2026-11-18",
+        "endDate": "2026-11-20",
+        "location": "Singapore",
+        "url": "https://acmsocc.org/2026/index.html",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Round 1","abstractDeadline":"2026-02-06","deadline":"2026-02-13","notification":"2026-04-29","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Round 2","abstractDeadline":"2026-07-07","deadline":"2026-07-14","notification":"2026-09-26","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGMOD, ACM SIGOPS"}
+  },
+  "Middleware": {
+    "homepage": "https://middleware-conf.github.io/",
+    "editions": {
+      "2026": {
+        "dateText": "December 14-18, 2026",
+        "startDate": "2026-12-14",
+        "endDate": "2026-12-18",
+        "location": "Tarragona, Spain",
+        "url": "https://middleware-conf.github.io/2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Winter","abstractDeadline":"2025-12-09","deadline":"2025-12-12","notification":"2026-03-06","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Summer","abstractDeadline":"2026-05-29","deadline":"2026-06-05","notification":"2026-08-28","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "December 13-17, 2027",
+        "startDate": "2027-12-13",
+        "endDate": "2027-12-17",
+        "location": "Kyoto, Japan",
+        "url": "https://middleware-conf.github.io/2027/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Winter","abstractDeadline":"2026-11-27","deadline":"2026-12-04","notification":"2027-03-29","estimated":false,"verified":true,"deadlineTime":"00:00","timezone":"AoE"},
+          {"name":"Summer","abstractDeadline":"2027-05-28","deadline":"2027-06-04","notification":"2027-09-13","estimated":false,"verified":true,"deadlineTime":null,"timezone":null}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM, IFIP"}
+  },
+  "ICPP": {
+    "homepage": "https://www.icpp-conf.org/",
+    "editions": {
+      "2026": {
+        "dateText": "September 28 - October 1, 2026",
+        "startDate": "2026-09-28",
+        "endDate": "2026-10-01",
+        "location": "Singapore",
+        "url": "https://icpp2026.github.io/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-04-24","deadline":"2026-05-01","notification":"2026-06-30","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "September 13-17, 2027",
+        "startDate": "2027-09-13",
+        "endDate": "2027-09-17",
+        "location": "Sapporo, Japan",
+        "url": "https://icpp2027.github.io/",
+        "approximateDate": false
+      }
+    },
+    "sponsor": {"group":"Other","label":"IACC","names":"IACC, SGSCS (ACM and ACM SIGHPC in cooperation)"}
+  },
+  "ASE": {
+    "homepage": "https://conf.researchr.org/series/ase",
+    "editions": {
+      "2026": {
+        "dateText": "October 12-16, 2026",
+        "startDate": "2026-10-12",
+        "endDate": "2026-10-16",
+        "location": "Munich, Germany",
+        "url": "https://conf.researchr.org/home/ase-2026",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-03-26","notification":"2026-06-18","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "October 24-28, 2027",
+        "startDate": "2027-10-24",
+        "endDate": "2027-10-28",
+        "location": "El Paso, TX, USA",
+        "url": "https://conf.researchr.org/home/ase-2027",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2027-03-10","notification":"2027-06-08","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM/IEEE","names":"IEEE Computer Society, ACM SIGSOFT, ACM SIGAI"}
+  },
+  "NeurIPS": {
+    "homepage": "https://neurips.cc/",
+    "editions": {
+      "2026": {
+        "dateText": "December 6-12, 2026",
+        "startDate": "2026-12-06",
+        "endDate": "2026-12-12",
+        "location": "Sydney, Australia",
+        "url": "https://neurips.cc/Conferences/2026",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-05-04","deadline":"2026-05-06","notification":"2026-09-24","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {"location":"Europe (city TBA)"}
+    },
+    "sponsor": {"group":"Other","label":"Independent","names":"NeurIPS Foundation"}
+  },
+  "ICML": {
+    "homepage": "https://icml.cc/",
+    "editions": {
+      "2026": {
+        "dateText": "July 6-11, 2026",
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-11",
+        "location": "Seoul, South Korea",
+        "url": "https://icml.cc/Conferences/2026",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-01-23","deadline":"2026-01-28","notification":"2026-04-30","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "July 31 - August 6, 2027",
+        "startDate": "2027-07-31",
+        "endDate": "2027-08-06",
+        "location": "Rio de Janeiro, Brazil",
+        "url": "https://icml.cc/Conferences/2027",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2027-01-14","deadline":"2027-01-22","notification":"2027-05-03","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"Other","label":"IMLS","names":"IMLS (International Machine Learning Society)"}
+  },
+  "SC": {
+    "homepage": "https://supercomputing.org/",
+    "editions": {
+      "2026": {
+        "dateText": "November 15-20, 2026",
+        "startDate": "2026-11-15",
+        "endDate": "2026-11-20",
+        "location": "Chicago, IL, USA",
+        "url": "https://sc26.supercomputing.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-04-01","deadline":"2026-04-08","notification":"2026-07-01","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "November 14-19, 2027",
+        "startDate": "2027-11-14",
+        "endDate": "2027-11-19",
+        "location": "Denver, CO, USA",
+        "url": "https://sc27.supercomputing.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2027-03-25","deadline":"2027-04-01","notification":"2027-07-01","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM/IEEE","names":"ACM, ACM SIGHPC, IEEE Computer Society, IEEE CS TCHPC"}
+  },
+  "RTSS": {
+    "homepage": "https://www.rtss.org/",
+    "editions": {
+      "2026": {
+        "dateText": "December 9-11, 2026",
+        "startDate": "2026-12-09",
+        "endDate": "2026-12-11",
+        "location": "Yokohama, Japan",
+        "url": "https://2026.rtss.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-05-21","deadline":"2026-05-26","notification":"2026-07-25","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"IEEE","names":"IEEE Computer Society TCRTS"}
+  },
+  "HotNets": {
+    "fullName": "ACM Workshop on Hot Topics in Networks (HotNets)",
+    "homepage": "https://www.sigcomm.org/events/hotnets-workshop",
+    "editions": {
+      "2026": {
+        "dateText": "November 16-17, 2026",
+        "startDate": "2026-11-16",
+        "endDate": "2026-11-17",
+        "location": "Salt Lake City, UT, USA",
+        "url": "https://conferences.sigcomm.org/hotnets/2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-07-16","notification":"2026-09-24","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGCOMM"}
+  },
+  "ACM ATC": {
+    "fullName": "ACM SIGOPS Annual Technical Conference (ATC), successor of USENIX ATC",
+    "editions": {
+      "2026": {
+        "dateText": "November 16-18, 2026",
+        "startDate": "2026-11-16",
+        "endDate": "2026-11-18",
+        "location": "Hong Kong",
+        "url": "https://atc.sigops.org/2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-06-10","notification":"2026-09-18","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "June 28 - July 1, 2027",
+        "startDate": "2027-06-28",
+        "endDate": "2027-07-01",
+        "location": "Rennes, France",
+        "url": "https://atc.sigops.org/2027/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2027-01-19","notification":"2027-04-27","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGOPS"}
+  },
+  "VLSI Symposium": {
+    "fullName": "IEEE Symposium on VLSI Technology and Circuits",
+    "homepage": "https://www.vlsisymposium.org/",
+    "editions": {
+      "2026": {
+        "dateText": "June 14-18, 2026",
+        "startDate": "2026-06-14",
+        "endDate": "2026-06-18",
+        "location": "Honolulu, HI, USA",
+        "url": "https://archive.vlsisymposium.org/26web/",
+        "approximateDate": false
+      },
+      "2027": {
+        "dateText": "June 20-24, 2027",
+        "startDate": "2027-06-20",
+        "endDate": "2027-06-24",
+        "location": "Kyoto, Japan",
+        "url": "https://www.vlsisymposium.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2027-01-25","notification":null,"estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"JST"}
+        ]
+      }
+    },
+    "sponsor": {"group":"IEEE","names":"IEEE Electron Devices Society, IEEE Solid-State Circuits Society, Japan Society of Applied Physics"}
+  },
+  "HotOS": {
+    "fullName": "Workshop on Hot Topics in Operating Systems (HotOS)",
+    "homepage": "https://sigops.org/s/conferences/hotos/",
+    "editions": {
+      "2027": {
+        "dateText": "May 24-26, 2027",
+        "startDate": "2027-05-24",
+        "endDate": "2027-05-26",
+        "location": "Burghausen, Bavaria, Germany",
+        "url": "https://sigops.org/s/conferences/hotos/2027/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2027-02-01","notification":"2027-04-09","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGOPS"}
+  },
+  "HotMobile": {
+    "fullName": "International Workshop on Mobile Computing Systems and Applications (HotMobile)",
+    "homepage": "https://www.hotmobile.org/",
+    "editions": {
+      "2026": {
+        "dateText": "February 25-26, 2026",
+        "startDate": "2026-02-25",
+        "endDate": "2026-02-26",
+        "location": "Atlanta, GA, USA",
+        "url": "https://hotmobile.org/2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2025-10-31","notification":"2025-12-16","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "February 24-25, 2027",
+        "startDate": "2027-02-24",
+        "endDate": "2027-02-25",
+        "location": "Tucson, AZ, USA",
+        "url": "https://www.hotmobile.org/2027/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-10-09","notification":"2026-12-16","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGMOBILE"}
+  },
+  "HPCA": {
+    "homepage": "https://hpca-conf.org/",
+    "editions": {
+      "2026": {
+        "dateText": "January 31 - February 4, 2026",
+        "startDate": "2026-01-31",
+        "endDate": "2026-02-04",
+        "location": "Sydney, Australia",
+        "approximateDate": false
+      },
+      "2027": {
+        "dateText": "March 20-24, 2027",
+        "startDate": "2027-03-20",
+        "endDate": "2027-03-24",
+        "location": "Salt Lake City, UT, USA",
+        "url": "https://conf.researchr.org/home/hpca-2027",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-07-24","deadline":"2026-07-31","notification":"2026-11-06","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"IEEE","names":"IEEE Computer Society TCCA"}
+  },
+  "ASPLOS": {
+    "homepage": "https://www.asplos-conference.org/",
+    "editions": {
+      "2026": {
+        "dateText": "March 22-26, 2026",
+        "startDate": "2026-03-22",
+        "endDate": "2026-03-26",
+        "location": "Pittsburgh, PA, USA",
+        "url": "https://www.asplos-conference.org/asplos2026/",
+        "approximateDate": false
+      },
+      "2027": {
+        "dateText": "April 11-15, 2027",
+        "startDate": "2027-04-11",
+        "endDate": "2027-04-15",
+        "location": "Heraklion, Crete, Greece",
+        "url": "https://www.asplos-conference.org/asplos2027/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"April","abstractDeadline":null,"deadline":"2026-04-15","notification":"2026-07-27","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"September","abstractDeadline":null,"deadline":"2026-09-09","notification":"2026-12-21","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGARCH, ACM SIGOPS, ACM SIGPLAN"}
+  },
+  "PACT": {
+    "editions": {
+      "2026": {
+        "dateText": "October 19-22, 2026",
+        "startDate": "2026-10-19",
+        "endDate": "2026-10-22",
+        "location": "Chicago, IL, USA",
+        "url": "https://pact2026.github.io/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-04-23","deadline":"2026-04-30","notification":"2026-08-05","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {"location":"Tokyo, Japan"}
+    },
+    "sponsor": {"group":"ACM/IEEE","names":"ACM SIGARCH, IEEE Computer Society (TCCA), IFIP"}
+  },
+  "IISWC": {
+    "homepage": "https://iiswc.org/",
+    "editions": {
+      "2026": {
+        "dateText": "September 27-29, 2026",
+        "startDate": "2026-09-27",
+        "endDate": "2026-09-29",
+        "location": "Boulder, CO, USA",
+        "url": "https://iiswc.org/iiswc2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-05-14","deadline":"2026-05-21","notification":"2026-07-27","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"IEEE","names":"IEEE Computer Society TCCA"}
+  },
+  "HiPEAC": {
+    "homepage": "https://www.hipeac.net/",
+    "editions": {
+      "2027": {
+        "dateText": "January 18-20, 2027",
+        "startDate": "2027-01-18",
+        "endDate": "2027-01-20",
+        "location": "Glasgow, UK",
+        "url": "https://www.hipeac.net/2027/glasgow/",
+        "approximateDate": false
+      }
+    },
+    "sponsor": {"group":"Other","label":"HiPEAC","names":"HiPEAC network (EU-funded); papers via ACM TACO"}
+  },
+  "FPGA": {
+    "homepage": "https://www.isfpga.org/",
+    "editions": {
+      "2026": {"location":"Seaside, CA, USA"},
+      "2027": {
+        "dateText": "March 14-16, 2027",
+        "startDate": "2027-03-14",
+        "endDate": "2027-03-16",
+        "location": "California, USA",
+        "url": "https://www.isfpga.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-10-01","deadline":"2026-10-08","notification":"2026-12-08","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGDA"}
+  },
+  "FCCM": {
+    "homepage": "https://www.fccm.org/",
+    "editions": {
+      "2026": {
+        "dateText": "May 13-16, 2026",
+        "startDate": "2026-05-13",
+        "endDate": "2026-05-16",
+        "location": "Atlanta, GA, USA",
+        "url": "https://www.fccm.org/past/2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-01-10","deadline":"2026-01-17","notification":"2026-03-16","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "May 9-12, 2027",
+        "startDate": "2027-05-09",
+        "endDate": "2027-05-12",
+        "location": "Provo, UT, USA",
+        "url": "https://www.fccm.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2027-01-10","deadline":"2027-01-17","notification":"2027-03-14","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"IEEE","names":"IEEE Computer Society (TCCA)"}
+  },
+  "PLDI": {
+    "homepage": "https://www.sigplan.org/Conferences/PLDI/",
+    "editions": {
+      "2026": {
+        "dateText": "June 15-19, 2026",
+        "startDate": "2026-06-15",
+        "endDate": "2026-06-19",
+        "location": "Boulder, CO, USA",
+        "url": "https://pldi26.sigplan.org/",
+        "approximateDate": false
+      },
+      "2027": {
+        "dateText": "June 5-11, 2027",
+        "startDate": "2027-06-05",
+        "endDate": "2027-06-11",
+        "location": "Atlanta, GA, USA",
+        "url": "https://pldi27.sigplan.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-11-12","notification":"2027-03-04","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGPLAN"}
+  },
+  "POPL": {
+    "homepage": "https://www.sigplan.org/Conferences/POPL/",
+    "editions": {
+      "2026": {
+        "dateText": "January 11-17, 2026",
+        "startDate": "2026-01-11",
+        "endDate": "2026-01-17",
+        "location": "Rennes, France",
+        "url": "https://popl26.sigplan.org/",
+        "approximateDate": false
+      },
+      "2027": {
+        "dateText": "January 10-16, 2027",
+        "startDate": "2027-01-10",
+        "endDate": "2027-01-16",
+        "location": "Mexico City, Mexico",
+        "url": "https://popl27.sigplan.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-07-09","notification":"2026-10-05","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGPLAN"}
+  },
+  "OOPSLA": {
+    "homepage": "https://www.sigplan.org/Conferences/OOPSLA/",
+    "editions": {
+      "2026": {
+        "dateText": "October 4-9, 2026",
+        "startDate": "2026-10-04",
+        "endDate": "2026-10-09",
+        "location": "Oakland, CA, USA",
+        "url": "https://conf.researchr.org/track/splash-2026/oopsla-2026",
+        "approximateDate": false
+      },
+      "2027": {
+        "dateText": "October 10-15, 2027",
+        "startDate": "2027-10-10",
+        "endDate": "2027-10-15",
+        "location": "Prague, Czechia",
+        "url": "https://conf.researchr.org/track/splash-2027/splashoopsla2027",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Round 1","abstractDeadline":null,"deadline":"2026-10-14","notification":"2026-12-18","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Round 2","abstractDeadline":null,"deadline":"2027-04-07","notification":"2027-07-02","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGPLAN"}
+  },
+  "PPoPP": {
+    "homepage": "https://www.sigplan.org/Conferences/PPoPP/",
+    "editions": {
+      "2026": {
+        "dateText": "January 31 - February 4, 2026",
+        "startDate": "2026-01-31",
+        "endDate": "2026-02-04",
+        "location": "Sydney, Australia",
+        "url": "https://ppopp26.sigplan.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2025-09-01","notification":"2025-11-10","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "March 20-24, 2027",
+        "startDate": "2027-03-20",
+        "endDate": "2027-03-24",
+        "location": "Salt Lake City, UT, USA",
+        "url": "https://ppopp27.sigplan.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-08-03","notification":"2026-10-26","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGPLAN, ACM SIGHPC"}
+  },
+  "ICFP": {
+    "homepage": "https://icfpconference.org/",
+    "editions": {
+      "2026": {
+        "dateText": "August 24-29, 2026",
+        "startDate": "2026-08-24",
+        "endDate": "2026-08-29",
+        "location": "Indianapolis, IN, USA",
+        "url": "https://icfp26.sigplan.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-02-19","notification":"2026-05-14","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "September 26 - October 1, 2027",
+        "startDate": "2027-09-26",
+        "endDate": "2027-10-01",
+        "location": "Nijmegen, Netherlands",
+        "url": "https://icfp27.sigplan.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2027-02-25","notification":"2027-05-07","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGPLAN"}
+  },
+  "ECOOP": {
+    "homepage": "https://conf.researchr.org/series/ecoop",
+    "editions": {
+      "2026": {
+        "dateText": "June 29 - July 3, 2026",
+        "startDate": "2026-06-29",
+        "endDate": "2026-07-03",
+        "location": "Brussels, Belgium",
+        "url": "https://2026.ecoop.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Round 1","abstractDeadline":null,"deadline":"2025-11-27","notification":"2026-01-29","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Round 2","abstractDeadline":null,"deadline":"2026-02-12","notification":"2026-04-09","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "June 28 - July 2, 2027",
+        "startDate": "2027-06-28",
+        "endDate": "2027-07-02",
+        "location": "Turin, Italy",
+        "url": "https://2027.ecoop.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Round 1","abstractDeadline":null,"deadline":"2026-11-19","notification":"2027-01-28","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Round 2","abstractDeadline":null,"deadline":"2027-02-11","notification":"2027-04-08","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"Other","label":"AITO","names":"AITO (Association Internationale pour les Technologies Objets)"}
+  },
+  "ESOP": {
+    "homepage": "https://etaps.org/",
+    "editions": {
+      "2026": {
+        "dateText": "April 11-16, 2026",
+        "startDate": "2026-04-11",
+        "endDate": "2026-04-16",
+        "location": "Turin, Italy",
+        "url": "https://etaps.org/2026/conferences/esop/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Round 1","abstractDeadline":null,"deadline":"2025-06-03","notification":"2025-08-01","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Round 2","abstractDeadline":null,"deadline":"2025-10-16","notification":"2025-12-22","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "April 10-15, 2027",
+        "startDate": "2027-04-10",
+        "endDate": "2027-04-15",
+        "location": "Copenhagen, Denmark",
+        "url": "https://etaps.org/2027/conferences/esop/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Round 1","abstractDeadline":null,"deadline":"2026-05-28","notification":"2026-08-06","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Round 2","abstractDeadline":null,"deadline":"2026-10-15","notification":"2026-12-22","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2028": {
+        "dateText": "April 2-7, 2028",
+        "startDate": "2028-04-02",
+        "endDate": "2028-04-07",
+        "location": "Karlsruhe, Germany",
+        "url": "https://etaps.org/2028/",
+        "approximateDate": false
+      }
+    },
+    "sponsor": {"group":"Other","label":"ETAPS","names":"ETAPS Association"}
+  },
+  "SAS": {
+    "homepage": "https://conf.researchr.org/series/sas",
+    "editions": {
+      "2026": {
+        "dateText": "October 6-8, 2026",
+        "startDate": "2026-10-06",
+        "endDate": "2026-10-08",
+        "location": "Oakland, CA, USA",
+        "url": "https://conf.researchr.org/home/sas-2026",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-05-07","notification":"2026-07-04","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {"location":"Prague, Czechia","url":"https://2027.splashcon.org/home/sas-2027"}
+    },
+    "sponsor": {"group":"Other","label":"Independent","names":"SAS steering committee (proceedings: Springer LNCS)"}
+  },
+  "CAV": {
+    "homepage": "https://i-cav.org/",
+    "editions": {
+      "2026": {
+        "dateText": "July 26-29, 2026",
+        "startDate": "2026-07-26",
+        "endDate": "2026-07-29",
+        "location": "Lisbon, Portugal",
+        "url": "https://conferences.i-cav.org/2026/",
+        "approximateDate": false
+      },
+      "2027": {
+        "dateText": "July 19-23, 2027",
+        "startDate": "2027-07-19",
+        "endDate": "2027-07-23",
+        "location": "Amsterdam, Netherlands",
+        "url": "https://conferences.i-cav.org/2027/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2027-01-20","notification":"2027-04-23","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"Other","label":"Independent","names":"CAV steering committee (proceedings: Springer LNCS)"}
+  },
+  "OSDI": {
+    "homepage": "https://www.usenix.org/conferences/byname/179",
+    "editions": {
+      "2026": {
+        "dateText": "July 13-15, 2026",
+        "startDate": "2026-07-13",
+        "endDate": "2026-07-15",
+        "location": "Seattle, WA, USA",
+        "url": "https://www.usenix.org/conference/osdi26",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2025-12-04","deadline":"2025-12-11","notification":"2026-03-26","estimated":false,"verified":true,"deadlineTime":"17:59","timezone":"ET"}
+        ]
+      },
+      "2027": {
+        "dateText": "July 7-9, 2027",
+        "startDate": "2027-07-07",
+        "endDate": "2027-07-09",
+        "location": "Baltimore, MD, USA",
+        "url": "https://www.usenix.org/conference/osdi27",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-12-01","deadline":"2026-12-08","notification":"2027-03-16","estimated":false,"verified":true,"deadlineTime":"17:59","timezone":"ET"}
+        ]
+      },
+      "2028": {
+        "dateText": "July 10-12, 2028",
+        "startDate": "2028-07-10",
+        "endDate": "2028-07-12",
+        "location": "Seattle, WA, USA",
+        "url": "https://www.usenix.org/conference/osdi28",
+        "approximateDate": false
+      }
+    },
+    "sponsor": {"group":"USENIX","names":"USENIX Association"}
+  },
+  "SOSP": {
+    "homepage": "https://www.sosp.org/",
+    "editions": {
+      "2026": {
+        "dateText": "September 29 - October 2, 2026",
+        "startDate": "2026-09-29",
+        "endDate": "2026-10-02",
+        "location": "Prague, Czechia",
+        "url": "https://sigops.org/s/conferences/sosp/2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-03-26","deadline":"2026-04-01","notification":"2026-07-03","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "November 30 - December 3, 2027",
+        "startDate": "2027-11-30",
+        "endDate": "2027-12-03",
+        "location": "Vancouver, Canada",
+        "approximateDate": false
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGOPS"}
+  },
+  "EuroSys": {
+    "homepage": "https://www.eurosys.org/",
+    "editions": {
+      "2026": {
+        "dateText": "April 27-30, 2026",
+        "startDate": "2026-04-27",
+        "endDate": "2026-04-30",
+        "location": "Edinburgh, UK",
+        "url": "https://2026.eurosys.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Spring","abstractDeadline":"2025-05-08","deadline":"2025-05-15","notification":"2025-08-22","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Fall","abstractDeadline":"2025-09-18","deadline":"2025-09-25","notification":"2026-01-30","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "April 19-23, 2027",
+        "startDate": "2027-04-19",
+        "endDate": "2027-04-23",
+        "location": "Rabat, Morocco",
+        "url": "https://2027.eurosys.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Spring","abstractDeadline":"2026-05-07","deadline":"2026-05-14","notification":"2026-08-21","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Fall","abstractDeadline":"2026-09-17","deadline":"2026-09-24","notification":"2027-01-29","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGOPS, EuroSys (European chapter of ACM SIGOPS)"}
+  },
+  "MLSys": {
+    "homepage": "https://mlsys.org/",
+    "editions": {
+      "2026": {
+        "dateText": "May 18-22, 2026",
+        "startDate": "2026-05-18",
+        "endDate": "2026-05-22",
+        "location": "Bellevue, WA, USA",
+        "url": "https://mlsys.org/Conferences/2026",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2025-10-30","notification":"2026-01-26","estimated":false,"verified":true,"deadlineTime":"20:00","timezone":"UTC"}
+        ]
+      },
+      "2027": {
+        "dateText": "June 21-25, 2027",
+        "startDate": "2027-06-21",
+        "endDate": "2027-06-25",
+        "location": "Bellevue, WA, USA",
+        "url": "https://mlsys.org/Conferences/2027",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-10-30","notification":"2027-02-28","estimated":false,"verified":true,"deadlineTime":"21:00","timezone":"UTC"}
+        ]
+      }
+    },
+    "sponsor": {"group":"Other","label":"Independent","names":"Systems and Machine Learning Foundation (non-profit)"}
+  },
+  "APSys": {
+    "homepage": "https://www.sigops.org/conferences/",
+    "editions": {
+      "2026": {
+        "dateText": "September 17-18, 2026",
+        "startDate": "2026-09-17",
+        "endDate": "2026-09-18",
+        "location": "Bangkok, Thailand",
+        "url": "https://apsys26.github.io/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-05-13","deadline":"2026-05-20","notification":"2026-07-29","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGOPS"}
+  },
+  "FAST": {
+    "homepage": "https://www.usenix.org/conferences/byname/146",
+    "editions": {
+      "2026": {
+        "dateText": "February 24-26, 2026",
+        "startDate": "2026-02-24",
+        "endDate": "2026-02-26",
+        "location": "Santa Clara, CA, USA",
+        "url": "https://www.usenix.org/conference/fast26",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Spring","abstractDeadline":null,"deadline":"2025-03-18","notification":"2025-06-05","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Fall","abstractDeadline":null,"deadline":"2025-09-16","notification":"2025-12-08","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "February 23-25, 2027",
+        "startDate": "2027-02-23",
+        "endDate": "2027-02-25",
+        "location": "Renton, WA, USA",
+        "url": "https://www.usenix.org/conference/fast27",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Spring","abstractDeadline":null,"deadline":"2026-03-17","notification":"2026-06-04","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Fall","abstractDeadline":null,"deadline":"2026-09-15","notification":"2026-12-08","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2028": {
+        "dateText": "February 28 - March 1, 2028",
+        "startDate": "2028-02-28",
+        "endDate": "2028-03-01",
+        "location": "Seattle, WA, USA",
+        "url": "https://www.usenix.org/conference/fast28",
+        "approximateDate": false
+      }
+    },
+    "sponsor": {"group":"USENIX","names":"USENIX Association"}
+  },
+  "MSST": {
+    "homepage": "https://www.msstconference.org/",
+    "editions": {
+      "2026": {
+        "dateText": "June 1-5, 2026",
+        "startDate": "2026-06-01",
+        "endDate": "2026-06-05",
+        "location": "Santa Clara, CA, USA",
+        "url": "https://msstconference.org/2026/index.html",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-04-14","notification":"2026-05-01","estimated":false,"verified":true,"deadlineTime":null,"timezone":null}
+        ]
+      },
+      "2027": {"dateText":"May 17-21, 2027","startDate":"2027-05-17","endDate":"2027-05-21","approximateDate":false}
+    },
+    "fullName": "International Conference on Massive Storage Systems and Technology (MSST)",
+    "sponsor": {"group":"Other","label":"Independent","names":"No sponsoring society named (hosted by Santa Clara University; IEEE-branded until 2013)"}
+  },
+  "SYSTOR": {
+    "homepage": "https://www.systor.org/",
+    "editions": {
+      "2026": {
+        "dateText": "September 8-9, 2026",
+        "startDate": "2026-09-08",
+        "endDate": "2026-09-09",
+        "location": "Virtual",
+        "url": "https://www.systor.org/2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-05-25","notification":"2026-07-13","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGOPS"}
+  },
+  "IEEE CLOUD": {
+    "homepage": "https://services.conferences.computer.org/",
+    "editions": {
+      "2026": {
+        "dateText": "July 13-18, 2026",
+        "startDate": "2026-07-13",
+        "endDate": "2026-07-18",
+        "location": "Sydney, Australia",
+        "url": "https://services.conferences.computer.org/2026/cloud/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-03-22","notification":"2026-05-10","estimated":false,"verified":true,"deadlineTime":null,"timezone":null}
+        ]
+      }
+    },
+    "sponsor": {"group":"IEEE","names":"IEEE Computer Society (Technical Community on Services Computing, TCSVC)"}
+  },
+  "PODC": {
+    "homepage": "https://www.podc.org/",
+    "editions": {
+      "2026": {
+        "dateText": "July 6-10, 2026",
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-10",
+        "location": "Egham, UK",
+        "url": "https://www.podc.org/podc2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-02-11","deadline":"2026-02-16","notification":"2026-04-29","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "June 21-25, 2027",
+        "startDate": "2027-06-21",
+        "endDate": "2027-06-25",
+        "location": "Reykjavik, Iceland",
+        "url": "https://www.podc.org/podc2027/",
+        "approximateDate": false
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGACT, ACM SIGOPS"}
+  },
+  "SRDS": {
+    "homepage": "https://srds-conference.org/",
+    "editions": {
+      "2026": {
+        "dateText": "September 22-24, 2026",
+        "startDate": "2026-09-22",
+        "endDate": "2026-09-24",
+        "location": "Rome, Italy",
+        "url": "https://srds-conference.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-05-01","deadline":"2026-05-08","notification":"2026-07-03","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"Other","label":"Independent","names":"Not IEEE-sponsored since 2025 (local organizers; proceedings via IEEE CPS)"}
+  },
+  "DSN": {
+    "homepage": "https://dsn.org/",
+    "editions": {
+      "2026": {
+        "dateText": "June 22-25, 2026",
+        "startDate": "2026-06-22",
+        "endDate": "2026-06-25",
+        "location": "Charlotte, NC, USA",
+        "url": "https://dsn2026.github.io/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2025-11-27","deadline":"2025-12-04","notification":"2026-03-19","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "June 22-25, 2027",
+        "startDate": "2027-06-22",
+        "endDate": "2027-06-25",
+        "location": "Berlin, Germany",
+        "url": "https://dsn2027-berlin.github.io/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-11-25","deadline":"2026-12-02","notification":"2027-03-18","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"IEEE","names":"IEEE Computer Society TCFT (Technical Community on Dependable Computing and Fault Tolerance), IFIP WG 10.4"}
+  },
+  "SIGMETRICS": {
+    "homepage": "https://www.sigmetrics.org/",
+    "editions": {
+      "2026": {
+        "dateText": "June 8-12, 2026",
+        "startDate": "2026-06-08",
+        "endDate": "2026-06-12",
+        "location": "Ann Arbor, MI, USA",
+        "url": "https://www.sigmetrics.org/sigmetrics2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Summer","abstractDeadline":"2025-07-22","deadline":"2025-07-29","notification":"2025-09-26","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Fall","abstractDeadline":"2025-10-07","deadline":"2025-10-14","notification":"2025-12-12","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Winter","abstractDeadline":"2026-01-06","deadline":"2026-01-13","notification":"2026-03-13","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "June 7-10, 2027",
+        "startDate": "2027-06-07",
+        "endDate": "2027-06-10",
+        "location": "Atlanta, GA, USA",
+        "url": "https://www.sigmetrics.org/sigmetrics2027/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Summer","abstractDeadline":"2026-07-03","deadline":"2026-07-10","notification":"2026-09-09","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Fall","abstractDeadline":"2026-10-02","deadline":"2026-10-09","notification":"2026-12-09","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Winter","abstractDeadline":"2027-01-04","deadline":"2027-01-11","notification":"2027-03-10","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGMETRICS"}
+  },
+  "Performance": {
+    "editions": {
+      "2026": {
+        "dateText": "November 3-5, 2026",
+        "startDate": "2026-11-03",
+        "endDate": "2026-11-05",
+        "location": "Ghent, Belgium",
+        "url": "https://performance2026.github.io/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-05-15","deadline":"2026-05-22","notification":"2026-08-07","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"Other","label":"IFIP","names":"IFIP WG 7.3"}
+  },
+  "IPDPS": {
+    "homepage": "https://www.ipdps.org/",
+    "editions": {
+      "2026": {
+        "dateText": "May 25-29, 2026",
+        "startDate": "2026-05-25",
+        "endDate": "2026-05-29",
+        "location": "New Orleans, LA, USA",
+        "url": "https://www.ipdps.org/ipdps2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2025-10-02","deadline":"2025-10-09","notification":"2026-02-02","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "June 1-5, 2027",
+        "startDate": "2027-06-01",
+        "endDate": "2027-06-05",
+        "location": "Seattle, WA, USA",
+        "url": "https://www.ipdps.org/ipdps2027/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-10-01","deadline":"2026-10-08","notification":"2026-12-18","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"IEEE","names":"IEEE Computer Society TCPP (Technical Community on Parallel Processing)"}
+  },
+  "HPDC": {
+    "homepage": "https://hpdc.sci.utah.edu/",
+    "editions": {
+      "2026": {
+        "dateText": "July 13-16, 2026",
+        "startDate": "2026-07-13",
+        "endDate": "2026-07-16",
+        "location": "Cleveland, OH, USA",
+        "url": "https://hpdc.sci.utah.edu/2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-01-29","deadline":"2026-02-05","notification":"2026-03-31","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "June 7-10, 2027",
+        "startDate": "2027-06-07",
+        "endDate": "2027-06-10",
+        "location": "Atlanta, GA, USA",
+        "url": "https://hpdc.sci.utah.edu/2027/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2027-01-11","deadline":"2027-01-18","notification":"2027-03-30","estimated":false,"verified":true,"deadlineTime":null,"timezone":null}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGARCH, ACM SIGHPC"}
+  },
+  "ICS": {
+    "editions": {
+      "2026": {
+        "dateText": "July 6-9, 2026",
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-09",
+        "location": "Belfast, UK",
+        "url": "https://dipsa-qub.github.io/ICS2026-webpage/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Cycle 1","abstractDeadline":"2025-12-09","deadline":"2025-12-16","notification":"2026-02-24","estimated":false,"verified":true,"deadlineTime":null,"timezone":null},
+          {"name":"Cycle 2","abstractDeadline":"2026-02-02","deadline":"2026-02-09","notification":"2026-04-06","estimated":false,"verified":true,"deadlineTime":null,"timezone":null}
+        ]
+      },
+      "2027": {
+        "dateText": "June 5-11, 2027",
+        "startDate": "2027-06-05",
+        "endDate": "2027-06-11",
+        "location": "Atlanta, GA, USA",
+        "url": "https://klab-ai3.github.io/ics2027/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-12-01","deadline":"2026-12-07","notification":"2027-03-12","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGARCH"}
+  },
+  "SPAA": {
+    "homepage": "https://spaa.acm.org/",
+    "editions": {
+      "2026": {
+        "dateText": "July 6-10, 2026",
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-10",
+        "location": "Egham, UK",
+        "url": "https://icalppodcspaa2026.cs.rhul.ac.uk/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-02-20","deadline":"2026-02-27","notification":"2026-05-15","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "June 5-11, 2027",
+        "startDate": "2027-06-05",
+        "endDate": "2027-06-11",
+        "location": "Atlanta, GA, USA",
+        "url": "https://spaa.acm.org/spaa-2027-call-for-papers/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Cycle 1","abstractDeadline":"2026-09-18","deadline":"2026-09-25","notification":"2026-12-05","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Cycle 2","abstractDeadline":"2027-01-22","deadline":"2027-01-29","notification":"2027-04-10","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGACT, ACM SIGARCH"}
+  },
+  "Euro-Par": {
+    "homepage": "https://www.euro-par.org/",
+    "editions": {
+      "2026": {
+        "dateText": "August 24-28, 2026",
+        "startDate": "2026-08-24",
+        "endDate": "2026-08-28",
+        "location": "Pisa, Italy",
+        "url": "https://2026.euro-par.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-03-06","deadline":"2026-03-13","notification":"2026-04-30","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "August 23-27, 2027",
+        "startDate": "2027-08-23",
+        "endDate": "2027-08-27",
+        "location": "Groningen, Netherlands",
+        "url": "https://2027.euro-par.org/",
+        "approximateDate": false
+      }
+    },
+    "sponsor": {"group":"Other","label":"Independent","names":"Euro-Par steering committee (proceedings: Springer LNCS)"}
+  },
+  "CLUSTER": {
+    "homepage": "https://clustercomp.org/",
+    "editions": {
+      "2026": {
+        "dateText": "September 22-25, 2026",
+        "startDate": "2026-09-22",
+        "endDate": "2026-09-25",
+        "location": "Alexandria, VA, USA",
+        "url": "https://clustercomp.org/2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-05-07","notification":"2026-07-05","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"IEEE","names":"IEEE Computer Society TCHPC (Technical Community on High Performance Computing)"}
+  },
+  "CCGrid": {
+    "editions": {
+      "2026": {
+        "dateText": "May 18-21, 2026",
+        "startDate": "2026-05-18",
+        "endDate": "2026-05-21",
+        "location": "Sydney, Australia",
+        "url": "https://www.westernsydney.edu.au/ccgrid2026",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2025-12-21","notification":"2026-02-10","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "May 24-27, 2027",
+        "startDate": "2027-05-24",
+        "endDate": "2027-05-27",
+        "location": "Dallas-Fort Worth, TX, USA",
+        "url": "https://hpcclab.org/ccgrid27/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-11-24","deadline":"2026-12-01","notification":"2027-02-01","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"IEEE","names":"IEEE Computer Society, IEEE Technical Community on Scalable Computing (TCSC)"}
+  },
+  "CCS": {
+    "homepage": "https://www.sigsac.org/ccs.html",
+    "editions": {
+      "2026": {
+        "dateText": "November 15-19, 2026",
+        "startDate": "2026-11-15",
+        "endDate": "2026-11-19",
+        "location": "The Hague, The Netherlands",
+        "url": "https://www.sigsac.org/ccs/CCS2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Cycle 1","abstractDeadline":"2026-01-07","deadline":"2026-01-14","notification":"2026-04-09","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Cycle 2","abstractDeadline":"2026-04-22","deadline":"2026-04-29","notification":"2026-07-17","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "October 11-15, 2027",
+        "startDate": "2027-10-11",
+        "endDate": "2027-10-15",
+        "location": "Atlanta, GA, USA",
+        "url": "https://www.sigsac.org/ccs/CCS2027/",
+        "approximateDate": false
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGSAC"}
+  },
+  "IEEE S&P": {
+    "homepage": "https://www.ieee-security.org/TC/SP-Index.html",
+    "editions": {
+      "2026": {
+        "dateText": "May 18-21, 2026",
+        "startDate": "2026-05-18",
+        "endDate": "2026-05-21",
+        "location": "San Francisco, CA, USA",
+        "url": "https://sp2026.ieee-security.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Cycle 1","abstractDeadline":"2025-05-29","deadline":"2025-06-05","notification":"2025-09-09","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Cycle 2","abstractDeadline":"2025-11-06","deadline":"2025-11-13","notification":"2026-03-09","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "May 17-20, 2027",
+        "startDate": "2027-05-17",
+        "endDate": "2027-05-20",
+        "location": "Montreal, Canada",
+        "url": "https://sp2027.ieee-security.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Cycle 1","abstractDeadline":"2026-06-04","deadline":"2026-06-11","notification":"2026-09-11","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Cycle 2","abstractDeadline":"2026-11-10","deadline":"2026-11-17","notification":"2027-03-05","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"IEEE","names":"IEEE Computer Society Technical Community on Security and Privacy"}
+  },
+  "USENIX Security": {
+    "homepage": "https://www.usenix.org/conferences/byname/108",
+    "editions": {
+      "2026": {
+        "dateText": "August 12-14, 2026",
+        "startDate": "2026-08-12",
+        "endDate": "2026-08-14",
+        "location": "Baltimore, MD, USA",
+        "url": "https://www.usenix.org/conference/usenixsecurity26",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Cycle 1","abstractDeadline":"2025-08-19","deadline":"2025-08-26","notification":"2025-12-04","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Cycle 2","abstractDeadline":"2026-01-29","deadline":"2026-02-05","notification":"2026-05-14","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "August 11-13, 2027",
+        "startDate": "2027-08-11",
+        "endDate": "2027-08-13",
+        "location": "Denver, CO, USA",
+        "url": "https://www.usenix.org/conference/usenixsecurity27",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Cycle 1","abstractDeadline":"2026-08-18","deadline":"2026-08-25","notification":"2026-12-03","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Cycle 2","abstractDeadline":"2027-01-19","deadline":"2027-01-26","notification":"2027-05-06","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"USENIX","names":"USENIX Association"}
+  },
+  "NDSS": {
+    "homepage": "https://www.ndss-symposium.org/",
+    "editions": {
+      "2026": {
+        "dateText": "February 23-27, 2026",
+        "startDate": "2026-02-23",
+        "endDate": "2026-02-27",
+        "location": "San Diego, CA, USA",
+        "url": "https://www.ndss-symposium.org/ndss2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Summer Cycle","abstractDeadline":null,"deadline":"2025-04-23","notification":"2025-07-02","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Fall Cycle","abstractDeadline":null,"deadline":"2025-08-06","notification":"2025-10-22","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "March 22-26, 2027",
+        "startDate": "2027-03-22",
+        "endDate": "2027-03-26",
+        "location": "Seoul, South Korea",
+        "url": "https://www.ndss-symposium.org/ndss2027/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Summer Cycle","abstractDeadline":null,"deadline":"2026-05-06","notification":"2026-07-29","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Fall Cycle","abstractDeadline":null,"deadline":"2026-08-19","notification":"2026-12-02","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"Other","label":"ISOC","names":"Internet Society (ISOC)"}
+  },
+  "EuroS&P": {
+    "editions": {
+      "2026": {
+        "dateText": "July 6-10, 2026",
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-10",
+        "location": "Lisbon, Portugal",
+        "url": "https://eurosp2026.ieee-security.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2025-11-13","deadline":"2025-11-20","notification":"2026-03-05","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "July 5-9, 2027",
+        "startDate": "2027-07-05",
+        "endDate": "2027-07-09",
+        "location": "Madrid, Spain",
+        "url": "https://eurosp2027.ieee-security.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-11-25","deadline":"2026-12-02","notification":"2027-03-18","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"IEEE","names":"IEEE Computer Society Technical Committee on Security and Privacy (IEEE)"}
+  },
+  "AsiaCCS": {
+    "homepage": "https://www.sigsac.org/",
+    "editions": {
+      "2026": {
+        "dateText": "June 1-5, 2026",
+        "startDate": "2026-06-01",
+        "endDate": "2026-06-05",
+        "location": "Bangalore, India",
+        "url": "https://asiaccs2026.cse.iitkgp.ac.in/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Cycle 1","abstractDeadline":null,"deadline":"2025-08-25","notification":"2025-11-19","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Cycle 2","abstractDeadline":null,"deadline":"2025-12-12","notification":"2026-03-10","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "July 12-16, 2027",
+        "startDate": "2027-07-12",
+        "endDate": "2027-07-16",
+        "location": "Macau, China",
+        "url": "https://asiaccs2027.cityu.edu.mo/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Cycle 1","abstractDeadline":null,"deadline":"2026-08-21","notification":"2026-11-13","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Cycle 2","abstractDeadline":null,"deadline":"2026-12-11","notification":"2027-03-31","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGSAC"}
+  },
+  "ACSAC": {
+    "homepage": "https://www.acsac.org/",
+    "editions": {
+      "2026": {
+        "dateText": "December 7-11, 2026",
+        "startDate": "2026-12-07",
+        "endDate": "2026-12-11",
+        "location": "Los Angeles, CA, USA",
+        "url": "https://www.acsac.org/2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-05-26","notification":"2026-09-08","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"IEEE","names":"IEEE Computer Society, IEEE TC on Security and Privacy; co-sponsor ACSA"}
+  },
+  "CSF": {
+    "homepage": "https://www.ieee-security.org/CSFWweb/",
+    "editions": {
+      "2026": {
+        "dateText": "July 26-29, 2026",
+        "startDate": "2026-07-26",
+        "endDate": "2026-07-29",
+        "location": "Lisbon, Portugal",
+        "url": "https://csf2026.ieee-security.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Summer","abstractDeadline":null,"deadline":"2025-07-24","notification":"2025-09-25","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Fall","abstractDeadline":null,"deadline":"2025-10-09","notification":"2025-12-11","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Winter","abstractDeadline":null,"deadline":"2026-01-29","notification":"2026-04-01","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "September 13-17, 2027",
+        "startDate": "2027-09-13",
+        "endDate": "2027-09-17",
+        "location": "Tokyo, Japan",
+        "url": "https://csf2027.ieee-security.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Summer","abstractDeadline":null,"deadline":"2026-08-03","notification":"2026-10-07","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Fall","abstractDeadline":null,"deadline":"2026-10-15","notification":"2026-12-14","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Winter","abstractDeadline":null,"deadline":"2027-01-28","notification":"2027-04-05","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"IEEE","names":"IEEE Computer Society Technical Committee on Security and Privacy"}
+  },
+  "DIMVA": {
+    "homepage": "https://www.dimva.org/",
+    "editions": {
+      "2026": {
+        "dateText": "July 1-3, 2026",
+        "startDate": "2026-07-01",
+        "endDate": "2026-07-03",
+        "location": "Chania, Greece",
+        "url": "https://www.dimva.org/dimva2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Cycle 1","abstractDeadline":null,"deadline":"2025-12-10","notification":"2026-01-27","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Cycle 2","abstractDeadline":null,"deadline":"2026-02-18","notification":"2026-04-03","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "June 30 - July 2, 2027",
+        "startDate": "2027-06-30",
+        "endDate": "2027-07-02",
+        "location": "Enschede, Netherlands",
+        "url": "https://www.dimva.org/dimva2027/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Cycle 1","abstractDeadline":"2026-12-03","deadline":"2026-12-10","notification":"2027-01-28","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Cycle 2","abstractDeadline":"2027-02-11","deadline":"2027-02-18","notification":"2027-04-08","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"Other","label":"GI","names":"GI (German Informatics Society) SIG SIDAR"}
+  },
+  "SaTML": {
+    "homepage": "https://satml.org/",
+    "editions": {
+      "2026": {
+        "dateText": "March 23-25, 2026",
+        "startDate": "2026-03-23",
+        "endDate": "2026-03-25",
+        "location": "Munich, Germany",
+        "url": "https://satml.org/2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2025-09-24","notification":"2025-12-10","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "May 3-6, 2027",
+        "startDate": "2027-05-03",
+        "endDate": "2027-05-06",
+        "location": "Reykjavik, Iceland",
+        "url": "https://satml.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-09-22","deadline":"2026-09-29","notification":"2026-12-16","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"IEEE","names":"IEEE Computer Society Technical Committee on Security and Privacy"}
+  },
+  "PETS": {
+    "homepage": "https://petsymposium.org/",
+    "editions": {
+      "2026": {
+        "dateText": "July 20-25, 2026",
+        "startDate": "2026-07-20",
+        "endDate": "2026-07-25",
+        "location": "Calgary, Canada",
+        "url": "https://petsymposium.org/2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Issue 1","abstractDeadline":null,"deadline":"2025-05-31","notification":"2025-08-01","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Issue 2","abstractDeadline":null,"deadline":"2025-08-31","notification":"2025-11-01","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Issue 3","abstractDeadline":null,"deadline":"2025-11-30","notification":"2026-02-01","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Issue 4","abstractDeadline":null,"deadline":"2026-02-28","notification":"2026-05-01","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "July 19-24, 2027",
+        "startDate": "2027-07-19",
+        "endDate": "2027-07-24",
+        "location": "Delft, The Netherlands",
+        "url": "https://petsymposium.org/2027/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Issue 1","abstractDeadline":null,"deadline":"2026-05-31","notification":"2026-08-01","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Issue 2","abstractDeadline":null,"deadline":"2026-08-31","notification":"2026-11-01","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Issue 3","abstractDeadline":null,"deadline":"2026-11-30","notification":"2027-02-01","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Issue 4","abstractDeadline":null,"deadline":"2027-02-28","notification":"2027-05-01","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"Other","label":"Independent","names":"PETS Advisory Board (PoPETs)"}
+  },
+  "SOUPS": {
+    "homepage": "https://www.usenix.org/conferences/byname/884",
+    "editions": {
+      "2026": {
+        "dateText": "August 23-26, 2026",
+        "startDate": "2026-08-23",
+        "endDate": "2026-08-26",
+        "location": "Hannover, Germany",
+        "url": "https://soups.page/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-02-12","deadline":"2026-02-19","notification":"2026-05-19","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "August 8-10, 2027",
+        "startDate": "2027-08-08",
+        "endDate": "2027-08-10",
+        "location": "Denver, CO, USA",
+        "url": "https://www.usenix.org/conference/soups2027",
+        "approximateDate": false
+      }
+    },
+    "sponsor": {"group":"Other","label":"Independent","names":"SOUPS steering committee, in cooperation with USENIX (USENIX publishes the proceedings)"}
+  },
+  "WiSec": {
+    "homepage": "https://www.sigsac.org/wisec/",
+    "editions": {
+      "2026": {
+        "dateText": "June 30 - July 3, 2026",
+        "startDate": "2026-06-30",
+        "endDate": "2026-07-03",
+        "location": "Saarbrücken, Germany",
+        "url": "https://wisec26.events.cispa.de/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Cycle 1","abstractDeadline":null,"deadline":"2025-11-18","notification":"2026-01-13","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Cycle 2","abstractDeadline":null,"deadline":"2026-03-03","notification":"2026-04-14","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "June 29 - July 2, 2027",
+        "startDate": "2027-06-29",
+        "endDate": "2027-07-02",
+        "location": "Singapore",
+        "url": "https://ntu-dtc.github.io/wisec2027/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Cycle 1","abstractDeadline":null,"deadline":"2026-11-30","notification":"2027-01-11","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Cycle 2","abstractDeadline":null,"deadline":"2027-02-15","notification":"2027-04-12","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM, ACM SIGSAC"}
+  },
+  "CODASPY": {
+    "homepage": "https://www.codaspy.org/",
+    "editions": {
+      "2026": {
+        "dateText": "June 23-25, 2026",
+        "startDate": "2026-06-23",
+        "endDate": "2026-06-25",
+        "location": "Frankfurt am Main, Germany",
+        "url": "https://www.codaspy.org/2026/",
+        "approximateDate": false
+      },
+      "2027": {
+        "dateText": "June 14-17, 2027",
+        "startDate": "2027-06-14",
+        "endDate": "2027-06-17",
+        "location": "Fort Collins, CO, USA",
+        "url": "https://www.codaspy.org/2027/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-11-30","deadline":"2026-12-07","notification":"2027-01-25","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGSAC"}
+  },
+  "ACNS": {
+    "editions": {
+      "2026": {
+        "dateText": "June 22-25, 2026",
+        "startDate": "2026-06-22",
+        "endDate": "2026-06-25",
+        "location": "Stony Brook, NY, USA",
+        "url": "https://acns2026.github.io/index.html",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Cycle 1","abstractDeadline":null,"deadline":"2025-09-26","notification":"2025-11-20","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Cycle 2","abstractDeadline":null,"deadline":"2026-01-23","notification":"2026-03-19","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "June 28 - July 1, 2027",
+        "startDate": "2027-06-28",
+        "endDate": "2027-07-01",
+        "location": "Egham, UK",
+        "url": "https://acns2027.isg.rhul.ac.uk/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Cycle 1","abstractDeadline":null,"deadline":"2026-09-24","notification":"2026-11-26","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Cycle 2","abstractDeadline":null,"deadline":"2027-01-21","notification":"2027-03-25","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"Other","label":"Independent","names":"ACNS steering committee"}
+  },
+  "IFIP SEC": {
+    "homepage": "https://ifipsec.org/",
+    "editions": {
+      "2026": {"dateText":"June 9-11, 2026","startDate":"2026-06-09","endDate":"2026-06-11","location":"Perth, Australia","approximateDate":false},
+      "2027": {
+        "dateText": "June 14-16, 2027",
+        "startDate": "2027-06-14",
+        "endDate": "2027-06-16",
+        "location": "Linköping, Sweden",
+        "url": "https://ifipsec.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-12-15","notification":"2027-02-18","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"Other","label":"IFIP","names":"IFIP TC-11"}
+  },
+  "ESORICS": {
+    "homepage": "https://conf.laas.fr/esorics",
+    "editions": {
+      "2026": {
+        "dateText": "September 14-16, 2026",
+        "startDate": "2026-09-14",
+        "endDate": "2026-09-16",
+        "location": "Rome, Italy",
+        "url": "https://sites.google.com/di.uniroma1.it/esorics2026/home",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Winter","abstractDeadline":null,"deadline":"2026-01-09","notification":"2026-03-10","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Spring","abstractDeadline":null,"deadline":"2026-04-21","notification":"2026-06-12","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "September 13-15, 2027",
+        "startDate": "2027-09-13",
+        "endDate": "2027-09-15",
+        "location": "Vienna, Austria",
+        "url": "https://www.esorics2027.org/",
+        "approximateDate": false
+      }
+    },
+    "sponsor": {"group":"Other","label":"Independent","names":"ESORICS steering committee (proceedings: Springer LNCS)"}
+  },
+  "FC": {
+    "homepage": "https://ifca.ai/",
+    "editions": {
+      "2026": {
+        "dateText": "March 2-6, 2026",
+        "startDate": "2026-03-02",
+        "endDate": "2026-03-06",
+        "location": "St. Kitts, Saint Kitts and Nevis",
+        "url": "https://fc26.ifca.ai/",
+        "approximateDate": false
+      },
+      "2027": {
+        "dateText": "February 8-12, 2027",
+        "startDate": "2027-02-08",
+        "endDate": "2027-02-12",
+        "location": "Barbados",
+        "url": "https://fc27.ifca.ai/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-09-24","notification":"2026-11-12","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"Other","label":"IFCA","names":"IFCA (International Financial Cryptography Association)"}
+  },
+  "Crypto": {
+    "homepage": "https://www.iacr.org/meetings/crypto/",
+    "editions": {
+      "2026": {
+        "dateText": "August 17-20, 2026",
+        "startDate": "2026-08-17",
+        "endDate": "2026-08-20",
+        "location": "Santa Barbara, CA, USA",
+        "url": "https://crypto.iacr.org/2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-02-12","notification":"2026-05-04","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"PT"}
+        ]
+      },
+      "2027": {"location":"Santa Barbara, CA, USA","url":"https://crypto.iacr.org/2027/"}
+    },
+    "sponsor": {"group":"Other","label":"IACR","names":"IACR"}
+  },
+  "Eurocrypt": {
+    "homepage": "https://www.iacr.org/meetings/eurocrypt/",
+    "editions": {
+      "2026": {
+        "dateText": "May 10-14, 2026",
+        "startDate": "2026-05-10",
+        "endDate": "2026-05-14",
+        "location": "Rome, Italy",
+        "url": "https://eurocrypt.iacr.org/2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2025-10-02","notification":"2026-01-29","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "April 11-15, 2027",
+        "startDate": "2027-04-11",
+        "endDate": "2027-04-15",
+        "location": "Eindhoven, Netherlands",
+        "url": "https://eurocrypt.iacr.org/2027/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-09-17","notification":"2027-01-18","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"Other","label":"IACR","names":"IACR"}
+  },
+  "Asiacrypt": {
+    "homepage": "https://www.iacr.org/meetings/asiacrypt/",
+    "editions": {
+      "2026": {
+        "dateText": "December 7-11, 2026",
+        "startDate": "2026-12-07",
+        "endDate": "2026-12-11",
+        "location": "Hong Kong, China",
+        "url": "https://asiacrypt.iacr.org/2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-05-21","notification":"2026-08-14","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {"dateText":"December 13-17, 2027","startDate":"2027-12-13","endDate":"2027-12-17","location":"Nagoya, Japan","approximateDate":false}
+    },
+    "sponsor": {"group":"Other","label":"IACR","names":"IACR"}
+  },
+  "CHES": {
+    "homepage": "https://www.iacr.org/meetings/ches/",
+    "editions": {
+      "2026": {
+        "dateText": "October 11-15, 2026",
+        "startDate": "2026-10-11",
+        "endDate": "2026-10-15",
+        "location": "Antalya, Türkiye",
+        "url": "https://ches.iacr.org/2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"TCHES 2026/1","abstractDeadline":null,"deadline":"2025-07-15","notification":"2025-09-15","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"TCHES 2026/2","abstractDeadline":null,"deadline":"2025-10-15","notification":"2025-12-15","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"TCHES 2026/3","abstractDeadline":null,"deadline":"2026-01-15","notification":"2026-03-15","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"TCHES 2026/4","abstractDeadline":null,"deadline":"2026-04-15","notification":"2026-06-15","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "September 6-9, 2027",
+        "startDate": "2027-09-06",
+        "endDate": "2027-09-09",
+        "location": "Cancún, Mexico",
+        "url": "https://ches.iacr.org/2027/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"TCHES 2027/1","abstractDeadline":null,"deadline":"2026-07-15","notification":"2026-09-15","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"TCHES 2027/2","abstractDeadline":null,"deadline":"2026-10-15","notification":"2026-12-15","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"TCHES 2027/3","abstractDeadline":null,"deadline":"2027-01-15","notification":"2027-03-15","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"TCHES 2027/4","abstractDeadline":null,"deadline":"2027-04-15","notification":"2027-06-15","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"Other","label":"IACR","names":"IACR (papers via TCHES)"}
+  },
+  "TCC": {
+    "homepage": "https://www.iacr.org/meetings/tcc/",
+    "editions": {
+      "2026": {
+        "dateText": "November 10-13, 2026",
+        "startDate": "2026-11-10",
+        "endDate": "2026-11-13",
+        "location": "New York, NY, USA",
+        "url": "https://tcc.iacr.org/2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-05-19","notification":"2026-08-20","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"Other","label":"IACR","names":"IACR"}
+  },
+  "PKC": {
+    "homepage": "https://www.iacr.org/meetings/pkc/",
+    "editions": {
+      "2026": {
+        "dateText": "May 25-28, 2026",
+        "startDate": "2026-05-25",
+        "endDate": "2026-05-28",
+        "location": "West Palm Beach, FL, USA",
+        "url": "https://pkc.iacr.org/2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2025-10-24","notification":"2026-02-13","estimated":false,"verified":true,"deadlineTime":"11:59","timezone":"UTC"}
+        ]
+      },
+      "2027": {
+        "dateText": "March 1-4, 2027",
+        "startDate": "2027-03-01",
+        "endDate": "2027-03-04",
+        "location": "Taipei, Taiwan",
+        "url": "https://pkc.iacr.org/2027/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-08-16","notification":"2026-11-26","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"Other","label":"IACR","names":"IACR"}
+  },
+  "IACR FSE": {
+    "homepage": "https://www.iacr.org/meetings/fse/",
+    "editions": {
+      "2026": {
+        "dateText": "March 23-27, 2026",
+        "startDate": "2026-03-23",
+        "endDate": "2026-03-27",
+        "location": "Singapore, Singapore",
+        "url": "https://fse.iacr.org/2026/",
+        "approximateDate": false
+      },
+      "2027": {
+        "dateText": "May 24-28, 2027",
+        "startDate": "2027-05-24",
+        "endDate": "2027-05-28",
+        "location": "Maastricht, Netherlands",
+        "url": "https://fse.iacr.org/2027/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"ToSC 2026/2","abstractDeadline":null,"deadline":"2026-03-01","notification":"2026-05-01","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"ToSC 2026/3","abstractDeadline":null,"deadline":"2026-06-01","notification":"2026-08-01","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"ToSC 2026/4","abstractDeadline":null,"deadline":"2026-09-01","notification":"2026-11-01","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"ToSC 2027/1","abstractDeadline":null,"deadline":"2026-12-01","notification":"2027-02-01","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"Other","label":"IACR","names":"IACR (papers via ToSC)"}
+  },
+  "CT-RSA": {
+    "homepage": "https://www.rsaconference.com/usa/programs/cryptography",
+    "editions": {
+      "2026": {
+        "dateText": "March 23-26, 2026",
+        "startDate": "2026-03-23",
+        "endDate": "2026-03-26",
+        "location": "San Francisco, CA, USA",
+        "url": "https://conference.wsu.edu/ct-rsa-2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2025-10-24","notification":"2025-12-07","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "April 5-8, 2027",
+        "startDate": "2027-04-05",
+        "endDate": "2027-04-08",
+        "location": "San Francisco, CA, USA",
+        "url": "https://www.esat.kuleuven.be/cosic/events/ct-rsa-2027/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-10-22","notification":"2026-12-03","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "fullName": "Cryptographers' Track at the RSAC Conference (CT-RSA)",
+    "sponsor": {"group":"Other","label":"RSAC","names":"RSAC (RSA Conference)"}
+  },
+  "SIGCOMM": {
+    "homepage": "https://www.sigcomm.org/events/sigcomm-conference",
+    "editions": {
+      "2026": {
+        "dateText": "August 17-21, 2026",
+        "startDate": "2026-08-17",
+        "endDate": "2026-08-21",
+        "location": "Denver, CO, USA",
+        "url": "https://conferences.sigcomm.org/sigcomm/2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-01-30","deadline":"2026-02-06","notification":"2026-05-11","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "August 8-12, 2027",
+        "startDate": "2027-08-08",
+        "endDate": "2027-08-12",
+        "location": "Bangkok, Thailand",
+        "url": "https://conferences.sigcomm.org/sigcomm/2027/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2027-02-02","notification":null,"estimated":false,"verified":true,"deadlineTime":null,"timezone":null}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGCOMM"}
+  },
+  "NSDI": {
+    "homepage": "https://www.usenix.org/conferences/byname/178",
+    "editions": {
+      "2026": {
+        "dateText": "May 4-6, 2026",
+        "startDate": "2026-05-04",
+        "endDate": "2026-05-06",
+        "location": "Renton, WA, USA",
+        "url": "https://www.usenix.org/conference/nsdi26",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Spring","abstractDeadline":"2025-04-18","deadline":"2025-04-25","notification":"2025-07-24","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"PT"},
+          {"name":"Fall","abstractDeadline":"2025-09-11","deadline":"2025-09-18","notification":"2025-12-09","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"PT"}
+        ]
+      },
+      "2027": {
+        "dateText": "May 11-13, 2027",
+        "startDate": "2027-05-11",
+        "endDate": "2027-05-13",
+        "location": "Providence, RI, USA",
+        "url": "https://www.usenix.org/conference/nsdi27",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Spring","abstractDeadline":"2026-04-16","deadline":"2026-04-23","notification":"2026-07-23","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"ET"},
+          {"name":"Fall","abstractDeadline":"2026-09-10","deadline":"2026-09-17","notification":"2026-12-08","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"ET"}
+        ]
+      },
+      "2028": {
+        "dateText": "May 9-11, 2028",
+        "startDate": "2028-05-09",
+        "endDate": "2028-05-11",
+        "location": "Santa Clara, CA, USA",
+        "url": "https://www.usenix.org/conference/nsdi28",
+        "approximateDate": false
+      }
+    },
+    "sponsor": {"group":"USENIX","names":"USENIX Association"}
+  },
+  "MobiCom": {
+    "homepage": "https://www.sigmobile.org/grav/events/conferences/mobicom",
+    "editions": {
+      "2025": {
+        "dateText": "November 4-8, 2025",
+        "startDate": "2025-11-04",
+        "endDate": "2025-11-08",
+        "location": "Hong Kong, China",
+        "url": "https://www.sigmobile.org/mobicom/2025/",
+        "approximateDate": false
+      },
+      "2026": {
+        "dateText": "October 26-30, 2026",
+        "startDate": "2026-10-26",
+        "endDate": "2026-10-30",
+        "location": "Austin, TX, USA",
+        "url": "https://www.sigmobile.org/mobicom/2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Summer","abstractDeadline":"2025-08-27","deadline":"2025-09-03","notification":"2025-11-24","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Winter","abstractDeadline":"2026-03-06","deadline":"2026-03-13","notification":"2026-06-29","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "October 18-22, 2027",
+        "startDate": "2027-10-18",
+        "endDate": "2027-10-22",
+        "location": "Athens, Greece",
+        "url": "https://www.sigmobile.org/mobicom/2027/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Summer","abstractDeadline":"2026-08-26","deadline":"2026-09-02","notification":"2026-11-19","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Winter","abstractDeadline":"2027-03-06","deadline":"2027-03-13","notification":"2027-06-22","estimated":true,"verified":false,"deadlineTime":null,"timezone":null}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGMOBILE"}
+  },
+  "MobiSys": {
+    "homepage": "https://www.sigmobile.org/grav/events/conferences/mobisys",
+    "editions": {
+      "2026": {
+        "location": "Cambridge, UK",
+        "url": "https://www.sigmobile.org/mobisys/2026/",
+        "cycles": [
+          {"name":null,"abstractDeadline":"2025-11-28","deadline":"2025-12-05","notification":"2026-03-02","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "June 21-25, 2027",
+        "startDate": "2027-06-21",
+        "endDate": "2027-06-25",
+        "location": "Ho Chi Minh City, Vietnam",
+        "url": "https://www.sigmobile.org/mobisys/2027/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-11-27","deadline":"2026-12-04","notification":"2027-03-06","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGMOBILE"}
+  },
+  "SenSys": {
+    "homepage": "https://sensys.acm.org/",
+    "editions": {
+      "2026": {
+        "dateText": "May 11-14, 2026",
+        "startDate": "2026-05-11",
+        "endDate": "2026-05-14",
+        "location": "Saint-Malo, France",
+        "url": "https://sensys.acm.org/2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"1st","abstractDeadline":null,"deadline":"2025-07-01","notification":"2025-09-21","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"2nd","abstractDeadline":"2025-11-06","deadline":"2025-11-13","notification":"2026-01-29","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "May 17-20, 2027",
+        "startDate": "2027-05-17",
+        "endDate": "2027-05-20",
+        "location": "Boulder, CO, USA",
+        "url": "https://sensys.acm.org/2027/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"1st","abstractDeadline":"2026-05-29","deadline":"2026-06-05","notification":"2026-08-31","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"2nd","abstractDeadline":"2026-10-29","deadline":"2026-11-05","notification":"2027-01-28","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "fullName": "ACM/IEEE International Conference on Embedded Artificial Intelligence and Sensing Systems (SenSys)",
+    "sponsor": {"group":"ACM/IEEE","names":"ACM SIGBED, ACM SIGMOBILE, IEEE Computer Society"}
+  },
+  "IMC": {
+    "homepage": "https://www.sigcomm.org/events/imc-conference",
+    "editions": {
+      "2026": {
+        "dateText": "October 12-16, 2026",
+        "startDate": "2026-10-12",
+        "endDate": "2026-10-16",
+        "location": "Karlsruhe, Germany",
+        "url": "https://conferences.sigcomm.org/imc/2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Cycle 1","abstractDeadline":"2025-11-13","deadline":"2025-11-20","notification":"2026-03-17","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Cycle 2","abstractDeadline":"2026-04-22","deadline":"2026-04-29","notification":"2026-08-04","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "October 25-29, 2027",
+        "startDate": "2027-10-25",
+        "endDate": "2027-10-29",
+        "location": "Atlanta, GA, USA",
+        "url": "https://conferences.sigcomm.org/imc/2027/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Cycle 1","abstractDeadline":"2026-11-10","deadline":"2026-11-17","notification":"2027-02-25","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Cycle 2","abstractDeadline":"2027-03-31","deadline":"2027-04-07","notification":"2027-07-22","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGCOMM"}
+  },
+  "ICNP": {
+    "homepage": "https://www.ieee-icnp.org/",
+    "editions": {
+      "2026": {
+        "dateText": "October 5-8, 2026",
+        "startDate": "2026-10-05",
+        "endDate": "2026-10-08",
+        "location": "Tempe, AZ, USA",
+        "url": "https://icnp26.cs.ucr.edu/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-05-15","deadline":"2026-05-22","notification":"2026-07-21","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"IEEE","names":"IEEE Computer Society (TCDP logo listed among sponsors)"}
+  },
+  "MobiHoc": {
+    "homepage": "https://www.sigmobile.org/grav/events/conferences/mobihoc",
+    "editions": {
+      "2026": {
+        "dateText": "November 23-26, 2026",
+        "startDate": "2026-11-23",
+        "endDate": "2026-11-26",
+        "location": "Tokyo, Japan",
+        "url": "https://www.sigmobile.org/mobihoc/2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-04-13","deadline":"2026-04-20","notification":"2026-08-23","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGMOBILE"}
+  },
+  "ICCAD": {
+    "homepage": "https://iccad.com/",
+    "editions": {
+      "2026": {
+        "dateText": "November 8-12, 2026",
+        "startDate": "2026-11-08",
+        "endDate": "2026-11-12",
+        "location": "San Jose, CA, USA",
+        "url": "https://iccad.com/2026",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-04-07","deadline":"2026-04-14","notification":"2026-07-11","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM/IEEE","names":"IEEE CEDA, ACM SIGDA"}
+  },
+  "DATE": {
+    "homepage": "https://www.date-conference.com/",
+    "editions": {
+      "2027": {
+        "dateText": "March 22-24, 2027",
+        "startDate": "2027-03-22",
+        "endDate": "2027-03-24",
+        "location": "Dresden, Germany",
+        "url": "https://date27.date-conference.com/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-09-13","deadline":"2026-09-20","notification":"2026-11-23","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM/IEEE","names":"EDAA, ESDA, IEEE CEDA, ACM SIGDA"}
+  },
+  "ASP-DAC": {
+    "homepage": "https://www.aspdac.com/",
+    "editions": {
+      "2026": {
+        "dateText": "January 19-22, 2026",
+        "startDate": "2026-01-19",
+        "endDate": "2026-01-22",
+        "location": "Hong Kong, China",
+        "url": "https://www.aspdac.com/aspdac2026/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2025-07-04","deadline":"2025-07-11","notification":"2025-09-05","estimated":false,"verified":true,"deadlineTime":"17:00","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "January 25-28, 2027",
+        "startDate": "2027-01-25",
+        "endDate": "2027-01-28",
+        "location": "Tokyo, Japan",
+        "url": "https://www.aspdac.com/aspdac2027/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-07-11","deadline":"2026-07-18","notification":"2026-09-04","estimated":false,"verified":true,"deadlineTime":"17:00","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM/IEEE","names":"ACM SIGDA, IEEE CASS, IEEE CEDA, IEICE ESS, IPSJ SIGSLDM"}
+  },
+  "CODES+ISSS": {
+    "homepage": "https://esweek.org/codes_isss_cfp/",
+    "editions": {
+      "2026": {
+        "dateText": "October 4-9, 2026",
+        "startDate": "2026-10-04",
+        "endDate": "2026-10-09",
+        "location": "Barcelona, Spain",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-03-23","deadline":"2026-03-30","notification":"2026-07-17","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM/IEEE","names":"ESWEEK societies: ACM SIGDA, ACM SIGBED, ACM SIGMICRO, IEEE CEDA, IEEE CAS"}
+  },
+  "EMSOFT": {
+    "homepage": "https://esweek.org/emsoft/",
+    "editions": {
+      "2026": {
+        "dateText": "October 4-9, 2026",
+        "startDate": "2026-10-04",
+        "endDate": "2026-10-09",
+        "location": "Barcelona, Spain",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-03-23","deadline":"2026-03-30","notification":"2026-07-17","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM/IEEE","names":"ESWEEK societies: ACM SIGBED, ACM SIGDA, ACM SIGMICRO, IEEE CEDA, IEEE CAS"}
+  },
+  "ECRTS": {
+    "homepage": "https://www.ecrts.org/",
+    "editions": {
+      "2026": {
+        "dateText": "July 7-10, 2026",
+        "startDate": "2026-07-07",
+        "endDate": "2026-07-10",
+        "location": "Lund, Sweden",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-02-26","notification":"2026-04-20","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "July 13-16, 2027",
+        "startDate": "2027-07-13",
+        "endDate": "2027-07-16",
+        "location": "Prague, Czech Republic",
+        "url": "https://www.ecrts.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2027-02-26","notification":null,"estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"Other","label":"Independent","names":"ECRTS Technical Committee (formerly Euromicro)"}
+  },
+  "SIGMOD": {
+    "homepage": "https://www.sigmod.org/conferences/",
+    "editions": {
+      "2027": {
+        "dateText": "June 13-18, 2027",
+        "startDate": "2027-06-13",
+        "endDate": "2027-06-18",
+        "location": "Huntington Beach, CA, USA",
+        "url": "https://2027.sigmod.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Round 1","abstractDeadline":"2026-01-10","deadline":"2026-01-17","notification":"2026-04-19","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Round 2","abstractDeadline":"2026-04-10","deadline":"2026-04-17","notification":"2026-07-19","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Round 3","abstractDeadline":"2026-07-10","deadline":"2026-07-17","notification":"2026-10-19","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Round 4","abstractDeadline":"2026-10-10","deadline":"2026-10-17","notification":"2027-01-19","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2028": {"location":"Seoul, South Korea","url":"https://2028.sigmod.org/"}
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGMOD"}
+  },
+  "VLDB": {
+    "homepage": "https://vldb.org/",
+    "editions": {
+      "2026": {
+        "dateText": "August 31 - September 4, 2026",
+        "startDate": "2026-08-31",
+        "endDate": "2026-09-04",
+        "location": "Boston, MA, USA",
+        "url": "https://vldb.org/2026/",
+        "approximateDate": false
+      },
+      "2027": {
+        "dateText": "August 23-27, 2027",
+        "startDate": "2027-08-23",
+        "endDate": "2027-08-27",
+        "location": "Athens, Greece",
+        "url": "https://vldb.org/2027/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"April Cycle","abstractDeadline":"2026-03-25","deadline":"2026-04-01","notification":"2026-05-15","estimated":false,"verified":true,"deadlineTime":"17:00","timezone":"PT"},
+          {"name":"May Cycle","abstractDeadline":"2026-04-25","deadline":"2026-05-01","notification":"2026-06-15","estimated":false,"verified":true,"deadlineTime":"17:00","timezone":"PT"},
+          {"name":"June Cycle","abstractDeadline":"2026-05-25","deadline":"2026-06-01","notification":"2026-07-15","estimated":false,"verified":true,"deadlineTime":"17:00","timezone":"PT"},
+          {"name":"July Cycle","abstractDeadline":"2026-06-25","deadline":"2026-07-01","notification":"2026-08-15","estimated":false,"verified":true,"deadlineTime":"17:00","timezone":"PT"},
+          {"name":"August Cycle","abstractDeadline":"2026-07-25","deadline":"2026-08-01","notification":"2026-09-15","estimated":false,"verified":true,"deadlineTime":"17:00","timezone":"PT"},
+          {"name":"September Cycle","abstractDeadline":"2026-08-25","deadline":"2026-09-01","notification":"2026-10-15","estimated":false,"verified":true,"deadlineTime":"17:00","timezone":"PT"},
+          {"name":"October Cycle","abstractDeadline":"2026-09-25","deadline":"2026-10-01","notification":"2026-11-15","estimated":false,"verified":true,"deadlineTime":"17:00","timezone":"PT"},
+          {"name":"November Cycle","abstractDeadline":"2026-10-25","deadline":"2026-11-01","notification":"2026-12-15","estimated":false,"verified":true,"deadlineTime":"17:00","timezone":"PT"},
+          {"name":"December Cycle","abstractDeadline":"2026-11-25","deadline":"2026-12-01","notification":"2027-01-15","estimated":false,"verified":true,"deadlineTime":"17:00","timezone":"PT"},
+          {"name":"January Cycle","abstractDeadline":"2026-12-25","deadline":"2027-01-01","notification":"2027-02-15","estimated":false,"verified":true,"deadlineTime":"17:00","timezone":"PT"},
+          {"name":"February Cycle","abstractDeadline":"2027-01-25","deadline":"2027-02-01","notification":"2027-03-15","estimated":false,"verified":true,"deadlineTime":"17:00","timezone":"PT"},
+          {"name":"March Cycle","abstractDeadline":"2027-02-25","deadline":"2027-03-01","notification":"2027-04-15","estimated":false,"verified":true,"deadlineTime":"17:00","timezone":"PT"}
+        ]
+      },
+      "2028": {
+        "dateText": "August 28 - September 1, 2028",
+        "startDate": "2028-08-28",
+        "endDate": "2028-09-01",
+        "location": "Marrakech, Morocco",
+        "url": "https://vldb.org/2028/",
+        "approximateDate": false
+      }
+    },
+    "sponsor": {"group":"Other","label":"VLDB Endowment","names":"VLDB Endowment"}
+  },
+  "ICDE": {
+    "homepage": "https://ieee-icde.org/",
+    "editions": {
+      "2026": {
+        "dateText": "May 4-8, 2026",
+        "startDate": "2026-05-04",
+        "endDate": "2026-05-08",
+        "location": "Montréal, Canada",
+        "url": "https://icde2026.github.io/",
+        "approximateDate": false
+      },
+      "2027": {
+        "dateText": "May 17-21, 2027",
+        "startDate": "2027-05-17",
+        "endDate": "2027-05-21",
+        "location": "Copenhagen, Denmark",
+        "url": "https://icde2027.github.io/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"First Round","abstractDeadline":null,"deadline":"2026-06-11","notification":"2026-09-10","estimated":false,"verified":true,"deadlineTime":"17:00","timezone":"PT"},
+          {"name":"Second Round","abstractDeadline":null,"deadline":"2026-11-11","notification":"2027-02-10","estimated":false,"verified":true,"deadlineTime":"17:00","timezone":"PT"}
+        ]
+      }
+    },
+    "sponsor": {"group":"IEEE","names":"IEEE Computer Society, IEEE Technical Committee on Data Engineering (TCDE)"}
+  },
+  "WWW": {
+    "homepage": "https://www.sigweb.org/conferences/acm-sigweb-conferences/the-web-conference",
+    "editions": {
+      "2026": {
+        "dateText": "June 29 - July 3, 2026",
+        "startDate": "2026-06-29",
+        "endDate": "2026-07-03",
+        "location": "Dubai, United Arab Emirates",
+        "url": "https://www2026.thewebconf.org/",
+        "approximateDate": false
+      },
+      "2027": {
+        "dateText": "May 10-14, 2027",
+        "startDate": "2027-05-10",
+        "endDate": "2027-05-14",
+        "location": "Dublin, Ireland",
+        "url": "https://www2027.thewebconf.org/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":"Long Paper","abstractDeadline":"2026-10-18","deadline":"2026-10-25","notification":"2027-01-04","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"},
+          {"name":"Short Paper","abstractDeadline":"2026-11-09","deadline":"2026-11-16","notification":"2027-01-04","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2028": {"location":"Edmonton, Canada"}
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGWEB"}
+  },
+  "KDD": {
+    "homepage": "https://kdd.org/conferences",
+    "editions": {
+      "2026": {
+        "dateText": "August 9-13, 2026",
+        "startDate": "2026-08-09",
+        "endDate": "2026-08-13",
+        "location": "Jeju, South Korea",
+        "url": "https://kdd2026.kdd.org/",
+        "approximateDate": false
+      },
+      "2027": {
+        "dateText": "August 1-5, 2027",
+        "startDate": "2027-08-01",
+        "endDate": "2027-08-05",
+        "location": "San Jose, CA, USA",
+        "url": "https://kdd2027.kdd.org/",
+        "approximateDate": false
+      }
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGKDD"}
+  },
+  "ICSE": {
+    "homepage": "https://conf.researchr.org/series/icse",
+    "editions": {
+      "2027": {
+        "dateText": "April 25 - May 1, 2027",
+        "startDate": "2027-04-25",
+        "endDate": "2027-05-01",
+        "location": "Dublin, Ireland",
+        "url": "https://conf.researchr.org/home/icse-2027",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-06-23","deadline":"2026-06-30","notification":"2026-10-20","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2028": {
+        "dateText": "April 29 - May 7, 2028",
+        "startDate": "2028-04-29",
+        "endDate": "2028-05-07",
+        "location": "Waikoloa, HI, USA",
+        "url": "https://conf.researchr.org/home/icse-2028",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2027-06-24","deadline":"2027-07-01","notification":"2027-10-21","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"ACM/IEEE","names":"ACM SIGSOFT, IEEE Computer Society TCSE"}
+  },
+  "FSE": {
+    "homepage": "https://www.esec-fse.org/",
+    "editions": {
+      "2026": {
+        "dateText": "July 5-9, 2026",
+        "startDate": "2026-07-05",
+        "endDate": "2026-07-09",
+        "location": "Montréal, Canada",
+        "url": "https://conf.researchr.org/home/fse-2026",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2025-09-04","deadline":"2025-09-11","notification":"2025-12-22","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "July 12-16, 2027",
+        "startDate": "2027-07-12",
+        "endDate": "2027-07-16",
+        "location": "Shenzhen, China",
+        "url": "https://conf.researchr.org/home/fse-2027",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-10-03","notification":"2027-01-22","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2028": {"location":"Milan, Italy"}
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGSOFT"}
+  },
+  "ISSTA": {
+    "homepage": "https://issta.org/",
+    "editions": {
+      "2026": {
+        "dateText": "October 7-9, 2026",
+        "startDate": "2026-10-07",
+        "endDate": "2026-10-09",
+        "location": "Oakland, CA, USA",
+        "url": "https://conf.researchr.org/home/issta-2026",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":null,"deadline":"2026-01-29","notification":"2026-04-16","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "September 7-10, 2027",
+        "startDate": "2027-09-07",
+        "endDate": "2027-09-10",
+        "location": "Singapore",
+        "url": "https://conf.researchr.org/home/issta-2027",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2027-01-08","deadline":"2027-01-11","notification":"2027-04-20","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2028": {"location":"Shanghai, China"}
+    },
+    "sponsor": {"group":"ACM","names":"ACM SIGSOFT"}
+  },
+  "ICLR": {
+    "homepage": "https://iclr.cc/",
+    "editions": {
+      "2026": {
+        "dateText": "April 23-27, 2026",
+        "startDate": "2026-04-23",
+        "endDate": "2026-04-27",
+        "location": "Rio de Janeiro, Brazil",
+        "url": "https://iclr.cc/Conferences/2026",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2025-09-19","deadline":"2025-09-24","notification":"2026-01-25","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      },
+      "2027": {
+        "dateText": "April 26-30, 2027",
+        "startDate": "2027-04-26",
+        "endDate": "2027-04-30",
+        "location": "California, USA",
+        "url": "https://iclr.cc/Conferences/2027",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-09-18","deadline":"2026-09-25","notification":"2026-12-16","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"Other","label":"Independent","names":"ICLR (Computational and Biological Learning Foundation)"}
+  },
+  "AAAI": {
+    "homepage": "https://aaai.org/conference/aaai/",
+    "editions": {
+      "2027": {
+        "dateText": "February 16-23, 2027",
+        "startDate": "2027-02-16",
+        "endDate": "2027-02-23",
+        "location": "Montréal, Canada",
+        "url": "https://aaai.org/conference/aaai/aaai-27/",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-07-21","deadline":"2026-07-28","notification":"2026-11-30","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"Other","label":"AAAI","names":"AAAI (Association for the Advancement of Artificial Intelligence)"}
+  },
+  "CVPR": {
+    "homepage": "https://cvpr.thecvf.com/",
+    "editions": {
+      "2026": {
+        "dateText": "June 3-7, 2026",
+        "startDate": "2026-06-03",
+        "endDate": "2026-06-07",
+        "location": "Denver, CO, USA",
+        "url": "https://cvpr.thecvf.com/Conferences/2026",
+        "approximateDate": false
+      },
+      "2027": {
+        "dateText": "June 20-25, 2027",
+        "startDate": "2027-06-20",
+        "endDate": "2027-06-25",
+        "location": "Seattle, WA, USA",
+        "url": "https://cvpr.thecvf.com/Conferences/2027",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-11-10","deadline":"2026-11-16","notification":"2027-02-25","estimated":false,"verified":true,"deadlineTime":"23:59","timezone":"AoE"}
+        ]
+      }
+    },
+    "sponsor": {"group":"IEEE","names":"IEEE Computer Society (TCPAMI), Computer Vision Foundation (CVF)"}
+  },
+  "ICCV": {
+    "homepage": "https://iccv.thecvf.com/",
+    "editions": {
+      "2027": {
+        "dateText": "October 3-7, 2027",
+        "startDate": "2027-10-03",
+        "endDate": "2027-10-07",
+        "location": "Hong Kong, China",
+        "url": "https://iccv.thecvf.com/Conferences/2027",
+        "approximateDate": false
+      }
+    },
+    "sponsor": {"group":"IEEE","names":"IEEE Computer Society (TCPAMI), Computer Vision Foundation (CVF)"}
+  },
+  "ECCV": {
+    "homepage": "https://eccv.ecva.net/",
+    "editions": {
+      "2026": {
+        "dateText": "September 8-12, 2026",
+        "startDate": "2026-09-08",
+        "endDate": "2026-09-12",
+        "location": "Malmö, Sweden",
+        "url": "https://eccv.ecva.net/Conferences/2026",
+        "approximateDate": false,
+        "cycles": [
+          {"name":null,"abstractDeadline":"2026-02-26","deadline":"2026-03-05","notification":"2026-06-17","estimated":false,"verified":true,"deadlineTime":"22:00","timezone":"UTC"}
+        ]
+      },
+      "2028": {"location":null}
+    },
+    "sponsor": {"group":"Other","label":"ECVA","names":"ECVA (European Computer Vision Association)"}
+  }
 }

@@ -1,5 +1,5 @@
 {
-  "$comment": "Read by scripts/update-conferences.mjs. hiddenVenues: venues dropped from the output. renames: heelim venue key -> display name. tierAliases: display name -> key in the tier CSV. extraFromCcf: venues fetched from ccfddl/ccf-deadlines. categories: display order and grouping.",
+  "$comment": "Read by scripts/update-conferences.mjs. hiddenVenues: venues dropped from the output. renames: heelim venue key -> display name. tierAliases: display name -> key in the tier CSV. extraFromCcf: venues fetched from ccfddl/ccf-deadlines (path under conference/). cadenceYears: venues held every N years (default 1), used when estimating the next edition. categories: display order and grouping; sortBy=rank orders a category by BK21+ IF, then KIISE tier, then list order.",
   "hiddenVenues": ["USENIX ATC"],
   "renames": {
     "Usenix Security": "USENIX Security",
@@ -18,25 +18,84 @@
     "CoNEXT": "CONEXT",
     "SoCC": "SOCC",
     "Crypto": "CRYPTO",
-    "Eurocrypt": "EUROCRYPT"
+    "Eurocrypt": "EUROCRYPT",
+    "Asiacrypt": "ASIACRYPT",
+    "FSE": "FSE/ESEC",
+    "IACR FSE": "FSE",
+    "IFIP SEC": "SEC (IFIP-SEC)",
+    "IEEE CLOUD": "CLOUD",
+    "CCGrid": "CCGRID",
+    "Performance": "PERFORMANCE"
   },
+  "cadenceYears": { "HotOS": 2, "ICCV": 2, "ECCV": 2 },
   "extraFromCcf": [
+    { "name": "IISWC", "path": "DS/iiswc.yml" },
+    { "name": "HiPEAC", "path": "DS/hipeac.yml" },
+    { "name": "FPGA", "path": "DS/fpga.yml" },
+    { "name": "FCCM", "path": "DS/fccm.yml" },
+
+    { "name": "ICFP", "path": "SE/icfp.yml" },
+    { "name": "ECOOP", "path": "SE/ecoop.yml" },
+
+    { "name": "APSys", "path": "DS/apsys.yml", "fullName": "ACM SIGOPS Asia-Pacific Workshop on Systems (APSys)" },
+    { "name": "MSST", "path": "DS/msst.yml" },
+    { "name": "SYSTOR", "path": "DS/systor.yml" },
+    { "name": "IEEE CLOUD", "path": "MX/cloud.yml" },
+    { "name": "PODC", "path": "DS/podc.yml" },
+    { "name": "SRDS", "path": "SC/srds.yml" },
+    { "name": "Performance", "path": "DS/performance.yml" },
+
+    { "name": "CLUSTER", "path": "DS/cluster.yml" },
+    { "name": "CCGrid", "path": "DS/ccgrid.yml" },
+
+    { "name": "EuroS&P", "path": "SC/eurosp.yml" },
+    { "name": "ACSAC", "path": "SC/acsac.yml" },
+    { "name": "CSF", "path": "SC/csfw.yml" },
+    { "name": "DIMVA", "path": "SC/dimva.yml", "fullName": "Conference on Detection of Intrusions and Malware & Vulnerability Assessment (DIMVA)" },
+    { "name": "SaTML", "path": "SC/satml.yml", "fullName": "IEEE Conference on Secure and Trustworthy Machine Learning (SaTML)" },
+    { "name": "SOUPS", "path": "SC/soups.yml" },
+    { "name": "WiSec", "path": "SC/wisec.yml" },
+    { "name": "CODASPY", "path": "SC/codaspy.yml" },
+    { "name": "ACNS", "path": "SC/acns.yml" },
+    { "name": "IFIP SEC", "path": "SC/sec.yml" },
+    { "name": "ESORICS", "path": "SC/esorics.yml", "fullName": "European Symposium on Research in Computer Security (ESORICS)" },
+    { "name": "PETS", "path": "SC/pets.yml", "fullName": "Privacy Enhancing Technologies Symposium (PETS)" },
+    { "name": "FC", "path": "SC/fc.yml" },
     { "name": "Crypto", "path": "SC/crypto.yml", "fullName": "Annual International Cryptology Conference (CRYPTO)" },
     { "name": "Eurocrypt", "path": "SC/eurocrypt.yml", "fullName": "Annual International Conference on the Theory and Applications of Cryptographic Techniques (EUROCRYPT)" },
+    { "name": "Asiacrypt", "path": "SC/asiacrypt.yml" },
     { "name": "CHES", "path": "SC/ches.yml", "fullName": "Conference on Cryptographic Hardware and Embedded Systems (CHES)" },
-    { "name": "ESORICS", "path": "SC/esorics.yml", "fullName": "European Symposium on Research in Computer Security (ESORICS)" },
-    { "name": "PETS", "path": "SC/pets.yml", "fullName": "Privacy Enhancing Technologies Symposium (PETS)" }
+    { "name": "TCC", "path": "SC/tcc.yml", "fullName": "Theory of Cryptography Conference (TCC)" },
+    { "name": "PKC", "path": "SC/pkc.yml" },
+    { "name": "IACR FSE", "path": "SC/fse.yml", "fullName": "Fast Software Encryption (FSE)" },
+    { "name": "CT-RSA", "path": "SC/ct-rsa.yml", "fullName": "Cryptographers' Track at the RSA Conference (CT-RSA)" },
+
+    { "name": "MobiSys", "path": "NW/mobisys.yml" },
+    { "name": "SenSys", "path": "NW/sensys.yml" },
+    { "name": "IMC", "path": "NW/imc.yml" },
+    { "name": "MobiHoc", "path": "NW/mobihoc.yml" },
+    { "name": "ICNP", "path": "NW/icnp.yml" },
+
+    { "name": "ICCAD", "path": "DS/iccad.yml" },
+    { "name": "ASP-DAC", "path": "DS/aspdac.yml", "fullName": "Asia and South Pacific Design Automation Conference (ASP-DAC)" },
+    { "name": "CODES+ISSS", "path": "DS/codesisss.yml" },
+
+    { "name": "ICDE", "path": "DB/icde.yml" },
+
+    { "name": "FSE", "path": "SE/fse.yml", "fullName": "ACM International Conference on the Foundations of Software Engineering (FSE)" },
+    { "name": "ISSTA", "path": "SE/issta.yml" }
   ],
   "categories": [
-    { "name": "Computer Architecture", "venues": ["MICRO", "ISCA", "HPCA", "ASPLOS", "PACT", "ISPASS", "ICCD", "CF", "VLSI Symposium"] },
-    { "name": "Compilers and Programming Languages", "venues": ["CGO", "CC", "PLDI", "POPL", "OOPSLA", "PPoPP", "LCTES", "ISMM"] },
-    { "name": "Operating and Distributed Systems", "venues": ["OSDI", "SOSP", "EuroSys", "USENIX ATC", "ACM ATC", "HotOS", "FAST", "HotStorage", "SoCC", "Middleware", "ICDCS", "DSN", "SIGMETRICS"] },
-    { "name": "Parallel and High-Performance Computing", "venues": ["SC", "ICPP", "IPDPS", "HPDC", "ICS", "SPAA", "Euro-Par"] },
-    { "name": "Security and Cryptography", "venues": ["CCS", "IEEE S&P", "USENIX Security", "NDSS", "AsiaCCS", "RAID", "Crypto", "Eurocrypt", "CHES", "ESORICS", "PETS"] },
-    { "name": "Networking and Mobile Systems", "venues": ["SIGCOMM", "NSDI", "MobiCom", "CoNEXT", "HotNets", "INFOCOM", "HotMobile"] },
-    { "name": "Design Automation and Embedded Systems", "venues": ["DAC", "DATE", "EMSOFT", "RTSS", "RTAS", "ECRTS"] },
-    { "name": "Data Management and Web", "venues": ["SIGMOD", "VLDB", "WWW", "KDD"] },
-    { "name": "Software Engineering", "venues": ["ICSE", "ASE"] },
+    { "name": "Compilers", "sortBy": "rank", "venues": ["CGO", "CC", "LCTES", "ISMM"] },
+    { "name": "Systems and Architecture", "sortBy": "rank", "venues": ["ASPLOS", "ISCA", "MICRO", "HPCA", "MLSys", "PACT", "ISPASS", "IISWC", "ICCD", "CF", "HiPEAC", "FPGA", "FCCM", "VLSI Symposium"] },
+    { "name": "Programming Languages", "sortBy": "rank", "venues": ["PLDI", "POPL", "OOPSLA", "PPoPP", "ICFP", "ECOOP", "ESOP", "SAS", "CAV"] },
+    { "name": "Operating and Distributed Systems", "sortBy": "rank", "venues": ["OSDI", "SOSP", "EuroSys", "USENIX ATC", "ACM ATC", "HotOS", "APSys", "FAST", "HotStorage", "MSST", "SYSTOR", "SoCC", "IEEE CLOUD", "Middleware", "ICDCS", "PODC", "SRDS", "DSN", "SIGMETRICS", "Performance"] },
+    { "name": "Security and Cryptography", "venues": ["CCS", "IEEE S&P", "USENIX Security", "NDSS", "EuroS&P", "AsiaCCS", "ACSAC", "RAID", "CSF", "DIMVA", "SaTML", "PETS", "SOUPS", "WiSec", "CODASPY", "ACNS", "IFIP SEC", "ESORICS", "FC", "Crypto", "Eurocrypt", "Asiacrypt", "CHES", "TCC", "PKC", "IACR FSE", "CT-RSA"] },
+    { "name": "Parallel and High-Performance Computing", "venues": ["SC", "ICPP", "IPDPS", "HPDC", "ICS", "SPAA", "Euro-Par", "CLUSTER", "CCGrid"] },
+    { "name": "Networking and Mobile Systems", "venues": ["SIGCOMM", "NSDI", "MobiCom", "MobiSys", "SenSys", "CoNEXT", "IMC", "HotNets", "INFOCOM", "ICNP", "MobiHoc", "HotMobile"] },
+    { "name": "Design Automation and Embedded Systems", "venues": ["DAC", "ICCAD", "DATE", "ASP-DAC", "CODES+ISSS", "EMSOFT", "RTSS", "RTAS", "ECRTS"] },
+    { "name": "Data Management and Web", "venues": ["SIGMOD", "VLDB", "ICDE", "WWW", "KDD"] },
+    { "name": "Software Engineering", "venues": ["ICSE", "FSE", "ASE", "ISSTA"] },
     { "name": "Machine Learning and Computer Vision", "venues": ["NeurIPS", "ICML", "ICLR", "AAAI", "CVPR", "ICCV", "ECCV"] }
   ]
 }
